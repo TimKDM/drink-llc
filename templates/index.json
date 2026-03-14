@@ -1,0 +1,610 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "divine_hero": {
+      "type": "divine-hero",
+      "blocks": {
+        "badge": {
+          "type": "badge",
+          "settings": {
+            "text": "Where Purity Meets Performance · Organic · Lab-Tested · No Fillers",
+            "badge_bg": "",
+            "badge_color": ""
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {}
+        },
+        "subtitle": {
+          "type": "subtitle",
+          "settings": {}
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Best Sellers",
+            "button_link_1": "shopify://collections/powder",
+            "btn1_bg": "",
+            "btn1_color": "",
+            "button_label_2": "Go Wholesale",
+            "button_link_2": "shopify://collections/shop-wholesale-with-divine",
+            "btn2_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "badge",
+        "heading",
+        "subtitle",
+        "buttons"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/IMG_6326_ac2a714e-fffa-454c-8849-c8568b2ece0e.jpg",
+        "image_height": 70,
+        "video_url": "",
+        "autoplay": true,
+        "loop": true,
+        "muted": true,
+        "heading": "<p>What You Put In <em>Matters</em>.</p>",
+        "subtitle": "Organic teas, matcha, superfoods, and spices — sourced from farms we trust, tested with precision, and crafted for people who believe what goes in matters.",
+        "overlay_opacity": 100,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "divine_trust_bar": {
+      "type": "divine-trust-bar",
+      "blocks": {
+        "trust_1": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "shield",
+            "text": "<strong>USDA</strong> Organic · CCOF Certified",
+            "link": ""
+          }
+        },
+        "trust_2": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "package",
+            "text": "<strong>Free Ship</strong> on Orders $75+",
+            "link": ""
+          }
+        },
+        "trust_3": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "leaf",
+            "text": "<strong>Zero</strong> Additives. Ever.",
+            "link": ""
+          }
+        },
+        "trust_4": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "check",
+            "text": "<strong>Every Batch</strong> Lab Tested",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "trust_1",
+        "trust_2",
+        "trust_3",
+        "trust_4"
+      ],
+      "settings": {
+        "background_color": "",
+        "text_color": "",
+        "icon_color": "",
+        "border_color": "",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "divine_brand_story": {
+      "type": "divine-brand-story",
+      "blocks": {
+        "value_1": {
+          "type": "value",
+          "settings": {
+            "icon": "shield",
+            "title": "Certified Organic",
+            "description": "USDA Organic and CCOF certified. No pesticides, no fillers, no mystery ingredients. Pure and authentic, always."
+          }
+        },
+        "value_2": {
+          "type": "value",
+          "settings": {
+            "icon": "globe",
+            "title": "Farm-Direct",
+            "description": "We know our growers by name. Fair trade, direct relationships, full traceability."
+          }
+        },
+        "value_3": {
+          "type": "value",
+          "settings": {
+            "icon": "clipboard",
+            "title": "Lab-Tested Everything",
+            "description": "Every single batch gets tested for purity, potency, and safety. Precision matters — we don't cut corners."
+          }
+        },
+        "value_4": {
+          "type": "value",
+          "settings": {
+            "icon": "heart",
+            "title": "Built for You",
+            "description": "Creators, chefs, wellness brands, home cooks — if you care about what goes in, we're here for you."
+          }
+        }
+      },
+      "block_order": [
+        "value_1",
+        "value_2",
+        "value_3",
+        "value_4"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Smoothie-blog-image-2.jpg",
+        "heading": "We Care About What Goes In — And Who It Goes To",
+        "text": "We started Divine because we couldn't find ingredients we truly trusted. So we went direct to the farms — Japan, India, Sri Lanka, and beyond. We built real relationships with real growers. We test every batch in independent labs. And we made a promise: no synthetic anything, ever. Because the best food starts with the best ingredients, and the people creating with them deserve complete transparency.",
+        "button_label": "Our Story",
+        "button_link": "shopify://pages/about-us",
+        "button_bg": "",
+        "button_color": "",
+        "use_alt_bg": false,
+        "background_color": "",
+        "text_color": "",
+        "accent_color": "",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "certification_logos": {
+      "type": "image-gallery",
+      "blocks": {
+        "logo_1": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Asset_1.png"
+          }
+        },
+        "logo_2": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/ccof_logo_4color_0.jpg"
+          }
+        },
+        "text_DaacRp": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/rainforest.png"
+          }
+        },
+        "logo_3": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/KosherCheck-tag_3c_300.jpg"
+          }
+        },
+        "logo_4": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/Organic4colorsealJPG.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "logo_1",
+        "logo_2",
+        "text_DaacRp",
+        "logo_3",
+        "logo_4"
+      ],
+      "settings": {
+        "caption": "Committed to Quality",
+        "text_style": "caption-with-letter-spacing",
+        "text_size": "medium",
+        "title": "Certified for Your Confidence",
+        "heading_size": "medium",
+        "heading_style": "default",
+        "heading_tag": "h2",
+        "scroll_direction": "ltc",
+        "scroll_speed": 50,
+        "scroll_height": 200,
+        "hover_stop": true,
+        "color_scheme": "option-2",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "ignore_spacing": true,
+        "scroll_height_mobile": 120,
+        "margin_spacing": "negative",
+        "margin_top": 0
+      }
+    },
+    "divine_categories": {
+      "type": "divine-categories",
+      "blocks": {
+        "cat_1": {
+          "type": "category",
+          "settings": {
+            "collection": "shopify://collections/matcha-tea-powders",
+            "image": "shopify://shop_images/GT.Supreha1_a142c4ff-7e20-4e71-bb11-9296a43987f7.jpg",
+            "heading": "Matcha",
+            "subtitle": "Ceremonial to everyday — all grades, all good",
+            "link": ""
+          }
+        },
+        "cat_2": {
+          "type": "category",
+          "settings": {
+            "collection": "shopify://collections/organic-herbal-tea",
+            "image": "shopify://shop_images/ceylon_black_a2709a53-daf9-4060-b061-8cdba4e4fdc7.jpg",
+            "heading": "Loose Leaf Tea",
+            "subtitle": "Black, green, oolong, herbal — pick your mood",
+            "link": ""
+          }
+        },
+        "cat_3": {
+          "type": "category",
+          "settings": {
+            "collection": "shopify://collections/organic-superfood-powders",
+            "image": "shopify://shop_images/pumpkin-spice-productphoto.svg",
+            "heading": "Superfood Powders",
+            "subtitle": "Mushroom, fruit, adaptogens — the good stuff",
+            "link": ""
+          }
+        },
+        "cat_4": {
+          "type": "category",
+          "settings": {
+            "collection": "shopify://collections/spices",
+            "image": "shopify://shop_images/IMG_6408.jpg",
+            "heading": "Herbs & Spices",
+            "subtitle": "Single origin, organic, honestly incredible",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "cat_1",
+        "cat_2",
+        "cat_3",
+        "cat_4"
+      ],
+      "settings": {
+        "caption": "Find Your Thing",
+        "title": "Shop by Category",
+        "use_alt_bg": true,
+        "background_color": "",
+        "text_color": "",
+        "accent_color": "",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "divine_products": {
+      "type": "divine-products",
+      "settings": {
+        "caption": "People Love These",
+        "title": "Best Sellers",
+        "collection": "powder",
+        "products_to_show": 6,
+        "show_rating": true,
+        "show_tags": true,
+        "show_view_all": true,
+        "view_all_label": "See Everything",
+        "view_all_link": "shopify://collections/powder",
+        "use_alt_bg": false,
+        "background_color": "",
+        "text_color": "",
+        "accent_color": "",
+        "card_background_color": "",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "divine_testimonials": {
+      "type": "divine-testimonials",
+      "blocks": {
+        "testimonial_1": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "This ceremonial matcha is unreal — best I've found outside Japan. Our regulars literally ask what brand we use. The consistency batch to batch is next level.",
+            "author": "Sarah M.",
+            "role": "Café Owner, Portland",
+            "link": ""
+          }
+        },
+        "testimonial_2": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "I needed a source for organic turmeric and ashwagandha that I could actually stand behind. Lab-tested, consistent quality, and the bulk pricing works perfectly for our practice. Done deal.",
+            "author": "Dr. James K.",
+            "role": "Wellness Practitioner",
+            "link": ""
+          }
+        },
+        "testimonial_3": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Switched all my baking ingredients to Divine and honestly — night and day. The vanilla, the cinnamon, the matcha. Everything just tastes more real.",
+            "author": "Michelle T.",
+            "role": "Home Baker & Recipe Creator",
+            "link": ""
+          }
+        },
+        "testimonial_4": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "We built our entire private label tea line on Divine ingredients. The sourcing transparency and quality certs make it easy to build trust with our own customers. Couldn't ask for a better partner.",
+            "author": "Ryan & Co.",
+            "role": "Private Label Brand",
+            "link": ""
+          }
+        },
+        "testimonial_5": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "The mushroom powder blends are next level — lion's mane and reishi that actually taste clean. No fillers, no weird aftertaste. My morning smoothie game has never been stronger.",
+            "author": "Anika P.",
+            "role": "Wellness Coach, Vancouver",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_1",
+        "testimonial_2",
+        "testimonial_3",
+        "testimonial_4",
+        "testimonial_5"
+      ],
+      "settings": {
+        "caption": "Real People, Real Talk",
+        "title": "Hear It From the Community",
+        "use_alt_bg": true,
+        "background_color": "",
+        "text_color": "",
+        "accent_color": "",
+        "card_background_color": "",
+        "card_border_color": "",
+        "star_color": "",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "divine_newsletter": {
+      "type": "divine-newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Stay in the Loop"
+          }
+        },
+        "subtitle": {
+          "type": "subtitle",
+          "settings": {
+            "text": "Get 10% off your first order, plus recipes, wellness inspo, and first dibs on new drops."
+          }
+        },
+        "email_form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "subtitle",
+        "email_form"
+      ],
+      "settings": {
+        "input_placeholder": "Your email address",
+        "button_label": "Count Me In",
+        "privacy_text": "No spam. No nonsense. Unsubscribe whenever.",
+        "background_color": "#1d1d1d",
+        "text_color": "#ffffff",
+        "button_bg": "#d4c4d9",
+        "button_color": "#1d1d1d",
+        "padding_top": 40,
+        "padding_bottom": 52,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "image_banner_with_featured_collection": {
+      "type": "image-banner-with-featured-collection",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Premium Organic Products</p>",
+            "heading_size": "extra-large",
+            "heading_style": "default",
+            "heading_tag": "h2",
+            "highlight_option": "underline-hand",
+            "word_animation_color": "#d4c4d9"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify://collections",
+            "open_new_tab_1": false,
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "open_new_tab_2": false,
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "buttons"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Smoothie_Blog_Image.jpg",
+        "hide_image": false,
+        "image_overlay_opacity": 60,
+        "image_height": 80,
+        "full_width_banner": true,
+        "adapt_to_image": false,
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "enable_collection": true,
+        "collection": "powder",
+        "collection_style": "collection-one",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "enable_desktop_slider": true,
+        "desktop_margin_top": 230,
+        "mobile_margin_top": 110,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "enable_quick_add": true,
+        "enable_quick_buy": true,
+        "quick_add_position": "overlay",
+        "color_scheme": "option-3",
+        "color_scheme_1": "option-4",
+        "padding_top": 0,
+        "padding_bottom": 8,
+        "ignore_spacing": false,
+        "image_overlay_opacity_mobile": 50,
+        "image_height_mobile": 56,
+        "margin_spacing": "negative",
+        "margin_top": 0,
+        "mobile_content_alignment": "center",
+        "columns_mobile": "1",
+        "disable_quick_add": true,
+        "swipe_on_mobile": true,
+        "disable_arrow_mobile": true
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><em>Nourish</em> Your Body, Delight Your Taste Buds</p>",
+            "heading_size": "large",
+            "heading_style": "default",
+            "heading_tag": "h2",
+            "highlight_option": "underline-hand",
+            "word_animation_color": "#d4c4d9"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "color_scheme": "option-4",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "ignore_spacing": false,
+        "margin_spacing": "negative",
+        "margin_top": 36,
+        "mobile_content_alignment": "center"
+      }
+    },
+    "slick_slider": {
+      "type": "slick-slider",
+      "blocks": {
+        "slide_1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/blog_on_chai.jpg",
+            "heading": "We love Chai!",
+            "caption": "Warm up your wellness routine with Divine Ingredients' organic chai blends.",
+            "button_label": "Order Now",
+            "link": "shopify://products/mumbai-chai",
+            "show_link_button": true,
+            "open_new_tab_1": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_1"
+      ],
+      "disabled": true,
+      "settings": {
+        "auto_rotate": true,
+        "slider_interval": 4,
+        "full_width": true,
+        "image_opacity": 0.1,
+        "opacity_mobile": false,
+        "hide_slider_desktop": false,
+        "hide_slider_mobile": false,
+        "heading_size": 9,
+        "heading_tag": "h2",
+        "heading_style": "none",
+        "caption_size": 1.6,
+        "caption_style": "none",
+        "link_size": 1.8,
+        "color_scheme": "option-2",
+        "margin_spacing": "negative",
+        "margin_top": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "ignore_spacing": false
+      }
+    }
+  },
+  "order": [
+    "divine_hero",
+    "divine_trust_bar",
+    "divine_brand_story",
+    "certification_logos",
+    "divine_categories",
+    "divine_products",
+    "divine_testimonials",
+    "divine_newsletter",
+    "image_banner_with_featured_collection",
+    "rich_text",
+    "slick_slider"
+  ]
+}
