@@ -1,0 +1,95 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Drink LLC",
+    "theme_version": "1.0.0",
+    "theme_author": "Drink LLC",
+    "theme_documentation_url": "",
+    "theme_support_url": ""
+  },
+  {
+    "name": "Brand",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo"
+      },
+      {
+        "type": "range",
+        "id": "logo_width",
+        "label": "Logo width",
+        "min": 60,
+        "max": 200,
+        "step": 10,
+        "default": 120,
+        "unit": "px"
+      },
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon"
+      }
+    ]
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "color",
+        "id": "color_void",
+        "label": "Void (primary background)",
+        "default": "#0D0D0D"
+      },
+      {
+        "type": "color",
+        "id": "color_carbon",
+        "label": "Carbon (secondary dark)",
+        "default": "#2A2A2A"
+      },
+      {
+        "type": "color",
+        "id": "color_ash",
+        "label": "Ash (muted text)",
+        "default": "#888880"
+      },
+      {
+        "type": "color",
+        "id": "color_offwhite",
+        "label": "Off-white (light text/bg)",
+        "default": "#F5F5F0"
+      }
+    ]
+  },
+  {
+    "name": "Social Media",
+    "settings": [
+      {
+        "type": "text",
+        "id": "social_instagram",
+        "label": "Instagram URL"
+      },
+      {
+        "type": "text",
+        "id": "social_tiktok",
+        "label": "TikTok URL"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter",
+        "label": "X / Twitter URL"
+      }
+    ]
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      {
+        "type": "text",
+        "id": "cart_empty_message",
+        "label": "Empty cart message",
+        "default": "Nothing here yet."
+      }
+    ]
+  }
+]

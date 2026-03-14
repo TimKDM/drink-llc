@@ -1,0 +1,25 @@
+{
+  "current": {
+    "color_void": "#0D0D0D",
+    "color_carbon": "#2A2A2A",
+    "color_ash": "#888880",
+    "color_offwhite": "#F5F5F0",
+    "cart_empty_message": "Nothing here yet.",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo_width": 120,
+          "menu": "main-menu"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "tagline": "Just Drink.",
+          "menu": "footer"
+        }
+      }
+    }
+  }
+}

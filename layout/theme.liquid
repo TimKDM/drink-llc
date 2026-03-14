@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>
+    {%- if page_title -%}
+      {{ page_title }} — {{ shop.name }}
+    {%- else -%}
+      {{ shop.name }}
+    {%- endif -%}
+  </title>
+
+  {%- if page_description -%}
+    <meta name="description" content="{{ page_description | escape }}">
+  {%- endif -%}
+
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  {%- if settings.favicon != blank -%}
+    <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32 }}">
+  {%- endif -%}
+
+  {%- comment -%} Brand Typography — Bebas Neue + DM Sans {%- endcomment -%}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  {{ 'base.css' | asset_url | stylesheet_tag }}
+  {{ content_for_header }}
+
+  {%- comment -%} Flavor accent color injection {%- endcomment -%}
+  <style>
+    :root {
+      --color-void: #0D0D0D;
+      --color-carbon: #2A2A2A;
+      --color-ash: #888880;
+      --color-offwhite: #F5F5F0;
+      --color-lemonade: #FFE566;
+      --color-lychee: #FF9EBA;
+      --color-peach-mango: #FF8C42;
+      --color-passion-fruit: #C77DFF;
+      --color-matcha: #7CB518;
+      --color-accent: var(--color-offwhite);
+      --radius-sm: 4px;
+      --radius-md: 8px;
+    }
+  </style>
+</head>
+
+<body class="template-{{ template.name }}">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  {% section 'header' %}
+
+  <main id="main-content" role="main">
+    {{ content_for_layout }}
+  </main>
+
+  {% section 'footer' %}
+
+  <script src="{{ 'theme.js' | asset_url }}" defer></script>
+</body>
+</html>

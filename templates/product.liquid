@@ -1,0 +1,257 @@
+{%- comment -%}
+  Drink LLC — Product Template
+  Each product page is themed by its flavor accent color.
+{%- endcomment -%}
+
+{%- assign flavor_handle = product.handle | downcase -%}
+{%- render 'flavor-accent', flavor_handle: flavor_handle -%}
+
+<div class="section product-page">
+  <div class="container">
+    <div class="product-layout">
+
+      {%- comment -%} Product Media {%- endcomment -%}
+      <div class="product-media">
+        {%- if product.featured_image -%}
+          <img
+            src="{{ product.featured_image | image_url: width: 900 }}"
+            alt="{{ product.featured_image.alt | escape }}"
+            width="{{ product.featured_image.width }}"
+            height="{{ product.featured_image.height }}"
+            loading="lazy"
+            class="product-media__image"
+          >
+        {%- else -%}
+          <div class="product-media__placeholder">
+            {{ 'product-1' | placeholder_svg_tag }}
+          </div>
+        {%- endif -%}
+
+        {%- if product.images.size > 1 -%}
+          <div class="product-media__thumbs">
+            {%- for image in product.images -%}
+              <button
+                class="product-media__thumb {% if forloop.first %}is-active{% endif %}"
+                data-image-src="{{ image | image_url: width: 900 }}"
+                data-index="{{ forloop.index0 }}"
+                aria-label="View {{ image.alt | default: product.title }}"
+              >
+                <img
+                  src="{{ image | image_url: width: 120 }}"
+                  alt="{{ image.alt | escape }}"
+                  width="120"
+                  height="120"
+                  loading="lazy"
+                >
+              </button>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+
+      {%- comment -%} Product Info {%- endcomment -%}
+      <div class="product-info">
+        <span class="label">{{ product.type | default: 'Hydration' }}</span>
+        <h1 class="product-info__title">{{ product.title }}</h1>
+        <p class="product-info__price">{{ product.price | money }}</p>
+
+        {%- if product.description != blank -%}
+          <div class="product-info__description">
+            {{ product.description }}
+          </div>
+        {%- endif -%}
+
+        {%- comment -%} Product Form {%- endcomment -%}
+        {%- form 'product', product -%}
+          {%- if product.variants.size > 1 -%}
+            <div class="product-info__variants">
+              <label class="label" for="variant-select">Size</label>
+              <select name="id" id="variant-select">
+                {%- for variant in product.variants -%}
+                  <option
+                    value="{{ variant.id }}"
+                    {% unless variant.available %}disabled{% endunless %}
+                  >
+                    {{ variant.title }} — {{ variant.price | money }}
+                    {%- unless variant.available %} (Sold out){% endunless %}
+                  </option>
+                {%- endfor -%}
+              </select>
+            </div>
+          {%- else -%}
+            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+          {%- endif -%}
+
+          <div class="product-info__quantity">
+            <label class="label" for="quantity">Quantity</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1" max="10">
+          </div>
+
+          <button type="submit" class="btn btn--accent product-info__add"
+            {% unless product.available %}disabled{% endunless %}
+          >
+            {%- if product.available -%}
+              Add to Cart
+            {%- else -%}
+              Sold Out
+            {%- endif -%}
+          </button>
+        {%- endform -%}
+
+        {%- comment -%} Product Details {%- endcomment -%}
+        <div class="product-info__details">
+          <div class="product-detail">
+            <span class="label">Formula</span>
+            <p>Electrolytes. B-vitamins. Caffeine-free. Sugar-free. Keto-friendly.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+  .product-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: start;
+  }
+
+  @media (max-width: 768px) {
+    .product-layout {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .product-media__image {
+    width: 100%;
+    border-radius: var(--radius-md);
+    background-color: var(--color-carbon);
+  }
+
+  .product-media__placeholder {
+    aspect-ratio: 1;
+    background-color: var(--color-carbon);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-media__placeholder svg {
+    width: 50%;
+    opacity: 0.3;
+  }
+
+  .product-media__thumbs {
+    display: flex;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+  }
+
+  .product-media__thumb {
+    width: 64px;
+    height: 64px;
+    border: 0.5px solid var(--color-carbon);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+    opacity: 0.5;
+    transition: opacity var(--transition-fast);
+  }
+
+  .product-media__thumb.is-active,
+  .product-media__thumb:hover {
+    opacity: 1;
+    border-color: var(--color-offwhite);
+  }
+
+  .product-media__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .product-info__title {
+    margin-top: var(--space-xs);
+  }
+
+  .product-info__price {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    letter-spacing: 0.06em;
+    color: var(--color-offwhite);
+  }
+
+  .product-info__description {
+    color: var(--color-ash);
+    font-weight: 300;
+    line-height: 1.7;
+    max-width: 50ch;
+  }
+
+  .product-info__variants,
+  .product-info__quantity {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    max-width: 200px;
+  }
+
+  .product-info__quantity input {
+    max-width: 80px;
+  }
+
+  .product-info__add {
+    margin-top: var(--space-md);
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .product-info__add:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  .product-info__details {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-lg);
+    border-top: 0.5px solid var(--color-carbon);
+  }
+
+  .product-detail .label {
+    display: block;
+    margin-bottom: var(--space-sm);
+  }
+
+  .product-detail p {
+    font-size: 0.9rem;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var thumbs = document.querySelectorAll('.product-media__thumb');
+    var mainImage = document.querySelector('.product-media__image');
+
+    if (!mainImage || !thumbs.length) return;
+
+    thumbs.forEach(function(thumb) {
+      thumb.addEventListener('click', function() {
+        thumbs.forEach(function(t) { t.classList.remove('is-active'); });
+        thumb.classList.add('is-active');
+        mainImage.src = thumb.getAttribute('data-image-src');
+      });
+    });
+  });
+</script>

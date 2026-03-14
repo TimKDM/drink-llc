@@ -1,0 +1,118 @@
+{%- comment -%}
+  Drink LLC — Product Card Snippet
+  Usage: {% render 'product-card', product: product %}
+{%- endcomment -%}
+
+{%- assign flavor_handle = product.handle | downcase -%}
+{%- assign card_accent = '' -%}
+
+{%- case flavor_handle -%}
+  {%- when 'lemonade-drink' -%}
+    {%- assign card_accent = '#FFE566' -%}
+  {%- when 'lychee-drink' -%}
+    {%- assign card_accent = '#FF9EBA' -%}
+  {%- when 'peach-mango-drink' -%}
+    {%- assign card_accent = '#FF8C42' -%}
+  {%- when 'passion-fruit-drink' -%}
+    {%- assign card_accent = '#C77DFF' -%}
+  {%- when 'matcha-drink' -%}
+    {%- assign card_accent = '#7CB518' -%}
+{%- endcase -%}
+
+<a href="{{ product.url }}" class="product-card" {% if card_accent != '' %}style="--card-accent: {{ card_accent }};"{% endif %}>
+  <div class="product-card__media">
+    {%- if product.featured_image -%}
+      <img
+        src="{{ product.featured_image | image_url: width: 600 }}"
+        alt="{{ product.featured_image.alt | default: product.title | escape }}"
+        width="600"
+        height="600"
+        loading="lazy"
+      >
+    {%- else -%}
+      <div class="product-card__placeholder">
+        {{ 'product-1' | placeholder_svg_tag }}
+      </div>
+    {%- endif -%}
+
+    {%- unless product.available -%}
+      <span class="badge product-card__badge" style="background-color: var(--color-ash);">Sold Out</span>
+    {%- endunless -%}
+  </div>
+
+  <div class="product-card__info">
+    <span class="label">{{ product.type | default: 'Hydration' }}</span>
+    <h3 class="product-card__title">{{ product.title }}</h3>
+    <p class="product-card__price">{{ product.price | money }}</p>
+  </div>
+</a>
+
+<style>
+  .product-card {
+    display: block;
+    text-decoration: none;
+    transition: opacity var(--transition-fast);
+  }
+
+  .product-card:hover {
+    opacity: 0.9;
+  }
+
+  .product-card__media {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    background-color: var(--color-carbon);
+    margin-bottom: var(--space-md);
+  }
+
+  .product-card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-base);
+  }
+
+  .product-card:hover .product-card__media img {
+    transform: scale(1.02);
+  }
+
+  .product-card__placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-card__placeholder svg {
+    width: 40%;
+    opacity: 0.2;
+  }
+
+  .product-card__badge {
+    position: absolute;
+    top: var(--space-md);
+    left: var(--space-md);
+  }
+
+  .product-card__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  .product-card__title {
+    font-size: 1.25rem;
+    letter-spacing: 0.06em;
+    color: var(--color-offwhite);
+  }
+
+  .product-card__price {
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: var(--color-ash);
+  }
+</style>
