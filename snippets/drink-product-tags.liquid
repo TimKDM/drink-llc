@@ -11,7 +11,7 @@
   - tag_style: {String} "pill" or "text" (default: "pill")
 
   Usage:
-  {% render 'divine-product-tags', product: product, max_tags: 3 %}
+  {% render 'drink-product-tags', product: product, max_tags: 3 %}
 {% endcomment %}
 
 {%- liquid
@@ -44,13 +44,13 @@
   -%}
 
   {%- if is_benefit and show_benefits != false -%}
-    <span class="divine-tag divine-tag--benefit">{{ tag_label }}</span>
+    <span class="drink-tag drink-tag--benefit">{{ tag_label }}</span>
     {%- assign displayed = displayed | plus: 1 -%}
   {%- elsif is_flavor and show_flavors != false -%}
-    <span class="divine-tag divine-tag--flavor">{{ tag_label }}</span>
+    <span class="drink-tag drink-tag--flavor">{{ tag_label }}</span>
     {%- assign displayed = displayed | plus: 1 -%}
   {%- elsif is_dietary and show_dietary == true -%}
-    <span class="divine-tag divine-tag--dietary">{{ tag_label }}</span>
+    <span class="drink-tag drink-tag--dietary">{{ tag_label }}</span>
     {%- assign displayed = displayed | plus: 1 -%}
   {%- endif -%}
 {%- endfor -%}

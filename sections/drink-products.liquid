@@ -1,5 +1,5 @@
 {%- style -%}
-  #shopify-section-{{ section.id }} .divine-section {
+  #shopify-section-{{ section.id }} .drink-section {
     {% if section.settings.background_color != blank and section.settings.background_color != 'rgba(0,0,0,0)' %}
       background-color: {{ section.settings.background_color }};
     {% endif %}
@@ -9,25 +9,25 @@
     margin-bottom: {{ section.settings.margin_bottom }}px;
   }
   @media screen and (min-width: 768px) {
-    #shopify-section-{{ section.id }} .divine-section {
+    #shopify-section-{{ section.id }} .drink-section {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
   {% if section.settings.text_color != blank and section.settings.text_color != 'rgba(0,0,0,0)' %}
-    #shopify-section-{{ section.id }} .divine-section-title,
-    #shopify-section-{{ section.id }} .divine-product-card__title,
-    #shopify-section-{{ section.id }} .divine-product-card__info {
+    #shopify-section-{{ section.id }} .drink-section-title,
+    #shopify-section-{{ section.id }} .drink-product-card__title,
+    #shopify-section-{{ section.id }} .drink-product-card__info {
       color: {{ section.settings.text_color }};
     }
   {% endif %}
   {% if section.settings.accent_color != blank and section.settings.accent_color != 'rgba(0,0,0,0)' %}
-    #shopify-section-{{ section.id }} .divine-section-label {
+    #shopify-section-{{ section.id }} .drink-section-label {
       color: {{ section.settings.accent_color }};
     }
   {% endif %}
   {% if section.settings.card_background_color != blank and section.settings.card_background_color != 'rgba(0,0,0,0)' %}
-    #shopify-section-{{ section.id }} .divine-product-card {
+    #shopify-section-{{ section.id }} .drink-product-card {
       background-color: {{ section.settings.card_background_color }};
     }
   {% endif %}
@@ -35,21 +35,21 @@
 
 {%- assign collection = collections[section.settings.collection] -%}
 
-<section class="divine-section{% if section.settings.use_alt_bg %} divine-section-alt{% endif %}">
-  <div class="divine-section-header">
+<section class="drink-section{% if section.settings.use_alt_bg %} drink-section-alt{% endif %}">
+  <div class="drink-section-header">
     {%- if section.settings.caption != blank -%}
-      <span class="divine-section-label">{{ section.settings.caption }}</span>
+      <span class="drink-section-label">{{ section.settings.caption }}</span>
     {%- endif -%}
     {%- if section.settings.title != blank -%}
-      <h2 class="divine-section-title">{{ section.settings.title }}</h2>
+      <h2 class="drink-section-title">{{ section.settings.title }}</h2>
     {%- endif -%}
   </div>
 
-  <div class="divine-product-scroll">
+  <div class="drink-product-scroll">
     {%- if collection != blank -%}
       {%- for product in collection.products limit: section.settings.products_to_show -%}
-        <a href="{{ product.url }}" class="divine-product-card">
-          <div class="divine-product-card__image">
+        <a href="{{ product.url }}" class="drink-product-card">
+          <div class="drink-product-card__image">
             {%- if product.featured_image != blank -%}
               {{
                 product.featured_image
@@ -64,24 +64,24 @@
             {%- endif -%}
           </div>
 
-          <div class="divine-product-card__info">
+          <div class="drink-product-card__info">
             {%- if product.compare_at_price > product.price -%}
-              <span class="divine-product-badge divine-product-badge--sale">Sale</span>
+              <span class="drink-product-badge drink-product-badge--sale">Sale</span>
             {%- elsif product.tags contains 'best-seller' -%}
-              <span class="divine-product-badge">Best Seller</span>
+              <span class="drink-product-badge">Best Seller</span>
             {%- elsif product.tags contains 'new' -%}
-              <span class="divine-product-badge">New</span>
+              <span class="drink-product-badge">New</span>
             {%- endif -%}
-            <h3 class="divine-product-card__title">{{ product.title }}</h3>
+            <h3 class="drink-product-card__title">{{ product.title }}</h3>
 
             {%- if product.metafields.custom.subtitle != blank -%}
-              <p class="divine-product-card__meta">{{ product.metafields.custom.subtitle }}</p>
+              <p class="drink-product-card__meta">{{ product.metafields.custom.subtitle }}</p>
             {%- elsif product.variants.first.title != 'Default Title' -%}
-              <p class="divine-product-card__meta">{{ product.variants.first.title }}</p>
+              <p class="drink-product-card__meta">{{ product.variants.first.title }}</p>
             {%- endif -%}
 
             {%- if section.settings.show_rating -%}
-              <div class="divine-product-rating">
+              <div class="drink-product-rating">
                 {%- for i in (1..5) -%}
                   <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                 {%- endfor -%}
@@ -92,12 +92,12 @@
             {%- endif -%}
 
             {%- if section.settings.show_tags -%}
-              <div class="divine-product-card__tags">
-                {% render 'divine-product-tags', product: product, max_tags: 3 %}
+              <div class="drink-product-card__tags">
+                {% render 'drink-product-tags', product: product, max_tags: 3 %}
               </div>
             {%- endif -%}
 
-            <p class="divine-product-card__price {% if product.compare_at_price > product.price %}divine-product-card__price--sale{% endif %}">
+            <p class="drink-product-card__price {% if product.compare_at_price > product.price %}drink-product-card__price--sale{% endif %}">
               {{ product.price | money }}
               {%- if product.compare_at_price > product.price -%}
                 <s>{{ product.compare_at_price | money }}</s>
@@ -108,20 +108,20 @@
       {%- endfor -%}
     {%- else -%}
       {%- for i in (1..4) -%}
-        <div class="divine-product-card">
-          <div class="divine-product-card__image">
+        <div class="drink-product-card">
+          <div class="drink-product-card__image">
             {{ 'product-' | append: i | placeholder_svg_tag: 'placeholder-svg' }}
           </div>
-          <div class="divine-product-card__info">
-            <h3 class="divine-product-card__title">Sample Product {{ i }}</h3>
-            <p class="divine-product-card__meta">100g · Organic</p>
-            <div class="divine-product-rating">
+          <div class="drink-product-card__info">
+            <h3 class="drink-product-card__title">Sample Product {{ i }}</h3>
+            <p class="drink-product-card__meta">100g · Organic</p>
+            <div class="drink-product-rating">
               {%- for s in (1..5) -%}
                 <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               {%- endfor -%}
               <span>(0)</span>
             </div>
-            <p class="divine-product-card__price">{{ 2000 | money }}</p>
+            <p class="drink-product-card__price">{{ 2000 | money }}</p>
           </div>
         </div>
       {%- endfor -%}
@@ -129,17 +129,17 @@
   </div>
 
   {%- if section.settings.show_view_all and collection != blank -%}
-    <div class="divine-products__view-all">
-      <a href="{% if section.settings.view_all_link != blank %}{{ section.settings.view_all_link }}{% else %}{{ collection.url }}{% endif %}" class="divine-btn divine-btn-secondary">{{ section.settings.view_all_label }}</a>
+    <div class="drink-products__view-all">
+      <a href="{% if section.settings.view_all_link != blank %}{{ section.settings.view_all_link }}{% else %}{{ collection.url }}{% endif %}" class="drink-btn drink-btn-secondary">{{ section.settings.view_all_label }}</a>
     </div>
   {%- endif -%}
 </section>
 
 {% schema %}
 {
-  "name": "Divine Products",
+  "name": "Drink Products",
   "tag": "section",
-  "class": "divine-products-section",
+  "class": "drink-products-section",
   "settings": [
     {
       "type": "header",
@@ -285,7 +285,7 @@
   ],
   "presets": [
     {
-      "name": "Divine Products",
+      "name": "Drink Products",
       "settings": {
         "caption": "People Love These",
         "title": "Best Sellers",
