@@ -1,0 +1,69 @@
+{%- comment -%} Drink LLC — Collection Template {%- endcomment -%}
+
+<div class="section">
+  <div class="container">
+    <header class="collection-header">
+      <h1>{{ collection.title }}</h1>
+      {%- if collection.description != blank -%}
+        <p>{{ collection.description }}</p>
+      {%- endif -%}
+    </header>
+
+    {%- if collection.products.size > 0 -%}
+      <div class="grid grid--3 collection-grid">
+        {%- for product in collection.products -%}
+          {%- render 'product-card', product: product -%}
+        {%- endfor -%}
+      </div>
+
+      {%- if paginate.pages > 1 -%}
+        <nav class="pagination" aria-label="Pagination">
+          {%- if paginate.previous -%}
+            <a href="{{ paginate.previous.url }}" class="btn btn--secondary">Previous</a>
+          {%- endif -%}
+          {%- if paginate.next -%}
+            <a href="{{ paginate.next.url }}" class="btn btn--secondary">Next</a>
+          {%- endif -%}
+        </nav>
+      {%- endif -%}
+    {%- else -%}
+      <div class="collection-empty">
+        <p>Nothing here yet.</p>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+<style>
+  .collection-header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .collection-header p {
+    margin-top: var(--space-md);
+  }
+
+  .collection-grid {
+    margin-bottom: var(--space-xl);
+  }
+
+  .collection-empty {
+    text-align: center;
+    padding: var(--space-3xl) 0;
+  }
+
+  .collection-empty p {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-ash);
+    margin: 0 auto;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+  }
+</style>
