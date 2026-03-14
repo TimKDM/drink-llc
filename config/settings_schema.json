@@ -36,6 +36,68 @@
     "name": "Colors",
     "settings": [
       {
+        "type": "color_scheme_group",
+        "id": "color_schemes",
+        "definition": [
+          {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background",
+            "default": "#0D0D0D"
+          },
+          {
+            "type": "color_background",
+            "id": "background_gradient",
+            "label": "Background gradient"
+          },
+          {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text",
+            "default": "#F5F5F0"
+          },
+          {
+            "type": "color",
+            "id": "button_primary_background_color",
+            "label": "Solid button background",
+            "default": "#F5F5F0"
+          },
+          {
+            "type": "color",
+            "id": "button_primary_text_color",
+            "label": "Solid button text",
+            "default": "#0D0D0D"
+          },
+          {
+            "type": "color",
+            "id": "button_secondary_color",
+            "label": "Outline button",
+            "default": "#F5F5F0"
+          },
+          {
+            "type": "color",
+            "id": "color_link",
+            "label": "Link color",
+            "default": "#F5F5F0"
+          }
+        ],
+        "role": {
+          "text": "text_color",
+          "background": {
+            "solid": "background_color",
+            "gradient": "background_gradient"
+          },
+          "links": "button_secondary_color",
+          "icons": "text_color",
+          "primary_button": "button_primary_background_color",
+          "on_primary_button": "button_primary_text_color",
+          "primary_button_border": "button_primary_background_color",
+          "secondary_button": "button_secondary_color",
+          "on_secondary_button": "button_secondary_color",
+          "secondary_button_border": "button_secondary_color"
+        }
+      },
+      {
         "type": "color",
         "id": "color_void",
         "label": "Void (primary background)",
@@ -62,22 +124,99 @@
     ]
   },
   {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "font_picker",
+        "id": "type_header_font",
+        "default": "bebas_neue_n4",
+        "label": "Heading font"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_body_font",
+        "default": "dm_sans_n3",
+        "label": "Body font"
+      },
+      {
+        "type": "range",
+        "id": "heading_scale",
+        "min": 70,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
+        "label": "Heading font size scale",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "body_scale",
+        "min": 70,
+        "max": 130,
+        "step": 5,
+        "unit": "%",
+        "label": "Body font size scale",
+        "default": 100
+      }
+    ]
+  },
+  {
     "name": "Social Media",
     "settings": [
       {
         "type": "text",
-        "id": "social_instagram",
+        "id": "social_instagram_link",
         "label": "Instagram URL"
       },
       {
         "type": "text",
-        "id": "social_tiktok",
+        "id": "social_tiktok_link",
         "label": "TikTok URL"
       },
       {
         "type": "text",
-        "id": "social_twitter",
+        "id": "social_twitter_link",
         "label": "X / Twitter URL"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook_link",
+        "label": "Facebook URL"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube_link",
+        "label": "YouTube URL"
+      },
+      {
+        "type": "text",
+        "id": "social_snapchat_link",
+        "label": "Snapchat URL"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest_link",
+        "label": "Pinterest URL"
+      },
+      {
+        "type": "text",
+        "id": "social_vimeo_link",
+        "label": "Vimeo URL"
+      },
+      {
+        "type": "text",
+        "id": "social_tumblr_link",
+        "label": "Tumblr URL"
+      },
+      {
+        "type": "text",
+        "id": "social_whatsapp_link",
+        "label": "WhatsApp URL"
+      },
+      {
+        "type": "text",
+        "id": "social_linkedin_link",
+        "label": "LinkedIn URL"
       }
     ]
   },
@@ -85,10 +224,162 @@
     "name": "Cart",
     "settings": [
       {
+        "type": "select",
+        "id": "cart_type",
+        "options": [
+          {
+            "value": "drawer",
+            "label": "Drawer"
+          },
+          {
+            "value": "page",
+            "label": "Page"
+          }
+        ],
+        "default": "drawer",
+        "label": "Cart type"
+      },
+      {
         "type": "text",
         "id": "cart_empty_message",
         "label": "Empty cart message",
         "default": "Nothing here yet."
+      }
+    ]
+  },
+  {
+    "name": "Layout",
+    "settings": [
+      {
+        "type": "range",
+        "id": "page_width",
+        "min": 1000,
+        "max": 1600,
+        "step": 20,
+        "default": 1280,
+        "unit": "px",
+        "label": "Page width"
+      },
+      {
+        "type": "range",
+        "id": "spacing_sections",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Space between sections",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "spacing_grid_horizontal",
+        "min": 4,
+        "max": 40,
+        "step": 4,
+        "default": 20,
+        "unit": "px",
+        "label": "Horizontal grid spacing"
+      },
+      {
+        "type": "range",
+        "id": "spacing_grid_vertical",
+        "min": 4,
+        "max": 40,
+        "step": 4,
+        "default": 8,
+        "unit": "px",
+        "label": "Vertical grid spacing"
+      }
+    ]
+  },
+  {
+    "name": "Buttons",
+    "settings": [
+      {
+        "type": "range",
+        "id": "buttons_radius",
+        "min": 0,
+        "max": 40,
+        "step": 2,
+        "unit": "px",
+        "label": "Button corner radius",
+        "default": 4
+      },
+      {
+        "type": "range",
+        "id": "buttons_border_thickness",
+        "min": 0,
+        "max": 12,
+        "step": 1,
+        "unit": "px",
+        "label": "Button border thickness",
+        "default": 1
+      }
+    ]
+  },
+  {
+    "name": "Global design",
+    "settings": [
+      {
+        "type": "range",
+        "id": "global_border_radius",
+        "min": 0,
+        "max": 40,
+        "step": 2,
+        "unit": "px",
+        "label": "Corner radius",
+        "default": 4
+      },
+      {
+        "type": "range",
+        "id": "global_shadow_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Shadow opacity",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "global_shadow_horizontal_offset",
+        "min": -12,
+        "max": 12,
+        "step": 2,
+        "unit": "px",
+        "label": "Shadow horizontal offset",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "global_shadow_vertical_offset",
+        "min": -12,
+        "max": 12,
+        "step": 2,
+        "unit": "px",
+        "label": "Shadow vertical offset",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "global_shadow_blur",
+        "min": 0,
+        "max": 20,
+        "step": 5,
+        "unit": "px",
+        "label": "Shadow blur",
+        "default": 0
+      }
+    ]
+  },
+  {
+    "name": "Search",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "predictive_search_enabled",
+        "default": true,
+        "label": "Enable predictive search"
       }
     ]
   }
