@@ -14,7 +14,12 @@
             loading="eager"
           >
         {%- else -%}
-          <span class="site-header__wordmark">{{ shop.name }}</span>
+          <img
+            src="{{ 'logo-drink.svg' | asset_url }}"
+            alt="{{ shop.name }}"
+            width="{{ section.settings.logo_width | default: 120 }}"
+            loading="eager"
+          >
         {%- endif -%}
       </a>
 

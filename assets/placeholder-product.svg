@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <!-- Product photo: Single matcha product pouch -->
+  <rect width="600" height="600" fill="#F5F7F2"/>
+
+  <!-- Soft circular background -->
+  <circle cx="300" cy="280" r="200" fill="#E8F0DC"/>
+
+  <!-- Product pouch -->
+  <path d="M220 150 Q300 120 380 150 L390 480 Q300 500 210 480z" fill="#F8F8F5" stroke="#D4DED0" stroke-width="2"/>
+
+  <!-- Pouch top seal -->
+  <path d="M225 155 Q300 130 375 155 L378 170 Q300 148 222 170z" fill="#7CB518"/>
+
+  <!-- Label area -->
+  <rect x="240" y="220" width="120" height="180" rx="6" fill="white" stroke="#D4DED0" stroke-width="1"/>
+
+  <!-- Label content -->
+  <rect x="255" y="240" width="90" height="8" rx="2" fill="#1A1A1A" opacity="0.15"/>
+  <text x="300" y="280" font-family="sans-serif" font-size="18" font-weight="700" fill="#1A1A1A" text-anchor="middle">DRINK</text>
+  <text x="300" y="300" font-family="sans-serif" font-size="9" font-weight="500" fill="#6B7B6E" text-anchor="middle" letter-spacing="0.15em">INGREDIENTS</text>
+
+  <!-- Product name -->
+  <rect x="260" y="320" width="80" height="6" rx="2" fill="#7CB518" opacity="0.4"/>
+  <text x="300" y="350" font-family="sans-serif" font-size="11" font-weight="600" fill="#5A9A10" text-anchor="middle">Organic Matcha</text>
+
+  <!-- Weight -->
+  <text x="300" y="380" font-family="sans-serif" font-size="9" fill="#6B7B6E" text-anchor="middle">100g / 3.5oz</text>
+
+  <!-- Certification badges -->
+  <circle cx="265" cy="560" r="16" fill="#5A9A10" opacity="0.15" stroke="#5A9A10" stroke-width="1"/>
+  <text x="265" y="564" font-family="sans-serif" font-size="7" font-weight="700" fill="#5A9A10" text-anchor="middle">USDA</text>
+
+  <circle cx="305" cy="560" r="16" fill="#5A9A10" opacity="0.15" stroke="#5A9A10" stroke-width="1"/>
+  <text x="305" y="564" font-family="sans-serif" font-size="7" font-weight="700" fill="#5A9A10" text-anchor="middle">ORG</text>
+
+  <circle cx="345" cy="560" r="16" fill="#5A9A10" opacity="0.15" stroke="#5A9A10" stroke-width="1"/>
+  <text x="345" y="564" font-family="sans-serif" font-size="5.5" font-weight="700" fill="#5A9A10" text-anchor="middle">KOSHER</text>
+
+  <!-- Matcha powder scatter -->
+  <circle cx="160" cy="420" r="4" fill="#7CB518" opacity="0.3"/>
+  <circle cx="440" cy="380" r="3" fill="#7CB518" opacity="0.25"/>
+  <circle cx="170" cy="350" r="2.5" fill="#7CB518" opacity="0.2"/>
+  <circle cx="430" cy="440" r="3.5" fill="#7CB518" opacity="0.2"/>
+</svg>

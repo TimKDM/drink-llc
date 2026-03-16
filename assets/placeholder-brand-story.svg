@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <!-- Brand story: Hands cupping matcha bowl -->
+  <rect width="800" height="600" fill="#F5F7F2"/>
+
+  <!-- Warm background circle -->
+  <circle cx="400" cy="300" r="250" fill="#E8F0DC"/>
+
+  <!-- Hands holding bowl -->
+  <!-- Left hand -->
+  <path d="M280 340 Q260 300 280 260 Q300 240 320 260 Q330 270 330 290 L340 340 Q340 380 320 400 L280 400 Q270 380 280 340z" fill="#DEB896" opacity="0.85"/>
+  <!-- Right hand -->
+  <path d="M520 340 Q540 300 520 260 Q500 240 480 260 Q470 270 470 290 L460 340 Q460 380 480 400 L520 400 Q530 380 520 340z" fill="#DEB896" opacity="0.85"/>
+
+  <!-- Matcha bowl -->
+  <ellipse cx="400" cy="310" rx="100" ry="22" fill="#C4A86B"/>
+  <path d="M300 310 C300 310 320 420 400 420 C480 420 500 310 500 310" fill="#8B7355"/>
+  <ellipse cx="400" cy="310" rx="95" ry="20" fill="#7CB518" opacity="0.9"/>
+
+  <!-- Steam wisps -->
+  <path d="M370 280 Q375 255 380 270 Q385 255 390 275" stroke="#7CB518" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <path d="M400 275 Q405 248 410 265 Q415 248 420 270" stroke="#7CB518" stroke-width="1.5" fill="none" opacity="0.25"/>
+  <path d="M425 282 Q430 260 435 275 Q440 260 445 278" stroke="#7CB518" stroke-width="1.5" fill="none" opacity="0.2"/>
+
+  <!-- Decorative leaves -->
+  <path d="M160 450 Q180 420 200 450 Q180 470 160 450z" fill="#5A9A10" opacity="0.3" transform="rotate(-30 180 450)"/>
+  <path d="M600 150 Q620 120 640 150 Q620 170 600 150z" fill="#7CB518" opacity="0.25" transform="rotate(20 620 150)"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 56" fill="#1A1A1A">
+  <!--
+    DRINK LLC — Logo Mark (D + Leaf)
+    A stylized D with an integrated matcha leaf
+    For favicon, social, compact usage
+  -->
+
+  <!-- D letterform -->
+  <path d="M0 2h16c15.5 0 26 10.5 26 26s-10.5 26-26 26H0V2zm9.5 8.5v35H16c10 0 17-7.5 17-17.5S26 10.5 16 10.5H9.5z"/>
+
+  <!-- Matcha leaf emerging from top of D -->
+  <path d="M34 8c0-4.5 3.5-8 7-8 2 0 4 1.2 5 3.5C47 6 48 9 48 12c0 6-4 10-8.5 10-1.5 0-3-.5-4-1.5C35 18 34 14 34 8z" fill="#7CB518"/>
+  <path d="M39.5 4c-.5 2.5-.5 5 0 8 .5 2.5 1.5 4.5 3 6" stroke="#F5F7F2" stroke-width="1" stroke-linecap="round" fill="none"/>
+</svg>

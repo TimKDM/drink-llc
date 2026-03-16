@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 56" fill="#1A1A1A">
+  <!--
+    DRINK LLC — Primary Logo (Wordmark + Leaf Accent)
+    Clean, modern sans-serif letterforms
+    Matcha green leaf replaces the dot on the I
+  -->
+
+  <!-- D -->
+  <path d="M0 2h16c15.5 0 26 10.5 26 26s-10.5 26-26 26H0V2zm9.5 8.5v35H16c10 0 17-7.5 17-17.5S26 10.5 16 10.5H9.5z"/>
+
+  <!-- R -->
+  <path d="M52 2h17c10.5 0 17 5.5 17 14.5 0 7-4 12-10.5 13.5L88 54H77L65.5 31H61.5V54H52V2zm9.5 8.5V23H69c5 0 8-3 8-6.5S74 10 69 10.5H61.5z"/>
+
+  <!-- I (stem only — leaf replaces dot) -->
+  <path d="M96 16h9.5V54H96V16z"/>
+
+  <!-- Leaf accent (replaces I dot) — matcha green -->
+  <path d="M100.75 0c3.5 0 6.5 2.8 6.5 7 0 4.5-3 7.5-6.5 7.5s-6.5-3-6.5-7.5c0-4.2 3-7 6.5-7z" fill="#7CB518"/>
+
+  <!-- N -->
+  <path d="M116 2h8.5l20 36V2H154V54h-8.5l-20-36V54H116V2z"/>
+
+  <!-- K -->
+  <path d="M164 2h9.5v22L194 2h12L184 26l23 28h-12l-17-21-4.5 5V54H164V2z"/>
+
+  <!-- Small "ingredients" tagline -->
+  <text
+    x="224"
+    y="35"
+    font-family="'Jost', 'DM Sans', Helvetica, Arial, sans-serif"
+    font-weight="400"
+    font-size="9.5"
+    letter-spacing="0.22em"
+    fill="#6B7B6E"
+  >INGREDIENTS</text>
+</svg>

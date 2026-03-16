@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <!-- Lifestyle: People enjoying drinks together -->
+  <rect width="800" height="600" fill="#F5F7F2"/>
+
+  <!-- Outdoor cafe setting — soft background -->
+  <rect y="380" width="800" height="220" fill="#E8F0DC"/>
+
+  <!-- Table -->
+  <ellipse cx="400" cy="400" rx="250" ry="30" fill="#DEB896" opacity="0.4"/>
+  <rect x="180" y="380" width="440" height="12" rx="6" fill="#C4A86B"/>
+
+  <!-- Glass 1: Iced matcha latte -->
+  <rect x="260" y="240" width="50" height="140" rx="6" fill="rgba(255,255,255,0.8)" stroke="#D4DED0" stroke-width="1.5"/>
+  <rect x="265" y="260" width="40" height="80" rx="4" fill="#7CB518" opacity="0.35"/>
+  <rect x="265" y="340" width="40" height="35" rx="4" fill="#F5F3EE"/>
+  <!-- Ice cubes -->
+  <rect x="270" y="268" width="12" height="10" rx="2" fill="white" opacity="0.6"/>
+  <rect x="286" y="280" width="12" height="10" rx="2" fill="white" opacity="0.5"/>
+  <!-- Straw -->
+  <rect x="280" y="210" width="4" height="170" rx="2" fill="#FF8C42" opacity="0.7"/>
+
+  <!-- Glass 2: Smoothie bowl -->
+  <ellipse cx="420" cy="340" rx="60" ry="14" fill="#C4A86B" opacity="0.6"/>
+  <path d="M360 340 C360 340 370 400 420 400 C470 400 480 340 480 340" fill="#C4A86B" opacity="0.5"/>
+  <ellipse cx="420" cy="340" rx="56" ry="12" fill="#FF8C42" opacity="0.6"/>
+  <!-- Toppings -->
+  <circle cx="405" cy="336" r="4" fill="#7CB518" opacity="0.6"/>
+  <circle cx="420" cy="334" r="3" fill="#FFE566" opacity="0.7"/>
+  <circle cx="435" cy="337" r="4" fill="#FF9EBA" opacity="0.5"/>
+
+  <!-- Glass 3: Iced tea -->
+  <rect x="520" y="260" width="45" height="120" rx="6" fill="rgba(255,255,255,0.8)" stroke="#D4DED0" stroke-width="1.5"/>
+  <rect x="525" y="280" width="35" height="70" rx="4" fill="#FFE566" opacity="0.3"/>
+  <!-- Lemon slice -->
+  <circle cx="542" cy="265" r="12" fill="#FFE566" opacity="0.6" stroke="#E5C940" stroke-width="1"/>
+  <line x1="542" y1="256" x2="542" y2="274" stroke="#E5C940" stroke-width="0.8"/>
+  <line x1="533" y1="265" x2="551" y2="265" stroke="#E5C940" stroke-width="0.8"/>
+
+  <!-- Person silhouettes (abstract, inclusive) -->
+  <!-- Person 1 -->
+  <circle cx="250" cy="180" r="25" fill="#6B7B6E" opacity="0.3"/>
+  <path d="M220 210 Q250 240 250 300 L250 370 Q230 370 220 340 L220 210z" fill="#6B7B6E" opacity="0.2"/>
+  <path d="M280 210 Q250 240 250 300 L250 370 Q270 370 280 340 L280 210z" fill="#6B7B6E" opacity="0.2"/>
+
+  <!-- Person 2 -->
+  <circle cx="530" cy="190" r="22" fill="#6B7B6E" opacity="0.25"/>
+  <path d="M505 215 Q530 240 530 290 L530 370 Q515 370 505 345 L505 215z" fill="#6B7B6E" opacity="0.18"/>
+  <path d="M555 215 Q530 240 530 290 L530 370 Q545 370 555 345 L555 215z" fill="#6B7B6E" opacity="0.18"/>
+
+  <!-- Decorative elements -->
+  <path d="M100 100 Q115 80 130 100 Q115 115 100 100z" fill="#7CB518" opacity="0.2" transform="rotate(15 115 100)"/>
+  <path d="M680 80 Q695 60 710 80 Q695 95 680 80z" fill="#5A9A10" opacity="0.15" transform="rotate(-10 695 80)"/>
+</svg>

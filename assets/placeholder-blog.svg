@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <!-- Blog/Content: Overhead shot of tea preparation -->
+  <rect width="800" height="450" fill="#F0EDE8"/>
+
+  <!-- Wooden surface texture -->
+  <line x1="0" y1="50" x2="800" y2="50" stroke="#E2DDD6" stroke-width="0.5" opacity="0.6"/>
+  <line x1="0" y1="120" x2="800" y2="120" stroke="#E2DDD6" stroke-width="0.5" opacity="0.5"/>
+  <line x1="0" y1="200" x2="800" y2="200" stroke="#E2DDD6" stroke-width="0.5" opacity="0.4"/>
+  <line x1="0" y1="290" x2="800" y2="290" stroke="#E2DDD6" stroke-width="0.5" opacity="0.5"/>
+  <line x1="0" y1="370" x2="800" y2="370" stroke="#E2DDD6" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Tea cup overhead (top-down) -->
+  <circle cx="350" cy="220" r="80" fill="#F5F7F2" stroke="#D4DED0" stroke-width="2"/>
+  <circle cx="350" cy="220" r="65" fill="#7CB518" opacity="0.25"/>
+  <circle cx="350" cy="220" r="55" fill="#7CB518" opacity="0.15"/>
+  <!-- Cup handle -->
+  <path d="M430 200 Q465 200 465 225 Q465 250 430 250" stroke="#D4DED0" stroke-width="4" fill="none"/>
+
+  <!-- Small plate with cookies/snacks -->
+  <circle cx="580" cy="150" r="55" fill="#F5F7F2" stroke="#D4DED0" stroke-width="1.5"/>
+  <ellipse cx="565" cy="145" rx="16" ry="14" fill="#DEB896" opacity="0.6"/>
+  <ellipse cx="595" cy="148" rx="14" ry="12" fill="#DEB896" opacity="0.5"/>
+  <ellipse cx="580" cy="160" rx="15" ry="13" fill="#DEB896" opacity="0.55"/>
+
+  <!-- Open book/magazine -->
+  <rect x="120" y="100" width="120" height="160" rx="3" fill="white" stroke="#D4DED0" stroke-width="1"/>
+  <rect x="150" y="120" width="60" height="4" rx="2" fill="#1A1A1A" opacity="0.12"/>
+  <rect x="140" y="135" width="80" height="3" rx="1.5" fill="#1A1A1A" opacity="0.08"/>
+  <rect x="140" y="145" width="75" height="3" rx="1.5" fill="#1A1A1A" opacity="0.08"/>
+  <rect x="140" y="155" width="70" height="3" rx="1.5" fill="#1A1A1A" opacity="0.08"/>
+  <rect x="145" y="175" width="60" height="40" rx="2" fill="#E8F0DC"/>
+  <rect x="140" y="225" width="80" height="3" rx="1.5" fill="#1A1A1A" opacity="0.08"/>
+  <rect x="140" y="235" width="70" height="3" rx="1.5" fill="#1A1A1A" opacity="0.08"/>
+
+  <!-- Sprig of herbs -->
+  <path d="M600 300 Q620 280 640 310" stroke="#5A9A10" stroke-width="2" fill="none"/>
+  <path d="M615 295 Q625 280 635 290" fill="#7CB518" opacity="0.5"/>
+  <path d="M620 300 Q630 285 640 295" fill="#7CB518" opacity="0.4"/>
+  <path d="M625 310 Q635 295 645 305" fill="#5A9A10" opacity="0.35"/>
+
+  <!-- Small honey jar -->
+  <rect x="480" y="300" width="40" height="50" rx="5" fill="#FFE566" opacity="0.3" stroke="#E5C940" stroke-width="1"/>
+  <rect x="485" y="290" width="30" height="15" rx="3" fill="#C4A86B" opacity="0.5"/>
+</svg>
