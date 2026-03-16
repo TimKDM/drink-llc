@@ -19,7 +19,7 @@
         "image_height": "medium",
         "image_overlay_opacity": 30,
         "color_scheme": "option-3",
-        "image": "shopify://shop_images/matcha_val.jpg",
+        "image": "",
         "image_for_all": false,
         "fallback_heading": "All Products",
         "padding_top": 6,
@@ -59,7 +59,7 @@
           "type": "promo_row",
           "settings": {
             "promo_row": "4",
-            "image": "shopify://shop_images/GT.Supreha1_a142c4ff-7e20-4e71-bb11-9296a43987f7.jpg",
+            "image": "",
             "banner_height": "small",
             "caption": "Hot Deal",
             "text_style": "caption-with-letter-spacing",
@@ -219,25 +219,25 @@
         "logo_1": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Asset_1.png"
+            "image": ""
           }
         },
         "logo_2": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/ccof_logo_4color_0.jpg"
+            "image": ""
           }
         },
         "logo_3": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Organic4colorsealJPG.jpg"
+            "image": ""
           }
         },
         "logo_4": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/KosherCheck-tag_3c_300.jpg"
+            "image": ""
           }
         }
       },

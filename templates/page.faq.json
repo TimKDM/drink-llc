@@ -375,7 +375,7 @@
             "heading_style": "default",
             "heading_tag": "h2",
             "highlight_option": "underline-hand",
-            "word_animation_color": "#d4c4d9"
+            "word_animation_color": "#7CB518"
           }
         }
       },
@@ -399,7 +399,7 @@
       "type": "contact-form",
       "settings": {
         "contact_style": "column",
-        "image": "shopify://shop_images/GT.Supreha1_a142c4ff-7e20-4e71-bb11-9296a43987f7.jpg",
+        "image": "",
         "image_height": "adapt",
         "hide_image": false,
         "caption": "Drop Us a Line",

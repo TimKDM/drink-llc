@@ -48,7 +48,7 @@
         "buttons"
       ],
       "settings": {
-        "image": "shopify://shop_images/IMG_6326_ac2a714e-fffa-454c-8849-c8568b2ece0e.jpg",
+        "image": "",
         "image_height": 70,
         "video_url": "",
         "autoplay": true,
@@ -157,7 +157,7 @@
         "value_4"
       ],
       "settings": {
-        "image": "shopify://shop_images/Smoothie-blog-image-2.jpg",
+        "image": "",
         "heading": "Not a Supplement Brand.",
         "text": "We're not here to sell you on miracle powders or 47-ingredient proprietary blends. Drink is hydration and recovery, done right. Clean ingredients you can pronounce, real flavors that don't taste like a science experiment, and formulas that do exactly what they say. Mix it. Drink it. Move on.",
         "button_label": "Our Story",
@@ -180,31 +180,31 @@
         "logo_1": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Asset_1.png"
+            "image": ""
           }
         },
         "logo_2": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/ccof_logo_4color_0.jpg"
+            "image": ""
           }
         },
         "text_DaacRp": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/rainforest.png"
+            "image": ""
           }
         },
         "logo_3": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/KosherCheck-tag_3c_300.jpg"
+            "image": ""
           }
         },
         "logo_4": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Organic4colorsealJPG.jpg"
+            "image": ""
           }
         }
       },
@@ -430,8 +430,8 @@
         "privacy_text": "No spam. No nonsense. Unsubscribe whenever.",
         "background_color": "#1d1d1d",
         "text_color": "#ffffff",
-        "button_bg": "#d4c4d9",
-        "button_color": "#1d1d1d",
+        "button_bg": "#7CB518",
+        "button_color": "#ffffff",
         "padding_top": 40,
         "padding_bottom": 52,
         "margin_top": 0,
@@ -449,7 +449,7 @@
             "heading_style": "default",
             "heading_tag": "h2",
             "highlight_option": "underline-hand",
-            "word_animation_color": "#d4c4d9"
+            "word_animation_color": "#7CB518"
           }
         },
         "text": {
@@ -480,7 +480,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/Smoothie_Blog_Image.jpg",
+        "image": "",
         "hide_image": false,
         "image_overlay_opacity": 60,
         "image_height": 80,
@@ -530,7 +530,7 @@
             "heading_style": "default",
             "heading_tag": "h2",
             "highlight_option": "underline-hand",
-            "word_animation_color": "#d4c4d9"
+            "word_animation_color": "#7CB518"
           }
         }
       },
@@ -557,7 +557,7 @@
         "slide_1": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/blog_on_chai.jpg",
+            "image": "",
             "heading": "Stay Hydrated.",
             "caption": "Premium hydration and recovery powders. Clean ingredients, real flavor.",
             "button_label": "Shop Now",
