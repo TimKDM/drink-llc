@@ -15,7 +15,7 @@
           "type": "slide",
           "settings": {
             "image": "",
-            "heading": "Welcome to Divine Ingredients",
+            "heading": "Welcome to Drink Ingredients",
             "caption": "We're a passionate team of sourcing experts, wellness advocates, and quality obsessives on a mission to bring the cleanest organic ingredients to your kitchen — whether you're running a café, building a brand, or crafting something extraordinary at home.",
             "button_label": "Shop Our Collections",
             "link": "shopify:\/\/collections",
@@ -90,7 +90,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>We built Divine Ingredients for people who want to know what's in their food — and who's behind it. We work directly with organic farms across Japan, India, Sri Lanka, and beyond because we think the relationship between grower and maker matters just as much as the ingredient itself.</p>"
+            "text": "<p>We built Drink Ingredients for people who want to know what's in their food — and who's behind it. We work directly with organic farms across Japan, India, Sri Lanka, and beyond because we think the relationship between grower and maker matters just as much as the ingredient itself.</p>"
           }
         }
       },
@@ -342,7 +342,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Explore Wholesale",
-            "button_link_1": "shopify:\/\/collections\/shop-wholesale-with-divine",
+            "button_link_1": "shopify:\/\/collections\/shop-wholesale-with-drink",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",

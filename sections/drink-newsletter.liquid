@@ -1,5 +1,5 @@
 {%- style -%}
-  .divine-newsletter {
+  .drink-newsletter {
     background-color: {{ section.settings.background_color | default: '#1d1d1d' }};
     {% if section.settings.text_color != blank and section.settings.text_color != 'rgba(0,0,0,0)' %}
       color: {{ section.settings.text_color }};
@@ -11,35 +11,35 @@
     {% endif %}
   }
   {% if section.settings.text_color != blank and section.settings.text_color != 'rgba(0,0,0,0)' %}
-    .divine-newsletter h2 {
+    .drink-newsletter h2 {
       color: {{ section.settings.text_color }};
     }
   {% endif %}
   {% if section.settings.button_bg != blank and section.settings.button_bg != 'rgba(0,0,0,0)' %}
-    .divine-newsletter button[type="submit"] {
+    .drink-newsletter button[type="submit"] {
       background-color: {{ section.settings.button_bg }};
     }
   {% endif %}
   {% if section.settings.button_color != blank and section.settings.button_color != 'rgba(0,0,0,0)' %}
-    .divine-newsletter button[type="submit"] {
+    .drink-newsletter button[type="submit"] {
       color: {{ section.settings.button_color }};
     }
   {% endif %}
-  .divine-newsletter-section {
+  .drink-newsletter-section {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     margin-top: {{ section.settings.margin_top }}px;
     margin-bottom: {{ section.settings.margin_bottom }}px;
   }
   @media screen and (min-width: 768px) {
-    .divine-newsletter-section {
+    .drink-newsletter-section {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
 {%- endstyle -%}
 
-<section class="divine-newsletter">
+<section class="drink-newsletter">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when 'heading' -%}
@@ -49,15 +49,15 @@
 
       {%- when 'subtitle' -%}
         {%- if block.settings.text != blank -%}
-          <p class="divine-newsletter__subtitle" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+          <p class="drink-newsletter__subtitle" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
         {%- endif -%}
 
       {%- when 'email_form' -%}
         <div {{ block.shopify_attributes }}>
-          {%- form 'customer', id: 'DivineNewsletter', class: 'divine-newsletter__form' -%}
+          {%- form 'customer', id: 'DrinkNewsletter', class: 'drink-newsletter__form' -%}
             <input type="hidden" name="contact[tags]" value="newsletter">
             <input
-              id="DivineNewsletterEmail--{{ section.id }}"
+              id="DrinkNewsletterEmail--{{ section.id }}"
               type="email"
               name="contact[email]"
               value="{{ form.email }}"
@@ -68,9 +68,9 @@
               {% if form.errors %}
                 autofocus
                 aria-invalid="true"
-                aria-describedby="DivineNewsletter-error"
+                aria-describedby="DrinkNewsletter-error"
               {% elsif form.posted_successfully? %}
-                aria-describedby="DivineNewsletter-success"
+                aria-describedby="DrinkNewsletter-success"
               {% endif %}
               placeholder="{{ section.settings.input_placeholder | default: 'Enter your email' }}"
               required
@@ -79,14 +79,14 @@
           {%- endform -%}
 
           {%- if form.errors -%}
-            <p class="divine-newsletter__message divine-newsletter__message--error" id="DivineNewsletter-error">
+            <p class="drink-newsletter__message drink-newsletter__message--error" id="DrinkNewsletter-error">
               {{ form.errors.translated_fields.email | capitalize }}
               {{ form.errors.messages.email }}
             </p>
           {%- endif -%}
 
           {%- if form.posted_successfully? -%}
-            <p class="divine-newsletter__message divine-newsletter__message--success" id="DivineNewsletter-success">
+            <p class="drink-newsletter__message drink-newsletter__message--success" id="DrinkNewsletter-success">
               {{ 'newsletter.success' | t }}
             </p>
           {%- endif -%}
@@ -95,15 +95,15 @@
   {%- endfor -%}
 
   {%- if section.settings.privacy_text != blank -%}
-    <p class="divine-newsletter__privacy">{{ section.settings.privacy_text }}</p>
+    <p class="drink-newsletter__privacy">{{ section.settings.privacy_text }}</p>
   {%- endif -%}
 </section>
 
 {% schema %}
 {
-  "name": "Divine Newsletter",
+  "name": "Drink Newsletter",
   "tag": "section",
-  "class": "divine-newsletter-section",
+  "class": "drink-newsletter-section",
   "settings": [
     {
       "type": "text",
@@ -229,7 +229,7 @@
   ],
   "presets": [
     {
-      "name": "Divine Newsletter",
+      "name": "Drink Newsletter",
       "blocks": [
         { "type": "heading" },
         { "type": "subtitle" },

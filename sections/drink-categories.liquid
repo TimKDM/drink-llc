@@ -1,5 +1,5 @@
 {%- style -%}
-  #shopify-section-{{ section.id }} .divine-section {
+  #shopify-section-{{ section.id }} .drink-section {
     background-color: {{ section.settings.background_color }};
     margin-top: {{ section.settings.margin_top }}px;
     margin-bottom: {{ section.settings.margin_bottom }}px;
@@ -7,38 +7,38 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 }}px;
   }
 
-  #shopify-section-{{ section.id }} .divine-section-label {
+  #shopify-section-{{ section.id }} .drink-section-label {
     color: {{ section.settings.accent_color }};
   }
 
-  #shopify-section-{{ section.id }} .divine-section-title {
+  #shopify-section-{{ section.id }} .drink-section-title {
     color: {{ section.settings.text_color }};
   }
 
-  #shopify-section-{{ section.id }} .divine-category-card__content h3,
-  #shopify-section-{{ section.id }} .divine-category-card__content p {
+  #shopify-section-{{ section.id }} .drink-category-card__content h3,
+  #shopify-section-{{ section.id }} .drink-category-card__content p {
     color: {{ section.settings.text_color }};
   }
 
   @media screen and (min-width: 750px) {
-    #shopify-section-{{ section.id }} .divine-section {
+    #shopify-section-{{ section.id }} .drink-section {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
 {%- endstyle -%}
 
-<section class="divine-section{% if section.settings.use_alt_bg %} divine-section-alt{% endif %}">
-  <div class="divine-section-header">
+<section class="drink-section{% if section.settings.use_alt_bg %} drink-section-alt{% endif %}">
+  <div class="drink-section-header">
     {%- if section.settings.caption != blank -%}
-      <span class="divine-section-label">{{ section.settings.caption }}</span>
+      <span class="drink-section-label">{{ section.settings.caption }}</span>
     {%- endif -%}
     {%- if section.settings.title != blank -%}
-      <h2 class="divine-section-title">{{ section.settings.title }}</h2>
+      <h2 class="drink-section-title">{{ section.settings.title }}</h2>
     {%- endif -%}
   </div>
 
-  <div class="divine-category-grid">
+  <div class="drink-category-grid">
     {%- for block in section.blocks -%}
       {%- assign collection = block.settings.collection -%}
       {%- if block.settings.link != blank -%}
@@ -48,7 +48,7 @@
       {%- else -%}
         {%- assign card_url = '#' -%}
       {%- endif -%}
-      <a href="{{ card_url }}" class="divine-category-card" {{ block.shopify_attributes }}>
+      <a href="{{ card_url }}" class="drink-category-card" {{ block.shopify_attributes }}>
         {%- if block.settings.image != blank -%}
           {%- assign card_image = block.settings.image -%}
         {%- elsif collection.image != blank -%}
@@ -71,7 +71,7 @@
         {%- else -%}
           {{ 'collection-' | append: forloop.index | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
-        <div class="divine-category-card__content">
+        <div class="drink-category-card__content">
           <h3>{{ block.settings.heading | default: collection.title }}</h3>
           {%- if block.settings.subtitle != blank -%}
             <p>{{ block.settings.subtitle }}</p>
@@ -84,9 +84,9 @@
 
 {% schema %}
 {
-  "name": "Divine Categories",
+  "name": "Drink Categories",
   "tag": "section",
-  "class": "divine-categories-section",
+  "class": "drink-categories-section",
   "max_blocks": 8,
   "settings": [
     {
@@ -199,7 +199,7 @@
   ],
   "presets": [
     {
-      "name": "Divine Categories",
+      "name": "Drink Categories",
       "blocks": [
         { "type": "category", "settings": { "heading": "Matcha", "subtitle": "Ceremonial to everyday — all grades, all good" } },
         { "type": "category", "settings": { "heading": "Loose Leaf Tea", "subtitle": "Black, green, oolong, herbal — pick your mood" } },

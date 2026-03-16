@@ -1,5 +1,5 @@
 /* ============================================
-   DIVINE INGREDIENTS - MOCKUP V3 STYLES
+   DRINK LLC - MOCKUP V3 STYLES
    Mobile-First Design System
    ============================================ */
 
@@ -9,7 +9,7 @@
 ----------------------------------------- */
 :root {
   --color-background-alt: #e2d6e6;       /* soft lavender */
-  --color-accent-hex: #c8a8d8;           /* Divine lavender — punched up */
+  --color-accent-hex: #c8a8d8;           /* Drink lavender — punched up */
   --color-accent-dark: #9b76a7;          /* richer, visible purple */
   --color-accent-light: #f0ebf4;         /* very soft lavender tint */
   --color-text-muted: #7a6f64;           /* warm brown-gray */
@@ -38,7 +38,7 @@
 /* -----------------------------------------
    Shared Horizontal Scroll Container
 ----------------------------------------- */
-.divine-scroll-container {
+.drink-scroll-container {
   display: flex;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -47,11 +47,11 @@
   -ms-overflow-style: none;
 }
 
-.divine-scroll-container::-webkit-scrollbar {
+.drink-scroll-container::-webkit-scrollbar {
   display: none;
 }
 
-.divine-scroll-container > * {
+.drink-scroll-container > * {
   scroll-snap-align: start;
   flex-shrink: 0;
 }
@@ -99,20 +99,20 @@ h1, h2, h3, h4, h5, h6,
    Section Base Styles
    Generous whitespace — artisan editorial feel
 ----------------------------------------- */
-.divine-section {
+.drink-section {
   padding: 48px 24px;
 }
 
-.divine-section-alt {
+.drink-section-alt {
   background: var(--color-background-alt);
 }
 
-.divine-section-header {
+.drink-section-header {
   text-align: center;
   margin-bottom: 32px;
 }
 
-.divine-section-label {
+.drink-section-label {
   font-family: var(--font-heading);
   font-size: 11px;
   font-weight: 600;
@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6,
   display: block;
 }
 
-.divine-section-title {
+.drink-section-title {
   font-family: var(--font-heading);
   font-size: 26px;
   font-weight: 400;
@@ -134,10 +134,10 @@ h1, h2, h3, h4, h5, h6,
 }
 
 @media screen and (min-width: 768px) {
-  .divine-section {
+  .drink-section {
     padding: 56px 48px;
   }
-  .divine-section-title {
+  .drink-section-title {
     font-size: 34px;
   }
 }
@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6,
 /* -----------------------------------------
    Button Styles
 ----------------------------------------- */
-.divine-btn {
+.drink-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,28 +166,28 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1;
 }
 
-.divine-btn-primary {
+.drink-btn-primary {
   background: var(--color-foreground-hex);
   color: var(--color-background-hex);
 }
 
-.divine-btn-primary:hover {
+.drink-btn-primary:hover {
   opacity: 0.85;
 }
 
-.divine-btn-secondary {
+.drink-btn-secondary {
   background: transparent;
   color: var(--color-foreground-hex);
   border: 1.5px solid var(--color-foreground-hex);
 }
 
-.divine-btn-secondary:hover {
+.drink-btn-secondary:hover {
   background: var(--color-foreground-hex);
   color: var(--color-background-hex);
 }
 
 @media screen and (min-width: 768px) {
-  .divine-btn {
+  .drink-btn {
     width: auto;
     padding: 14px 32px;
   }
@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6,
    Art of Tea / Chado style: image fills frame,
    content sits on top with gradient for legibility
    ============================================ */
-.divine-hero {
+.drink-hero {
   position: relative;
   overflow: hidden;
   min-height: 65vh;
@@ -206,42 +206,42 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* Image fills the whole hero */
-.divine-hero__image {
+.drink-hero__image {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
 }
 
-.divine-hero__image img,
-.divine-hero__image svg {
+.drink-hero__image img,
+.drink-hero__image svg {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.divine-hero__image video {
+.drink-hero__image video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.divine-hero__image iframe {
+.drink-hero__image iframe {
   width: 100%;
   height: 100%;
   border: 0;
   display: block;
 }
 
-.divine-hero__image--video {
+.drink-hero__image--video {
   position: absolute;
   inset: 0;
 }
 
 /* Gradient overlay — darkens bottom for text readability */
-.divine-hero::after {
+.drink-hero::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -257,7 +257,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* Content sits above gradient */
-.divine-hero__content {
+.drink-hero__content {
   position: relative;
   z-index: 2;
   min-height: 65vh;
@@ -270,7 +270,7 @@ h1, h2, h3, h4, h5, h6,
   color: #fff;
 }
 
-.divine-hero__badge {
+.drink-hero__badge {
   display: inline-block;
   background: rgba(255, 255, 255, 0.10);
   padding: 5px 14px;
@@ -286,7 +286,7 @@ h1, h2, h3, h4, h5, h6,
   -webkit-backdrop-filter: blur(4px);
 }
 
-.divine-hero h1 {
+.drink-hero h1 {
   font-family: var(--font-heading);
   font-size: 32px;
   font-weight: 400;
@@ -297,12 +297,12 @@ h1, h2, h3, h4, h5, h6,
   letter-spacing: -0.02em;
 }
 
-.divine-hero h1 em {
+.drink-hero h1 em {
   font-style: italic;
   font-weight: 400;
 }
 
-.divine-hero__subtitle {
+.drink-hero__subtitle {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.82);
   margin-bottom: 28px;
@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6,
   margin-right: auto;
 }
 
-.divine-hero__cta {
+.drink-hero__cta {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -323,18 +323,18 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* Button overrides for overlay context */
-.divine-hero .divine-btn-primary {
+.drink-hero .drink-btn-primary {
   background: #fff;
   color: var(--color-foreground-hex);
   border: none;
 }
 
-.divine-hero .divine-btn-primary:hover {
+.drink-hero .drink-btn-primary:hover {
   background: rgba(255, 255, 255, 0.90);
   opacity: 1;
 }
 
-.divine-hero .divine-btn-secondary {
+.drink-hero .drink-btn-secondary {
   background: rgba(255, 255, 255, 0.10);
   color: #fff;
   border-color: rgba(255, 255, 255, 0.50);
@@ -342,27 +342,27 @@ h1, h2, h3, h4, h5, h6,
   -webkit-backdrop-filter: blur(4px);
 }
 
-.divine-hero .divine-btn-secondary:hover {
+.drink-hero .drink-btn-secondary:hover {
   background: rgba(255, 255, 255, 0.20);
   color: #fff;
 }
 
 @media screen and (min-width: 768px) {
-  .divine-hero {
+  .drink-hero {
     min-height: 78vh;
   }
-  .divine-hero__content {
+  .drink-hero__content {
     min-height: 78vh;
     padding: 60px 48px 80px;
   }
-  .divine-hero h1 {
+  .drink-hero h1 {
     font-size: 56px;
   }
-  .divine-hero__subtitle {
+  .drink-hero__subtitle {
     font-size: 17px;
     max-width: 580px;
   }
-  .divine-hero__cta {
+  .drink-hero__cta {
     flex-direction: row;
     justify-content: center;
     max-width: none;
@@ -372,7 +372,7 @@ h1, h2, h3, h4, h5, h6,
 /* ============================================
    TRUST BAR
    ============================================ */
-.divine-trust-bar {
+.drink-trust-bar {
   padding: 18px 0;
   background: var(--color-background-warm);
   border-top: 1px solid var(--color-border-hex);
@@ -383,11 +383,11 @@ h1, h2, h3, h4, h5, h6,
   -ms-overflow-style: none;
 }
 
-.divine-trust-bar::-webkit-scrollbar {
+.drink-trust-bar::-webkit-scrollbar {
   display: none;
 }
 
-.divine-trust-bar__inner {
+.drink-trust-bar__inner {
   display: flex;
   justify-content: center;
   gap: 28px;
@@ -395,14 +395,14 @@ h1, h2, h3, h4, h5, h6,
   min-width: max-content;
 }
 
-.divine-trust-item {
+.drink-trust-item {
   display: flex;
   align-items: center;
   gap: 8px;
   white-space: nowrap;
 }
 
-.divine-trust-item svg {
+.drink-trust-item svg {
   width: 22px;
   height: 22px;
   stroke: var(--color-accent-dark);
@@ -411,29 +411,29 @@ h1, h2, h3, h4, h5, h6,
   flex-shrink: 0;
 }
 
-.divine-trust-item span {
+.drink-trust-item span {
   font-size: 13px;
   letter-spacing: 0.04em;
   color: var(--color-text-muted);
 }
 
-.divine-trust-item strong {
+.drink-trust-item strong {
   color: var(--color-foreground-hex);
   font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
-  .divine-trust-bar {
+  .drink-trust-bar {
     padding: 20px 0;
   }
-  .divine-trust-bar__inner {
+  .drink-trust-bar__inner {
     gap: 56px;
   }
-  .divine-trust-item svg {
+  .drink-trust-item svg {
     width: 26px;
     height: 26px;
   }
-  .divine-trust-item span {
+  .drink-trust-item span {
     font-size: 14px;
   }
 }
@@ -441,13 +441,13 @@ h1, h2, h3, h4, h5, h6,
 /* ============================================
    CATEGORY GRID
    ============================================ */
-.divine-category-grid {
+.drink-category-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
 }
 
-.divine-category-card {
+.drink-category-card {
   position: relative;
   aspect-ratio: 1;
   border-radius: var(--radius-md);
@@ -456,7 +456,7 @@ h1, h2, h3, h4, h5, h6,
   display: block;
 }
 
-.divine-category-card img {
+.drink-category-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -464,11 +464,11 @@ h1, h2, h3, h4, h5, h6,
   display: block;
 }
 
-.divine-category-card:hover img {
+.drink-category-card:hover img {
   transform: scale(1.05);
 }
 
-.divine-category-card::after {
+.drink-category-card::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -476,7 +476,7 @@ h1, h2, h3, h4, h5, h6,
   pointer-events: none;
 }
 
-.divine-category-card__content {
+.drink-category-card__content {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -486,7 +486,7 @@ h1, h2, h3, h4, h5, h6,
   color: #fff;
 }
 
-.divine-category-card__content h3 {
+.drink-category-card__content h3 {
   font-family: var(--font-heading);
   font-size: 17px;
   font-weight: 700;
@@ -495,7 +495,7 @@ h1, h2, h3, h4, h5, h6,
   text-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
 
-.divine-category-card__content p {
+.drink-category-card__content p {
   font-size: 13px;
   opacity: 1;
   margin: 0;
@@ -504,7 +504,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 @media screen and (min-width: 768px) {
-  .divine-category-grid {
+  .drink-category-grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
@@ -513,7 +513,7 @@ h1, h2, h3, h4, h5, h6,
 /* ============================================
    PRODUCT CAROUSEL
    ============================================ */
-.divine-product-scroll {
+.drink-product-scroll {
   display: flex;
   gap: 16px;
   overflow-x: auto;
@@ -525,11 +525,11 @@ h1, h2, h3, h4, h5, h6,
   -ms-overflow-style: none;
 }
 
-.divine-product-scroll::-webkit-scrollbar {
+.drink-product-scroll::-webkit-scrollbar {
   display: none;
 }
 
-.divine-product-card {
+.drink-product-card {
   flex: 0 0 210px;
   scroll-snap-align: start;
   background: var(--color-background-warm);
@@ -542,12 +542,12 @@ h1, h2, h3, h4, h5, h6,
   transition: box-shadow 0.28s ease, transform 0.28s ease;
 }
 
-.divine-product-card:hover {
+.drink-product-card:hover {
   box-shadow: 0 4px 24px rgba(0,0,0,0.1);
   transform: translateY(-2px);
 }
 
-.divine-product-card__image {
+.drink-product-card__image {
   aspect-ratio: 1;
   position: relative;
   overflow: hidden;
@@ -556,14 +556,14 @@ h1, h2, h3, h4, h5, h6,
   background: var(--color-background-alt);
 }
 
-.divine-product-card__image img {
+.drink-product-card__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.divine-product-badge {
+.drink-product-badge {
   display: inline-block;
   font-size: 10px;
   font-weight: 700;
@@ -577,17 +577,17 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 5px;
 }
 
-.divine-product-badge--sale {
+.drink-product-badge--sale {
   color: #c75050;
   border-color: rgba(199, 80, 80, 0.35);
   background: transparent;
 }
 
-.divine-product-card__info {
+.drink-product-card__info {
   padding: 14px;
 }
 
-.divine-product-card__title {
+.drink-product-card__title {
   font-family: var(--font-heading);
   font-size: 14px;
   font-weight: 500;
@@ -596,61 +596,61 @@ h1, h2, h3, h4, h5, h6,
   margin-top: 0;
 }
 
-.divine-product-card__meta {
+.drink-product-card__meta {
   font-size: 12px;
   color: var(--color-text-muted);
   margin-bottom: 6px;
 }
 
-.divine-product-rating {
+.drink-product-rating {
   display: flex;
   align-items: center;
   gap: 2px;
   margin-bottom: 6px;
 }
 
-.divine-product-rating svg {
+.drink-product-rating svg {
   width: 12px;
   height: 12px;
   fill: #e5b94e;
 }
 
-.divine-product-rating span {
+.drink-product-rating span {
   font-size: 12px;
   color: var(--color-text-muted);
   margin-left: 4px;
 }
 
-.divine-product-card__price {
+.drink-product-card__price {
   font-weight: 600;
   font-size: 15px;
   margin: 0;
 }
 
-.divine-product-card__price--sale {
+.drink-product-card__price--sale {
   color: #c75050;
 }
 
-.divine-product-card__price s {
+.drink-product-card__price s {
   text-decoration: line-through;
   color: var(--color-text-muted);
   font-weight: 400;
 }
 
-.divine-products__view-all {
+.drink-products__view-all {
   text-align: center;
   padding: 0 20px;
   margin-top: 8px;
 }
 
-.divine-products__view-all .divine-btn-secondary {
+.drink-products__view-all .drink-btn-secondary {
   display: inline-flex;
   width: auto;
   padding: 12px 28px;
 }
 
 @media screen and (min-width: 768px) {
-  .divine-product-scroll {
+  .drink-product-scroll {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 220px));
     justify-content: center;
@@ -660,7 +660,7 @@ h1, h2, h3, h4, h5, h6,
     margin: 0;
     scroll-snap-type: none;
   }
-  .divine-product-card {
+  .drink-product-card {
     flex: none;
     width: 100%;
   }
@@ -669,7 +669,7 @@ h1, h2, h3, h4, h5, h6,
 /* ============================================
    BRAND STORY
    ============================================ */
-.divine-brand-story__image {
+.drink-brand-story__image {
   width: 100%;
   max-width: 480px;
   aspect-ratio: 4/3;
@@ -679,14 +679,14 @@ h1, h2, h3, h4, h5, h6,
   margin-inline: auto;
 }
 
-.divine-brand-story__image img {
+.drink-brand-story__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.divine-brand-story__content h2 {
+.drink-brand-story__content h2 {
   font-family: var(--font-heading);
   font-size: 26px;
   font-weight: 400;
@@ -696,27 +696,27 @@ h1, h2, h3, h4, h5, h6,
   margin-top: 0;
 }
 
-.divine-brand-story__content > p {
+.drink-brand-story__content > p {
   color: var(--color-text-muted);
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.75;
 }
 
-.divine-brand-values {
+.drink-brand-values {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   margin-top: 24px;
 }
 
-.divine-brand-value {
+.drink-brand-value {
   display: flex;
   align-items: flex-start;
   gap: 10px;
 }
 
-.divine-brand-value svg {
+.drink-brand-value svg {
   width: 20px;
   height: 20px;
   stroke: var(--color-accent-dark);
@@ -726,7 +726,7 @@ h1, h2, h3, h4, h5, h6,
   margin-top: 2px;
 }
 
-.divine-brand-value h4 {
+.drink-brand-value h4 {
   font-family: var(--font-heading);
   font-size: 14px;
   font-weight: 600;
@@ -734,7 +734,7 @@ h1, h2, h3, h4, h5, h6,
   margin-top: 0;
 }
 
-.divine-brand-value p {
+.drink-brand-value p {
   font-size: 13px;
   color: var(--color-text-muted);
   margin: 0;
@@ -742,13 +742,13 @@ h1, h2, h3, h4, h5, h6,
 }
 
 @media screen and (min-width: 768px) {
-  .divine-brand-story__grid {
+  .drink-brand-story__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
     align-items: stretch;
   }
-  .divine-brand-story__image {
+  .drink-brand-story__image {
     margin-bottom: 0;
     aspect-ratio: auto;
     max-width: 100%;
@@ -758,7 +758,7 @@ h1, h2, h3, h4, h5, h6,
 /* ============================================
    TESTIMONIALS
    ============================================ */
-.divine-testimonial-scroll {
+.drink-testimonial-scroll {
   display: flex;
   gap: 16px;
   overflow-x: auto;
@@ -770,11 +770,11 @@ h1, h2, h3, h4, h5, h6,
   -ms-overflow-style: none;
 }
 
-.divine-testimonial-scroll::-webkit-scrollbar {
+.drink-testimonial-scroll::-webkit-scrollbar {
   display: none;
 }
 
-.divine-testimonial-card {
+.drink-testimonial-card {
   flex: 0 0 300px;
   scroll-snap-align: start;
   background: var(--color-background-warm);
@@ -783,19 +783,19 @@ h1, h2, h3, h4, h5, h6,
   border: 1px solid var(--color-border-hex);
 }
 
-.divine-testimonial-stars {
+.drink-testimonial-stars {
   display: flex;
   gap: 2px;
   margin-bottom: 12px;
 }
 
-.divine-testimonial-stars svg {
+.drink-testimonial-stars svg {
   width: 14px;
   height: 14px;
   fill: #e5b94e;
 }
 
-.divine-testimonial-text {
+.drink-testimonial-text {
   font-size: 15px;
   line-height: 1.65;
   color: var(--color-foreground-hex);
@@ -803,21 +803,21 @@ h1, h2, h3, h4, h5, h6,
   font-style: italic;
 }
 
-.divine-testimonial-author {
+.drink-testimonial-author {
   font-family: var(--font-heading);
   font-size: 13px;
   font-weight: 600;
   margin: 0;
 }
 
-.divine-testimonial-role {
+.drink-testimonial-role {
   font-size: 12px;
   color: var(--color-text-muted);
   margin: 0;
 }
 
 @media screen and (min-width: 768px) {
-  .divine-testimonial-scroll {
+  .drink-testimonial-scroll {
     padding: 0 40px 16px;
     margin: 0 -40px;
   }
@@ -826,14 +826,14 @@ h1, h2, h3, h4, h5, h6,
 /* ============================================
    EMAIL SIGNUP / NEWSLETTER
    ============================================ */
-.divine-newsletter {
+.drink-newsletter {
   background: #2c2420;                   /* warm dark brown — earthy, not stark black */
   color: var(--color-background-hex);
   padding: 56px 24px;
   text-align: center;
 }
 
-.divine-newsletter h2 {
+.drink-newsletter h2 {
   font-family: var(--font-heading);
   font-size: 26px;
   font-weight: 400;
@@ -843,20 +843,20 @@ h1, h2, h3, h4, h5, h6,
   color: var(--color-background-hex);
 }
 
-.divine-newsletter > p,
-.divine-newsletter__subtitle {
+.drink-newsletter > p,
+.drink-newsletter__subtitle {
   color: rgba(255,255,255,0.7);
   font-size: 15px;
   margin-bottom: 20px;
 }
 
-.divine-newsletter__form {
+.drink-newsletter__form {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.divine-newsletter__form input[type="email"] {
+.drink-newsletter__form input[type="email"] {
   width: 100%;
   padding: 14px 16px;
   border: 1px solid rgba(255,255,255,0.2);
@@ -868,15 +868,15 @@ h1, h2, h3, h4, h5, h6,
   outline: none;
 }
 
-.divine-newsletter__form input[type="email"]::placeholder {
+.drink-newsletter__form input[type="email"]::placeholder {
   color: rgba(255,255,255,0.5);
 }
 
-.divine-newsletter__form input[type="email"]:focus {
+.drink-newsletter__form input[type="email"]:focus {
   border-color: rgba(255,255,255,0.4);
 }
 
-.divine-newsletter__form button[type="submit"] {
+.drink-newsletter__form button[type="submit"] {
   width: 100%;
   padding: 14px 24px;
   background: var(--color-accent-hex);
@@ -893,39 +893,39 @@ h1, h2, h3, h4, h5, h6,
   transition: var(--transition-default);
 }
 
-.divine-newsletter__form button[type="submit"]:hover {
+.drink-newsletter__form button[type="submit"]:hover {
   opacity: 0.9;
 }
 
-.divine-newsletter__privacy {
+.drink-newsletter__privacy {
   font-size: 12px;
   color: rgba(255,255,255,0.5);
   margin-top: 12px;
 }
 
-.divine-newsletter__message {
+.drink-newsletter__message {
   margin-top: 12px;
   font-size: 14px;
 }
 
-.divine-newsletter__message--success {
+.drink-newsletter__message--success {
   color: #7dca7d;
 }
 
-.divine-newsletter__message--error {
+.drink-newsletter__message--error {
   color: #e57373;
 }
 
 @media screen and (min-width: 768px) {
-  .divine-newsletter__form {
+  .drink-newsletter__form {
     flex-direction: row;
     max-width: 450px;
     margin: 0 auto;
   }
-  .divine-newsletter__form input[type="email"] {
+  .drink-newsletter__form input[type="email"] {
     flex: 1;
   }
-  .divine-newsletter__form button[type="submit"] {
+  .drink-newsletter__form button[type="submit"] {
     width: auto;
   }
 }
@@ -1151,7 +1151,7 @@ header-drawer summary {
 
 /* ============================================
    PRODUCT PAGE — Buy Buttons
-   Divine-branded, full-width, uniform height
+   Drink-branded, full-width, uniform height
    ============================================ */
 .product-form__buttons {
   display: flex !important;
@@ -1168,7 +1168,7 @@ header-drawer summary {
   box-sizing: border-box;
 }
 
-/* Add to Cart — Divine primary */
+/* Add to Cart — Drink primary */
 .product-form__buttons .product-form__submit {
   align-self: stretch;
   height: 52px;
@@ -1224,7 +1224,7 @@ header-drawer summary {
   letter-spacing: 0.06em;
 }
 
-/* "More payment options" link — Divine style */
+/* "More payment options" link — Drink style */
 .shopify-payment-button__more-options {
   font-family: var(--font-body);
   color: var(--color-text-muted);
@@ -1305,16 +1305,16 @@ header-drawer summary {
 }
 
 /* ============================================
-   DIVINE TAG BADGES (product cards)
+   DRINK TAG BADGES (product cards)
    ============================================ */
-.divine-product-card__tags {
+.drink-product-card__tags {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
   margin-top: 6px;
 }
 
-.divine-tag {
+.drink-tag {
   display: inline-block;
   font-family: var(--font-body);
   font-size: 0.7rem;
@@ -1326,40 +1326,40 @@ header-drawer summary {
   white-space: nowrap;
 }
 
-.divine-tag--benefit {
+.drink-tag--benefit {
   background-color: var(--color-accent-light, #f0ebf4);
   color: var(--color-accent-dark, #9b76a7);
 }
 
-.divine-tag--flavor {
+.drink-tag--flavor {
   background-color: #fef6e8;
   color: #a07628;
 }
 
-.divine-tag--dietary {
+.drink-tag--dietary {
   background-color: #e8f5e9;
   color: #4a7c4f;
 }
 
 /* Larger tags on product detail page */
-.divine-product-detail-tags .divine-tag {
+.drink-product-detail-tags .drink-tag {
   font-size: 0.75rem;
   padding: 4px 12px;
 }
 
 /* ============================================
-   DIVINE COLLECTION FILTERS
+   DRINK COLLECTION FILTERS
    ============================================ */
-.divine-filters {
+.drink-filters {
   padding: var(--spacing-sm) 0;
   margin-bottom: var(--spacing-md);
 }
 
-.divine-filter-group {
+.drink-filter-group {
   margin-bottom: var(--spacing-sm);
 }
 
-.divine-filter-group__title {
+.drink-filter-group__title {
   font-family: var(--font-heading);
   font-size: 0.8rem;
   font-weight: 600;
@@ -1369,13 +1369,13 @@ header-drawer summary {
   margin-bottom: 6px;
 }
 
-.divine-filter-group__chips {
+.drink-filter-group__chips {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
 }
 
-.divine-chip {
+.drink-chip {
   display: inline-block;
   font-family: var(--font-body);
   font-size: 0.75rem;
@@ -1391,83 +1391,83 @@ header-drawer summary {
   line-height: 1.4;
 }
 
-.divine-chip:hover {
+.drink-chip:hover {
   border-color: var(--color-accent-dark, #9b76a7);
   color: var(--color-accent-dark, #9b76a7);
 }
 
-.divine-chip--active {
+.drink-chip--active {
   background-color: var(--color-accent-dark, #9b76a7);
   color: #fff;
   border-color: var(--color-accent-dark, #9b76a7);
 }
 
-.divine-chip--active:hover {
+.drink-chip--active:hover {
   background-color: var(--color-accent-hex, #c8a8d8);
   color: #fff;
 }
 
-.divine-chip--clear {
+.drink-chip--clear {
   background-color: transparent;
   border-color: var(--color-text-muted, #7a6f64);
   color: var(--color-text-muted, #7a6f64);
   font-weight: 600;
 }
 
-.divine-chip--clear:hover {
+.drink-chip--clear:hover {
   background-color: var(--color-foreground-hex, #1d1917);
   color: #fff;
   border-color: var(--color-foreground-hex, #1d1917);
 }
 
 /* Flavor-specific chip accent colors */
-.divine-chip--benefit.divine-chip--active {
+.drink-chip--benefit.drink-chip--active {
   background-color: #9b76a7;
   border-color: #9b76a7;
 }
 
-.divine-chip--flavor.divine-chip--active {
+.drink-chip--flavor.drink-chip--active {
   background-color: #a07628;
   border-color: #a07628;
 }
 
-.divine-chip--dietary.divine-chip--active {
+.drink-chip--dietary.drink-chip--active {
   background-color: #4a7c4f;
   border-color: #4a7c4f;
 }
 
-.divine-chip--caffeine.divine-chip--active {
+.drink-chip--caffeine.drink-chip--active {
   background-color: #6b5e52;
   border-color: #6b5e52;
 }
 
-.divine-chip--origin.divine-chip--active {
+.drink-chip--origin.drink-chip--active {
   background-color: #5a7d9a;
   border-color: #5a7d9a;
 }
 
-.divine-chip--format.divine-chip--active {
+.drink-chip--format.drink-chip--active {
   background-color: #8b6e4e;
   border-color: #8b6e4e;
 }
 
 /* Filter group responsive */
 @media screen and (max-width: 767px) {
-  .divine-filter-group__chips {
+  .drink-filter-group__chips {
     overflow-x: auto;
     flex-wrap: nowrap;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     padding-bottom: 4px;
   }
-  .divine-filter-group__chips::-webkit-scrollbar {
+  .drink-filter-group__chips::-webkit-scrollbar {
     display: none;
   }
 }
 
 /* ============================================
    PRODUCT PAGE — Recently Viewed Section
-   Divine-branded headings
+   Drink-branded headings
    (Related Products headings live in section-related-products.css)
    ============================================ */
 .recent-products .title-wrapper .title {

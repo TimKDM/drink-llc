@@ -1,5 +1,5 @@
 {%- style -%}
-  .divine-brand-story-section {
+  .drink-brand-story-section {
     {% if section.settings.background_color != blank and section.settings.background_color != 'rgba(0,0,0,0)' %}
       background-color: {{ section.settings.background_color }};
     {% endif %}
@@ -9,28 +9,28 @@
     margin-bottom: {{ section.settings.margin_bottom }}px;
   }
   @media screen and (min-width: 768px) {
-    .divine-brand-story-section {
+    .drink-brand-story-section {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
   {% if section.settings.text_color != blank and section.settings.text_color != 'rgba(0,0,0,0)' %}
-    .divine-brand-story-section h2,
-    .divine-brand-story-section h4,
-    .divine-brand-story-section p {
+    .drink-brand-story-section h2,
+    .drink-brand-story-section h4,
+    .drink-brand-story-section p {
       color: {{ section.settings.text_color }};
     }
   {% endif %}
   {% if section.settings.accent_color != blank and section.settings.accent_color != 'rgba(0,0,0,0)' %}
-    .divine-brand-story-section .divine-brand-value svg {
+    .drink-brand-story-section .drink-brand-value svg {
       stroke: {{ section.settings.accent_color }};
     }
   {% endif %}
 {%- endstyle -%}
 
-<section class="divine-section{% if section.settings.use_alt_bg %} divine-section-alt{% endif %}">
-  <div class="divine-brand-story__grid">
-    <div class="divine-brand-story__image">
+<section class="drink-section{% if section.settings.use_alt_bg %} drink-section-alt{% endif %}">
+  <div class="drink-brand-story__grid">
+    <div class="drink-brand-story__image">
       {%- if section.settings.image != blank -%}
         {{
           section.settings.image
@@ -45,7 +45,7 @@
       {%- endif -%}
     </div>
 
-    <div class="divine-brand-story__content">
+    <div class="drink-brand-story__content">
       {%- if section.settings.heading != blank -%}
         <h2>{{ section.settings.heading }}</h2>
       {%- endif -%}
@@ -55,15 +55,15 @@
       {%- endif -%}
 
       {%- if section.settings.button_label != blank -%}
-        <a href="{{ section.settings.button_link }}" class="divine-btn divine-btn-primary" style="{% if section.settings.button_bg != blank and section.settings.button_bg != 'rgba(0,0,0,0)' %}background:{{ section.settings.button_bg }};{% endif %}{% if section.settings.button_color != blank and section.settings.button_color != 'rgba(0,0,0,0)' %}color:{{ section.settings.button_color }};{% endif %}">
+        <a href="{{ section.settings.button_link }}" class="drink-btn drink-btn-primary" style="{% if section.settings.button_bg != blank and section.settings.button_bg != 'rgba(0,0,0,0)' %}background:{{ section.settings.button_bg }};{% endif %}{% if section.settings.button_color != blank and section.settings.button_color != 'rgba(0,0,0,0)' %}color:{{ section.settings.button_color }};{% endif %}">
           {{ section.settings.button_label }}
         </a>
       {%- endif -%}
 
       {%- if section.blocks.size > 0 -%}
-        <div class="divine-brand-values">
+        <div class="drink-brand-values">
           {%- for block in section.blocks -%}
-            <div class="divine-brand-value" {{ block.shopify_attributes }}>
+            <div class="drink-brand-value" {{ block.shopify_attributes }}>
               {%- if block.settings.icon == 'shield' -%}
                 <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
               {%- elsif block.settings.icon == 'globe' -%}
@@ -91,9 +91,9 @@
 
 {% schema %}
 {
-  "name": "Divine Brand Story",
+  "name": "Drink Brand Story",
   "tag": "section",
-  "class": "divine-brand-story-section",
+  "class": "drink-brand-story-section",
   "max_blocks": 4,
   "settings": [
     {
@@ -111,7 +111,7 @@
       "type": "textarea",
       "id": "text",
       "label": "Description",
-      "default": "We started Divine because we couldn't find ingredients we truly trusted. So we went direct to the farms — Japan, India, Sri Lanka, and beyond. We built real relationships with real growers. We test every batch in independent labs. And we made a promise: no synthetic anything, ever. Because the best food starts with the best ingredients, and the people creating with them deserve complete transparency."
+      "default": "We started Drink because we couldn't find ingredients we truly trusted. So we went direct to the farms — Japan, India, Sri Lanka, and beyond. We built real relationships with real growers. We test every batch in independent labs. And we made a promise: no synthetic anything, ever. Because the best food starts with the best ingredients, and the people creating with them deserve complete transparency."
     },
     {
       "type": "text",
@@ -231,7 +231,7 @@
   ],
   "presets": [
     {
-      "name": "Divine Brand Story",
+      "name": "Drink Brand Story",
       "blocks": [
         { "type": "value", "settings": { "icon": "shield", "title": "Certified Organic", "description": "USDA Organic and CCOF certified. No pesticides, no fillers, no mystery ingredients. Pure and authentic, always." } },
         { "type": "value", "settings": { "icon": "globe", "title": "Farm-Direct", "description": "We know our growers by name. Fair trade, direct relationships, full traceability." } },

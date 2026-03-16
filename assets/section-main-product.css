@@ -1114,7 +1114,7 @@ a.product-text {
   margin: 0 auto 1.2rem auto;
 }
 
-/* Button layout handled by divine-mockup-v3.css */
+/* Button layout handled by drink-theme.css */
 
 .product-form-quantity .quantity:before {
     background: none;
@@ -2380,7 +2380,7 @@ p.rating-count.caption {
   }
 }
 
-/* 350px button reset removed — handled by divine-mockup-v3.css */
+/* 350px button reset removed — handled by drink-theme.css */
 
 /* Recipient form */
 .recipient-form {
@@ -2551,5 +2551,5 @@ p.rating-count.caption {
   .product-info-wrapper .accordion__title.extra-large {
     font-size: calc(var(--font-heading-scale)* 2.2rem);
   }
-  /* Button layout handled by divine-mockup-v3.css */
+  /* Button layout handled by drink-theme.css */
 }
