@@ -4,8 +4,8 @@
     "theme_name": "Drink LLC",
     "theme_version": "1.0.0",
     "theme_author": "Drink LLC",
-    "theme_documentation_url": "",
-    "theme_support_url": ""
+    "theme_documentation_url": "https://drinkingredients.com",
+    "theme_support_url": "https://drinkingredients.com/pages/contact-us"
   },
   {
     "name": "Brand",
@@ -43,7 +43,7 @@
             "type": "color",
             "id": "background_color",
             "label": "Background",
-            "default": "#0D0D0D"
+            "default": "#FFFFFF"
           },
           {
             "type": "color_background",
@@ -54,31 +54,31 @@
             "type": "color",
             "id": "text_color",
             "label": "Text",
-            "default": "#F5F5F0"
+            "default": "#1A1A1A"
           },
           {
             "type": "color",
             "id": "button_primary_background_color",
             "label": "Solid button background",
-            "default": "#F5F5F0"
+            "default": "#7CB518"
           },
           {
             "type": "color",
             "id": "button_primary_text_color",
             "label": "Solid button text",
-            "default": "#0D0D0D"
+            "default": "#FFFFFF"
           },
           {
             "type": "color",
             "id": "button_secondary_color",
             "label": "Outline button",
-            "default": "#F5F5F0"
+            "default": "#1A1A1A"
           },
           {
             "type": "color",
             "id": "color_link",
             "label": "Link color",
-            "default": "#F5F5F0"
+            "default": "#5A9A10"
           }
         ],
         "role": {
@@ -101,25 +101,25 @@
         "type": "color",
         "id": "color_void",
         "label": "Void (primary background)",
-        "default": "#0D0D0D"
+        "default": "#FFFFFF"
       },
       {
         "type": "color",
         "id": "color_carbon",
         "label": "Carbon (secondary dark)",
-        "default": "#2A2A2A"
+        "default": "#E2E6DE"
       },
       {
         "type": "color",
         "id": "color_ash",
         "label": "Ash (muted text)",
-        "default": "#888880"
+        "default": "#6B7B6E"
       },
       {
         "type": "color",
         "id": "color_offwhite",
         "label": "Off-white (light text/bg)",
-        "default": "#F5F5F0"
+        "default": "#1A1A1A"
       }
     ]
   },
