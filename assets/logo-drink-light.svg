@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 56" fill="#FFFFFF">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 56" fill="#FFFFFF">
   <!--
     DRINK LLC — Light Logo (for dark backgrounds)
-    White text, matcha green leaf accent
+    White wordmark, green water drop accent
   -->
 
   <!-- D -->
@@ -13,23 +13,12 @@
   <!-- I stem -->
   <path d="M96 16h9.5V54H96V16z"/>
 
-  <!-- Leaf accent — matcha green -->
-  <path d="M100.75 0c3.5 0 6.5 2.8 6.5 7 0 4.5-3 7.5-6.5 7.5s-6.5-3-6.5-7.5c0-4.2 3-7 6.5-7z" fill="#7CB518"/>
+  <!-- Water drop — green accent -->
+  <path d="M100.75 1 L106.5 9.5 C108.5 12.5 108.5 14 106.5 16 C104.5 18 97 18 95 16 C93 14 93 12.5 95 9.5 Z" fill="#7CB518"/>
 
   <!-- N -->
   <path d="M116 2h8.5l20 36V2H154V54h-8.5l-20-36V54H116V2z"/>
 
   <!-- K -->
   <path d="M164 2h9.5v22L194 2h12L184 26l23 28h-12l-17-21-4.5 5V54H164V2z"/>
-
-  <!-- Tagline -->
-  <text
-    x="224"
-    y="35"
-    font-family="'Jost', 'DM Sans', Helvetica, Arial, sans-serif"
-    font-weight="400"
-    font-size="9.5"
-    letter-spacing="0.22em"
-    fill="rgba(255,255,255,0.6)"
-  >INGREDIENTS</text>
 </svg>
