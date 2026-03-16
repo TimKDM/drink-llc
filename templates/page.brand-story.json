@@ -37,7 +37,7 @@
         "story_1": {
           "type": "image_text",
           "settings": {
-            "image": "shopify://shop_images/3_6819de39-96be-4b4a-95c5-f01b3067e447.jpg",
+            "image": "",
             "caption": "How It Started",
             "heading": "We Couldn't Find What We Wanted, So We Built It",
             "text": "<p>It started with frustration. We wanted clean, organic ingredients we could actually trace back to the source — and they didn't exist in the way we needed them to. So we bought plane tickets, visited farms, and started building the kind of supply chain we wished someone else had already built.</p><p>From matcha fields in Japan to spice growers in India and tea estates in Sri Lanka, every partnership is rooted in trust, fair trade, and a shared love for doing things right.</p>",
@@ -50,7 +50,7 @@
         "story_2": {
           "type": "image_text",
           "settings": {
-            "image": "shopify://shop_images/2.jpg",
+            "image": "",
             "caption": "Our Process",
             "heading": "We Test Everything Because Facts Actually Matter",
             "text": "<p>Every ingredient that carries our name has been lab-tested by independent third parties. Not some of them — all of them. Purity, potency, heavy metals, allergens. If it doesn't pass, it doesn't ship.</p><p>Zero synthetic additives. Zero fillers. Zero artificial anything. We know that sounds like every brand's tagline, but for us it's the baseline. The bare minimum. The starting point.</p>",
@@ -79,7 +79,7 @@
         "story_3": {
           "type": "image_text",
           "settings": {
-            "image": "shopify://shop_images/life-goals-happy-people.jpg",
+            "image": "",
             "caption": "Our Community",
             "heading": "You're in Good Company",
             "text": "<p>When you choose Drink, you're joining a community of people who genuinely care about what goes into their food, their products, and their bodies. That's not a niche — that's a movement.</p><p>From home chefs discovering the joy of real matcha to wellness brands formulating their next breakthrough, café owners pouring signature drinks, and creators pushing the boundaries of what good food can be — we're honored to be part of your journey.</p>",

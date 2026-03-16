@@ -129,7 +129,7 @@
         "email_form"
       ],
       "settings": {
-        "image": "shopify://shop_images/matcha-top-half.png",
+        "image": "",
         "newsletter_style": "style_one",
         "layout": "image_first",
         "full_width": true,

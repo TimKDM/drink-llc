@@ -279,10 +279,10 @@
         "trust_item_DcDi4t"
       ],
       "settings": {
-        "background_color": "#D4C4D9",
+        "background_color": "#E8F0DC",
         "text_color": "#000000",
         "icon_color": "",
-        "border_color": "#D4C4D9",
+        "border_color": "#D4DED0",
         "padding_top": 20,
         "padding_bottom": 20,
         "margin_top": 48,
@@ -296,7 +296,7 @@
           "type": "tab",
           "settings": {
             "heading": "How to Use",
-            "image": "shopify://shop_images/BT.Breakis1.jpg",
+            "image": "",
             "tab_image_width": 1000,
             "hide_image": false,
             "row_content": "<p>Every product page includes specific usage instructions, but here are a few general tips:</p><ul><li><strong>Powders &amp; Superfoods</strong> — Start with ½ to 1 tsp. Mix into smoothies, lattes, oatmeal, or baked goods.</li><li><strong>Loose Leaf Teas</strong> — Use 1–2 tsp per 8 oz of water. Steep at the recommended temperature for the best flavor.</li><li><strong>Spices &amp; Seasonings</strong> — Add to taste during cooking or as a finishing touch. A little goes a long way with high-quality ingredients.</li></ul><p>Store in a cool, dry place away from direct sunlight to preserve freshness and potency.</p>",
@@ -546,25 +546,25 @@
         "logo_1": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/ccof_logo_4color_0.jpg"
+            "image": ""
           }
         },
         "logo_2": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Organic4colorsealJPG.jpg"
+            "image": ""
           }
         },
         "logo_3": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/KosherCheck-tag_3c_300.jpg"
+            "image": ""
           }
         },
         "logo_4": {
           "type": "text",
           "settings": {
-            "image": "shopify://shop_images/Asset_1.png"
+            "image": ""
           }
         }
       },
