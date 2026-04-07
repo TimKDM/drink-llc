@@ -48,14 +48,14 @@
         "buttons"
       ],
       "settings": {
-        "image": "",
+        "image": "shopify://shop_images/placeholder-hero.png",
         "image_height": 70,
         "video_url": "",
         "autoplay": true,
         "loop": true,
         "muted": true,
         "heading": "<p>Just <em>Drink</em>.</p>",
-        "subtitle": "Hydration and recovery powders that actually taste good. Clean ingredients, real flavor, zero compromise.",
+        "subtitle": "Performance hydration and recovery that actually tastes good. Clean ingredients, real flavor, zero compromise.",
         "overlay_opacity": 100,
         "margin_top": 0,
         "margin_bottom": 0
@@ -68,7 +68,7 @@
           "type": "trust_item",
           "settings": {
             "icon": "shield",
-            "text": "<strong>Clean</strong> Ingredients Only",
+            "text": "<strong>Tested</strong> for Purity",
             "link": ""
           }
         },
@@ -76,7 +76,7 @@
           "type": "trust_item",
           "settings": {
             "icon": "check",
-            "text": "<strong>Zero</strong> Sugar · Caffeine-Free",
+            "text": "<strong>Zero</strong> Sugar · No Dyes",
             "link": ""
           }
         },
@@ -84,7 +84,7 @@
           "type": "trust_item",
           "settings": {
             "icon": "leaf",
-            "text": "<strong>Electrolytes</strong> That Actually Work",
+            "text": "<strong>Real</strong> Fruit Flavors",
             "link": ""
           }
         },
@@ -92,7 +92,7 @@
           "type": "trust_item",
           "settings": {
             "icon": "package",
-            "text": "<strong>Free Ship</strong> on Orders $50+",
+            "text": "<strong>Fast</strong> Global Shipping",
             "link": ""
           }
         }
@@ -122,31 +122,31 @@
           "settings": {
             "icon": "shield",
             "title": "Clean Formula",
-            "description": "No artificial sweeteners, no dyes, no fillers. Just the good stuff your body actually needs."
+            "description": "No artificial sweeteners, no dyes, no fillers. Just the active ingredients your body needs."
           }
         },
         "value_2": {
           "type": "value",
           "settings": {
             "icon": "globe",
-            "title": "Real Flavors",
-            "description": "Lemonade, Lychee, Peach Mango, Passion Fruit, Matcha. Five flavors. All of them hit."
+            "title": "Elite Flavors",
+            "description": "Lemonade, Lychee, Peach Mango, Passion Fruit, Matcha. Real fruit extracts, zero aftertaste."
           }
         },
         "value_3": {
           "type": "value",
           "settings": {
             "icon": "clipboard",
-            "title": "Built for Recovery",
-            "description": "Electrolytes, vitamins, and minerals dosed for real recovery. Not a token sprinkle — the full amount."
+            "title": "Science-Backed",
+            "description": "Electrolytes and minerals dosed for effective recovery. We don't do 'proprietary blends'."
           }
         },
         "value_4": {
           "type": "value",
           "settings": {
             "icon": "heart",
-            "title": "Keto-Friendly",
-            "description": "Zero sugar, low carb, no compromise. Fits your macros and your standards."
+            "title": "Dietary Friendly",
+            "description": "Zero sugar, low carb, keto, and vegan. Designed to fit your lifestyle perfectly."
           }
         }
       },
@@ -157,10 +157,10 @@
         "value_4"
       ],
       "settings": {
-        "image": "",
-        "heading": "Not a Supplement Brand.",
-        "text": "We're not here to sell you on miracle powders or 47-ingredient proprietary blends. Drink is hydration and recovery, done right. Clean ingredients you can pronounce, real flavors that don't taste like a science experiment, and formulas that do exactly what they say. Mix it. Drink it. Move on.",
-        "button_label": "Our Story",
+        "image": "shopify://shop_images/placeholder-brand-story.png",
+        "heading": "Hydration, Evolved.",
+        "text": "We're here to redefine performance hydration. Drink is clean recovery, done right. We use ingredients you can pronounce, flavors you'll actually enjoy, and formulas that provide real results. No nonsense, no shortcuts. Just better hydration.",
+        "button_label": "Learn Our Story",
         "button_link": "shopify://pages/about-us",
         "button_bg": "",
         "button_color": "",
@@ -180,31 +180,31 @@
         "logo_1": {
           "type": "text",
           "settings": {
-            "image": ""
+            "image": "shopify://shop_images/logo-drink-mark.png"
           }
         },
         "logo_2": {
           "type": "text",
           "settings": {
-            "image": ""
+            "image": "shopify://shop_images/logo-drink-mark.png"
           }
         },
         "text_DaacRp": {
           "type": "text",
           "settings": {
-            "image": ""
+            "image": "shopify://shop_images/logo-drink-mark.png"
           }
         },
         "logo_3": {
           "type": "text",
           "settings": {
-            "image": ""
+            "image": "shopify://shop_images/logo-drink-mark.png"
           }
         },
         "logo_4": {
           "type": "text",
           "settings": {
-            "image": ""
+            "image": "shopify://shop_images/logo-drink-mark.png"
           }
         }
       },
@@ -216,10 +216,10 @@
         "logo_4"
       ],
       "settings": {
-        "caption": "Committed to Quality",
+        "caption": "Committed to Excellence",
         "text_style": "caption-with-letter-spacing",
         "text_size": "medium",
-        "title": "Certified for Your Confidence",
+        "title": "Tested and Trusted",
         "heading_size": "medium",
         "heading_style": "default",
         "heading_tag": "h2",
@@ -242,40 +242,40 @@
         "cat_1": {
           "type": "category",
           "settings": {
-            "collection": "",
-            "image": "",
-            "heading": "Hydration",
-            "subtitle": "Daily electrolyte mixes that actually taste good",
+            "collection": "all",
+            "image": "shopify://shop_images/placeholder-product.png",
+            "heading": "Daily Hydration",
+            "subtitle": "Stay sharp and hydrated all day long",
             "link": ""
           }
         },
         "cat_2": {
           "type": "category",
           "settings": {
-            "collection": "",
-            "image": "",
-            "heading": "Recovery",
-            "subtitle": "Post-workout recovery without the chalk taste",
+            "collection": "all",
+            "image": "shopify://shop_images/placeholder-lifestyle.png",
+            "heading": "Active Recovery",
+            "subtitle": "Post-workout support for real results",
             "link": ""
           }
         },
         "cat_3": {
           "type": "category",
           "settings": {
-            "collection": "",
-            "image": "",
-            "heading": "Bundles",
-            "subtitle": "Mix and match your favorites — save more",
+            "collection": "all",
+            "image": "shopify://shop_images/placeholder-collection.png",
+            "heading": "Flavor Bundles",
+            "subtitle": "Mix your favorites and save on every order",
             "link": ""
           }
         },
         "cat_4": {
           "type": "category",
           "settings": {
-            "collection": "",
-            "image": "",
-            "heading": "Subscribe",
-            "subtitle": "Never run out. Cancel anytime. 15% off always.",
+            "collection": "all",
+            "image": "shopify://shop_images/placeholder-product.png",
+            "heading": "Subscriptions",
+            "subtitle": "Save 15% and never miss a recovery session",
             "link": ""
           }
         }
