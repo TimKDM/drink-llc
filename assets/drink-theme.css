@@ -935,20 +935,6 @@ h1, h2, h3, h4, h5, h6,
    Replaces default dark ticker with warm static bar
    ============================================ */
 
-/* Force warm background regardless of color scheme */
-.announcement-bar,
-.announcement-bar.color-option-3,
-.announcement-bar.color-option-3.gradient,
-.announcement-bar[class*="color-option"],
-.announcement-bar[class*="color-option"].gradient {
-  background: var(--color-accent-light) !important;
-  background-color: var(--color-accent-light) !important;
-  border-bottom: 1px solid rgba(124, 181, 24, 0.25);
-  --color-foreground: 26, 26, 26;
-  --color-background: 240, 245, 232;
-  --gradient-background: transparent;
-}
-
 /* Message wrapper: kill flex column layout the theme uses */
 .announcement-bar .announcement-bar__message {
   display: flex;

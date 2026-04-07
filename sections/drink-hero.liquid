@@ -54,11 +54,11 @@
           {%- endif -%}
 
         {%- when 'heading' -%}
-          <h1 style="font-family: var(--font-heading); font-size: 4.5rem; text-transform: none; letter-spacing: -0.02em;" {{ block.shopify_attributes }}>{{ section.settings.heading }}</h1>
+          <h1 class="drink-hero__heading" {{ block.shopify_attributes }}>{{ section.settings.heading }}</h1>
 
         {%- when 'subtitle' -%}
           {%- if section.settings.subtitle != blank -%}
-            <p class="drink-hero__subtitle" style="font-family: var(--font-body); font-size: 1.1rem; max-width: 600px;" {{ block.shopify_attributes }}>{{ section.settings.subtitle }}</p>
+            <p class="drink-hero__subtitle" {{ block.shopify_attributes }}>{{ section.settings.subtitle }}</p>
           {%- endif -%}
 
         {%- when 'buttons' -%}

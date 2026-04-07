@@ -75,16 +75,41 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 .gap-4 { gap: calc(4 * var(--space-unit)); }
 .w-full { width: 100%; }
 
-/* Tintype Noise Overlay (Applied via theme.liquid but styles defined here) */
-.noise-overlay::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  opacity: 0.03;
-  z-index: 1000;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+/* Announcement Bar - Enhanced Specificity without !important */
+.announcement-bar,
+body .announcement-bar[class*="color-option"] {
+  background: var(--drink-bg-cream);
+  border-bottom: 1px solid var(--drink-sepia);
+  --color-foreground: 26, 26, 26;
+  --color-background: 240, 245, 232;
+  --gradient-background: transparent;
+}
+
+/* Responsive Hero Typography */
+.drink-hero__heading {
+  font-family: var(--font-heading);
+  font-size: 2.8rem; /* Mobile Size */
+  line-height: 1.1;
+  text-transform: none;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .drink-hero__heading {
+    font-size: 4.5rem; /* Desktop Size */
+  }
+}
+
+.drink-hero__subtitle {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  max-width: 600px;
+  opacity: 0.9;
+}
+
+@media screen and (min-width: 768px) {
+  .drink-hero__subtitle {
+    font-size: 1.1rem;
+  }
 }

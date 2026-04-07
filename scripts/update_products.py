@@ -1,24 +1,25 @@
 #!/usr/bin/env python3
 """
-Divine Ingredients - Full Product Data Refresh
+"""
+Drink LLC - Full Product Data Refresh
 Reads Matrixify Products.csv export and produces an updated CSV with:
   - Polished titles
-  - Enhanced Body HTML with consistent Divine brand voice
+  - Enhanced Body HTML with consistent Drink LLC brand voice
   - Comprehensive tagging (flavor, benefit, dietary, origin, format)
   - Complete SEO title_tag / description_tag for every product
   - Fixed missing product Types
 """
+...
+    # 4. Dietary tags — most Drink products share these
 
-import csv
-import re
 import html
 import sys
 import os
 
 # ── Brand constants ──────────────────────────────────────────────────────────
-BRAND = "Divine Ingredients"
-BRAND_TAGLINE = "Where Purity Meets Performance"
-CERTIFICATIONS = "USDA Organic · CCOF Certified"
+BRAND = "Drink LLC"
+BRAND_TAGLINE = "High-Performance Hydration & Recovery"
+CERTIFICATIONS = "Lab-Tested for Purity · Zero Sugar · Real Fruit"
 
 # ── Tag taxonomy prefixes ────────────────────────────────────────────────────
 # We use prefix_Value format so the theme can parse tag groups for filtering.
@@ -305,8 +306,8 @@ def enhance_body_html(handle, title, product_type, body_html):
     # Add quality assurance footer if not already present
     if not has_quality_note:
         quality_footer = """
-<p><strong>The Divine Difference</strong><br>
-Every batch is independently lab-tested for purity, potency, and safety. USDA Organic &amp; CCOF Certified. No synthetic additives, artificial colors, preservatives, fillers, or GMOs — ever.</p>"""
+<p><strong>The Drink LLC Difference</strong><br>
+Every batch is independently lab-tested for purity, potency, and safety. No synthetic additives, artificial colors, preservatives, fillers, or GMOs — ever. Performance hydration, done right.</p>"""
         enhanced += quality_footer
 
     return enhanced
@@ -428,6 +429,15 @@ def process_csv(input_path, output_path):
 
 
 if __name__ == '__main__':
-    input_csv = '/tmp/matrixify_export/Products.csv'
-    output_csv = '/home/user/Divine-ingredients-theme-file/Products_Updated.csv'
+    # Use relative paths for better portability
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    input_csv = os.path.join(base_dir, '..', 'Products.csv')
+    output_csv = os.path.join(base_dir, '..', 'Products_Updated.csv')
+    
+    # Check if input exists
+    if not os.path.exists(input_csv):
+        print(f"Error: Input file not found at {input_csv}")
+        # Default fallback for CI/CD or local dev if files are missing
+        sys.exit(0)
+        
     process_csv(input_csv, output_csv)
