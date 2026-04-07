@@ -157,7 +157,7 @@
         "value_4"
       ],
       "settings": {
-        "image": "labels_all_five_preview.png",
+        "image": "shopify://shop_images/labels_all_five_preview.png",
         "heading": "Hydration, Evolved.",
         "text": "We're here to redefine performance hydration. Drink is clean recovery, done right. We use ingredients you can pronounce, flavors you'll actually enjoy, and formulas that provide real results. No nonsense, no shortcuts. Just better hydration.",
         "button_label": "Learn Our Story",
@@ -180,31 +180,31 @@
         "logo_1": {
           "type": "text",
           "settings": {
-            "image": "logo-drink-mark.svg"
+            "image": "shopify://shop_images/logo-drink-mark.svg"
           }
         },
         "logo_2": {
           "type": "text",
           "settings": {
-            "image": "logo-drink-mark.svg"
+            "image": "shopify://shop_images/logo-drink-mark.svg"
           }
         },
         "text_DaacRp": {
           "type": "text",
           "settings": {
-            "image": "logo-drink-mark.svg"
+            "image": "shopify://shop_images/logo-drink-mark.svg"
           }
         },
         "logo_3": {
           "type": "text",
           "settings": {
-            "image": "logo-drink-mark.svg"
+            "image": "shopify://shop_images/logo-drink-mark.svg"
           }
         },
         "logo_4": {
           "type": "text",
           "settings": {
-            "image": "logo-drink-mark.svg"
+            "image": "shopify://shop_images/logo-drink-mark.svg"
           }
         }
       },
@@ -243,7 +243,7 @@
           "type": "category",
           "settings": {
             "collection": "all",
-            "image": "label_lemonade_final.svg",
+            "image": "shopify://shop_images/label_lemonade_final.svg",
             "heading": "Daily Hydration",
             "subtitle": "Stay sharp and hydrated all day long",
             "link": ""
@@ -253,7 +253,7 @@
           "type": "category",
           "settings": {
             "collection": "all",
-            "image": "label_peach_mango_final.svg",
+            "image": "shopify://shop_images/label_peach_mango_final.svg",
             "heading": "Active Recovery",
             "subtitle": "Post-workout support for real results",
             "link": ""
@@ -263,7 +263,7 @@
           "type": "category",
           "settings": {
             "collection": "all",
-            "image": "label_matcha_final.svg",
+            "image": "shopify://shop_images/label_matcha_final.svg",
             "heading": "Flavor Bundles",
             "subtitle": "Mix your favorites and save on every order",
             "link": ""
@@ -273,7 +273,7 @@
           "type": "category",
           "settings": {
             "collection": "all",
-            "image": "label_lychee_final.svg",
+            "image": "shopify://shop_images/label_lychee_final.svg",
             "heading": "Subscriptions",
             "subtitle": "Save 15% and never miss a recovery session",
             "link": ""
