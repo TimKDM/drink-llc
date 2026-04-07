@@ -1,0 +1,34 @@
+name: Drink LLC Brand & Code Audit
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Gemini AI Review
+        uses: google-gemini/github-action@v1
+        with:
+          api-key: ${{ secrets.GEMINI_API_KEY }}
+          model: 'gemini-2.0-flash'
+          instructions: |
+            You are the Drink LLC Brand Guardian. 
+            Review this PR against the following strict Manifest rules:
+            
+            1. BRAND VOICE: 
+               - Deadpan confident. Short sentences. 
+               - NO exclamation points. NO "wellness jargon" (optimize, elevate, fuel).
+            2. PRODUCT NAMING: 
+               - Must be [Flavor] Drink (e.g., Mango Drink). FLAG any reordering.
+            3. LOGO/SVG: 
+               - Check for fill-rule="evenodd" on D and R paths.
+               - Ensure fonts are base64 embedded for cairosvg.
+            4. TONE: 
+               - "Tim-style" brevity. Max 15 words per sentence. Use bolding for scanability.
