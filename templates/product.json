@@ -237,7 +237,7 @@
       }
     },
     "product_trust_bar": {
-      "type": "divine-trust-bar",
+      "type": "drink-trust-bar",
       "blocks": {
         "trust_item_Fx79gx": {
           "type": "trust_item",
@@ -356,7 +356,7 @@
         "collapsible_row_1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Are Divine Ingredients products organic?",
+            "heading": "Are drink Ingredients products organic?",
             "icon": "question_mark",
             "row_content": "<p>Every single one. USDA certified organic and CCOF certified, sourced from certified farms, and independently lab-tested. We don't use the word \"organic\" lightly — we can back it up.</p>",
             "page": ""
@@ -457,7 +457,7 @@
           "settings": {
             "rating": true,
             "rating_stars": "5-star",
-            "text": "<p>Switched all my baking ingredients to Divine and honestly — night and day. Everything just tastes more real.</p>",
+            "text": "<p>Switched all my baking ingredients to drink and honestly — night and day. Everything just tastes more real.</p>",
             "title": "Michelle T.",
             "hide_image": true,
             "product": "mumbai-chai"

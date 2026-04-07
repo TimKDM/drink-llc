@@ -1,5 +1,5 @@
 {%- style -%}
-  .divine-story-page {
+  .drink-story-page {
     {% if section.settings.background_color != blank and section.settings.background_color != 'rgba(0,0,0,0)' %}
       background-color: {{ section.settings.background_color }};
     {% endif %}
@@ -8,29 +8,29 @@
     {% endif %}
   }
   {% if section.settings.text_color != blank and section.settings.text_color != 'rgba(0,0,0,0)' %}
-    .divine-story-page h1,
-    .divine-story-page h2,
-    .divine-story-page h3 {
+    .drink-story-page h1,
+    .drink-story-page h2,
+    .drink-story-page h3 {
       color: {{ section.settings.text_color }};
     }
   {% endif %}
   {% if section.settings.accent_color != blank and section.settings.accent_color != 'rgba(0,0,0,0)' %}
-    .divine-story-page .divine-section-label,
-    .divine-story-page .divine-story__values-icon svg {
+    .drink-story-page .drink-section-label,
+    .drink-story-page .drink-story__values-icon svg {
       color: {{ section.settings.accent_color }};
       stroke: {{ section.settings.accent_color }};
     }
   {% endif %}
 {%- endstyle -%}
 
-<div class="divine-story-page">
+<div class="drink-story-page">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
 
       {%- when 'hero' -%}
-        <div class="divine-story__hero" {{ block.shopify_attributes }}>
+        <div class="drink-story__hero" {{ block.shopify_attributes }}>
           {%- if block.settings.image != blank -%}
-            <div class="divine-story__hero-image">
+            <div class="drink-story__hero-image">
               {{
                 block.settings.image
                 | image_url: width: 1600
@@ -39,10 +39,10 @@
                   widths: '375, 750, 1100, 1600',
                   sizes: '100vw'
               }}
-              <div class="divine-story__hero-overlay"></div>
-              <div class="divine-story__hero-content">
+              <div class="drink-story__hero-overlay"></div>
+              <div class="drink-story__hero-content">
                 {%- if block.settings.caption != blank -%}
-                  <span class="divine-section-label">{{ block.settings.caption }}</span>
+                  <span class="drink-section-label">{{ block.settings.caption }}</span>
                 {%- endif -%}
                 {%- if block.settings.heading != blank -%}
                   <h1>{{ block.settings.heading }}</h1>
@@ -50,9 +50,9 @@
               </div>
             </div>
           {%- else -%}
-            <div class="divine-story__hero-simple">
+            <div class="drink-story__hero-simple">
               {%- if block.settings.caption != blank -%}
-                <span class="divine-section-label">{{ block.settings.caption }}</span>
+                <span class="drink-section-label">{{ block.settings.caption }}</span>
               {%- endif -%}
               {%- if block.settings.heading != blank -%}
                 <h1>{{ block.settings.heading }}</h1>
@@ -62,19 +62,19 @@
         </div>
 
       {%- when 'intro' -%}
-        <div class="divine-story__intro" {{ block.shopify_attributes }}>
+        <div class="drink-story__intro" {{ block.shopify_attributes }}>
           {%- if block.settings.heading != blank -%}
             <h2>{{ block.settings.heading }}</h2>
           {%- endif -%}
           {%- if block.settings.text != blank -%}
-            <div class="divine-story__intro-text">{{ block.settings.text }}</div>
+            <div class="drink-story__intro-text">{{ block.settings.text }}</div>
           {%- endif -%}
         </div>
 
       {%- when 'image_text' -%}
-        <div class="divine-story__section {% if block.settings.layout == 'image_right' %}divine-story__section--reversed{% endif %} {% if block.settings.use_alt_bg %}divine-section-alt{% endif %}" {{ block.shopify_attributes }}>
-          <div class="divine-story__section-grid">
-            <div class="divine-story__section-image">
+        <div class="drink-story__section {% if block.settings.layout == 'image_right' %}drink-story__section--reversed{% endif %} {% if block.settings.use_alt_bg %}drink-section-alt{% endif %}" {{ block.shopify_attributes }}>
+          <div class="drink-story__section-grid">
+            <div class="drink-story__section-image">
               {%- if block.settings.image != blank -%}
                 {{
                   block.settings.image
@@ -88,37 +88,37 @@
                 {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
               {%- endif -%}
             </div>
-            <div class="divine-story__section-content">
+            <div class="drink-story__section-content">
               {%- if block.settings.caption != blank -%}
-                <span class="divine-section-label">{{ block.settings.caption }}</span>
+                <span class="drink-section-label">{{ block.settings.caption }}</span>
               {%- endif -%}
               {%- if block.settings.heading != blank -%}
                 <h2>{{ block.settings.heading }}</h2>
               {%- endif -%}
               {%- if block.settings.text != blank -%}
-                <div class="divine-story__section-text">{{ block.settings.text }}</div>
+                <div class="drink-story__section-text">{{ block.settings.text }}</div>
               {%- endif -%}
               {%- if block.settings.button_label != blank -%}
-                <a href="{{ block.settings.button_link }}" class="divine-btn divine-btn-primary">{{ block.settings.button_label }}</a>
+                <a href="{{ block.settings.button_link }}" class="drink-btn drink-btn-primary">{{ block.settings.button_label }}</a>
               {%- endif -%}
             </div>
           </div>
         </div>
 
       {%- when 'values' -%}
-        <div class="divine-story__values {% if block.settings.use_alt_bg %}divine-section-alt{% endif %}" {{ block.shopify_attributes }}>
+        <div class="drink-story__values {% if block.settings.use_alt_bg %}drink-section-alt{% endif %}" {{ block.shopify_attributes }}>
           {%- if block.settings.heading != blank -%}
-            <div class="divine-section-header">
+            <div class="drink-section-header">
               {%- if block.settings.caption != blank -%}
-                <span class="divine-section-label">{{ block.settings.caption }}</span>
+                <span class="drink-section-label">{{ block.settings.caption }}</span>
               {%- endif -%}
-              <h2 class="divine-section-title">{{ block.settings.heading }}</h2>
+              <h2 class="drink-section-title">{{ block.settings.heading }}</h2>
             </div>
           {%- endif -%}
-          <div class="divine-story__values-grid">
+          <div class="drink-story__values-grid">
             {%- if block.settings.value_1_title != blank -%}
-              <div class="divine-story__values-item">
-                <div class="divine-story__values-icon">
+              <div class="drink-story__values-item">
+                <div class="drink-story__values-icon">
                   <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                 </div>
                 <h3>{{ block.settings.value_1_title }}</h3>
@@ -128,8 +128,8 @@
               </div>
             {%- endif -%}
             {%- if block.settings.value_2_title != blank -%}
-              <div class="divine-story__values-item">
-                <div class="divine-story__values-icon">
+              <div class="drink-story__values-item">
+                <div class="drink-story__values-icon">
                   <svg viewBox="0 0 24 24"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
                 <h3>{{ block.settings.value_2_title }}</h3>
@@ -139,8 +139,8 @@
               </div>
             {%- endif -%}
             {%- if block.settings.value_3_title != blank -%}
-              <div class="divine-story__values-item">
-                <div class="divine-story__values-icon">
+              <div class="drink-story__values-item">
+                <div class="drink-story__values-icon">
                   <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
                 </div>
                 <h3>{{ block.settings.value_3_title }}</h3>
@@ -150,8 +150,8 @@
               </div>
             {%- endif -%}
             {%- if block.settings.value_4_title != blank -%}
-              <div class="divine-story__values-item">
-                <div class="divine-story__values-icon">
+              <div class="drink-story__values-item">
+                <div class="drink-story__values-icon">
                   <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
                 </div>
                 <h3>{{ block.settings.value_4_title }}</h3>
@@ -164,7 +164,7 @@
         </div>
 
       {%- when 'cta' -%}
-        <div class="divine-story__cta {% if block.settings.use_dark_bg %}divine-story__cta--dark{% endif %}" {{ block.shopify_attributes }}>
+        <div class="drink-story__cta {% if block.settings.use_dark_bg %}drink-story__cta--dark{% endif %}" {{ block.shopify_attributes }}>
           {%- if block.settings.heading != blank -%}
             <h2>{{ block.settings.heading }}</h2>
           {%- endif -%}
@@ -172,7 +172,7 @@
             <p>{{ block.settings.text }}</p>
           {%- endif -%}
           {%- if block.settings.button_label != blank -%}
-            <a href="{{ block.settings.button_link }}" class="divine-btn divine-btn-primary">{{ block.settings.button_label }}</a>
+            <a href="{{ block.settings.button_link }}" class="drink-btn drink-btn-primary">{{ block.settings.button_label }}</a>
           {%- endif -%}
         </div>
 
@@ -182,24 +182,24 @@
 
 <style>
   /* Story Page Hero */
-  .divine-story__hero-image {
+  .drink-story__hero-image {
     position: relative;
     width: 100%;
     max-height: 50vh;
     overflow: hidden;
   }
-  .divine-story__hero-image img {
+  .drink-story__hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
   }
-  .divine-story__hero-overlay {
+  .drink-story__hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 60%, transparent 100%);
   }
-  .divine-story__hero-content {
+  .drink-story__hero-content {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -208,22 +208,22 @@
     color: #fff;
     text-align: center;
   }
-  .divine-story__hero-content h1 {
+  .drink-story__hero-content h1 {
     font-family: var(--font-heading);
     font-size: 28px;
     font-weight: 400;
     margin: 0;
     color: #fff;
   }
-  .divine-story__hero-content .divine-section-label {
+  .drink-story__hero-content .drink-section-label {
     color: var(--color-accent-hex);
     margin-bottom: 8px;
   }
-  .divine-story__hero-simple {
+  .drink-story__hero-simple {
     text-align: center;
     padding: 48px 20px;
   }
-  .divine-story__hero-simple h1 {
+  .drink-story__hero-simple h1 {
     font-family: var(--font-heading);
     font-size: 28px;
     font-weight: 400;
@@ -231,13 +231,13 @@
   }
 
   /* Intro Section */
-  .divine-story__intro {
+  .drink-story__intro {
     max-width: 720px;
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
   }
-  .divine-story__intro h2 {
+  .drink-story__intro h2 {
     font-family: var(--font-heading);
     font-size: 22px;
     font-weight: 400;
@@ -245,33 +245,33 @@
     margin-top: 0;
     line-height: 1.3;
   }
-  .divine-story__intro-text {
+  .drink-story__intro-text {
     font-size: 15px;
     color: var(--color-text-muted);
     line-height: 1.8;
   }
-  .divine-story__intro-text p {
+  .drink-story__intro-text p {
     margin-bottom: 16px;
   }
 
   /* Image + Text Sections */
-  .divine-story__section {
+  .drink-story__section {
     padding: 40px 20px;
   }
-  .divine-story__section-image {
+  .drink-story__section-image {
     width: 100%;
     aspect-ratio: 4/3;
     border-radius: var(--radius-md);
     overflow: hidden;
     margin-bottom: 24px;
   }
-  .divine-story__section-image img {
+  .drink-story__section-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
   }
-  .divine-story__section-content h2 {
+  .drink-story__section-content h2 {
     font-family: var(--font-heading);
     font-size: 22px;
     font-weight: 400;
@@ -279,47 +279,47 @@
     margin-top: 0;
     line-height: 1.3;
   }
-  .divine-story__section-text {
+  .drink-story__section-text {
     font-size: 14px;
     color: var(--color-text-muted);
     line-height: 1.7;
     margin-bottom: 20px;
   }
-  .divine-story__section-text p {
+  .drink-story__section-text p {
     margin-bottom: 12px;
   }
 
   /* Values Grid */
-  .divine-story__values {
+  .drink-story__values {
     padding: 40px 20px;
   }
-  .divine-story__values-grid {
+  .drink-story__values-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
     margin-top: 24px;
   }
-  .divine-story__values-item {
+  .drink-story__values-item {
     text-align: center;
   }
-  .divine-story__values-icon {
+  .drink-story__values-icon {
     margin-bottom: 12px;
   }
-  .divine-story__values-icon svg {
+  .drink-story__values-icon svg {
     width: 32px;
     height: 32px;
     stroke: var(--color-accent-dark);
     stroke-width: 1.5;
     fill: none;
   }
-  .divine-story__values-item h3 {
+  .drink-story__values-item h3 {
     font-family: var(--font-heading);
     font-size: 14px;
     font-weight: 600;
     margin-bottom: 6px;
     margin-top: 0;
   }
-  .divine-story__values-item p {
+  .drink-story__values-item p {
     font-size: 13px;
     color: var(--color-text-muted);
     line-height: 1.5;
@@ -327,28 +327,28 @@
   }
 
   /* CTA Section */
-  .divine-story__cta {
+  .drink-story__cta {
     text-align: center;
     padding: 48px 20px;
   }
-  .divine-story__cta--dark {
+  .drink-story__cta--dark {
     background: var(--color-foreground-hex);
     color: var(--color-background-hex);
   }
-  .divine-story__cta--dark h2 {
+  .drink-story__cta--dark h2 {
     color: var(--color-background-hex);
   }
-  .divine-story__cta--dark p {
+  .drink-story__cta--dark p {
     color: rgba(255,255,255,0.7);
   }
-  .divine-story__cta h2 {
+  .drink-story__cta h2 {
     font-family: var(--font-heading);
     font-size: 22px;
     font-weight: 400;
     margin-bottom: 12px;
     margin-top: 0;
   }
-  .divine-story__cta p {
+  .drink-story__cta p {
     font-size: 14px;
     color: var(--color-text-muted);
     margin-bottom: 20px;
@@ -357,67 +357,67 @@
     margin-right: auto;
     line-height: 1.6;
   }
-  .divine-story__cta .divine-btn {
+  .drink-story__cta .drink-btn {
     display: inline-flex;
     width: auto;
   }
 
   @media screen and (min-width: 768px) {
-    .divine-story__hero-content {
+    .drink-story__hero-content {
       padding: 48px 40px;
     }
-    .divine-story__hero-content h1 {
+    .drink-story__hero-content h1 {
       font-size: 40px;
     }
-    .divine-story__hero-simple h1 {
+    .drink-story__hero-simple h1 {
       font-size: 40px;
     }
-    .divine-story__hero-image {
+    .drink-story__hero-image {
       max-height: 60vh;
     }
-    .divine-story__intro {
+    .drink-story__intro {
       padding: 60px 40px;
     }
-    .divine-story__intro h2 {
+    .drink-story__intro h2 {
       font-size: 28px;
     }
-    .divine-story__section {
+    .drink-story__section {
       padding: 60px 40px;
     }
-    .divine-story__section-grid {
+    .drink-story__section-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 48px;
       align-items: center;
     }
-    .divine-story__section--reversed .divine-story__section-grid {
+    .drink-story__section--reversed .drink-story__section-grid {
       direction: rtl;
     }
-    .divine-story__section--reversed .divine-story__section-grid > * {
+    .drink-story__section--reversed .drink-story__section-grid > * {
       direction: ltr;
     }
-    .divine-story__section-image {
+    .drink-story__section-image {
       margin-bottom: 0;
       aspect-ratio: 1;
     }
-    .divine-story__section-content h2 {
+    .drink-story__section-content h2 {
       font-size: 26px;
     }
-    .divine-story__values {
+    .drink-story__values {
       padding: 60px 40px;
     }
-    .divine-story__values-grid {
+    .drink-story__values-grid {
       grid-template-columns: repeat(4, 1fr);
       gap: 32px;
     }
-    .divine-story__values-icon svg {
+    .drink-story__values-icon svg {
       width: 40px;
       height: 40px;
     }
-    .divine-story__cta {
+    .drink-story__cta {
       padding: 64px 40px;
     }
-    .divine-story__cta h2 {
+    .drink-story__cta h2 {
       font-size: 28px;
     }
   }
@@ -425,9 +425,9 @@
 
 {% schema %}
 {
-  "name": "Divine Story Page",
+  "name": "drink Story Page",
   "tag": "section",
-  "class": "divine-story-page-section",
+  "class": "drink-story-page-section",
   "settings": [
     {
       "type": "color",
@@ -626,7 +626,7 @@
           "type": "textarea",
           "id": "text",
           "label": "Text",
-          "default": "Join the community of creators, chefs, and wellness brands who trust Divine for the ingredients that matter most."
+          "default": "Join the community of creators, chefs, and wellness brands who trust drink for the ingredients that matter most."
         },
         {
           "type": "text",
@@ -650,7 +650,7 @@
   ],
   "presets": [
     {
-      "name": "Divine Story Page",
+      "name": "drink Story Page",
       "blocks": [
         {
           "type": "hero",
@@ -663,7 +663,7 @@
           "type": "intro",
           "settings": {
             "heading": "We Believe Good Food Should Be Simple, Honest, and Backed by Facts",
-            "text": "<p>Divine Ingredients exists because we think you deserve to know exactly what's in your food — and where it came from. We're not here to slap a label on something and call it organic. We go to the farms. We test the batches. We build relationships that last.</p><p>Whether you're creating in your kitchen, developing products, or growing your brand, we're in your corner. Not as a supplier — as your people.</p>"
+            "text": "<p>drink Ingredients exists because we think you deserve to know exactly what's in your food — and where it came from. We're not here to slap a label on something and call it organic. We go to the farms. We test the batches. We build relationships that last.</p><p>Whether you're creating in your kitchen, developing products, or growing your brand, we're in your corner. Not as a supplier — as your people.</p>"
           }
         },
         {
@@ -706,7 +706,7 @@
           "settings": {
             "caption": "Our Community",
             "heading": "You're in Good Company",
-            "text": "<p>When you choose Divine, you're joining a community of people who genuinely care about what goes into their food, their products, and their bodies. That's not a niche — that's a movement.</p><p>From home chefs discovering the joy of real matcha to wellness brands formulating their next big thing, café owners pouring signature drinks, and creators pushing the boundaries of what good food can be — we're honored to be part of your story.</p>",
+            "text": "<p>When you choose drink, you're joining a community of people who genuinely care about what goes into their food, their products, and their bodies. That's not a niche — that's a movement.</p><p>From home chefs discovering the joy of real matcha to wellness brands formulating their next big thing, café owners pouring signature drinks, and creators pushing the boundaries of what good food can be — we're honored to be part of your story.</p>",
             "button_label": "Shop All Collections",
             "layout": "image_left",
             "use_alt_bg": true
@@ -716,7 +716,7 @@
           "type": "cta",
           "settings": {
             "heading": "Ready to Make Something Great?",
-            "text": "Join the community of creators, chefs, and wellness brands who trust Divine for the ingredients that matter most.",
+            "text": "Join the community of creators, chefs, and wellness brands who trust drink for the ingredients that matter most.",
             "button_label": "Explore Collections",
             "use_dark_bg": true
           }

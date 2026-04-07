@@ -17,8 +17,8 @@
         "padding_bottom": 0
       }
     },
-    "divine_story": {
-      "type": "divine-story-page",
+    "drink_story": {
+      "type": "drink-story-page",
       "blocks": {
         "hero": {
           "type": "hero",
@@ -31,7 +31,7 @@
           "type": "intro",
           "settings": {
             "heading": "We Believe Good Food Should Be Simple, Honest, and Backed by Facts",
-            "text": "<p>Divine Ingredients exists because we believe you deserve to know exactly what's in your food — and where it came from. We're not here to slap a label on something and call it organic. We go to the farms. We test every batch. We build relationships that last.</p><p>Whether you're creating in your kitchen, developing products, or growing your brand, we're in your corner. Not as a vendor — as a true partner.</p>"
+            "text": "<p>drink Ingredients exists because we believe you deserve to know exactly what's in your food — and where it came from. We're not here to slap a label on something and call it organic. We go to the farms. We test every batch. We build relationships that last.</p><p>Whether you're creating in your kitchen, developing products, or growing your brand, we're in your corner. Not as a vendor — as a true partner.</p>"
           }
         },
         "story_1": {
@@ -82,7 +82,7 @@
             "image": "shopify://shop_images/life-goals-happy-people.jpg",
             "caption": "Our Community",
             "heading": "You're in Good Company",
-            "text": "<p>When you choose Divine, you're joining a community of people who genuinely care about what goes into their food, their products, and their bodies. That's not a niche — that's a movement.</p><p>From home chefs discovering the joy of real matcha to wellness brands formulating their next breakthrough, café owners pouring signature drinks, and creators pushing the boundaries of what good food can be — we're honored to be part of your journey.</p>",
+            "text": "<p>When you choose drink, you're joining a community of people who genuinely care about what goes into their food, their products, and their bodies. That's not a niche — that's a movement.</p><p>From home chefs discovering the joy of real matcha to wellness brands formulating their next breakthrough, café owners pouring signature drinks, and creators pushing the boundaries of what good food can be — we're honored to be part of your journey.</p>",
             "button_label": "Shop All Collections",
             "button_link": "shopify://collections",
             "layout": "image_left",
@@ -93,7 +93,7 @@
           "type": "cta",
           "settings": {
             "heading": "Ready to Make Something Great?",
-            "text": "Join the community of creators, chefs, and wellness brands who trust Divine for the ingredients that matter most.",
+            "text": "Join the community of creators, chefs, and wellness brands who trust drink for the ingredients that matter most.",
             "button_label": "Explore Collections",
             "button_link": "shopify://collections",
             "use_dark_bg": true
@@ -118,6 +118,6 @@
   },
   "order": [
     "main",
-    "divine_story"
+    "drink_story"
   ]
 }

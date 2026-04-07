@@ -414,7 +414,7 @@
         "collapsible_row_1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Are Divine Ingredients products organic?",
+            "heading": "Are drink Ingredients products organic?",
             "icon": "question_mark",
             "row_content": "<p>Yes, every product we offer is USDA certified organic. We source exclusively from certified organic farms and each batch is independently lab-tested for purity and safety.</p>",
             "page": ""
@@ -452,7 +452,7 @@
           "settings": {
             "heading": "Are there any additives or preservatives in your products?",
             "icon": "question_mark",
-            "row_content": "<p>Absolutely not. All Divine Ingredients products are free from synthetic additives, artificial colors, preservatives, fillers, and GMOs. Just pure, clean ingredients.</p>",
+            "row_content": "<p>Absolutely not. All drink Ingredients products are free from synthetic additives, artificial colors, preservatives, fillers, and GMOs. Just pure, clean ingredients.</p>",
             "page": ""
           }
         }

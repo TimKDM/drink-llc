@@ -1,5 +1,5 @@
 {%- style -%}
-  .divine-trust-bar-section .divine-trust-bar {
+  .drink-trust-bar-section .drink-trust-bar {
     {% if section.settings.background_color != blank and section.settings.background_color != 'rgba(0,0,0,0)' %}
       background-color: {{ section.settings.background_color }};
     {% endif %}
@@ -12,18 +12,18 @@
     margin-bottom: {{ section.settings.margin_bottom }}px;
   }
   {% if section.settings.icon_color != blank and section.settings.icon_color != 'rgba(0,0,0,0)' %}
-    .divine-trust-bar-section .divine-trust-item svg { stroke: {{ section.settings.icon_color }}; }
+    .drink-trust-bar-section .drink-trust-item svg { stroke: {{ section.settings.icon_color }}; }
   {% endif %}
   {% if section.settings.text_color != blank and section.settings.text_color != 'rgba(0,0,0,0)' %}
-    .divine-trust-bar-section .divine-trust-item span { color: {{ section.settings.text_color }}; }
-    .divine-trust-bar-section .divine-trust-item strong { color: {{ section.settings.text_color }}; }
+    .drink-trust-bar-section .drink-trust-item span { color: {{ section.settings.text_color }}; }
+    .drink-trust-bar-section .drink-trust-item strong { color: {{ section.settings.text_color }}; }
   {% endif %}
 {%- endstyle -%}
 
-<section class="divine-trust-bar">
-  <div class="divine-trust-bar__inner">
+<section class="drink-trust-bar">
+  <div class="drink-trust-bar__inner">
     {%- for block in section.blocks -%}
-      <div class="divine-trust-item" {{ block.shopify_attributes }}>
+      <div class="drink-trust-item" {{ block.shopify_attributes }}>
         {%- if block.settings.custom_image != blank -%}
           {{ block.settings.custom_image | image_url: width: 64 | image_tag: loading: 'lazy', width: 32, height: 32 }}
         {%- elsif block.settings.icon == 'shield' -%}
@@ -53,9 +53,9 @@
 
 {% schema %}
 {
-  "name": "Divine Trust Bar",
+  "name": "drink Trust Bar",
   "tag": "section",
-  "class": "divine-trust-bar-section",
+  "class": "drink-trust-bar-section",
   "max_blocks": 6,
   "settings": [
     {
@@ -168,7 +168,7 @@
   ],
   "presets": [
     {
-      "name": "Divine Trust Bar",
+      "name": "drink Trust Bar",
       "blocks": [
         { "type": "trust_item", "settings": { "icon": "shield", "text": "<strong>USDA</strong> Certified Organic" } },
         { "type": "trust_item", "settings": { "icon": "package", "text": "<strong>Free Ship</strong> on $75+" } },

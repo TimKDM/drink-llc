@@ -9,8 +9,8 @@
  */
 {
   "sections": {
-    "divine_hero": {
-      "type": "divine-hero",
+    "drink_hero": {
+      "type": "drink-hero",
       "blocks": {
         "badge": {
           "type": "badge",
@@ -36,7 +36,7 @@
             "btn1_bg": "",
             "btn1_color": "",
             "button_label_2": "Go Wholesale",
-            "button_link_2": "shopify://collections/shop-wholesale-with-divine",
+            "button_link_2": "shopify://collections/shop-wholesale-with-drink",
             "btn2_color": ""
           }
         }
@@ -61,8 +61,8 @@
         "margin_bottom": 0
       }
     },
-    "divine_trust_bar": {
-      "type": "divine-trust-bar",
+    "drink_trust_bar": {
+      "type": "drink-trust-bar",
       "blocks": {
         "trust_1": {
           "type": "trust_item",
@@ -114,8 +114,8 @@
         "margin_bottom": 0
       }
     },
-    "divine_brand_story": {
-      "type": "divine-brand-story",
+    "drink_brand_story": {
+      "type": "drink-brand-story",
       "blocks": {
         "value_1": {
           "type": "value",
@@ -159,7 +159,7 @@
       "settings": {
         "image": "shopify://shop_images/Smoothie-blog-image-2.jpg",
         "heading": "We Care About What Goes In — And Who It Goes To",
-        "text": "We started Divine because we couldn't find ingredients we truly trusted. So we went direct to the farms — Japan, India, Sri Lanka, and beyond. We built real relationships with real growers. We test every batch in independent labs. And we made a promise: no synthetic anything, ever. Because the best food starts with the best ingredients, and the people creating with them deserve complete transparency.",
+        "text": "We started drink because we couldn't find ingredients we truly trusted. So we went direct to the farms — Japan, India, Sri Lanka, and beyond. We built real relationships with real growers. We test every batch in independent labs. And we made a promise: no synthetic anything, ever. Because the best food starts with the best ingredients, and the people creating with them deserve complete transparency.",
         "button_label": "Our Story",
         "button_link": "shopify://pages/about-us",
         "button_bg": "",
@@ -236,8 +236,8 @@
         "margin_top": 0
       }
     },
-    "divine_categories": {
-      "type": "divine-categories",
+    "drink_categories": {
+      "type": "drink-categories",
       "blocks": {
         "cat_1": {
           "type": "category",
@@ -299,8 +299,8 @@
         "margin_bottom": 0
       }
     },
-    "divine_products": {
-      "type": "divine-products",
+    "drink_products": {
+      "type": "drink-products",
       "settings": {
         "caption": "People Love These",
         "title": "Best Sellers",
@@ -322,8 +322,8 @@
         "margin_bottom": 0
       }
     },
-    "divine_testimonials": {
-      "type": "divine-testimonials",
+    "drink_testimonials": {
+      "type": "drink-testimonials",
       "blocks": {
         "testimonial_1": {
           "type": "testimonial",
@@ -349,7 +349,7 @@
           "type": "testimonial",
           "settings": {
             "rating": 5,
-            "text": "Switched all my baking ingredients to Divine and honestly — night and day. The vanilla, the cinnamon, the matcha. Everything just tastes more real.",
+            "text": "Switched all my baking ingredients to drink and honestly — night and day. The vanilla, the cinnamon, the matcha. Everything just tastes more real.",
             "author": "Michelle T.",
             "role": "Home Baker & Recipe Creator",
             "link": ""
@@ -359,7 +359,7 @@
           "type": "testimonial",
           "settings": {
             "rating": 5,
-            "text": "We built our entire private label tea line on Divine ingredients. The sourcing transparency and quality certs make it easy to build trust with our own customers. Couldn't ask for a better partner.",
+            "text": "We built our entire private label tea line on drink ingredients. The sourcing transparency and quality certs make it easy to build trust with our own customers. Couldn't ask for a better partner.",
             "author": "Ryan & Co.",
             "role": "Private Label Brand",
             "link": ""
@@ -399,8 +399,8 @@
         "margin_bottom": 0
       }
     },
-    "divine_newsletter": {
-      "type": "divine-newsletter",
+    "drink_newsletter": {
+      "type": "drink-newsletter",
       "blocks": {
         "heading": {
           "type": "heading",
@@ -559,7 +559,7 @@
           "settings": {
             "image": "shopify://shop_images/blog_on_chai.jpg",
             "heading": "We love Chai!",
-            "caption": "Warm up your wellness routine with Divine Ingredients' organic chai blends.",
+            "caption": "Warm up your wellness routine with drink Ingredients' organic chai blends.",
             "button_label": "Order Now",
             "link": "shopify://products/mumbai-chai",
             "show_link_button": true,
@@ -595,14 +595,14 @@
     }
   },
   "order": [
-    "divine_hero",
-    "divine_trust_bar",
-    "divine_brand_story",
+    "drink_hero",
+    "drink_trust_bar",
+    "drink_brand_story",
     "certification_logos",
-    "divine_categories",
-    "divine_products",
-    "divine_testimonials",
-    "divine_newsletter",
+    "drink_categories",
+    "drink_products",
+    "drink_testimonials",
+    "drink_newsletter",
     "image_banner_with_featured_collection",
     "rich_text",
     "slick_slider"

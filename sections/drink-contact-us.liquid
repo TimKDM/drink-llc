@@ -1,15 +1,15 @@
 {%- style -%}
-  .divine-contact-page {
+  .drink-contact-page {
     font-family: 'Jost', var(--font-body-family), sans-serif;
   }
 
   /* Hero */
-  .divine-contact-hero {
+  .drink-contact-hero {
     background: linear-gradient(135deg, #f5f2f6 0%, #ebe5ed 100%);
     padding: 64px 24px;
     text-align: center;
   }
-  .divine-contact-hero__label {
+  .drink-contact-hero__label {
     font-family: 'Josefin Sans', var(--font-heading-family), sans-serif;
     font-size: 11px;
     font-weight: 600;
@@ -19,7 +19,7 @@
     margin-bottom: 12px;
     display: block;
   }
-  .divine-contact-hero h1 {
+  .drink-contact-hero h1 {
     font-family: 'Josefin Sans', var(--font-heading-family), sans-serif;
     font-size: clamp(28px, 5vw, 42px);
     font-weight: 400;
@@ -28,10 +28,10 @@
     margin-top: 0;
     letter-spacing: -0.01em;
   }
-  .divine-contact-hero h1 strong {
+  .drink-contact-hero h1 strong {
     font-weight: 600;
   }
-  .divine-contact-hero p {
+  .drink-contact-hero p {
     font-size: 17px;
     color: var(--color-text-muted, #7a6f64);
     max-width: 600px;
@@ -40,18 +40,18 @@
   }
 
   /* Contact Grid */
-  .divine-contact-body {
+  .drink-contact-body {
     padding: 64px 24px;
     max-width: 1200px;
     margin: 0 auto;
   }
-  .divine-contact-grid {
+  .drink-contact-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 48px;
   }
   @media screen and (min-width: 768px) {
-    .divine-contact-grid {
+    .drink-contact-grid {
       grid-template-columns: 1fr 1fr;
       gap: 64px;
       align-items: start;
@@ -59,7 +59,7 @@
   }
 
   /* Contact Info */
-  .divine-contact-info h2 {
+  .drink-contact-info h2 {
     font-family: 'Josefin Sans', var(--font-heading-family), sans-serif;
     font-size: 28px;
     font-weight: 400;
@@ -67,23 +67,23 @@
     margin-top: 0;
     letter-spacing: -0.01em;
   }
-  .divine-contact-info > p {
+  .drink-contact-info > p {
     font-size: 16px;
     color: var(--color-text-muted, #7a6f64);
     margin-bottom: 36px;
     line-height: 1.7;
   }
-  .divine-contact-methods {
+  .drink-contact-methods {
     display: flex;
     flex-direction: column;
     gap: 28px;
   }
-  .divine-contact-method {
+  .drink-contact-method {
     display: flex;
     align-items: flex-start;
     gap: 16px;
   }
-  .divine-contact-method__icon {
+  .drink-contact-method__icon {
     width: 44px;
     height: 44px;
     min-width: 44px;
@@ -93,14 +93,14 @@
     align-items: center;
     justify-content: center;
   }
-  .divine-contact-method__icon svg {
+  .drink-contact-method__icon svg {
     width: 20px;
     height: 20px;
     stroke: var(--color-accent-dark, #9b76a7);
     stroke-width: 1.5;
     fill: none;
   }
-  .divine-contact-method h4 {
+  .drink-contact-method h4 {
     font-family: 'Josefin Sans', var(--font-heading-family), sans-serif;
     font-size: 13px;
     font-weight: 600;
@@ -109,22 +109,22 @@
     margin-bottom: 4px;
     margin-top: 0;
   }
-  .divine-contact-method p {
+  .drink-contact-method p {
     font-size: 14px;
     color: var(--color-text-muted, #7a6f64);
     margin: 0;
     line-height: 1.5;
   }
-  .divine-contact-method a {
+  .drink-contact-method a {
     color: var(--color-accent-dark, #9b76a7);
     text-decoration: none;
   }
-  .divine-contact-method a:hover {
+  .drink-contact-method a:hover {
     text-decoration: underline;
   }
 
   /* Contact Form Card */
-  .divine-contact-form-card {
+  .drink-contact-form-card {
     background: var(--color-background-hex, #ffffff);
     padding: 40px;
     border-radius: 12px;
@@ -132,11 +132,11 @@
     border: 1px solid var(--color-border-hex, #d2c4d7);
   }
   @media screen and (max-width: 767px) {
-    .divine-contact-form-card {
+    .drink-contact-form-card {
       padding: 24px;
     }
   }
-  .divine-contact-form-card h3 {
+  .drink-contact-form-card h3 {
     font-family: 'Josefin Sans', var(--font-heading-family), sans-serif;
     font-size: 20px;
     font-weight: 600;
@@ -145,14 +145,14 @@
     letter-spacing: 0.02em;
   }
   /* Form fields — stack with vertical gaps */
-  .divine-contact-form-card .field {
+  .drink-contact-form-card .field {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
     position: relative;
   }
-  .divine-contact-form-card .field__label,
-  .divine-contact-form-card .form__label {
+  .drink-contact-form-card .field__label,
+  .drink-contact-form-card .form__label {
     font-family: 'Josefin Sans', var(--font-heading-family), sans-serif;
     font-size: 11px;
     font-weight: 600;
@@ -164,8 +164,8 @@
     pointer-events: auto;
     color: rgba(var(--color-foreground));
   }
-  .divine-contact-form-card .field__input,
-  .divine-contact-form-card .text-area {
+  .drink-contact-form-card .field__input,
+  .drink-contact-form-card .text-area {
     width: 100%;
     padding: 12px 16px;
     font-size: 15px;
@@ -177,7 +177,7 @@
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
     box-sizing: border-box;
   }
-  .divine-contact-form-card .select__select {
+  .drink-contact-form-card .select__select {
     width: 100%;
     padding: 12px 16px;
     font-size: 15px;
@@ -189,31 +189,31 @@
     cursor: pointer;
     margin: 0;
   }
-  .divine-contact-form-card .field__input:focus,
-  .divine-contact-form-card .text-area:focus,
-  .divine-contact-form-card .select__select:focus {
+  .drink-contact-form-card .field__input:focus,
+  .drink-contact-form-card .text-area:focus,
+  .drink-contact-form-card .select__select:focus {
     border-color: var(--color-accent-dark, #9b76a7);
     outline: none;
     box-shadow: 0 0 0 3px rgba(155, 118, 167, 0.12);
   }
-  .divine-contact-form-card .field:before,
-  .divine-contact-form-card .field:after {
+  .drink-contact-form-card .field:before,
+  .drink-contact-form-card .field:after {
     content: none;
   }
-  .divine-contact-submit {
+  .drink-contact-submit {
     width: 100%;
     margin-top: 8px;
   }
 
   /* Quick Help Section */
-  .divine-contact-quick {
+  .drink-contact-quick {
     background: linear-gradient(135deg, #f0ebf2 0%, #e8e0ec 100%);
     padding: 64px 24px;
   }
-  .divine-contact-quick .divine-section-header {
+  .drink-contact-quick .drink-section-header {
     margin-bottom: 40px;
   }
-  .divine-quick-grid {
+  .drink-quick-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
@@ -221,11 +221,11 @@
     margin: 0 auto;
   }
   @media screen and (min-width: 768px) {
-    .divine-quick-grid {
+    .drink-quick-grid {
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  .divine-quick-card {
+  .drink-quick-card {
     background: var(--color-background-hex, #ffffff);
     border-radius: 10px;
     padding: 28px 24px;
@@ -236,11 +236,11 @@
     transition: box-shadow 0.25s ease, transform 0.25s ease;
     display: block;
   }
-  .divine-quick-card:hover {
+  .drink-quick-card:hover {
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     transform: translateY(-2px);
   }
-  .divine-quick-card__icon {
+  .drink-quick-card__icon {
     width: 48px;
     height: 48px;
     background: #f0ebf4;
@@ -250,21 +250,21 @@
     justify-content: center;
     margin: 0 auto 16px;
   }
-  .divine-quick-card__icon svg {
+  .drink-quick-card__icon svg {
     width: 22px;
     height: 22px;
     stroke: var(--color-accent-dark, #9b76a7);
     stroke-width: 1.5;
     fill: none;
   }
-  .divine-quick-card h3 {
+  .drink-quick-card h3 {
     font-family: 'Josefin Sans', var(--font-heading-family), sans-serif;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 8px;
     margin-top: 0;
   }
-  .divine-quick-card p {
+  .drink-quick-card p {
     font-size: 14px;
     color: var(--color-text-muted, #7a6f64);
     margin: 0;
@@ -272,13 +272,13 @@
   }
 
   /* CTA */
-  .divine-contact-cta {
+  .drink-contact-cta {
     background: #2c2420;
     color: #fff;
     padding: 64px 24px;
     text-align: center;
   }
-  .divine-contact-cta h2 {
+  .drink-contact-cta h2 {
     font-family: 'Josefin Sans', var(--font-heading-family), sans-serif;
     font-size: clamp(22px, 4vw, 30px);
     font-weight: 400;
@@ -286,12 +286,12 @@
     margin-top: 0;
     color: #fff;
   }
-  .divine-contact-cta p {
+  .drink-contact-cta p {
     color: rgba(255,255,255,0.7);
     margin-bottom: 28px;
     font-size: 16px;
   }
-  .divine-contact-cta .divine-btn-accent {
+  .drink-contact-cta .drink-btn-accent {
     background: var(--color-accent-hex, #c8a8d8);
     color: var(--color-foreground-hex, #1d1917);
     border: none;
@@ -310,33 +310,33 @@
     cursor: pointer;
     transition: all 0.25s ease;
   }
-  .divine-contact-cta .divine-btn-accent:hover {
+  .drink-contact-cta .drink-btn-accent:hover {
     background: #b899c5;
   }
 {%- endstyle -%}
 
-<div class="divine-contact-page">
+<div class="drink-contact-page">
 
   {%- comment -%} Hero {%- endcomment -%}
-  <div class="divine-contact-hero">
-    <span class="divine-contact-hero__label">{{ section.settings.hero_label }}</span>
+  <div class="drink-contact-hero">
+    <span class="drink-contact-hero__label">{{ section.settings.hero_label }}</span>
     <h1>{{ section.settings.hero_heading }}</h1>
     <p>{{ section.settings.hero_subtext }}</p>
   </div>
 
   {%- comment -%} Contact Grid {%- endcomment -%}
-  <div class="divine-contact-body">
-    <div class="divine-contact-grid">
+  <div class="drink-contact-body">
+    <div class="drink-contact-grid">
 
       {%- comment -%} Left: Contact Info {%- endcomment -%}
-      <div class="divine-contact-info">
+      <div class="drink-contact-info">
         <h2>{{ section.settings.info_heading }}</h2>
         <p>{{ section.settings.info_text }}</p>
 
-        <div class="divine-contact-methods">
+        <div class="drink-contact-methods">
           {%- if section.settings.email_address != blank -%}
-            <div class="divine-contact-method">
-              <div class="divine-contact-method__icon">
+            <div class="drink-contact-method">
+              <div class="drink-contact-method__icon">
                 <svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
               </div>
               <div>
@@ -348,8 +348,8 @@
           {%- endif -%}
 
           {%- if section.settings.phone_number != blank -%}
-            <div class="divine-contact-method">
-              <div class="divine-contact-method__icon">
+            <div class="drink-contact-method">
+              <div class="drink-contact-method__icon">
                 <svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
               </div>
               <div>
@@ -361,8 +361,8 @@
           {%- endif -%}
 
           {%- if section.settings.show_location and section.settings.location_address != blank -%}
-            <div class="divine-contact-method">
-              <div class="divine-contact-method__icon">
+            <div class="drink-contact-method">
+              <div class="drink-contact-method__icon">
                 <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
               </div>
               <div>
@@ -372,8 +372,8 @@
             </div>
           {%- endif -%}
 
-          <div class="divine-contact-method">
-            <div class="divine-contact-method__icon">
+          <div class="drink-contact-method">
+            <div class="drink-contact-method__icon">
               <svg viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
             </div>
             <div>
@@ -386,7 +386,7 @@
       </div>
 
       {%- comment -%} Right: Contact Form {%- endcomment -%}
-      <div class="divine-contact-form-card">
+      <div class="drink-contact-form-card">
         <h3>Send Us a Message</h3>
         {%- form 'contact', id: 'ContactForm' -%}
           {%- if form.posted_successfully? -%}
@@ -435,7 +435,7 @@
             <label class="form__label field__label" for="ContactForm-body">Message</label>
           </div>
 
-          <button type="submit" class="button button--full-width divine-contact-submit">
+          <button type="submit" class="button button--full-width drink-contact-submit">
             Send Message
           </button>
         {%- endform -%}
@@ -445,28 +445,28 @@
   </div>
 
   {%- comment -%} Quick Help Section {%- endcomment -%}
-  <div class="divine-contact-quick">
-    <div class="divine-section-header">
-      <span class="divine-section-label">Quick Help</span>
-      <h2 class="divine-section-title">Looking for Something Specific?</h2>
+  <div class="drink-contact-quick">
+    <div class="drink-section-header">
+      <span class="drink-section-label">Quick Help</span>
+      <h2 class="drink-section-title">Looking for Something Specific?</h2>
     </div>
-    <div class="divine-quick-grid">
-      <a href="/account/orders" class="divine-quick-card">
-        <div class="divine-quick-card__icon">
+    <div class="drink-quick-grid">
+      <a href="/account/orders" class="drink-quick-card">
+        <div class="drink-quick-card__icon">
           <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
         </div>
         <h3>Track Your Order</h3>
         <p>Check the status of your recent order with your order number.</p>
       </a>
-      <a href="/policies/shipping-policy" class="divine-quick-card">
-        <div class="divine-quick-card__icon">
+      <a href="/policies/shipping-policy" class="drink-quick-card">
+        <div class="drink-quick-card__icon">
           <svg viewBox="0 0 24 24"><path d="M16 15v-1a4 4 0 00-4-4H8m0 0l3 3m-3-3l3-3m9 14V5a2 2 0 00-2-2H6a2 2 0 00-2 2v16l4-2 4 2 4-2 4 2z"/></svg>
         </div>
         <h3>Shipping & Returns</h3>
         <p>Learn about our shipping options and hassle-free return policy.</p>
       </a>
-      <a href="/pages/faq" class="divine-quick-card">
-        <div class="divine-quick-card__icon">
+      <a href="/pages/faq" class="drink-quick-card">
+        <div class="drink-quick-card__icon">
           <svg viewBox="0 0 24 24"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
         </div>
         <h3>FAQ</h3>
@@ -476,10 +476,10 @@
   </div>
 
   {%- comment -%} Wholesale CTA {%- endcomment -%}
-  <div class="divine-contact-cta">
+  <div class="drink-contact-cta">
     <h2>{{ section.settings.cta_heading }}</h2>
     <p>{{ section.settings.cta_text }}</p>
-    <a href="{{ section.settings.cta_link }}" class="divine-btn-accent">{{ section.settings.cta_label }}</a>
+    <a href="{{ section.settings.cta_link }}" class="drink-btn-accent">{{ section.settings.cta_label }}</a>
   </div>
 
 </div>
@@ -488,7 +488,7 @@
 {
   "name": "Contact Us Page",
   "tag": "section",
-  "class": "divine-contact-us-section",
+  "class": "drink-contact-us-section",
   "settings": [
     {
       "type": "header",
@@ -532,7 +532,7 @@
       "type": "text",
       "id": "email_address",
       "label": "Email address",
-      "default": "hello@divineingredients.com"
+      "default": "hello@drinkingredients.com"
     },
     {
       "type": "text",

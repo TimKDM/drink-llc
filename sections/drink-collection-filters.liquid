@@ -1,22 +1,22 @@
 {%- style -%}
-  #shopify-section-{{ section.id }} .divine-filters-section {
+  #shopify-section-{{ section.id }} .drink-filters-section {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
   @media screen and (min-width: 768px) {
-    #shopify-section-{{ section.id }} .divine-filters-section {
+    #shopify-section-{{ section.id }} .drink-filters-section {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
 {%- endstyle -%}
 
-<section class="divine-filters-section page-width">
+<section class="drink-filters-section page-width">
   {%- if section.settings.title != blank -%}
-    <h3 class="divine-filter-group__title" style="margin-bottom: var(--spacing-sm);">{{ section.settings.title }}</h3>
+    <h3 class="drink-filter-group__title" style="margin-bottom: var(--spacing-sm);">{{ section.settings.title }}</h3>
   {%- endif -%}
 
-  {% render 'divine-collection-filters',
+  {% render 'drink-collection-filters',
     collection: collection,
     current_tags: current_tags
   %}
@@ -24,9 +24,9 @@
 
 {% schema %}
 {
-  "name": "Divine Collection Filters",
+  "name": "drink Collection Filters",
   "tag": "section",
-  "class": "divine-collection-filters-section",
+  "class": "drink-collection-filters-section",
   "settings": [
     {
       "type": "text",
@@ -61,7 +61,7 @@
   ],
   "presets": [
     {
-      "name": "Divine Collection Filters",
+      "name": "drink Collection Filters",
       "settings": {
         "title": "Filter by",
         "padding_top": 16,
