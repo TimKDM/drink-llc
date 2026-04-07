@@ -35,11 +35,13 @@
 
   {%- comment -%} Drink LLC — Color Schemes + Brand Tokens {%- endcomment -%}
   {% style %}
-    {% for scheme in settings.color_schemes -%}
+    {% for scheme_tuple in settings.color_schemes -%}
+      {% assign scheme_id = scheme_tuple[0] %}
+      {% assign scheme = scheme_tuple[1] %}
       {% if forloop.index == 1 -%}
         :root,
       {%- endif %}
-      .color-{{ scheme.id }} {
+      .color-{{ scheme_id }} {
         --color-background: {{ scheme.settings.background_color.red }},{{ scheme.settings.background_color.green }},{{ scheme.settings.background_color.blue }};
         {% if scheme.settings.background_gradient != empty %}
           --gradient-background: {{ scheme.settings.background_gradient }};
