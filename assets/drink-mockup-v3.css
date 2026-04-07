@@ -1,10 +1,15 @@
 /* ============================================
+<<<<<<<< HEAD:assets/drink-mockup-v3.css
    drink INGREDIENTS - MOCKUP V3 STYLES
+========
+   DRINK LLC - MOCKUP V3 STYLES
+>>>>>>>> a439cc3:assets/drink-theme.css
    Mobile-First Design System
    ============================================ */
 
 /* -----------------------------------------
    Design Tokens (extending theme variables)
+<<<<<<<< HEAD:assets/drink-mockup-v3.css
    Aesthetic: warm artisan GÇö Art of Tea / Chado inspired
 ----------------------------------------- */
 :root {
@@ -15,8 +20,20 @@
   --color-text-muted: #7a6f64;           /* warm brown-gray */
   --color-border-hex: #d2c4d7;           /* soft lavender border */
   --color-foreground-hex: #1d1917;       /* near-black with warm undertone */
+========
+   Aesthetic: fresh, bold, active â€” hydration & recovery
+----------------------------------------- */
+:root {
+  --color-background-alt: #F5F7F2;       /* soft green tint */
+  --color-accent-hex: #7CB518;           /* matcha green â€” primary accent */
+  --color-accent-dark: #5A9A10;          /* deeper green for contrast */
+  --color-accent-light: #F0F5E8;         /* very soft green tint */
+  --color-text-muted: #6B7B6E;           /* sage gray */
+  --color-border-hex: #D4DED0;           /* soft green border */
+  --color-foreground-hex: #1A1A1A;       /* near-black */
+>>>>>>>> a439cc3:assets/drink-theme.css
   --color-background-hex: #ffffff;
-  --color-background-warm: #e2d6e6;      /* soft lavender for cards */
+  --color-background-warm: #F5F7F2;      /* soft green for cards */
 
   --font-heading: 'Josefin Sans', var(--font-heading-family), sans-serif;
   --font-body: 'Jost', var(--font-body-family), sans-serif;
@@ -202,7 +219,7 @@ h1, h2, h3, h4, h5, h6,
   position: relative;
   overflow: hidden;
   min-height: 65vh;
-  background: linear-gradient(135deg, #f0eaf2 0%, #e2d6e6 50%, #d5c9d8 100%);
+  background: linear-gradient(135deg, #F0F5E8 0%, #E8F0DC 50%, #DDE8D2 100%);
 }
 
 /* Image fills the whole hero */
@@ -240,7 +257,11 @@ h1, h2, h3, h4, h5, h6,
   inset: 0;
 }
 
+<<<<<<<< HEAD:assets/drink-mockup-v3.css
 /* Gradient overlay GÇö darkens bottom for text readability */
+========
+/* Gradient overlay â€” darkens bottom for text readability */
+>>>>>>>> a439cc3:assets/drink-theme.css
 .drink-hero::after {
   content: '';
   position: absolute;
@@ -827,7 +848,11 @@ h1, h2, h3, h4, h5, h6,
    EMAIL SIGNUP / NEWSLETTER
    ============================================ */
 .drink-newsletter {
+<<<<<<<< HEAD:assets/drink-mockup-v3.css
   background: #2c2420;                   /* warm dark brown GÇö earthy, not stark black */
+========
+  background: #2A3A28;                   /* deep forest green â€” earthy, not stark black */
+>>>>>>>> a439cc3:assets/drink-theme.css
   color: var(--color-background-hex);
   padding: 56px 24px;
   text-align: center;
@@ -943,9 +968,9 @@ h1, h2, h3, h4, h5, h6,
 .announcement-bar[class*="color-option"].gradient {
   background: var(--color-accent-light) !important;
   background-color: var(--color-accent-light) !important;
-  border-bottom: 1px solid rgba(155, 118, 167, 0.25);
-  --color-foreground: 44, 36, 32;
-  --color-background: 240, 235, 244;
+  border-bottom: 1px solid rgba(124, 181, 24, 0.25);
+  --color-foreground: 26, 26, 26;
+  --color-background: 240, 245, 232;
   --gradient-background: transparent;
 }
 
@@ -1067,8 +1092,8 @@ header-drawer summary {
   background: var(--color-background-warm) !important;
   background-color: var(--color-background-warm) !important;
   /* Reset CSS vars the color scheme may have flipped to dark */
-  --color-foreground: 44, 36, 32;
-  --color-background: 226, 214, 230;
+  --color-foreground: 26, 26, 26;
+  --color-background: 245, 247, 242;
   --gradient-background: transparent;
 }
 
@@ -1150,8 +1175,13 @@ header-drawer summary {
 }
 
 /* ============================================
+<<<<<<<< HEAD:assets/drink-mockup-v3.css
    PRODUCT PAGE GÇö Buy Buttons
    drink-branded, full-width, uniform height
+========
+   PRODUCT PAGE â€” Buy Buttons
+   Drink-branded, full-width, uniform height
+>>>>>>>> a439cc3:assets/drink-theme.css
    ============================================ */
 .product-form__buttons {
   display: flex !important;
@@ -1168,7 +1198,11 @@ header-drawer summary {
   box-sizing: border-box;
 }
 
+<<<<<<<< HEAD:assets/drink-mockup-v3.css
 /* Add to Cart GÇö drink primary */
+========
+/* Add to Cart â€” Drink primary */
+>>>>>>>> a439cc3:assets/drink-theme.css
 .product-form__buttons .product-form__submit {
   align-self: stretch;
   height: 52px;
@@ -1224,7 +1258,11 @@ header-drawer summary {
   letter-spacing: 0.06em;
 }
 
+<<<<<<<< HEAD:assets/drink-mockup-v3.css
 /* "More payment options" link GÇö drink style */
+========
+/* "More payment options" link â€” Drink style */
+>>>>>>>> a439cc3:assets/drink-theme.css
 .shopify-payment-button__more-options {
   font-family: var(--font-body);
   color: var(--color-text-muted);
@@ -1305,7 +1343,11 @@ header-drawer summary {
 }
 
 /* ============================================
+<<<<<<<< HEAD:assets/drink-mockup-v3.css
    drink TAG BADGES (product cards)
+========
+   DRINK TAG BADGES (product cards)
+>>>>>>>> a439cc3:assets/drink-theme.css
    ============================================ */
 .drink-product-card__tags {
   display: flex;
@@ -1327,8 +1369,13 @@ header-drawer summary {
 }
 
 .drink-tag--benefit {
+<<<<<<<< HEAD:assets/drink-mockup-v3.css
   background-color: var(--color-accent-light, #f0ebf4);
   color: var(--color-accent-dark, #9b76a7);
+========
+  background-color: var(--color-accent-light, #F0F5E8);
+  color: var(--color-accent-dark, #5A9A10);
+>>>>>>>> a439cc3:assets/drink-theme.css
 }
 
 .drink-tag--flavor {
@@ -1348,7 +1395,11 @@ header-drawer summary {
 }
 
 /* ============================================
+<<<<<<<< HEAD:assets/drink-mockup-v3.css
    drink COLLECTION FILTERS
+========
+   DRINK COLLECTION FILTERS
+>>>>>>>> a439cc3:assets/drink-theme.css
    ============================================ */
 .drink-filters {
   padding: var(--spacing-sm) 0;
@@ -1365,7 +1416,7 @@ header-drawer summary {
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--color-text-muted, #7a6f64);
+  color: var(--color-text-muted, #6B7B6E);
   margin-bottom: 6px;
 }
 
@@ -1382,9 +1433,9 @@ header-drawer summary {
   font-weight: 500;
   padding: 5px 14px;
   border-radius: 999px;
-  border: 1px solid var(--color-border-hex, #d2c4d7);
+  border: 1px solid var(--color-border-hex, #D4DED0);
   background-color: var(--color-background-hex, #fff);
-  color: var(--color-foreground-hex, #1d1917);
+  color: var(--color-foreground-hex, #1A1A1A);
   text-decoration: none;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -1392,38 +1443,60 @@ header-drawer summary {
 }
 
 .drink-chip:hover {
+<<<<<<<< HEAD:assets/drink-mockup-v3.css
   border-color: var(--color-accent-dark, #9b76a7);
   color: var(--color-accent-dark, #9b76a7);
 }
 
 .drink-chip--active {
   background-color: var(--color-accent-dark, #9b76a7);
+========
+  border-color: var(--color-accent-dark, #5A9A10);
+  color: var(--color-accent-dark, #5A9A10);
+}
+
+.drink-chip--active {
+  background-color: var(--color-accent-dark, #5A9A10);
+>>>>>>>> a439cc3:assets/drink-theme.css
   color: #fff;
-  border-color: var(--color-accent-dark, #9b76a7);
+  border-color: var(--color-accent-dark, #5A9A10);
 }
 
 .drink-chip--active:hover {
+<<<<<<<< HEAD:assets/drink-mockup-v3.css
   background-color: var(--color-accent-hex, #c8a8d8);
+========
+  background-color: var(--color-accent-hex, #7CB518);
+>>>>>>>> a439cc3:assets/drink-theme.css
   color: #fff;
 }
 
 .drink-chip--clear {
   background-color: transparent;
-  border-color: var(--color-text-muted, #7a6f64);
-  color: var(--color-text-muted, #7a6f64);
+  border-color: var(--color-text-muted, #6B7B6E);
+  color: var(--color-text-muted, #6B7B6E);
   font-weight: 600;
 }
 
 .drink-chip--clear:hover {
+<<<<<<<< HEAD:assets/drink-mockup-v3.css
   background-color: var(--color-foreground-hex, #1d1917);
+========
+  background-color: var(--color-foreground-hex, #1A1A1A);
+>>>>>>>> a439cc3:assets/drink-theme.css
   color: #fff;
-  border-color: var(--color-foreground-hex, #1d1917);
+  border-color: var(--color-foreground-hex, #1A1A1A);
 }
 
 /* Flavor-specific chip accent colors */
 .drink-chip--benefit.drink-chip--active {
+<<<<<<<< HEAD:assets/drink-mockup-v3.css
   background-color: #9b76a7;
   border-color: #9b76a7;
+========
+  background-color: #5A9A10;
+  border-color: #5A9A10;
+>>>>>>>> a439cc3:assets/drink-theme.css
 }
 
 .drink-chip--flavor.drink-chip--active {
@@ -1466,8 +1539,13 @@ header-drawer summary {
 }
 
 /* ============================================
+<<<<<<<< HEAD:assets/drink-mockup-v3.css
    PRODUCT PAGE GÇö Recently Viewed Section
    drink-branded headings
+========
+   PRODUCT PAGE â€” Recently Viewed Section
+   Drink-branded headings
+>>>>>>>> a439cc3:assets/drink-theme.css
    (Related Products headings live in section-related-products.css)
    ============================================ */
 .recent-products .title-wrapper .title {

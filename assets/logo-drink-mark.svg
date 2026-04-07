@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="#1A1A1A">
+  <!--
+    DRINK LLC — Logo Mark
+    Stylized D with water drop
+    For favicon, social, compact usage
+  -->
+
+  <!-- D letterform -->
+  <path d="M4 2h16c15.5 0 26 10.5 26 26s-10.5 26-26 26H4V2zm9.5 8.5v35H20c10 0 17-7.5 17-17.5S30 10.5 20 10.5H13.5z"/>
+
+  <!-- Water drop accent — top right -->
+  <path d="M42 4 L49 14 C51.5 17.5 51.5 19.5 49 22 C46.5 24.5 37.5 24.5 35 22 C32.5 19.5 32.5 17.5 35 14 Z" fill="#7CB518"/>
+</svg>

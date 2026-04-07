@@ -54,10 +54,10 @@
 
       {%- when 'email_form' -%}
         <div {{ block.shopify_attributes }}>
-          {%- form 'customer', id: 'drinkNewsletter', class: 'drink-newsletter__form' -%}
+          {%- form 'customer', id: 'DrinkNewsletter', class: 'drink-newsletter__form' -%}
             <input type="hidden" name="contact[tags]" value="newsletter">
             <input
-              id="drinkNewsletterEmail--{{ section.id }}"
+              id="DrinkNewsletterEmail--{{ section.id }}"
               type="email"
               name="contact[email]"
               value="{{ form.email }}"
@@ -68,9 +68,9 @@
               {% if form.errors %}
                 autofocus
                 aria-invalid="true"
-                aria-describedby="drinkNewsletter-error"
+                aria-describedby="DrinkNewsletter-error"
               {% elsif form.posted_successfully? %}
-                aria-describedby="drinkNewsletter-success"
+                aria-describedby="DrinkNewsletter-success"
               {% endif %}
               placeholder="{{ section.settings.input_placeholder | default: 'Enter your email' }}"
               required
@@ -79,14 +79,14 @@
           {%- endform -%}
 
           {%- if form.errors -%}
-            <p class="drink-newsletter__message drink-newsletter__message--error" id="drinkNewsletter-error">
+            <p class="drink-newsletter__message drink-newsletter__message--error" id="DrinkNewsletter-error">
               {{ form.errors.translated_fields.email | capitalize }}
               {{ form.errors.messages.email }}
             </p>
           {%- endif -%}
 
           {%- if form.posted_successfully? -%}
-            <p class="drink-newsletter__message drink-newsletter__message--success" id="drinkNewsletter-success">
+            <p class="drink-newsletter__message drink-newsletter__message--success" id="DrinkNewsletter-success">
               {{ 'newsletter.success' | t }}
             </p>
           {%- endif -%}
@@ -101,7 +101,7 @@
 
 {% schema %}
 {
-  "name": "drink Newsletter",
+  "name": "Drink Newsletter",
   "tag": "section",
   "class": "drink-newsletter-section",
   "settings": [
@@ -139,7 +139,7 @@
       "type": "color",
       "id": "button_bg",
       "label": "Button background",
-      "default": "#d4c4d9"
+      "default": "#7CB518"
     },
     {
       "type": "color",
@@ -229,7 +229,7 @@
   ],
   "presets": [
     {
-      "name": "drink Newsletter",
+      "name": "Drink Newsletter",
       "blocks": [
         { "type": "heading" },
         { "type": "subtitle" },

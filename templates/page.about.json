@@ -15,7 +15,7 @@
           "type": "slide",
           "settings": {
             "image": "",
-            "heading": "Welcome to drink Ingredients",
+            "heading": "Welcome to Drink Ingredients",
             "caption": "We're a passionate team of sourcing experts, wellness advocates, and quality obsessives on a mission to bring the cleanest organic ingredients to your kitchen — whether you're running a café, building a brand, or crafting something extraordinary at home.",
             "button_label": "Shop Our Collections",
             "link": "shopify:\/\/collections",
@@ -84,13 +84,13 @@
             "heading_style": "default",
             "heading_tag": "h2",
             "highlight_option": "underline-hand",
-            "word_animation_color": "#d4c4d9"
+            "word_animation_color": "#7CB518"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>We built drink Ingredients for people who want to know what's in their food — and who's behind it. We work directly with organic farms across Japan, India, Sri Lanka, and beyond because we think the relationship between grower and maker matters just as much as the ingredient itself.</p>"
+            "text": "<p>We built Drink Ingredients for people who want to know what's in their food — and who's behind it. We work directly with organic farms across Japan, India, Sri Lanka, and beyond because we think the relationship between grower and maker matters just as much as the ingredient itself.</p>"
           }
         }
       },

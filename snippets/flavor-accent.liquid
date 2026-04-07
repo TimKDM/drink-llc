@@ -1,0 +1,28 @@
+{%- comment -%}
+  Drink LLC — Flavor Accent Color Snippet
+  Sets --color-accent CSS variable based on product handle.
+  Usage: {% render 'flavor-accent', flavor_handle: product.handle %}
+{%- endcomment -%}
+
+{%- assign accent = '' -%}
+
+{%- case flavor_handle -%}
+  {%- when 'lemonade-drink' -%}
+    {%- assign accent = 'var(--color-lemonade)' -%}
+  {%- when 'lychee-drink' -%}
+    {%- assign accent = 'var(--color-lychee)' -%}
+  {%- when 'peach-mango-drink' -%}
+    {%- assign accent = 'var(--color-peach-mango)' -%}
+  {%- when 'passion-fruit-drink' -%}
+    {%- assign accent = 'var(--color-passion-fruit)' -%}
+  {%- when 'matcha-drink' -%}
+    {%- assign accent = 'var(--color-matcha)' -%}
+{%- endcase -%}
+
+{%- if accent != '' -%}
+  <style>
+    :root {
+      --color-accent: {{ accent }};
+    }
+  </style>
+{%- endif -%}
