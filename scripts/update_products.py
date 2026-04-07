@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-drink Ingredients - Full Product Data Refresh
+Divine Ingredients - Full Product Data Refresh
 Reads Matrixify Products.csv export and produces an updated CSV with:
   - Polished titles
-  - Enhanced Body HTML with consistent drink brand voice
+  - Enhanced Body HTML with consistent Divine brand voice
   - Comprehensive tagging (flavor, benefit, dietary, origin, format)
   - Complete SEO title_tag / description_tag for every product
   - Fixed missing product Types
@@ -16,7 +16,7 @@ import sys
 import os
 
 # ── Brand constants ──────────────────────────────────────────────────────────
-BRAND = "drink Ingredients"
+BRAND = "Divine Ingredients"
 BRAND_TAGLINE = "Where Purity Meets Performance"
 CERTIFICATIONS = "USDA Organic · CCOF Certified"
 
@@ -110,7 +110,7 @@ TITLE_OVERRIDES = {
     "chamomile-care-herbal-tea": "Organic Chamomile Care Herbal Tea",
     "yellow-mellow-mint-herbal-tea": "Mellow Mint Herbal Tea",
     "cascara-hemp-chocolate-rose": "Cascara Hemp Chocolate Rose",  # fix "Casacara" typo
-    "glass-tea-pot": "drink Artisan Glass Tea Pot",  # fix "Artisinal" typo
+    "glass-tea-pot": "Divine Artisan Glass Tea Pot",  # fix "Artisinal" typo
 }
 
 # ── Missing type fixes ───────────────────────────────────────────────────────
@@ -178,7 +178,7 @@ def generate_tags(handle, title, product_type, body_html, existing_tags):
     for benefit in scan_keywords(search_text, BENEFIT_KEYWORDS):
         tags.add(f"{TAG_PREFIX_BENEFIT}_{benefit}")
 
-    # 4. Dietary tags — most drink products share these
+    # 4. Dietary tags — most Divine products share these
     text_lower = search_text.lower()
     if "organic" in text_lower or title.startswith("Organic"):
         tags.add(f"{TAG_PREFIX_DIETARY}_Organic")
@@ -276,7 +276,7 @@ def generate_seo_description(title, product_type, body_html):
 
 def enhance_body_html(handle, title, product_type, body_html):
     """
-    Enhance existing Body HTML with drink brand voice.
+    Enhance existing Body HTML with Divine brand voice.
     Strategy: preserve existing content, but ensure consistent structure.
     - Add brand intro paragraph if missing
     - Ensure usage instructions ("How to Use") are present where applicable
@@ -292,7 +292,7 @@ def enhance_body_html(handle, title, product_type, body_html):
     has_ingredients_section = any(kw in text_lower for kw in ["<h5>ingredients", "<h4>ingredients", "<h3>ingredients", "<strong>ingredients"])
     has_taste_notes = any(kw in text_lower for kw in ["taste notes", "tasting notes", "flavor profile", "flavor notes"])
     has_benefits = any(kw in text_lower for kw in ["benefit", "health benefit", "nutritional", "properties"])
-    has_quality_note = any(kw in text_lower for kw in ["drink ingredients", "usda", "ccof", "lab tested", "quality"])
+    has_quality_note = any(kw in text_lower for kw in ["divine ingredients", "usda", "ccof", "lab tested", "quality"])
 
     is_tea = product_type in ("Green Tea", "Black Tea", "Herbal Tea", "Wellness Tea",
                                 "Iced Tea", "Oolong Tea", "Hemp Tea")
@@ -305,7 +305,7 @@ def enhance_body_html(handle, title, product_type, body_html):
     # Add quality assurance footer if not already present
     if not has_quality_note:
         quality_footer = """
-<p><strong>The drink Difference</strong><br>
+<p><strong>The Divine Difference</strong><br>
 Every batch is independently lab-tested for purity, potency, and safety. USDA Organic &amp; CCOF Certified. No synthetic additives, artificial colors, preservatives, fillers, or GMOs — ever.</p>"""
         enhanced += quality_footer
 
@@ -429,5 +429,5 @@ def process_csv(input_path, output_path):
 
 if __name__ == '__main__':
     input_csv = '/tmp/matrixify_export/Products.csv'
-    output_csv = '/home/user/drink-ingredients-theme-file/Products_Updated.csv'
+    output_csv = '/home/user/Divine-ingredients-theme-file/Products_Updated.csv'
     process_csv(input_csv, output_csv)
