@@ -1,18 +1,18 @@
-{%- comment -%} Drink LLC — Footer Section {%- endcomment -%}
+{%- comment -%} Drink LLC — Custom Footer v2 {%- endcomment -%}
 
-<footer class="site-footer" role="contentinfo">
-  <div class="container">
+<footer class="site-footer" role="contentinfo" data-aos="fade-up">
+  <div class="page-width">
     <div class="site-footer__grid">
 
       <div class="site-footer__brand">
         <span class="site-footer__wordmark">{{ shop.name }}</span>
-        <p class="site-footer__tagline">{{ section.settings.tagline | default: 'Just Drink.' }}</p>
+        <p class="site-footer__tagline">{{ section.settings.tagline | default: 'Performance Hydration. Clean Recovery.' }}</p>
       </div>
 
       {%- if section.settings.menu != blank -%}
         <nav class="site-footer__nav" aria-label="Footer navigation">
-          <span class="label">Navigate</span>
-          <ul role="list">
+          <span class="drink-mono-label">Navigate</span>
+          <ul class="list-unstyled" role="list">
             {%- for link in section.settings.menu.links -%}
               <li><a href="{{ link.url }}">{{ link.title }}</a></li>
             {%- endfor -%}
@@ -21,100 +21,100 @@
       {%- endif -%}
 
       <div class="site-footer__social">
-        <span class="label">Follow</span>
-        <ul role="list">
-          {%- if settings.social_instagram != blank -%}
-            <li><a href="{{ settings.social_instagram }}" target="_blank" rel="noopener">Instagram</a></li>
+        <span class="drink-mono-label">Follow</span>
+        <ul class="list-unstyled" role="list">
+          {%- if settings.social_instagram_link != blank -%}
+            <li><a href="{{ settings.social_instagram_link }}" target="_blank" rel="noopener">Instagram</a></li>
           {%- endif -%}
-          {%- if settings.social_tiktok != blank -%}
-            <li><a href="{{ settings.social_tiktok }}" target="_blank" rel="noopener">TikTok</a></li>
+          {%- if settings.social_tiktok_link != blank -%}
+            <li><a href="{{ settings.social_tiktok_link }}" target="_blank" rel="noopener">TikTok</a></li>
           {%- endif -%}
-          {%- if settings.social_twitter != blank -%}
-            <li><a href="{{ settings.social_twitter }}" target="_blank" rel="noopener">X</a></li>
+          {%- if settings.social_twitter_link != blank -%}
+            <li><a href="{{ settings.social_twitter_link }}" target="_blank" rel="noopener">X / Twitter</a></li>
           {%- endif -%}
         </ul>
       </div>
 
     </div>
 
-    <div class="site-footer__bottom">
-      <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. All rights reserved.</p>
+    <div class="site-footer__bottom py-4">
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. Crafted for Performance.</p>
     </div>
   </div>
 </footer>
 
 <style>
   .site-footer {
-    border-top: 0.5px solid var(--color-carbon);
-    padding: var(--space-2xl) 0 var(--space-xl);
-    background-color: var(--color-void);
+    border-top: 1px solid var(--drink-border);
+    padding: 80px 0 40px;
+    background-color: white;
   }
 
   .site-footer__grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    gap: var(--space-xl);
-    margin-bottom: var(--space-2xl);
+    gap: 48px;
+    margin-bottom: 64px;
   }
 
   @media (max-width: 768px) {
     .site-footer__grid {
       grid-template-columns: 1fr;
-      gap: var(--space-xl);
+      gap: 32px;
     }
   }
 
   .site-footer__wordmark {
-    font-family: var(--font-display);
-    font-size: 1.5rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--color-offwhite);
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--drink-black);
     display: block;
-    margin-bottom: var(--space-sm);
+    margin-bottom: 12px;
+    line-height: 1;
   }
 
   .site-footer__tagline {
-    color: var(--color-ash);
-    font-size: 0.9rem;
-  }
-
-  .site-footer__nav .label,
-  .site-footer__social .label {
-    display: block;
-    margin-bottom: var(--space-md);
+    color: var(--drink-rust);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 
   .site-footer__nav ul,
   .site-footer__social ul {
-    list-style: none;
     display: flex;
     flex-direction: column;
-    gap: var(--space-sm);
+    gap: 8px;
+    margin-top: 16px;
   }
 
   .site-footer__nav a,
   .site-footer__social a {
-    color: var(--color-ash);
-    font-size: 0.9rem;
-    font-weight: 300;
-    transition: color var(--transition-fast);
+    color: var(--drink-black);
+    font-size: 1rem;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
   }
 
   .site-footer__nav a:hover,
   .site-footer__social a:hover {
-    color: var(--color-offwhite);
     opacity: 1;
+    text-decoration: underline;
   }
 
   .site-footer__bottom {
-    border-top: 0.5px solid var(--color-carbon);
-    padding-top: var(--space-lg);
+    border-top: 1px solid var(--drink-border);
+    text-align: center;
   }
 
   .site-footer__bottom p {
-    font-size: 0.8rem;
-    color: var(--color-ash);
+    font-size: 0.75rem;
+    color: var(--drink-sepia);
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
   }
 </style>
 
@@ -126,7 +126,7 @@
       "type": "text",
       "id": "tagline",
       "label": "Tagline",
-      "default": "Just Drink."
+      "default": "Performance Hydration. Clean Recovery."
     },
     {
       "type": "link_list",

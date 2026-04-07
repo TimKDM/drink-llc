@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "drink_hero": {
@@ -15,7 +6,7 @@
         "badge": {
           "type": "badge",
           "settings": {
-            "text": "Premium Hydration · Clean Recovery · Real Flavor · No Junk",
+            "text": "Where Purity Meets Performance · Lab-Tested · Zero Sugar",
             "badge_bg": "",
             "badge_color": ""
           }
@@ -31,12 +22,12 @@
         "buttons": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Pick Your Flavor",
+            "button_label_1": "Shop Best Sellers",
             "button_link_1": "shopify://collections/all",
             "btn1_bg": "",
             "btn1_color": "",
-            "button_label_2": "How It Works",
-            "button_link_2": "",
+            "button_label_2": "Go Wholesale",
+            "button_link_2": "shopify://pages/contact",
             "btn2_color": ""
           }
         }
@@ -49,16 +40,28 @@
       ],
       "settings": {
         "image": "shopify://shop_images/placeholder-hero.png",
-        "image_height": 70,
+        "image_height": 75,
         "video_url": "",
         "autoplay": true,
         "loop": true,
         "muted": true,
         "heading": "<p>Just <em>Drink</em>.</p>",
-        "subtitle": "Performance hydration and recovery that actually tastes good. Clean ingredients, real flavor, zero compromise.",
+        "subtitle": "High-performance hydration and recovery crafted with clean, transparent ingredients. No junk, just results.",
         "overlay_opacity": 100,
         "margin_top": 0,
         "margin_bottom": 0
+      }
+    },
+    "divider_1": {
+      "type": "separator",
+      "settings": {
+        "separator_style": "line",
+        "spacer_color": "#D4C4A8",
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "margin_spacing": "positive",
+        "margin_top": 0,
+        "ignore_spacing": true
       }
     },
     "drink_trust_bar": {
@@ -112,6 +115,18 @@
         "padding_bottom": 20,
         "margin_top": 0,
         "margin_bottom": 0
+      }
+    },
+    "divider_2": {
+      "type": "separator",
+      "settings": {
+        "separator_style": "line",
+        "spacer_color": "#D4C4A8",
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "margin_spacing": "positive",
+        "margin_top": 0,
+        "ignore_spacing": true
       }
     },
     "drink_brand_story": {
@@ -168,10 +183,22 @@
         "background_color": "",
         "text_color": "",
         "accent_color": "",
-        "padding_top": 64,
-        "padding_bottom": 64,
+        "padding_top": 80,
+        "padding_bottom": 80,
         "margin_top": 0,
         "margin_bottom": 0
+      }
+    },
+    "divider_3": {
+      "type": "separator",
+      "settings": {
+        "separator_style": "line",
+        "spacer_color": "#D4C4A8",
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "margin_spacing": "positive",
+        "margin_top": 0,
+        "ignore_spacing": true
       }
     },
     "certification_logos": {
@@ -293,8 +320,8 @@
         "background_color": "",
         "text_color": "",
         "accent_color": "",
-        "padding_top": 64,
-        "padding_bottom": 64,
+        "padding_top": 80,
+        "padding_bottom": 80,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -316,8 +343,8 @@
         "text_color": "",
         "accent_color": "",
         "card_background_color": "",
-        "padding_top": 64,
-        "padding_bottom": 64,
+        "padding_top": 80,
+        "padding_bottom": 80,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -393,8 +420,8 @@
         "card_background_color": "",
         "card_border_color": "",
         "star_color": "",
-        "padding_top": 64,
-        "padding_bottom": 64,
+        "padding_top": 80,
+        "padding_bottom": 80,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -437,174 +464,19 @@
         "margin_top": 0,
         "margin_bottom": 0
       }
-    },
-    "image_banner_with_featured_collection": {
-      "type": "image-banner-with-featured-collection",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Premium Organic Products</p>",
-            "heading_size": "extra-large",
-            "heading_style": "default",
-            "heading_tag": "h2",
-            "highlight_option": "underline-hand",
-            "word_animation_color": "#7CB518"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "text_style": "body"
-          }
-        },
-        "buttons": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Now",
-            "button_link_1": "shopify://collections",
-            "open_new_tab_1": false,
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "open_new_tab_2": false,
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "buttons"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "",
-        "hide_image": false,
-        "image_overlay_opacity": 60,
-        "image_height": 80,
-        "full_width_banner": true,
-        "adapt_to_image": false,
-        "desktop_content_position": "middle-left",
-        "desktop_content_alignment": "left",
-        "enable_collection": true,
-        "collection": "powder",
-        "collection_style": "collection-one",
-        "products_to_show": 12,
-        "columns_desktop": 4,
-        "full_width": false,
-        "enable_desktop_slider": true,
-        "desktop_margin_top": 230,
-        "mobile_margin_top": 110,
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "enable_quick_add": true,
-        "enable_quick_buy": true,
-        "quick_add_position": "overlay",
-        "color_scheme": "option-3",
-        "color_scheme_1": "option-4",
-        "padding_top": 0,
-        "padding_bottom": 8,
-        "ignore_spacing": false,
-        "image_overlay_opacity_mobile": 50,
-        "image_height_mobile": 56,
-        "margin_spacing": "negative",
-        "margin_top": 0,
-        "mobile_content_alignment": "center",
-        "columns_mobile": "1",
-        "disable_quick_add": true,
-        "swipe_on_mobile": true,
-        "disable_arrow_mobile": true
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p><em>Nourish</em> Your Body, Delight Your Taste Buds</p>",
-            "heading_size": "large",
-            "heading_style": "default",
-            "heading_tag": "h2",
-            "highlight_option": "underline-hand",
-            "word_animation_color": "#7CB518"
-          }
-        }
-      },
-      "block_order": [
-        "heading"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "full_width": true,
-        "color_scheme": "option-4",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "ignore_spacing": false,
-        "margin_spacing": "negative",
-        "margin_top": 36,
-        "mobile_content_alignment": "center"
-      }
-    },
-    "slick_slider": {
-      "type": "slick-slider",
-      "blocks": {
-        "slide_1": {
-          "type": "slide",
-          "settings": {
-            "image": "",
-            "heading": "Stay Hydrated.",
-            "caption": "Premium hydration and recovery powders. Clean ingredients, real flavor.",
-            "button_label": "Shop Now",
-            "link": "shopify://collections/all",
-            "show_link_button": true,
-            "open_new_tab_1": false
-          }
-        }
-      },
-      "block_order": [
-        "slide_1"
-      ],
-      "disabled": true,
-      "settings": {
-        "auto_rotate": true,
-        "slider_interval": 4,
-        "full_width": true,
-        "image_opacity": 0.1,
-        "opacity_mobile": false,
-        "hide_slider_desktop": false,
-        "hide_slider_mobile": false,
-        "heading_size": 9,
-        "heading_tag": "h2",
-        "heading_style": "none",
-        "caption_size": 1.6,
-        "caption_style": "none",
-        "link_size": 1.8,
-        "color_scheme": "option-2",
-        "margin_spacing": "negative",
-        "margin_top": 0,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "ignore_spacing": false
-      }
     }
   },
   "order": [
     "drink_hero",
+    "divider_1",
     "drink_trust_bar",
+    "divider_2",
     "drink_brand_story",
+    "divider_3",
     "certification_logos",
     "drink_categories",
     "drink_products",
     "drink_testimonials",
-    "drink_newsletter",
-    "image_banner_with_featured_collection",
-    "rich_text",
-    "slick_slider"
+    "drink_newsletter"
   ]
 }
