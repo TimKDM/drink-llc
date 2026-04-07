@@ -72,10 +72,8 @@
           {{ 'collection-' | append: forloop.index | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
         <div class="drink-category-card__content">
-          <h3>{{ block.settings.heading | default: collection.title }}</h3>
-          {%- if block.settings.subtitle != blank -%}
-            <p>{{ block.settings.subtitle }}</p>
-          {%- endif -%}
+          <span class="drink-mono-label" style="background: var(--drink-matcha); color: #fff; border: none; margin-bottom: 8px;">{{ block.settings.subtitle | default: 'Explore' }}</span>
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; text-shadow: none; color: var(--drink-black);">{{ block.settings.heading | default: collection.title }}</h3>
         </div>
       </a>
     {%- endfor -%}

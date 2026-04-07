@@ -23,13 +23,14 @@
     <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32 }}">
   {%- endif -%}
 
-  {%- comment -%} Brand Typography — Bebas Neue + DM Sans {%- endcomment -%}
+  {%- comment -%} Brand Typography — DM Serif Display + DM Sans + JetBrains Mono {%- endcomment -%}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&family=JetBrains+Mono:wght@400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
 
   {{ 'base.css' | asset_url | stylesheet_tag }}
   {{ 'drink-theme.css' | asset_url | stylesheet_tag }}
+  {{ 'drink-custom-v1.css' | asset_url | stylesheet_tag }}
   {{ content_for_header }}
 
   {%- comment -%} Drink LLC — Color Schemes + Brand Tokens {%- endcomment -%}
@@ -105,7 +106,7 @@
   {% endstyle %}
 </head>
 
-<body class="template-{{ template.name }}">
+<body class="template-{{ template.name }} noise-overlay">
   <a class="skip-link" href="#main-content">Skip to content</a>
 
   {% section 'header' %}

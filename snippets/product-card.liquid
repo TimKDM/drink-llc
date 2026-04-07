@@ -41,7 +41,7 @@
   </div>
 
   <div class="product-card__info">
-    <span class="label">{{ product.type | default: 'Hydration' }}</span>
+    <span class="drink-mono-label">{{ product.type | default: 'Hydration' }}</span>
     <h3 class="product-card__title">{{ product.title }}</h3>
     <p class="product-card__price">{{ product.price | money }}</p>
   </div>
@@ -51,7 +51,7 @@
   .product-card {
     display: block;
     text-decoration: none;
-    transition: opacity var(--transition-fast);
+    transition: opacity 0.3s ease;
   }
 
   .product-card:hover {
@@ -63,19 +63,21 @@
     aspect-ratio: 1;
     overflow: hidden;
     border-radius: var(--radius-md);
-    background-color: var(--color-carbon);
-    margin-bottom: var(--space-md);
+    background-color: var(--drink-bg-cream);
+    margin-bottom: 16px;
+    border: 1px solid var(--drink-sepia);
   }
 
   .product-card__media img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform var(--transition-base);
+    object-fit: contain;
+    padding: 24px;
+    transition: transform 0.4s ease;
   }
 
   .product-card:hover .product-card__media img {
-    transform: scale(1.02);
+    transform: scale(1.05);
   }
 
   .product-card__placeholder {
@@ -93,26 +95,34 @@
 
   .product-card__badge {
     position: absolute;
-    top: var(--space-md);
-    left: var(--space-md);
+    top: 12px;
+    left: 12px;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    background: var(--drink-rust);
+    color: #fff;
+    padding: 2px 8px;
   }
 
   .product-card__info {
     display: flex;
     flex-direction: column;
-    gap: var(--space-xs);
+    gap: 4px;
   }
 
   .product-card__title {
-    font-size: 1.25rem;
-    letter-spacing: 0.06em;
-    color: var(--color-offwhite);
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--drink-black);
+    margin: 0;
   }
 
   .product-card__price {
     font-family: var(--font-body);
-    font-weight: 300;
-    font-size: 0.9rem;
-    color: var(--color-ash);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--drink-rust);
+    margin: 0;
   }
 </style>

@@ -168,8 +168,8 @@
         "background_color": "",
         "text_color": "",
         "accent_color": "",
-        "padding_top": 32,
-        "padding_bottom": 32,
+        "padding_top": 64,
+        "padding_bottom": 64,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -293,8 +293,8 @@
         "background_color": "",
         "text_color": "",
         "accent_color": "",
-        "padding_top": 32,
-        "padding_bottom": 32,
+        "padding_top": 64,
+        "padding_bottom": 64,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -316,8 +316,8 @@
         "text_color": "",
         "accent_color": "",
         "card_background_color": "",
-        "padding_top": 32,
-        "padding_bottom": 32,
+        "padding_top": 64,
+        "padding_bottom": 64,
         "margin_top": 0,
         "margin_bottom": 0
       }
@@ -393,8 +393,8 @@
         "card_background_color": "",
         "card_border_color": "",
         "star_color": "",
-        "padding_top": 32,
-        "padding_bottom": 32,
+        "padding_top": 64,
+        "padding_bottom": 64,
         "margin_top": 0,
         "margin_bottom": 0
       }

@@ -45,20 +45,20 @@
     </div>
   {%- endif -%}
 
-  <div class="drink-hero__content">
+  <div class="drink-hero__content items-center">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'badge' -%}
           {%- if block.settings.text != blank -%}
-            <span class="drink-hero__badge" style="{% if block.settings.badge_bg != blank and block.settings.badge_bg != 'rgba(0,0,0,0)' %}background:{{ block.settings.badge_bg }};{% endif %}{% if block.settings.badge_color != blank and block.settings.badge_color != 'rgba(0,0,0,0)' %}color:{{ block.settings.badge_color }};{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</span>
+            <span class="drink-mono-label" style="background: #fff; border-color: var(--drink-sepia); color: var(--drink-rust);" {{ block.shopify_attributes }}>{{ block.settings.text }}</span>
           {%- endif -%}
 
         {%- when 'heading' -%}
-          <h1 {{ block.shopify_attributes }}>{{ section.settings.heading }}</h1>
+          <h1 style="font-family: var(--font-heading); font-size: 4.5rem; text-transform: none; letter-spacing: -0.02em;" {{ block.shopify_attributes }}>{{ section.settings.heading }}</h1>
 
         {%- when 'subtitle' -%}
           {%- if section.settings.subtitle != blank -%}
-            <p class="drink-hero__subtitle" {{ block.shopify_attributes }}>{{ section.settings.subtitle }}</p>
+            <p class="drink-hero__subtitle" style="font-family: var(--font-body); font-size: 1.1rem; max-width: 600px;" {{ block.shopify_attributes }}>{{ section.settings.subtitle }}</p>
           {%- endif -%}
 
         {%- when 'buttons' -%}
