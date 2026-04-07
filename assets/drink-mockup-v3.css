@@ -1,26 +1,10 @@
 /* ============================================
-<<<<<<<< HEAD:assets/drink-mockup-v3.css
-   drink INGREDIENTS - MOCKUP V3 STYLES
-========
    DRINK LLC - MOCKUP V3 STYLES
->>>>>>>> a439cc3:assets/drink-theme.css
    Mobile-First Design System
    ============================================ */
 
 /* -----------------------------------------
    Design Tokens (extending theme variables)
-<<<<<<<< HEAD:assets/drink-mockup-v3.css
-   Aesthetic: warm artisan G�� Art of Tea / Chado inspired
------------------------------------------ */
-:root {
-  --color-background-alt: #e2d6e6;       /* soft lavender */
-  --color-accent-hex: #c8a8d8;           /* drink lavender G�� punched up */
-  --color-accent-dark: #9b76a7;          /* richer, visible purple */
-  --color-accent-light: #f0ebf4;         /* very soft lavender tint */
-  --color-text-muted: #7a6f64;           /* warm brown-gray */
-  --color-border-hex: #d2c4d7;           /* soft lavender border */
-  --color-foreground-hex: #1d1917;       /* near-black with warm undertone */
-========
    Aesthetic: fresh, bold, active — hydration & recovery
 ----------------------------------------- */
 :root {
@@ -31,7 +15,6 @@
   --color-text-muted: #6B7B6E;           /* sage gray */
   --color-border-hex: #D4DED0;           /* soft green border */
   --color-foreground-hex: #1A1A1A;       /* near-black */
->>>>>>>> a439cc3:assets/drink-theme.css
   --color-background-hex: #ffffff;
   --color-background-warm: #F5F7F2;      /* soft green for cards */
 
@@ -74,7 +57,7 @@
 }
 
 /* -----------------------------------------
-   Global Font Overrides G�� Josefin Sans + Jost
+   Global Font Overrides — Josefin Sans + Jost
    Applied site-wide over theme defaults
 ----------------------------------------- */
 body,
@@ -103,7 +86,7 @@ h1, h2, h3, h4, h5, h6,
   letter-spacing: 0.02em;
 }
 
-/* Announcement bar G�� clean, modern */
+/* Announcement bar — clean, modern */
 .announcement-bar {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 12px;
@@ -114,7 +97,7 @@ h1, h2, h3, h4, h5, h6,
 
 /* -----------------------------------------
    Section Base Styles
-   Generous whitespace G�� artisan editorial feel
+   Generous whitespace — artisan editorial feel
 ----------------------------------------- */
 .drink-section {
   padding: 48px 24px;
@@ -211,7 +194,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* ============================================
-   HERO SECTION G�� Full-bleed overlay layout
+   HERO SECTION — Full-bleed overlay layout
    Art of Tea / Chado style: image fills frame,
    content sits on top with gradient for legibility
    ============================================ */
@@ -257,11 +240,7 @@ h1, h2, h3, h4, h5, h6,
   inset: 0;
 }
 
-<<<<<<<< HEAD:assets/drink-mockup-v3.css
-/* Gradient overlay G�� darkens bottom for text readability */
-========
 /* Gradient overlay — darkens bottom for text readability */
->>>>>>>> a439cc3:assets/drink-theme.css
 .drink-hero::after {
   content: '';
   position: absolute;
@@ -480,21 +459,20 @@ h1, h2, h3, h4, h5, h6,
 .drink-category-card img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  padding: 20px;
+  object-fit: cover;
   transition: transform 0.4s ease;
   display: block;
 }
 
 .drink-category-card:hover img {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 .drink-category-card::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.03);
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 40%, transparent 70%);
   pointer-events: none;
 }
 
@@ -704,8 +682,7 @@ h1, h2, h3, h4, h5, h6,
 .drink-brand-story__image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  background: var(--color-background-warm);
+  object-fit: cover;
   display: block;
 }
 
@@ -850,11 +827,7 @@ h1, h2, h3, h4, h5, h6,
    EMAIL SIGNUP / NEWSLETTER
    ============================================ */
 .drink-newsletter {
-<<<<<<<< HEAD:assets/drink-mockup-v3.css
-  background: #2c2420;                   /* warm dark brown G�� earthy, not stark black */
-========
   background: #2A3A28;                   /* deep forest green — earthy, not stark black */
->>>>>>>> a439cc3:assets/drink-theme.css
   color: var(--color-background-hex);
   padding: 56px 24px;
   text-align: center;
@@ -958,7 +931,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* ============================================
-   ANNOUNCEMENT BAR G�� Static Centered Trust Strip
+   ANNOUNCEMENT BAR — Static Centered Trust Strip
    Replaces default dark ticker with warm static bar
    ============================================ */
 
@@ -985,7 +958,7 @@ h1, h2, h3, h4, h5, h6,
   width: 100%;
 }
 
-/* Kill the text-slider animation G�� pin it static */
+/* Kill the text-slider animation — pin it static */
 .announcement-bar text-slider {
   display: block;
   position: relative;
@@ -1032,12 +1005,12 @@ h1, h2, h3, h4, h5, h6,
   opacity: 0.8;
 }
 
-/* Hide the social icons column G�� keeps bar clean */
+/* Hide the social icons column — keeps bar clean */
 .announcement-bar .announcement-bar__socials {
   display: none !important;
 }
 
-/* Hide country selector in bar G�� cleaner */
+/* Hide country selector in bar — cleaner */
 .announcement-bar localization-form {
   display: none !important;
 }
@@ -1129,7 +1102,7 @@ header-drawer summary {
   line-height: 1.6;
 }
 
-/* Footer newsletter field G�� warm styled */
+/* Footer newsletter field — warm styled */
 .footer .newsletter-form__field-wrapper input {
   background: rgba(255, 255, 255, 0.7);
   border-color: var(--color-border-hex);
@@ -1177,13 +1150,8 @@ header-drawer summary {
 }
 
 /* ============================================
-<<<<<<<< HEAD:assets/drink-mockup-v3.css
-   PRODUCT PAGE G�� Buy Buttons
-   drink-branded, full-width, uniform height
-========
    PRODUCT PAGE — Buy Buttons
    Drink-branded, full-width, uniform height
->>>>>>>> a439cc3:assets/drink-theme.css
    ============================================ */
 .product-form__buttons {
   display: flex !important;
@@ -1200,11 +1168,7 @@ header-drawer summary {
   box-sizing: border-box;
 }
 
-<<<<<<<< HEAD:assets/drink-mockup-v3.css
-/* Add to Cart G�� drink primary */
-========
 /* Add to Cart — Drink primary */
->>>>>>>> a439cc3:assets/drink-theme.css
 .product-form__buttons .product-form__submit {
   align-self: stretch;
   height: 52px;
@@ -1226,7 +1190,7 @@ header-drawer summary {
   opacity: 0.85;
 }
 
-/* Shop Pay / dynamic checkout G�� match height */
+/* Shop Pay / dynamic checkout — match height */
 .product-form__buttons .shopify-payment-button {
   height: 52px;
   min-height: 52px;
@@ -1260,11 +1224,7 @@ header-drawer summary {
   letter-spacing: 0.06em;
 }
 
-<<<<<<<< HEAD:assets/drink-mockup-v3.css
-/* "More payment options" link G�� drink style */
-========
 /* "More payment options" link — Drink style */
->>>>>>>> a439cc3:assets/drink-theme.css
 .shopify-payment-button__more-options {
   font-family: var(--font-body);
   color: var(--color-text-muted);
@@ -1307,7 +1267,7 @@ header-drawer summary {
   aspect-ratio: 1;
 }
 
-/* Cart page G�� line item images */
+/* Cart page — line item images */
 .cart-item__image {
   border-radius: 50%;
   overflow: hidden;
@@ -1329,7 +1289,7 @@ header-drawer summary {
   aspect-ratio: 1;
 }
 
-/* Recently viewed products G�� circular images
+/* Recently viewed products — circular images
    The JS template now uses .card-media (single dash) which inherits
    the global circular rules from component-card.css.  These overrides
    ensure the inner .media / .global-media-settings layers also clip
@@ -1345,11 +1305,7 @@ header-drawer summary {
 }
 
 /* ============================================
-<<<<<<<< HEAD:assets/drink-mockup-v3.css
-   drink TAG BADGES (product cards)
-========
    DRINK TAG BADGES (product cards)
->>>>>>>> a439cc3:assets/drink-theme.css
    ============================================ */
 .drink-product-card__tags {
   display: flex;
@@ -1371,13 +1327,8 @@ header-drawer summary {
 }
 
 .drink-tag--benefit {
-<<<<<<<< HEAD:assets/drink-mockup-v3.css
-  background-color: var(--color-accent-light, #f0ebf4);
-  color: var(--color-accent-dark, #9b76a7);
-========
   background-color: var(--color-accent-light, #F0F5E8);
   color: var(--color-accent-dark, #5A9A10);
->>>>>>>> a439cc3:assets/drink-theme.css
 }
 
 .drink-tag--flavor {
@@ -1397,11 +1348,7 @@ header-drawer summary {
 }
 
 /* ============================================
-<<<<<<<< HEAD:assets/drink-mockup-v3.css
-   drink COLLECTION FILTERS
-========
    DRINK COLLECTION FILTERS
->>>>>>>> a439cc3:assets/drink-theme.css
    ============================================ */
 .drink-filters {
   padding: var(--spacing-sm) 0;
@@ -1445,31 +1392,18 @@ header-drawer summary {
 }
 
 .drink-chip:hover {
-<<<<<<<< HEAD:assets/drink-mockup-v3.css
-  border-color: var(--color-accent-dark, #9b76a7);
-  color: var(--color-accent-dark, #9b76a7);
-}
-
-.drink-chip--active {
-  background-color: var(--color-accent-dark, #9b76a7);
-========
   border-color: var(--color-accent-dark, #5A9A10);
   color: var(--color-accent-dark, #5A9A10);
 }
 
 .drink-chip--active {
   background-color: var(--color-accent-dark, #5A9A10);
->>>>>>>> a439cc3:assets/drink-theme.css
   color: #fff;
   border-color: var(--color-accent-dark, #5A9A10);
 }
 
 .drink-chip--active:hover {
-<<<<<<<< HEAD:assets/drink-mockup-v3.css
-  background-color: var(--color-accent-hex, #c8a8d8);
-========
   background-color: var(--color-accent-hex, #7CB518);
->>>>>>>> a439cc3:assets/drink-theme.css
   color: #fff;
 }
 
@@ -1481,24 +1415,15 @@ header-drawer summary {
 }
 
 .drink-chip--clear:hover {
-<<<<<<<< HEAD:assets/drink-mockup-v3.css
-  background-color: var(--color-foreground-hex, #1d1917);
-========
   background-color: var(--color-foreground-hex, #1A1A1A);
->>>>>>>> a439cc3:assets/drink-theme.css
   color: #fff;
   border-color: var(--color-foreground-hex, #1A1A1A);
 }
 
 /* Flavor-specific chip accent colors */
 .drink-chip--benefit.drink-chip--active {
-<<<<<<<< HEAD:assets/drink-mockup-v3.css
-  background-color: #9b76a7;
-  border-color: #9b76a7;
-========
   background-color: #5A9A10;
   border-color: #5A9A10;
->>>>>>>> a439cc3:assets/drink-theme.css
 }
 
 .drink-chip--flavor.drink-chip--active {
@@ -1541,13 +1466,8 @@ header-drawer summary {
 }
 
 /* ============================================
-<<<<<<<< HEAD:assets/drink-mockup-v3.css
-   PRODUCT PAGE G�� Recently Viewed Section
-   drink-branded headings
-========
    PRODUCT PAGE — Recently Viewed Section
    Drink-branded headings
->>>>>>>> a439cc3:assets/drink-theme.css
    (Related Products headings live in section-related-products.css)
    ============================================ */
 .recent-products .title-wrapper .title {
@@ -1566,7 +1486,7 @@ header-drawer summary {
   font-size: 11px;
 }
 
-/* Card headings & prices G�� now in component-card.css
-   Testimonials G�� now in section-testimonials.css
-   Tabs G�� now in tabs.css
-   Related Products G�� now in section-related-products.css */
+/* Card headings & prices — now in component-card.css
+   Testimonials — now in section-testimonials.css
+   Tabs — now in tabs.css
+   Related Products — now in section-related-products.css */
