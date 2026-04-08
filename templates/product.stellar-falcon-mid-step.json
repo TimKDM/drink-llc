@@ -667,8 +667,8 @@
         "overlay_style": "full image-overlay--bg-shadow"
       }
     },
-    "euphree_reviews": {
-      "type": "euphree-reviews",
+    "drink_reviews": {
+      "type": "drink-reviews",
       "blocks": {
         "review_1": {
           "type": "review",
@@ -928,7 +928,7 @@
     "image_with_text_LwHNeL",
     "collapsible_tabs_7mcHkA",
     "background_video_txnWbN",
-    "euphree_reviews",
+    "drink_reviews",
     "1755203948c46cc650",
     "gallery_zD6JGN",
     "image_with_text_x6MTqy",

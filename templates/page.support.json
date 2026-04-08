@@ -1,7 +1,7 @@
 {
   "sections": {
     "support_portal": {
-      "type": "euphree-support-portal",
+      "type": "drink-support-portal",
       "settings": {
         "eyebrow": "Customer & Retailer Support",
         "heading": "How Can We Help?",

@@ -518,7 +518,7 @@
       }
     },
     "reviews_carousel": {
-      "type": "euphree-reviews",
+      "type": "drink-reviews",
       "blocks": {
         "review_2": {
           "type": "review",
