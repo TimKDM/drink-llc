@@ -1,0 +1,408 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} .drink-hiw {
+    {% if section.settings.background_color != blank and section.settings.background_color != 'rgba(0,0,0,0)' %}
+      background-color: {{ section.settings.background_color }};
+    {% endif %}
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    margin-top: {{ section.settings.margin_top }}px;
+    margin-bottom: {{ section.settings.margin_bottom }}px;
+  }
+  @media screen and (min-width: 768px) {
+    #shopify-section-{{ section.id }} .drink-hiw {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="drink-hiw{% if section.settings.use_alt_bg %} drink-section-alt{% endif %}">
+  <div class="drink-hiw__container">
+
+    {%- comment -%} Section Header {%- endcomment -%}
+    <div class="drink-hiw__header">
+      {%- if section.settings.caption != blank -%}
+        <span class="drink-hiw__caption">{{ section.settings.caption }}</span>
+      {%- endif -%}
+      {%- if section.settings.title != blank -%}
+        <h2 class="drink-hiw__title">{{ section.settings.title }}</h2>
+      {%- endif -%}
+      {%- if section.settings.subtitle != blank -%}
+        <p class="drink-hiw__subtitle">{{ section.settings.subtitle }}</p>
+      {%- endif -%}
+    </div>
+
+    {%- comment -%} Steps Grid {%- endcomment -%}
+    <div class="drink-hiw__steps">
+      {%- for block in section.blocks -%}
+        <div class="drink-hiw__step" {{ block.shopify_attributes }}>
+          <div class="drink-hiw__step-number">{{ forloop.index }}</div>
+          {%- if block.settings.image != blank -%}
+            <div class="drink-hiw__step-image">
+              {{ block.settings.image | image_url: width: 400 | image_tag: loading: 'lazy', widths: '200, 300, 400', sizes: '(min-width: 768px) 33vw, 80vw' }}
+            </div>
+          {%- elsif block.settings.icon != 'none' -%}
+            <div class="drink-hiw__step-icon">
+              {%- case block.settings.icon -%}
+                {%- when 'tear' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                {%- when 'mix' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>
+                {%- when 'lightning' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                {%- when 'bottle' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2h8v4H8zM6 6h12l1 4v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V10z"/><line x1="6" y1="14" x2="18" y2="14"/></svg>
+                {%- when 'check' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                {%- when 'heart' -%}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              {%- endcase -%}
+            </div>
+          {%- endif -%}
+          <h3 class="drink-hiw__step-title">{{ block.settings.title }}</h3>
+          <p class="drink-hiw__step-text">{{ block.settings.description }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {%- if section.settings.button_label != blank -%}
+      <div class="drink-hiw__cta">
+        <a href="{{ section.settings.button_link }}" class="drink-btn drink-btn-primary">
+          {{ section.settings.button_label }}
+        </a>
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+<style>
+  .drink-hiw {
+    padding: 60px 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .drink-hiw {
+      padding: 80px 48px;
+    }
+  }
+
+  .drink-hiw__container {
+    max-width: var(--page-width, 1280px);
+    margin: 0 auto;
+  }
+
+  .drink-hiw__header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .drink-hiw__caption {
+    display: block;
+    font-family: var(--font-mono, 'JetBrains Mono', monospace);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-accent-dark, #5A9A10);
+    margin-bottom: 10px;
+  }
+
+  .drink-hiw__title {
+    font-family: var(--font-heading, 'DM Serif Display', serif);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--color-foreground-hex, #1A1A1A);
+    margin: 0 0 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .drink-hiw__title {
+      font-size: 2.5rem;
+    }
+  }
+
+  .drink-hiw__subtitle {
+    font-family: var(--font-body, 'DM Sans', sans-serif);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--color-text-muted, #6B7B6E);
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  /* Steps Grid */
+  .drink-hiw__steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    counter-reset: step;
+  }
+
+  @media screen and (min-width: 768px) {
+    .drink-hiw__steps {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+  }
+
+  .drink-hiw__step {
+    text-align: center;
+    position: relative;
+  }
+
+  /* Step Number */
+  .drink-hiw__step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.5px solid var(--drink-sepia, #D4C4A8);
+    font-family: var(--font-mono, 'JetBrains Mono', monospace);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-accent-dark, #5A9A10);
+    margin-bottom: 20px;
+  }
+
+  /* Step Image */
+  .drink-hiw__step-image {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+    background: var(--drink-bg-cream, #FAF8F5);
+    border: 1px solid var(--drink-border, rgba(212, 196, 168, 0.4));
+  }
+
+  .drink-hiw__step-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Step Icon */
+  .drink-hiw__step-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--drink-bg-cream, #FAF8F5);
+    border: 1px solid var(--drink-border, rgba(212, 196, 168, 0.4));
+  }
+
+  .drink-hiw__step-icon svg {
+    width: 28px;
+    height: 28px;
+    stroke: var(--color-accent-dark, #5A9A10);
+  }
+
+  /* Step Text */
+  .drink-hiw__step-title {
+    font-family: var(--font-heading, 'DM Serif Display', serif);
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-foreground-hex, #1A1A1A);
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+
+  .drink-hiw__step-text {
+    font-family: var(--font-body, 'DM Sans', sans-serif);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--color-text-muted, #6B7B6E);
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  /* CTA */
+  .drink-hiw__cta {
+    text-align: center;
+    margin-top: 48px;
+  }
+
+  /* Connector line between steps (desktop) */
+  @media screen and (min-width: 768px) {
+    .drink-hiw__step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: calc(50% + 28px);
+      width: calc(100% - 56px);
+      height: 1px;
+      background: var(--drink-border, rgba(212, 196, 168, 0.4));
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "How It Works",
+  "tag": "section",
+  "class": "drink-hiw-section",
+  "max_blocks": 4,
+  "settings": [
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "Caption",
+      "default": "The Science"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "How It Works"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Clean hydration in three simple steps. No sugar, no shortcuts — just results."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "checkbox",
+      "id": "use_alt_bg",
+      "label": "Use alternate background",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 80,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 80,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "Margin top",
+      "min": -48,
+      "max": 100,
+      "step": 4,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "Margin bottom",
+      "min": -48,
+      "max": 100,
+      "step": 4,
+      "default": 0,
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            { "value": "none", "label": "None (use image)" },
+            { "value": "tear", "label": "Water Drop" },
+            { "value": "mix", "label": "Mix / Blend" },
+            { "value": "lightning", "label": "Energy / Boost" },
+            { "value": "bottle", "label": "Bottle" },
+            { "value": "check", "label": "Check / Complete" },
+            { "value": "heart", "label": "Heart / Wellness" }
+          ],
+          "default": "tear"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Step image (overrides icon)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Step Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "A short description of this step in the process."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How It Works",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "icon": "tear",
+            "title": "Tear & Pour",
+            "description": "Tear open a single-serve packet and pour the powder into 16oz of water."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "icon": "mix",
+            "title": "Mix & Shake",
+            "description": "Give it a quick stir or shake. The clean formula dissolves instantly — no clumps, no grit."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "icon": "lightning",
+            "title": "Hydrate & Perform",
+            "description": "Electrolytes and minerals get to work fast. Better hydration, better recovery, zero sugar crash."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

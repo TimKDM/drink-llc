@@ -426,6 +426,64 @@
         "margin_bottom": 0
       }
     },
+    "drink_how_it_works": {
+      "type": "drink-how-it-works",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "icon": "tear",
+            "title": "Tear & Pour",
+            "description": "Tear open a single-serve packet and pour the clean formula into 16oz of water."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "icon": "mix",
+            "title": "Mix & Shake",
+            "description": "Give it a quick stir or shake. Dissolves instantly — no clumps, no grit, no aftertaste."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "icon": "lightning",
+            "title": "Hydrate & Perform",
+            "description": "Electrolytes and minerals get to work fast. Better hydration, better recovery, zero sugar crash."
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3"
+      ],
+      "settings": {
+        "caption": "The Science",
+        "title": "How It Works",
+        "subtitle": "Clean hydration in three simple steps. No sugar, no shortcuts — just results.",
+        "button_label": "Shop Now",
+        "button_link": "shopify://collections/all",
+        "use_alt_bg": false,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "divider_4": {
+      "type": "separator",
+      "settings": {
+        "separator_style": "line",
+        "spacer_color": "#D4C4A8",
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "margin_spacing": "positive",
+        "margin_top": 0,
+        "ignore_spacing": true
+      }
+    },
     "drink_newsletter": {
       "type": "drink-newsletter",
       "blocks": {
@@ -476,6 +534,8 @@
     "certification_logos",
     "drink_categories",
     "drink_products",
+    "drink_how_it_works",
+    "divider_4",
     "drink_testimonials",
     "drink_newsletter"
   ]
