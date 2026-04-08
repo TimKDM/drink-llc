@@ -117,7 +117,7 @@
   text-align: center;
   min-width: 200px;
 }
-.drink-compare-bike-photo {
+.drink-compare-product-photo {
   width: 100%;
   max-width: 200px;
   height: auto;
@@ -221,7 +221,7 @@
 /* Column visibility */
 .drink-compare-table .drink-col-hidden { display: none; }
 
-/* Falcon column header accent */
+/* Featured column header accent */
 .drink-compare-col-head.drink-featured-head {
   background: linear-gradient(180deg, #ffffff 0%, #fafaf8 100%);
 }
@@ -262,7 +262,7 @@
   .drink-compare-col-head h4 { font-size: 16px; }
   .drink-col-price { font-size: 13px; }
   .drink-col-rating { font-size: 11px; }
-  .drink-compare-bike-photo { max-width: 140px; }
+  .drink-compare-product-photo { max-width: 140px; }
   .drink-compare-table .drink-cat-row .drink-row-label { font-size: 14px; }
   .drink-btn-compare { padding: 12px 12px; font-size: 12px; }
 }
@@ -271,7 +271,7 @@
   .drink-compare-table td { min-width: 120px; }
   .drink-compare-col-head { min-width: 120px; padding: 16px 8px 12px; }
   .drink-compare-col-head h4 { font-size: 14px; }
-  .drink-compare-bike-photo { max-width: 100px; }
+  .drink-compare-product-photo { max-width: 100px; }
   .drink-compare-table td, .drink-compare-table th { padding: 10px 8px; font-size: 12px; }
   .drink-compare-table .drink-row-label { font-size: 11px; }
   .drink-compare-toggle { max-width: 100%; }
@@ -321,13 +321,13 @@
             <th class="drink-col-col-{{ forloop.index }}">
               <div class="drink-compare-col-head{% if forloop.index > 2 %} drink-featured-head{% endif %}">
                 {% if block.settings.image != blank %}
-                  <img class="drink-compare-bike-photo" src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ model_name }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" loading="lazy">
+                  <img class="drink-compare-product-photo" src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ model_name }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" loading="lazy">
                 {% elsif p != blank and p.featured_image != blank %}
-                  <img class="drink-compare-bike-photo" src="{{ p.featured_image | image_url: width: 800 }}" alt="{{ model_name }}" width="{{ p.featured_image.width }}" height="{{ p.featured_image.height }}" loading="lazy">
+                  <img class="drink-compare-product-photo" src="{{ p.featured_image | image_url: width: 800 }}" alt="{{ model_name }}" width="{{ p.featured_image.width }}" height="{{ p.featured_image.height }}" loading="lazy">
                 {% elsif c != blank and c.products.first != blank and c.products.first.featured_image != blank %}
-                  <img class="drink-compare-bike-photo" src="{{ c.products.first.featured_image | image_url: width: 800 }}" alt="{{ model_name }}" width="{{ c.products.first.featured_image.width }}" height="{{ c.products.first.featured_image.height }}" loading="lazy">
+                  <img class="drink-compare-product-photo" src="{{ c.products.first.featured_image | image_url: width: 800 }}" alt="{{ model_name }}" width="{{ c.products.first.featured_image.width }}" height="{{ c.products.first.featured_image.height }}" loading="lazy">
                 {% elsif block.settings.image_url != blank %}
-                  <img class="drink-compare-bike-photo" src="{{ block.settings.image_url }}" alt="{{ model_name }}" loading="lazy">
+                  <img class="drink-compare-product-photo" src="{{ block.settings.image_url }}" alt="{{ model_name }}" loading="lazy">
                 {% endif %}
                 <h4>{{ model_name }}</h4>
                 <div class="drink-col-price">
@@ -540,7 +540,7 @@ function drinkToggleCol(colName, toggleEl) {
           "type": "collection",
           "id": "collection",
           "label": "Linked collection",
-          "info": "Use instead of product for collection pages (e.g. Stellar Falcon series)."
+          "info": "Use instead of product for collection pages (e.g. Variety Pack)."
         },
         {
           "type": "header",
