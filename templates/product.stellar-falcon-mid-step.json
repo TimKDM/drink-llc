@@ -63,17 +63,17 @@
             "box_color": "#ffffff",
             "icon_1": "truck",
             "icon_1_color": "rgba(0,0,0,0)",
-            "custom_icon_1": "shopify://shop_images/Artboard_1_aab0e27a-ebf4-436a-9f8e-2a4ce3df3896.svg",
+            "custom_icon_1": "",
             "icon_1_heading": "2 Year Warranty",
             "icon_1_text": "",
             "icon_2": "map_pin",
             "icon_2_color": "rgba(0,0,0,0)",
-            "custom_icon_2": "shopify://shop_images/USA1_411be68c-93db-4977-8ba6-6f5340a9a4f1.svg",
+            "custom_icon_2": "",
             "icon_2_heading": "14 Day FREE Trial",
             "icon_2_text": "",
             "icon_3": "gift",
             "icon_3_color": "rgba(0,0,0,0)",
-            "custom_icon_3": "shopify://shop_images/SGSCertification.svg",
+            "custom_icon_3": "",
             "icon_3_heading": "SGS Certified",
             "icon_3_text": "",
             "show_in_quickbuy": false
@@ -246,7 +246,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/Stellar_Falcon_Motor_product_photo.png",
+        "image": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "left",
@@ -301,7 +301,7 @@
         "feature_JVzUKF": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/stellarfalconmotor.png",
+            "image": "",
             "bg_color": "#ffffff",
             "bg_gradient": "",
             "text_color": "#1f1f1f",
@@ -322,7 +322,7 @@
         "feature_DWbMFp": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/stellarfalcontires_df51a1fb-8cf8-4ad6-8793-9dfc9f162288.png",
+            "image": "",
             "bg_color": "#ffffff",
             "bg_gradient": "",
             "text_color": "#1f1f1f",
@@ -383,7 +383,7 @@
           "type": "text_block",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/CityRobinX_AirSuspension.png",
+            "image": "",
             "title": "Comfort, Not Just Suspension",
             "text": "<p>110 mm air-suspension fork + premium SR Suntour NCX seatpost soften rough roads and trails so you stay fresher, go farther, and ride more often.</p>",
             "button_label": "",
@@ -394,7 +394,7 @@
           "type": "text_block",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/StellarFalconMidStepView.png",
+            "image": "",
             "title": "Mid-Step = Accessible Adventure",
             "text": "<p>750 W Bafang motor (1200 W peak, 90 Nm torque) delivers fast, smooth acceleration.</p>",
             "button_label": "",
@@ -441,8 +441,8 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/StellarFalconAirSuspension.png",
-        "image_2": "shopify://shop_images/StellarFalconSeatpost.png",
+        "image": "",
+        "image_2": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "left",
@@ -457,7 +457,7 @@
         "logo_w7hnj4": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Shimicon.svg",
+            "image": "",
             "image_width": 160,
             "link": "",
             "title": "Drivetrain: Shimano Altus 8-speed."
@@ -466,7 +466,7 @@
         "logo_YQcQVT": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/TEKICON.svg",
+            "image": "",
             "image_width": 160,
             "link": "",
             "title": "Brakes: Tektro hydraulic disc brakes"
@@ -475,7 +475,7 @@
         "logo_pYrE6M": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/BAFICON.svg",
+            "image": "",
             "image_width": 160,
             "link": "",
             "title": "Motor: Bafang 750W Up to 28 mph"
@@ -484,7 +484,7 @@
         "logo_xVNBUz": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/schwalbelogo.svg",
+            "image": "",
             "image_width": 160,
             "link": "",
             "title": "Tires: Johnny Watts 27.5” × 2.8”"
@@ -528,7 +528,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/StellarFalcon_Textro.png",
+        "image": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "left",
@@ -561,7 +561,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/stellarfalcontires_df51a1fb-8cf8-4ad6-8793-9dfc9f162288.png",
+        "image": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "right",
@@ -657,7 +657,7 @@
       "type": "background-video",
       "name": "Background video",
       "settings": {
-        "video_shopify": "shopify://files/videos/Father.mp4",
+        "video_shopify": "",
         "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_description": "",
         "text_alignment": "center center",
@@ -738,7 +738,7 @@
         "media_qrcGfj": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Black_Cherry_Drink LLC_Stellar_Falcon_Mid-Step_Electric_Bike.png",
+            "image": "",
             "enlarge_media": false,
             "subheading": "",
             "title": "",
@@ -750,7 +750,7 @@
         "media_rtmDrW": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/stellar-falcon-black-cherry-galaxy-blue-couple-park-ride.png",
+            "image": "",
             "enlarge_media": false,
             "subheading": "",
             "title": "",
@@ -762,7 +762,7 @@
         "media_DyXna7": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/midstepblog1.png",
+            "image": "",
             "enlarge_media": false,
             "subheading": "",
             "title": "",
@@ -774,7 +774,7 @@
         "media_3aHFTg": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Man_on_Crimson_Red_MidStep_Beverage.png",
+            "image": "",
             "enlarge_media": false,
             "subheading": "",
             "title": "",
@@ -842,7 +842,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/Beach_Days_Drink LLC_Style.png",
+        "image": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "left",

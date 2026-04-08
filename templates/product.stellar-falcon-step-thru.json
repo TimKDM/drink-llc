@@ -75,17 +75,17 @@
             "box_color": "#ffffff",
             "icon_1": "truck",
             "icon_1_color": "rgba(0,0,0,0)",
-            "custom_icon_1": "shopify://shop_images/Artboard_1_aab0e27a-ebf4-436a-9f8e-2a4ce3df3896.svg",
+            "custom_icon_1": "",
             "icon_1_heading": "2-Year Warranty",
             "icon_1_text": "",
             "icon_2": "map_pin",
             "icon_2_color": "rgba(0,0,0,0)",
-            "custom_icon_2": "shopify://shop_images/USA1_411be68c-93db-4977-8ba6-6f5340a9a4f1.svg",
+            "custom_icon_2": "",
             "icon_2_heading": "Free USA Shipping",
             "icon_2_text": "",
             "icon_3": "gift",
             "icon_3_color": "rgba(0,0,0,0)",
-            "custom_icon_3": "shopify://shop_images/SGSCertification.svg",
+            "custom_icon_3": "",
             "icon_3_heading": "SGS Certified",
             "icon_3_text": "",
             "show_in_quickbuy": false
@@ -209,7 +209,7 @@
         "image_CydLcg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/terrain.svg",
+            "image": "",
             "image_width": 60,
             "url": ""
           }
@@ -236,7 +236,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/stellarfalconmotor.png",
+        "image": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "left",
@@ -340,8 +340,8 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/StellarFalconAirSuspension.png",
-        "image_2": "shopify://shop_images/SeatpostSuspensionStellar.png",
+        "image": "",
+        "image_2": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "left",
@@ -356,7 +356,7 @@
         "logo_8A7t6R": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Schwalbe_Logo_b19a9369-d2fc-4664-a7d4-34876ca4288a.svg",
+            "image": "",
             "image_width": 100,
             "link": "",
             "title": "Tires: Johnny Watts 27.5” × 2.8”"
@@ -365,7 +365,7 @@
         "logo_yhxDrf": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Bafang_logo.svg",
+            "image": "",
             "image_width": 100,
             "link": "",
             "title": "Motor: Bafang 750W Up to 28 mph"
@@ -374,7 +374,7 @@
         "logo_NqC6CC": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/TEKICON.svg",
+            "image": "",
             "image_width": 100,
             "link": "",
             "title": "Brakes: Tektro hydraulic disc brakes"
@@ -383,7 +383,7 @@
         "logo_kFnb6P": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Shimicon.svg",
+            "image": "",
             "image_width": 100,
             "link": "",
             "title": "Drivetrain: Shimano Altus 8-speed."
@@ -427,7 +427,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/StellarFalconCrimsonRed_c0a38c5b-181e-4a36-8f6b-0915605ff668.png",
+        "image": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "right",
@@ -460,7 +460,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/stellarfalcontires_df51a1fb-8cf8-4ad6-8793-9dfc9f162288.png",
+        "image": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "left",
@@ -494,7 +494,7 @@
       "disabled": true,
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/StellarFalconCrimsonRed_c0a38c5b-181e-4a36-8f6b-0915605ff668.png",
+        "image": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "left",
@@ -528,7 +528,7 @@
       "disabled": true,
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/StellarFalcon_Textro.png",
+        "image": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "right",
@@ -581,7 +581,7 @@
             "heading": "",
             "text": "<p><strong>SR Suntour:</strong> NCX suspension seatpost</p>",
             "icon": "",
-            "custom_icon": "shopify://shop_images/sricon.svg",
+            "custom_icon": "",
             "icon_width": 100
           }
         },
@@ -648,7 +648,7 @@
       "disabled": true,
       "name": "Hotspots",
       "settings": {
-        "image": "shopify://shop_images/Stellar-Falcon-Step-Thru-Black-Cherry-Curved.png",
+        "image": "",
         "hotspot_color": "#070707",
         "button_content": "plus",
         "outer_circle": "pulse",
@@ -675,7 +675,7 @@
           "type": "text_block",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/StellarFalconCrimsonRed_c0a38c5b-181e-4a36-8f6b-0915605ff668.png",
+            "image": "",
             "title": "Comfort That Supports You",
             "text": "<p>The Velo wide comfort saddle and SR Suntour NCX suspension seatpost work together to cushion bumps, letting you sit upright, relaxed, and fully enjoy the ride</p>",
             "button_label": "",
@@ -687,7 +687,7 @@
           "disabled": true,
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/stellarfalconstepthruredsuspension.png",
+            "image": "",
             "title": "Comfort, Not Just Suspension",
             "text": "<p>Full 110 mm air-fork + premium suspension seatpost soften rough roads and trails so you stay fresher, go farther, and ride more often.</p>",
             "button_label": "",
@@ -939,7 +939,7 @@
       "type": "background-video",
       "name": "Background video",
       "settings": {
-        "video_shopify": "shopify://files/videos/stellerfalconsummer.mp4",
+        "video_shopify": "",
         "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_description": "",
         "text_alignment": "center center",
@@ -1020,7 +1020,7 @@
         "media_qrcGfj": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Stellar_Falcon_Step-Thru_Customer_on_beach_Commute.png",
+            "image": "",
             "enlarge_media": false,
             "subheading": "",
             "title": "",
@@ -1032,7 +1032,7 @@
         "media_rtmDrW": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Stellar_Falcon_Step-Thru_Customer_on_Park_Path.png",
+            "image": "",
             "enlarge_media": false,
             "subheading": "",
             "title": "",
@@ -1044,7 +1044,7 @@
         "media_DyXna7": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Women_on_Galaxy_Blue_Riding_Stellar_Falcon_Beverages_at_Beach.png",
+            "image": "",
             "enlarge_media": false,
             "subheading": "",
             "title": "",
@@ -1056,7 +1056,7 @@
         "media_3aHFTg": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Stellar_Falcon_Step-Thru_Customer_Riding_in_City_parks.png",
+            "image": "",
             "enlarge_media": false,
             "subheading": "",
             "title": "",
@@ -1124,7 +1124,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/drinkretailers.png",
+        "image": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "left",

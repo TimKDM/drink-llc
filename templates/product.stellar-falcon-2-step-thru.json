@@ -96,17 +96,17 @@
             "box_color": "#ffffff",
             "icon_1": "truck",
             "icon_1_color": "rgba(0,0,0,0)",
-            "custom_icon_1": "shopify://shop_images/Artboard_1_aab0e27a-ebf4-436a-9f8e-2a4ce3df3896.svg",
+            "custom_icon_1": "",
             "icon_1_heading": "Free Shipping",
             "icon_1_text": "",
             "icon_2": "map_pin",
             "icon_2_color": "rgba(0,0,0,0)",
-            "custom_icon_2": "shopify://shop_images/USA1_411be68c-93db-4977-8ba6-6f5340a9a4f1.svg",
+            "custom_icon_2": "",
             "icon_2_heading": "2-Year Warranty",
             "icon_2_text": "",
             "icon_3": "gift",
             "icon_3_color": "rgba(0,0,0,0)",
-            "custom_icon_3": "shopify://shop_images/SGSCertification.svg",
+            "custom_icon_3": "",
             "icon_3_heading": "SGS Certified",
             "icon_3_text": "",
             "show_in_quickbuy": false
@@ -184,7 +184,7 @@
       "settings": {
         "video_external": "https://www.youtube.com/watch?v=Ug_bDULzWWQ&t",
         "video_description": "Stellar Falcon 2 Step-Thru — Bike Overview by Daniel",
-        "placeholder_image": "shopify://shop_images/DSC04874.jpg",
+        "placeholder_image": "",
         "text_alignment": "center center",
         "full_width": true,
         "overlay_style": "shadow"
@@ -361,7 +361,7 @@
           "type": "text_block",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/sf-2026-step-thru-front-suspension-fork.jpg",
+            "image": "",
             "title": "Air Front Fork",
             "text": "<p>SR Suntour Air Front Fork Suspension, 90 mm with boost front hub spacing </p>",
             "button_label": "",
@@ -372,7 +372,7 @@
           "type": "text_block",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/sf-2026-step-thru-saddle-seatpost.jpg",
+            "image": "",
             "title": "Seat Post Suspension",
             "text": "<p>NCX Suspension seat post has 50 mm of vertical and lateral travel providing natural suspension dampening on bumps.</p>",
             "button_label": "",
@@ -383,7 +383,7 @@
           "type": "text_block",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/Screenshot_2026-03-23_at_3.28.35_PM.png",
+            "image": "",
             "title": "Shimano Drivetrain",
             "text": "<p>Shimano Altus derailleur, 8 speed trigger shifter paired with a custom 10 x 32T freewheel and KMC chain</p>",
             "button_label": "",
@@ -394,7 +394,7 @@
           "type": "text_block",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/sf-2026-step-thru-rear-rack.jpg",
+            "image": "",
             "title": "Fully Equipped",
             "text": "<p>MIK compatible rear rack, front and rear lights, fenders, signal bell and kickstand all come standard</p>",
             "button_label": "",
@@ -442,7 +442,7 @@
       ],
       "name": "Detail: Motor",
       "settings": {
-        "image": "shopify://shop_images/Hector-SF-Stepthru-1.jpg",
+        "image": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "right",
@@ -475,7 +475,7 @@
       ],
       "name": "Detail: Comfort",
       "settings": {
-        "image": "shopify://shop_images/Stepthru-Stem-Animated.gif",
+        "image": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "left",
@@ -508,7 +508,7 @@
       ],
       "name": "Detail: Comfort",
       "settings": {
-        "image": "shopify://shop_images/2026-SF-Stepthru-2040_1.gif",
+        "image": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "right",
@@ -561,7 +561,7 @@
         "eyebrow": "Testimonials",
         "heading": "Why Customers Love the Stellar Falcon",
         "subtitle": "Real Customer Stories · Join 8,000+ Happy Customers",
-        "bg_image": "shopify://shop_images/2_f0c891b8-f99e-41fe-b948-1356c35036ec.png"
+        "bg_image": ""
       }
     },
     "accessories_grid": {
@@ -681,7 +681,7 @@
       ],
       "name": "Detail: Comfort",
       "settings": {
-        "image": "shopify://shop_images/Screenshot_2026-03-23_at_4.45.04_PM.png",
+        "image": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "left",
@@ -765,7 +765,7 @@
       "type": "background-video",
       "name": "Background video",
       "settings": {
-        "video_shopify": "shopify://files/videos/Drink LLCvideo.mp4",
+        "video_shopify": "",
         "video_external": "",
         "video_description": "",
         "text_alignment": "center center",
@@ -781,7 +781,7 @@
         "sizing_img": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Stellar-Falcon-Geometry.png",
+            "image": "",
             "caption": ""
           }
         },

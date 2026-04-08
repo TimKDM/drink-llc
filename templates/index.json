@@ -772,7 +772,7 @@
         "feature_f7Mipw": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/beltdrive_07b44b90-7609-42c4-8be9-c4df42a2047a.png",
+            "image": "",
             "bg_color": "#ffffff",
             "bg_gradient": "",
             "text_color": "#505050",
@@ -861,7 +861,7 @@
       "disabled": true,
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/1_b5b84f71-9131-4c64-8b26-b0556324e861.png",
+        "image": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "right",

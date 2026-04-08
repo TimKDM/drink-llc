@@ -96,17 +96,17 @@
             "box_color": "#ffffff",
             "icon_1": "truck",
             "icon_1_color": "rgba(0,0,0,0)",
-            "custom_icon_1": "shopify://shop_images/Artboard_1_aab0e27a-ebf4-436a-9f8e-2a4ce3df3896.svg",
+            "custom_icon_1": "",
             "icon_1_heading": "Free Shipping",
             "icon_1_text": "",
             "icon_2": "map_pin",
             "icon_2_color": "rgba(0,0,0,0)",
-            "custom_icon_2": "shopify://shop_images/USA1_411be68c-93db-4977-8ba6-6f5340a9a4f1.svg",
+            "custom_icon_2": "",
             "icon_2_heading": "2-Year Warranty",
             "icon_2_text": "",
             "icon_3": "gift",
             "icon_3_color": "rgba(0,0,0,0)",
-            "custom_icon_3": "shopify://shop_images/SGSCertification.svg",
+            "custom_icon_3": "",
             "icon_3_heading": "SGS Certified",
             "icon_3_text": "",
             "show_in_quickbuy": false
@@ -728,7 +728,7 @@
         "logo_1": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/RebelRed.svg",
+            "image": "",
             "image_width": 100,
             "link": "",
             "title": "Comfort-focused designs tested by real customers"
@@ -737,7 +737,7 @@
         "logo_2": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/USA1_411be68c-93db-4977-8ba6-6f5340a9a4f1.svg",
+            "image": "",
             "image_width": 100,
             "link": "",
             "title": "USA-based support team in Houston, Texas"
@@ -746,7 +746,7 @@
         "logo_3": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/black2.svg",
+            "image": "",
             "image_width": 110,
             "link": "",
             "title": "Lifetime frame coverage + 2-year warranty"
@@ -755,7 +755,7 @@
         "logo_4": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/Bafang_logo.svg",
+            "image": "",
             "image_width": 100,
             "link": "",
             "title": "Name-brand components mechanics trust"
@@ -844,7 +844,7 @@
         "sizing_img": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/1_7b7dff38-2f81-4270-ac0e-6f7dd79d5785.png",
+            "image": "",
             "caption": ""
           }
         },
