@@ -1,0 +1,249 @@
+<!-- Euphree About / Houston Section -->
+<style>
+.euphree-about {
+  padding: 120px 48px;
+  background: #f5f5f3;
+  position: relative;
+  overflow: hidden;
+  font-family: var(--base-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-sizing: border-box;
+}
+.euphree-about * { box-sizing: border-box; margin: 0; padding: 0; }
+.euphree-about::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(46,114,210,0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.euphree-about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.euphree-about-img {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  position: relative;
+}
+.euphree-about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px;
+}
+.euphree-about-eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #888888;
+  margin-bottom: 16px;
+  text-align: left;
+}
+.euphree-about-content h2 {
+  font-family: var(--heading-font-family), serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: #121212;
+}
+.euphree-about-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555555;
+  margin-bottom: 20px;
+}
+.euphree-about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 36px 0;
+  padding: 32px 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.euphree-stat-number {
+  font-family: var(--heading-font-family), serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #121212;
+  line-height: 1;
+}
+.euphree-stat-label {
+  font-size: 14px;
+  color: #888888;
+  margin-top: 4px;
+  font-weight: 500;
+}
+.euphree-about .euphree-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #2e72d2;
+  color: #ffffff;
+  padding: 18px 36px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+.euphree-about .euphree-btn:hover {
+  background: #2563b8;
+  transform: translateY(-2px);
+}
+@media (max-width: 1024px) {
+  .euphree-about-grid { grid-template-columns: 1fr; gap: 48px; }
+  .euphree-about-content h2 { font-size: 40px; }
+}
+@media (max-width: 768px) {
+  .euphree-about { padding: 64px 20px; }
+  .euphree-about-grid { gap: 40px; }
+  .euphree-about-content h2 { font-size: 32px; }
+  .euphree-about-content p { font-size: 16px; }
+  .euphree-about-stats { grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 24px 0; }
+  .euphree-stat-number { font-size: 32px; }
+  .euphree-stat-label { font-size: 12px; }
+}
+@media (max-width: 480px) {
+  .euphree-about-content h2 { font-size: 28px; }
+  .euphree-about-stats { gap: 8px; }
+  .euphree-stat-number { font-size: 26px; }
+  .euphree-stat-label { font-size: 11px; }
+}
+</style>
+
+<section class="euphree-about">
+  <div class="euphree-about-grid">
+    <div class="euphree-about-img">
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | image_url: width: 1200 }}" alt="{{ section.settings.image.alt | default: section.settings.heading }}" width="{{ section.settings.image.width }}" height="{{ section.settings.image.height }}" loading="lazy">
+      {% endif %}
+    </div>
+    <div class="euphree-about-content">
+      <div class="euphree-about-eyebrow">{{ section.settings.eyebrow }}</div>
+      <h2>{{ section.settings.heading }}</h2>
+      <p>{{ section.settings.description_1 }}</p>
+      <p>{{ section.settings.description_2 }}</p>
+      <div class="euphree-about-stats">
+        {% for block in section.blocks %}
+          {% if block.type == 'stat' %}
+            <div {{ block.shopify_attributes }}>
+              <div class="euphree-stat-number">{{ block.settings.number }}</div>
+              <div class="euphree-stat-label">{{ block.settings.label }}</div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% if section.settings.button_label != blank %}
+        <a href="{{ section.settings.button_url }}" class="euphree-btn">{{ section.settings.button_label }}</a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Euphree About Houston",
+  "class": "section-euphree-about-houston",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Main Image"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow Text",
+      "default": "About Euphree"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "An American Company from Houston, Texas"
+    },
+    {
+      "type": "textarea",
+      "id": "description_1",
+      "label": "Description (Paragraph 1)",
+      "default": "We back American jobs and stand behind every rider who joins The Flock. From your first ride to years down the road, we're here as your riding partner for life."
+    },
+    {
+      "type": "textarea",
+      "id": "description_2",
+      "label": "Description (Paragraph 2)",
+      "default": "Every Euphree is designed in Houston and built with premium, name-brand components. We don't cut corners — because the ride matters."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "About Euphree →"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number",
+          "default": "100+"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Stat Label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Euphree About Houston",
+      "blocks": [
+        {
+          "type": "stat",
+          "settings": {
+            "number": "180+",
+            "label": "Dealers Nationwide"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": "5,000+",
+            "label": "Happy Riders"
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "number": "2 yr",
+            "label": "Full Warranty"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

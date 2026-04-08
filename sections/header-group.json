@@ -1,0 +1,171 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "779702cf-d8cf-4f96-b433-b424480b158b": {
+          "type": "announcement",
+          "settings": {
+            "text": "New Stellar Falcon 2.0 Is Here - Lets Ride!",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "dash",
+            "use_custom_colors": true,
+            "bg_color": "#2e2fa3",
+            "bg_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "announcement_DD4WBT": {
+          "type": "announcement",
+          "settings": {
+            "text": "Save $200 on the Solar Sparrow — Now $1,799",
+            "show_countdown": true,
+            "hide_on_end": true,
+            "end_date": "2026-03-31",
+            "end_time": "",
+            "number_font": "heading",
+            "countdown_separator": "space",
+            "use_custom_colors": false,
+            "bg_color": "#4a4a4a",
+            "bg_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "announcement_RgTKyN": {
+          "type": "announcement",
+          "settings": {
+            "text": "American company from Houston, Texas. USA based support. Join the Flock.",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "box",
+            "use_custom_colors": false,
+            "bg_color": "#4a4a4a",
+            "bg_gradient": "",
+            "text_color": "#ffffff"
+          }
+        },
+        "announcement_jgzXqn": {
+          "type": "announcement",
+          "settings": {
+            "text": "2 year warranty on all ebikes",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
+            "end_time": "",
+            "number_font": "base",
+            "countdown_separator": "box",
+            "use_custom_colors": false,
+            "bg_color": "#4a4a4a",
+            "bg_gradient": "",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "779702cf-d8cf-4f96-b433-b424480b158b",
+        "announcement_DD4WBT",
+        "announcement_RgTKyN",
+        "announcement_jgzXqn"
+      ],
+      "settings": {
+        "message_font_size": 15,
+        "announcement_bar_col": "#232323",
+        "announcement_bar_gradient": "",
+        "announcement_text_col": "#ffffff",
+        "show_social_icons": true,
+        "menu": "upper",
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "menu_promotion_small_FtXFe8": {
+          "type": "menu-promotion-small",
+          "settings": {
+            "dropdown_link_title": "Ebikes",
+            "image": "shopify://shop_images/falcon_1_899_Limited_Time.png",
+            "title": "Shop The New Stellar Falcon!",
+            "link_url": "shopify://collections/electric-bikes"
+          }
+        },
+        "menu_promotion_small_cgqEMQ": {
+          "type": "menu-promotion-small",
+          "disabled": true,
+          "settings": {
+            "dropdown_link_title": "Ebikes",
+            "image": "shopify://shop_images/BlackFridayMenu.png",
+            "title": "SHOP OUR BIGGEST SALE OF THE YEAR",
+            "link_url": "shopify://collections/electric-bikes"
+          }
+        }
+      },
+      "block_order": [
+        "menu_promotion_small_FtXFe8",
+        "menu_promotion_small_cgqEMQ"
+      ],
+      "settings": {
+        "logo": "shopify://shop_images/euphree-logo-black.svg",
+        "logo_img_width_int": 155,
+        "mobile_logo_img_width_int": 135,
+        "logo_h1": true,
+        "enable_sticky": true,
+        "enable_transparent": false,
+        "transparent_logo": "shopify://shop_images/euphree-logo-white.svg",
+        "transparent_color": "#ffffff",
+        "transparent_fade": "#000000",
+        "transparent_fade_strength": 40,
+        "menu_linklist": "main-menu",
+        "menu_layout": "inline-menu-left",
+        "nav_featured_link": "Clearance",
+        "menu_linklist_mobile": "mobile-menu",
+        "mobile_expand_with_entire_link": true,
+        "enable_mobile_promo_carousel": false,
+        "enable_nav_mob_products": true,
+        "nav_mob_products_title": "#1 in comfort",
+        "nav_mob_products_collection": "stellar-falcon-series",
+        "enable_search": true,
+        "search_recommendations_title": "",
+        "search_recommendations_menu": "support-service",
+        "icon_strategy": "icons_only",
+        "cart_icon": "bag"
+      }
+    },
+    "store-messages": {
+      "type": "store-messages",
+      "settings": {
+        "head_not_home_only": true,
+        "head_not_col_bg": "#ffffff",
+        "head_not_col_txt1": "#171717",
+        "head_not_col_txt2": "#4c4c4b",
+        "head_not_mob_show": true,
+        "head_not_mob_text": "Call Us: (866) 729-8075",
+        "head_not_mob_url": "tel:(866) 729-8075"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "store-messages"
+  ]
+}

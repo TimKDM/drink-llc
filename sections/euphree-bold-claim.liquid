@@ -1,0 +1,103 @@
+<!-- Euphree Bold Claim Section — Fully editable via Theme Customizer -->
+<style>
+.euphree-bold-claim {
+  padding: 100px 48px;
+  text-align: center;
+  background: #ffffff;
+  font-family: var(--base-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-sizing: border-box;
+}
+.euphree-bold-claim * { box-sizing: border-box; margin: 0; padding: 0; }
+.euphree-bold-claim h2 {
+  font-family: var(--heading-font-family), serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.15;
+  max-width: 900px;
+  margin: 0 auto 24px;
+  color: #121212;
+}
+.euphree-bold-claim p {
+  font-size: 20px;
+  color: #555555;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.euphree-underline-accent {
+  position: relative;
+  display: inline;
+}
+.euphree-underline-accent::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: #2e72d2;
+  opacity: 0.25;
+  border-radius: 3px;
+}
+@media (max-width: 1024px) {
+  .euphree-bold-claim h2 { font-size: 40px; }
+}
+@media (max-width: 768px) {
+  .euphree-bold-claim { padding: 64px 20px; }
+  .euphree-bold-claim h2 { font-size: 28px; }
+  .euphree-bold-claim p { font-size: 16px; }
+}
+@media (max-width: 480px) {
+  .euphree-bold-claim h2 { font-size: 24px; }
+}
+</style>
+
+<section class="euphree-bold-claim">
+  <h2>{{ section.settings.heading_start }} <span class="euphree-underline-accent">{{ section.settings.heading_highlight }}</span> {{ section.settings.heading_end }}</h2>
+  <p>{{ section.settings.subheading }}</p>
+</section>
+
+{% schema %}
+{
+  "name": "Euphree Bold Claim",
+  "class": "section-euphree-bold-claim",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_start",
+      "label": "Heading Start",
+      "default": "Euphree Makes the"
+    },
+    {
+      "type": "text",
+      "id": "heading_highlight",
+      "label": "Heading Highlight",
+      "info": "This text will have the blue underline accent.",
+      "default": "Most Comfortable"
+    },
+    {
+      "type": "text",
+      "id": "heading_end",
+      "label": "Heading End",
+      "default": "Premium Electric Bikes for Daily Use"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Designed in Houston. Built with the industry's best components. Backed by real people who ride what they sell."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Euphree Bold Claim",
+      "settings": {
+        "heading_start": "Euphree Makes the",
+        "heading_highlight": "Most Comfortable",
+        "heading_end": "Premium Electric Bikes for Daily Use",
+        "subheading": "Designed in Houston. Built with the industry's best components. Backed by real people who ride what they sell."
+      }
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,316 @@
+<!-- Euphree Dealer Section -->
+<!-- 2-column: photo mosaic left, dealer content + perks right -->
+<style>
+.euphree-dealers {
+  padding: 120px 48px;
+  background: #ffffff;
+  font-family: var(--base-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-sizing: border-box;
+}
+.euphree-dealers * { box-sizing: border-box; margin: 0; padding: 0; }
+.euphree-dealer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.euphree-dealer-visual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.euphree-dealer-img {
+  aspect-ratio: 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.euphree-dealer-img:first-child {
+  grid-row: span 2;
+  aspect-ratio: auto;
+}
+.euphree-dealer-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.euphree-dealer-eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #888888;
+  margin-bottom: 16px;
+}
+.euphree-dealer-content h2 {
+  font-family: var(--heading-font-family), serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: #121212;
+}
+.euphree-dealer-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555555;
+  margin-bottom: 32px;
+}
+.euphree-dealer-perks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.euphree-perk {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+}
+.euphree-perk-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f5f5f3;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.euphree-perk-icon svg { width: 18px; height: 18px; color: #333333; }
+.euphree-dealers .euphree-btn-dealer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #2e72d2;
+  color: #ffffff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s;
+  letter-spacing: 0.3px;
+}
+.euphree-dealers .euphree-btn-dealer:hover {
+  background: #2563b8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(46,114,210,0.3);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .euphree-dealer-grid { grid-template-columns: 1fr; gap: 48px; }
+  .euphree-dealer-content h2 { font-size: 40px; }
+  .euphree-dealer-visual { gap: 8px; }
+}
+/* Mobile */
+@media (max-width: 768px) {
+  .euphree-dealers { padding: 64px 20px; }
+  .euphree-dealer-grid { gap: 40px; }
+  .euphree-dealer-content h2 { font-size: 32px; }
+  .euphree-dealer-content p { font-size: 16px; }
+  .euphree-dealer-visual { gap: 8px; }
+  .euphree-dealer-img { border-radius: 8px; }
+}
+@media (max-width: 480px) {
+  .euphree-dealer-content h2 { font-size: 28px; }
+  .euphree-dealer-visual { grid-template-columns: 1fr; }
+  .euphree-dealer-img:first-child { grid-row: auto; }
+  .euphree-dealers .euphree-btn-dealer { width: 100%; text-align: center; justify-content: center; font-size: 16px; padding: 16px 28px; }
+}
+</style>
+
+<section class="euphree-dealers">
+  <div class="euphree-dealer-grid">
+    <div class="euphree-dealer-visual">
+      <div class="euphree-dealer-img">
+        {% if section.settings.image_1 != blank %}
+          <img src="{{ section.settings.image_1 | image_url: width: 1024 }}" alt="{{ section.settings.image_1_alt }}" width="{{ section.settings.image_1.width }}" height="{{ section.settings.image_1.height }}" loading="lazy">
+        {% else %}
+          <div class="placeholder-image">{{- 'image' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
+        {% endif %}
+      </div>
+      <div class="euphree-dealer-img">
+        {% if section.settings.image_2 != blank %}
+          <img src="{{ section.settings.image_2 | image_url: width: 800 }}" alt="{{ section.settings.image_2_alt }}" width="{{ section.settings.image_2.width }}" height="{{ section.settings.image_2.height }}" loading="lazy">
+        {% else %}
+          <div class="placeholder-image">{{- 'image' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
+        {% endif %}
+      </div>
+      <div class="euphree-dealer-img">
+        {% if section.settings.image_3 != blank %}
+          <img src="{{ section.settings.image_3 | image_url: width: 800 }}" alt="{{ section.settings.image_3_alt }}" width="{{ section.settings.image_3.width }}" height="{{ section.settings.image_3.height }}" loading="lazy">
+        {% else %}
+          <div class="placeholder-image">{{- 'image' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="euphree-dealer-content">
+      <div class="euphree-dealer-eyebrow">{{ section.settings.eyebrow }}</div>
+      <h2>{{ section.settings.heading }}</h2>
+      <p>{{ section.settings.description }}</p>
+      <div class="euphree-dealer-perks">
+        {% for block in section.blocks %}
+          {% if block.type == 'perk' %}
+            <div class="euphree-perk" {{ block.shopify_attributes }}>
+              <div class="euphree-perk-icon">
+                {% case block.settings.icon %}
+                  {% when 'people' %}
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                  {% when 'wrench' %}
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"></path></svg>
+                  {% when 'location' %}
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  {% when 'shield' %}
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  {% when 'checkmark' %}
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                {% endcase %}
+              </div>
+              {{ block.settings.text }}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      {% if section.settings.button_label != blank %}
+        <a href="{{ section.settings.button_url }}" class="euphree-btn-dealer">{{ section.settings.button_label }}</a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Euphree Dealer Section",
+  "class": "section-euphree-dealer-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Main Image (tall left)"
+    },
+    {
+      "type": "text",
+      "id": "image_1_alt",
+      "label": "Main Image Alt Text",
+      "default": "Euphree bikes in dealer showroom"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Top Right Image"
+    },
+    {
+      "type": "text",
+      "id": "image_2_alt",
+      "label": "Top Right Image Alt Text",
+      "default": "Euphree bike tour group ride"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Bottom Right Image"
+    },
+    {
+      "type": "text",
+      "id": "image_3_alt",
+      "label": "Bottom Right Image Alt Text",
+      "default": "Euphree riders group photo"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow Text",
+      "default": "Buy Local"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Test Ride at Your Local Dealer"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "With 180+ bike shops nationwide, you can see, touch, and test ride your Euphree before you commit. Real local service from real bike people."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Find a Dealer Near You →"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "perk",
+      "name": "Perk",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            { "value": "people", "label": "People" },
+            { "value": "wrench", "label": "Tools" },
+            { "value": "location", "label": "Location" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "checkmark", "label": "Checkmark" }
+          ],
+          "default": "people"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Perk Text",
+          "default": "Perk description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Euphree Dealer Section",
+      "blocks": [
+        {
+          "type": "perk",
+          "settings": {
+            "icon": "people",
+            "text": "Expert-guided test rides"
+          }
+        },
+        {
+          "type": "perk",
+          "settings": {
+            "icon": "wrench",
+            "text": "Professional assembly & tune-ups"
+          }
+        },
+        {
+          "type": "perk",
+          "settings": {
+            "icon": "location",
+            "text": "Local warranty service"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

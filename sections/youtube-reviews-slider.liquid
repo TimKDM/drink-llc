@@ -1,0 +1,186 @@
+{%- comment -%}
+  YouTube Reviews Slider — Horizontal carousel of embedded YouTube review videos
+  Each block is one video with title, channel name, and optional quote
+{%- endcomment -%}
+
+{{ 'youtube-reviews-slider.css' | asset_url | stylesheet_tag }}
+
+<div class="youtube-reviews-slider section-{{ section.id }}" style="position:relative;overflow:hidden;{% if section.settings.bg_color != blank and section.settings.bg_color != 'rgba(0,0,0,0)' %}background-color:{{ section.settings.bg_color }};{% endif %}" data-youtube-slider>
+  {%- if section.settings.bg_video != blank -%}
+    <video class="youtube-reviews-slider__bg-media" autoplay muted loop playsinline>
+      {%- for source in section.settings.bg_video.sources -%}
+        <source src="{{ source.url }}" type="{{ source.mime_type }}">
+      {%- endfor -%}
+    </video>
+  {%- elsif section.settings.bg_image != blank -%}
+    <div class="youtube-reviews-slider__bg-media" style="background-image:url({{ section.settings.bg_image | image_url: width: 1920 }})"></div>
+  {%- endif -%}
+  <div class="container" style="position:relative;z-index:1">
+    {%- if section.settings.title != blank -%}
+      <h2 class="youtube-reviews-slider__heading">{{ section.settings.title | escape }}</h2>
+    {%- endif -%}
+    {%- if section.settings.subtitle != blank -%}
+      <p class="youtube-reviews-slider__subtitle">{{ section.settings.subtitle | escape }}</p>
+    {%- endif -%}
+
+    <div class="youtube-reviews-slider__track" data-slider-track>
+      {%- for block in section.blocks -%}
+        <div class="youtube-reviews-slider__slide" {{ block.shopify_attributes }}>
+          <div class="youtube-reviews-slider__video-wrap">
+            <lite-youtube videoid="{{ block.settings.video_id }}" playlabel="Play review video">
+              <button type="button" class="youtube-reviews-slider__play" aria-label="Play">
+                <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55C3.97 2.33 2.27 4.81 1.48 7.74.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24L27 14v20" fill="white"/></svg>
+              </button>
+            </lite-youtube>
+          </div>
+          <div class="youtube-reviews-slider__info">
+            {%- if block.settings.channel_name != blank -%}
+              <span class="youtube-reviews-slider__channel">{{ block.settings.channel_name | escape }}</span>
+            {%- endif -%}
+            {%- if block.settings.video_title != blank -%}
+              <h3 class="youtube-reviews-slider__title">{{ block.settings.video_title | escape }}</h3>
+            {%- endif -%}
+            {%- if block.settings.quote != blank -%}
+              <p class="youtube-reviews-slider__quote">"{{ block.settings.quote | escape }}"</p>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {%- if section.blocks.size > 1 -%}
+      <div class="youtube-reviews-slider__nav">
+        <button class="youtube-reviews-slider__arrow youtube-reviews-slider__arrow--prev" data-slider-prev aria-label="Previous video">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"></path></svg>
+        </button>
+        <button class="youtube-reviews-slider__arrow youtube-reviews-slider__arrow--next" data-slider-next aria-label="Next video">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"></path></svg>
+        </button>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+<script>
+  /* lite-youtube-embed — lightweight YouTube facade */
+  if (!customElements.get('lite-youtube')) {
+    class LiteYoutube extends HTMLElement {
+      connectedCallback() {
+        this.style.backgroundImage = 'url(https://i.ytimg.com/vi/' + this.getAttribute('videoid') + '/hqdefault.jpg)';
+        this.addEventListener('click', () => this._activate(), { once: true });
+      }
+      _activate() {
+        const iframe = document.createElement('iframe');
+        iframe.width = '100%';
+        iframe.height = '100%';
+        iframe.title = this.getAttribute('playlabel') || 'Video';
+        iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+        iframe.src = 'https://www.youtube-nocookie.com/embed/' + this.getAttribute('videoid') + '?autoplay=1&rel=0';
+        this.innerHTML = '';
+        this.appendChild(iframe);
+        this.classList.add('is-activated');
+      }
+    }
+    customElements.define('lite-youtube', LiteYoutube);
+  }
+
+  /* Slider logic */
+  (function() {
+    const section = document.querySelector('.section-{{ section.id }}');
+    if (!section) return;
+    const track = section.querySelector('[data-slider-track]');
+    const prev = section.querySelector('[data-slider-prev]');
+    const next = section.querySelector('[data-slider-next]');
+    if (!track) return;
+
+    function scrollBy(dir) {
+      const slide = track.querySelector('.youtube-reviews-slider__slide');
+      if (!slide) return;
+      const gap = parseInt(getComputedStyle(track).gap) || 24;
+      const dist = (slide.offsetWidth + gap) * dir;
+      track.scrollBy({ left: dist, behavior: 'smooth' });
+    }
+    if (prev) prev.addEventListener('click', () => scrollBy(-1));
+    if (next) next.addEventListener('click', () => scrollBy(1));
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "YouTube reviews slider",
+  "class": "section-youtube-reviews-slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "What Reviewers Are Saying"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "See what top ebike reviewers think about Euphree"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background image"
+    },
+    {
+      "type": "video",
+      "id": "bg_video",
+      "label": "Background video"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "YouTube video",
+      "settings": [
+        {
+          "type": "text",
+          "id": "video_id",
+          "label": "YouTube video ID",
+          "info": "The part after v= in the URL, e.g. dQw4w9WgXcQ"
+        },
+        {
+          "type": "text",
+          "id": "video_title",
+          "label": "Video title",
+          "default": "Euphree Review"
+        },
+        {
+          "type": "text",
+          "id": "channel_name",
+          "label": "Channel name",
+          "default": "Channel Name"
+        },
+        {
+          "type": "text",
+          "id": "quote",
+          "label": "Pull quote",
+          "info": "Short highlight quote from the review"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "YouTube reviews slider",
+      "blocks": [
+        { "type": "video", "settings": { "video_id": "_9VUPq3SxOc", "video_title": "Euphree City Robin Review", "channel_name": "Ebike Reviewer", "quote": "One of the most comfortable ebikes I've tested." } },
+        { "type": "video", "settings": { "video_id": "_9VUPq3SxOc", "video_title": "City Robin X First Look", "channel_name": "Tech Rides", "quote": "Great value for the components." } },
+        { "type": "video", "settings": { "video_id": "_9VUPq3SxOc", "video_title": "Best Comfort Ebike 2025", "channel_name": "Bike Reviews", "quote": "The torque sensor makes all the difference." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,137 @@
+{% stylesheet %}
+  /* =============================
+     Solar Sparrow Icons (Scoped)
+  ============================== */
+  .solarsparrow-icons-wrapper {
+    max-width: 1200px;   /* keeps it aligned with theme container */
+    margin: 0 auto;      /* centers it */
+    padding: 1.5rem 1rem; /* reduced vertical padding */
+    box-sizing: border-box;
+  }
+
+  .solarsparrow-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .solarsparrow-icons li {
+    display: flex;
+    align-items: flex-start;
+    flex: 1 1 calc(25% - 20px); /* 4 per row on desktop */
+    box-sizing: border-box;
+  }
+
+  .solarsparrow-icons .icon-image {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    margin-right: 12px;
+    margin-top: 2px;
+  }
+
+  .solarsparrow-icons .icon-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .solarsparrow-icons .icon-title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: #2E2E2E;
+    line-height: 1.3;
+  }
+
+  .solarsparrow-icons .icon-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.4;
+  }
+
+  /* Responsive adjustments */
+  @media screen and (max-width: 1024px) {
+    .solarsparrow-icons li {
+      flex: 1 1 calc(33.333% - 20px); /* 3 per row on tablet */
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .solarsparrow-icons li {
+      flex: 1 1 calc(50% - 20px); /* always 2 per row on mobile */
+    }
+  }
+{% endstylesheet %}
+
+<div class="solarsparrow-icons-wrapper">
+  <ul class="solarsparrow-icons">
+
+    <li>
+      <img 
+        src="https://cdn.shopify.com/s/files/1/0577/5346/9110/files/range.svg?v=1730496961" 
+        alt="Range Icon" 
+        class="icon-image"
+      >
+      <div class="icon-text">
+        <div class="icon-title">Max Range</div>
+        <div class="icon-subtitle">✅ Up to 40 miles per charge</div>
+      </div>
+    </li>
+
+    <li>
+      <img 
+        src="https://cdn.shopify.com/s/files/1/0577/5346/9110/files/Speed.svg?v=1729093503" 
+        alt="Speed Icon" 
+        class="icon-image"
+      >
+      <div class="icon-text">
+        <div class="icon-title">Top Speed</div>
+        <div class="icon-subtitle">✅ 28 mph (Class 3 compliant)</div>
+      </div>
+    </li>
+
+    <li>
+      <img 
+        src="https://cdn.shopify.com/s/files/1/0577/5346/9110/files/Hub.svg?v=1730490760" 
+        alt="Motor Icon" 
+        class="icon-image"
+      >
+      <div class="icon-text">
+        <div class="icon-title">Motor</div>
+        <div class="icon-subtitle">✅ 500W hub motor, torque + cadence assist</div>
+      </div>
+    </li>
+
+    <li>
+      <img 
+        src="https://cdn.shopify.com/s/files/1/0577/5346/9110/files/gatedrive.svg?v=1749244402" 
+        alt="Belt Drive Icon" 
+        class="icon-image"
+      >
+      <div class="icon-text">
+        <div class="icon-title">Drivetrain</div>
+        <div class="icon-subtitle">✅ Gates Carbon Belt Drive – smooth & low-maintenance</div>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
+{% schema %}
+{
+  "name": "SolarSparrow Icons",
+  "tag": "section",
+  "class": "shopify-section--solarsparrow-icons",
+  "settings": [],
+  "presets": [
+    {
+      "name": "SolarSparrow Icons",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

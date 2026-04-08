@@ -1,0 +1,326 @@
+{%- comment -%}
+  Product Accessories — Teleported into buy box as compact swipable carousel
+  Products are editable via the customizer section settings
+  Uses AJAX to add items to cart without page reload
+{%- endcomment -%}
+
+{%- if section.blocks.size > 0 -%}
+<div class="product-accessories" id="ProductAccessories-{{ section.id }}">
+  <div class="product-accessories__header">
+    <span class="product-accessories__title">
+      {%- if section.settings.title != blank -%}
+        {{ section.settings.title | escape }}
+      {%- else -%}
+        Accessories
+      {%- endif -%}
+    </span>
+    {%- if section.settings.view_all_label != blank and section.settings.view_all_url != blank -%}
+      <a href="{{ section.settings.view_all_url }}" class="product-accessories__view-all">
+        {{ section.settings.view_all_label | escape }}
+      </a>
+    {%- endif -%}
+  </div>
+
+  <div class="product-accessories__track">
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'product' and block.settings.product != blank -%}
+        {%- assign acc_product = block.settings.product -%}
+        {%- assign acc_variant = acc_product.selected_or_first_available_variant -%}
+        <div class="product-accessories__card" {{ block.shopify_attributes }}>
+          <a href="{{ acc_product.url }}" class="product-accessories__img-link">
+            {%- if acc_product.featured_image -%}
+              <img
+                src="{{ acc_product.featured_image | image_url: width: 200 }}"
+                alt="{{ acc_product.featured_image.alt | escape }}"
+                loading="lazy"
+                width="100"
+                height="100"
+              >
+            {%- else -%}
+              {{ 'product-1' | placeholder_svg_tag: 'product-accessories__placeholder' }}
+            {%- endif -%}
+          </a>
+          <div class="product-accessories__info">
+            <a href="{{ acc_product.url }}" class="product-accessories__name">{{ acc_product.title }}</a>
+            <span class="product-accessories__price">
+              {%- if acc_variant.compare_at_price > acc_variant.price -%}
+                <span class="product-accessories__price-sale">{{ acc_variant.price | money }}</span>
+                <s class="product-accessories__price-was">{{ acc_variant.compare_at_price | money }}</s>
+              {%- else -%}
+                {{ acc_variant.price | money }}
+              {%- endif -%}
+            </span>
+          </div>
+          {%- if acc_variant.available -%}
+            <button
+              type="button"
+              class="product-accessories__add"
+              data-add-accessory
+              data-variant-id="{{ acc_variant.id }}"
+              aria-label="Add {{ acc_product.title | escape }} to cart"
+            >+</button>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</div>
+{%- endif -%}
+
+<style>
+  .product-accessories {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 12px;
+  }
+
+  .product-accessories__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .product-accessories__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #121212;
+  }
+  .product-accessories__view-all {
+    font-size: 12px;
+    font-weight: 600;
+    color: #2e72d2;
+    text-decoration: none;
+  }
+  .product-accessories__view-all:hover {
+    text-decoration: underline;
+  }
+
+  .product-accessories__track {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 2px;
+  }
+  .product-accessories__track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .product-accessories__card {
+    flex: 0 0 130px;
+    scroll-snap-align: start;
+    background: #f8f8f6;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  }
+
+  .product-accessories__img-link {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 6px;
+  }
+  .product-accessories__img-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+  .product-accessories__placeholder {
+    width: 60%;
+    height: auto;
+    opacity: 0.3;
+  }
+
+  .product-accessories__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+  .product-accessories__name {
+    font-size: 11px;
+    font-weight: 600;
+    color: #121212;
+    text-decoration: none;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .product-accessories__name:hover {
+    color: #2e72d2;
+  }
+  .product-accessories__price {
+    font-size: 12px;
+    font-weight: 700;
+    color: #121212;
+  }
+  .product-accessories__price-sale {
+    color: #c0392b;
+  }
+  .product-accessories__price-was {
+    font-size: 10px;
+    color: #bbb;
+  }
+
+  .product-accessories__add {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    background: #121212;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+  }
+  .product-accessories__add:hover {
+    background: #2e72d2;
+  }
+  .product-accessories__add--added {
+    background: #1a7a3a;
+  }
+  .product-accessories__add--adding {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+
+  /* Hide the outer Shopify section wrapper when content is teleported out */
+  .section-product-accessories:empty,
+  .section-product-accessories:not(:has(.product-accessories)) {
+    display: none;
+    padding: 0;
+    margin: 0;
+  }
+</style>
+
+<script>
+  (function() {
+    /* Teleport into buy box */
+    var el = document.getElementById('ProductAccessories-{{ section.id }}');
+    var slot = document.getElementById('accessories-slot');
+    if (el && slot) {
+      slot.appendChild(el);
+    }
+
+    /* Add to cart */
+    document.addEventListener('click', function(e) {
+      var btn = e.target.closest('[data-add-accessory]');
+      if (!btn) return;
+      e.preventDefault();
+      var vid = btn.getAttribute('data-variant-id');
+      if (!vid || btn.classList.contains('product-accessories__add--adding')) return;
+
+      var orig = btn.textContent;
+      btn.classList.add('product-accessories__add--adding');
+      btn.textContent = '…';
+
+      fetch('/cart/add.js', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ items: [{ id: parseInt(vid), quantity: 1 }] })
+      })
+      .then(function(r) {
+        if (!r.ok) throw new Error();
+        return r.json();
+      })
+      .then(function() {
+        btn.classList.remove('product-accessories__add--adding');
+        btn.classList.add('product-accessories__add--added');
+        btn.textContent = '✓';
+
+        fetch('/cart.js')
+          .then(function(r) { return r.json(); })
+          .then(function(cart) {
+            document.querySelectorAll('[data-cart-count], .cart-count, .header__cart-count').forEach(function(el) {
+              el.textContent = cart.item_count;
+            });
+            document.dispatchEvent(new CustomEvent('cart:updated', { detail: cart }));
+          });
+
+        setTimeout(function() {
+          btn.classList.remove('product-accessories__add--added');
+          btn.textContent = orig;
+        }, 2000);
+      })
+      .catch(function() {
+        btn.classList.remove('product-accessories__add--adding');
+        btn.textContent = orig;
+      });
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Accessories grid",
+  "class": "section-product-accessories",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Accessories"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Custom-designed to fit your Euphree perfectly."
+    },
+    {
+      "type": "text",
+      "id": "view_all_label",
+      "label": "View all button label",
+      "default": "View all"
+    },
+    {
+      "type": "url",
+      "id": "view_all_url",
+      "label": "View all button link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Accessory product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Accessories grid",
+      "blocks": [
+        { "type": "product" },
+        { "type": "product" },
+        { "type": "product" },
+        { "type": "product" }
+      ]
+    }
+  ]
+}
+{% endschema %}

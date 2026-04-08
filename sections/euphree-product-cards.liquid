@@ -1,0 +1,601 @@
+<!-- Euphree Product Cards Section — Shopify Online Store 2.0 -->
+<!-- Dynamic 3-column grid with editable product cards via blocks -->
+<style>
+.euphree-products {
+  padding: 100px 48px;
+  background: #f5f5f3;
+  font-family: var(--base-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-sizing: border-box;
+}
+.euphree-products * { box-sizing: border-box; margin: 0; padding: 0; }
+.euphree-products-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.euphree-products-eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #888888;
+  margin-bottom: 16px;
+}
+.euphree-products-header h2 {
+  font-family: var(--heading-font-family), serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: #121212;
+  line-height: 1.1;
+}
+.euphree-product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.euphree-product-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+.euphree-product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+.euphree-product-img {
+  position: relative;
+  padding: 40px 32px 20px;
+  background: linear-gradient(180deg, #f8f8f6 0%, #ffffff 100%);
+  text-align: center;
+}
+.euphree-product-img img { width: 100%; max-width: 380px; height: auto; }
+.euphree-product-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #2e72d2;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.euphree-product-specs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(0,0,0,0.06);
+  margin: 0 24px;
+}
+.euphree-spec-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555555;
+}
+.euphree-spec-item svg { width: 16px; height: 16px; opacity: 0.6; }
+.euphree-product-info { padding: 20px 28px 28px; }
+.euphree-product-category {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #888888;
+  margin-bottom: 8px;
+}
+.euphree-product-name {
+  font-family: var(--heading-font-family), serif;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #121212;
+}
+.euphree-product-desc {
+  font-size: 15px;
+  color: #888888;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.euphree-product-price {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.euphree-price-sale {
+  font-size: 28px;
+  font-weight: 800;
+  color: #c0392b;
+}
+.euphree-price-original {
+  font-size: 18px;
+  color: #c0c0c0;
+  text-decoration: line-through;
+}
+.euphree-price-regular {
+  font-size: 28px;
+  font-weight: 800;
+  color: #121212;
+}
+.euphree-product-height {
+  font-size: 13px;
+  color: #888888;
+  margin-bottom: 16px;
+}
+.euphree-color-swatches {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.euphree-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
+}
+.euphree-product-card .euphree-btn-product {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #2e72d2;
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+.euphree-product-card .euphree-btn-product:hover {
+  background: #2563b8;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(46,114,210,0.3);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .euphree-product-grid { grid-template-columns: 1fr 1fr; max-width: 800px; margin: 0 auto; }
+  .euphree-products-header h2 { font-size: 40px; }
+}
+/* Mobile */
+@media (max-width: 768px) {
+  .euphree-products { padding: 64px 20px; }
+  .euphree-products-header { margin-bottom: 40px; }
+  .euphree-products-header h2 { font-size: 32px; }
+  .euphree-product-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+  .euphree-product-name { font-size: 22px; }
+  .euphree-product-desc { font-size: 14px; }
+  .euphree-product-img { padding: 28px 20px 16px; }
+  .euphree-product-info { padding: 16px 20px 24px; }
+}
+@media (max-width: 480px) {
+  .euphree-products-header h2 { font-size: 28px; }
+}
+</style>
+
+<section class="euphree-products">
+  <div class="euphree-products-header">
+    <div class="euphree-products-eyebrow">{{ section.settings.eyebrow }}</div>
+    <h2>{{ section.settings.heading }}</h2>
+  </div>
+  <div class="euphree-product-grid">
+
+    {% for block in section.blocks %}
+      {%- assign p = block.settings.product -%}
+      {%- assign c = block.settings.collection -%}
+      {%- comment -%} Resolve values: manual override > linked product > linked collection > blank {%- endcomment -%}
+      {%- assign card_name = block.settings.name -%}
+      {%- if card_name == blank and p != blank -%}{%- assign card_name = p.title -%}{%- endif -%}
+      {%- if card_name == blank and c != blank -%}{%- assign card_name = c.title -%}{%- endif -%}
+
+      {%- assign card_desc = block.settings.description -%}
+      {%- if card_desc == blank and p != blank -%}{%- assign card_desc = p.description | strip_html | truncate: 120 -%}{%- endif -%}
+      {%- if card_desc == blank and c != blank -%}{%- assign card_desc = c.description | strip_html | truncate: 120 -%}{%- endif -%}
+
+      {%- assign card_url = block.settings.button_url -%}
+      {%- if card_url == blank and p != blank -%}{%- assign card_url = p.url -%}{%- endif -%}
+      {%- if card_url == blank and c != blank -%}{%- assign card_url = c.url -%}{%- endif -%}
+
+      {%- assign card_btn = block.settings.button_label -%}
+      {%- if card_btn == blank and p != blank -%}{%- assign card_btn = 'Shop ' | append: p.title -%}{%- endif -%}
+      {%- if card_btn == blank and c != blank -%}{%- assign card_btn = 'Shop ' | append: c.title -%}{%- endif -%}
+
+      <div class="euphree-product-card" {{ block.shopify_attributes }}>
+        <div class="euphree-product-img">
+          {% if block.settings.badge_text != blank %}
+            <div class="euphree-product-badge">{{ block.settings.badge_text }}</div>
+          {% endif %}
+          {% if block.settings.image != blank %}
+            <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ card_name }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" loading="lazy">
+          {% elsif p != blank and p.featured_image != blank %}
+            <img src="{{ p.featured_image | image_url: width: 800 }}" alt="{{ card_name }}" width="{{ p.featured_image.width }}" height="{{ p.featured_image.height }}" loading="lazy">
+          {% elsif c != blank and c.products.first != blank and c.products.first.featured_image != blank %}
+            <img src="{{ c.products.first.featured_image | image_url: width: 800 }}" alt="{{ card_name }}" width="{{ c.products.first.featured_image.width }}" height="{{ c.products.first.featured_image.height }}" loading="lazy">
+          {% elsif block.settings.image_url != blank %}
+            <img src="{{ block.settings.image_url }}" alt="{{ card_name }}" loading="lazy">
+          {% endif %}
+        </div>
+        <div class="euphree-product-specs">
+          <div class="euphree-spec-item">
+            {% case block.settings.spec_1_icon %}
+              {% when 'bolt' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+              {% when 'battery' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2"></rect><line x1="23" y1="10" x2="23" y2="14"></line></svg>
+              {% when 'speed' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+              {% when 'weight' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+              {% when 'suspension' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"></path></svg>
+            {% endcase %}
+            {{ block.settings.spec_1_value }}
+          </div>
+          <div class="euphree-spec-item">
+            {% case block.settings.spec_2_icon %}
+              {% when 'bolt' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+              {% when 'battery' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2"></rect><line x1="23" y1="10" x2="23" y2="14"></line></svg>
+              {% when 'speed' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+              {% when 'weight' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+              {% when 'suspension' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"></path></svg>
+            {% endcase %}
+            {{ block.settings.spec_2_value }}
+          </div>
+          <div class="euphree-spec-item">
+            {% case block.settings.spec_3_icon %}
+              {% when 'bolt' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+              {% when 'battery' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2"></rect><line x1="23" y1="10" x2="23" y2="14"></line></svg>
+              {% when 'speed' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+              {% when 'weight' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>
+              {% when 'suspension' %}
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"></path></svg>
+            {% endcase %}
+            {{ block.settings.spec_3_value }}
+          </div>
+        </div>
+        <div class="euphree-product-info">
+          <div class="euphree-product-category">{{ block.settings.category }}</div>
+          <div class="euphree-product-name">{{ card_name }}</div>
+          <div class="euphree-product-desc">{{ card_desc }}</div>
+          <div class="euphree-product-price">
+            {% if block.settings.sale_price != blank %}
+              {% if block.settings.original_price != blank %}
+                <span class="euphree-price-sale">{{ block.settings.sale_price }}</span>
+                <span class="euphree-price-original">{{ block.settings.original_price }}</span>
+              {% else %}
+                <span class="euphree-price-regular">{{ block.settings.sale_price }}</span>
+              {% endif %}
+            {% elsif p != blank %}
+              {% if p.compare_at_price > p.price %}
+                <span class="euphree-price-sale">{{ p.price | money }}</span>
+                <span class="euphree-price-original">{{ p.compare_at_price | money }}</span>
+              {% else %}
+                <span class="euphree-price-regular">{{ p.price | money }}</span>
+              {% endif %}
+            {% elsif c != blank and c.products.first != blank %}
+              {% if c.products.first.compare_at_price > c.products.first.price %}
+                <span class="euphree-price-sale">{{ c.products.first.price | money }}</span>
+                <span class="euphree-price-original">{{ c.products.first.compare_at_price | money }}</span>
+              {% else %}
+                <span class="euphree-price-regular">{{ c.products.first.price | money }}</span>
+              {% endif %}
+            {% endif %}
+          </div>
+          <div class="euphree-product-height">{{ block.settings.rider_height }}</div>
+          <div class="euphree-color-swatches">
+            {% if block.settings.color_1 != blank %}<div class="euphree-swatch" style="background: {{ block.settings.color_1 }};"></div>{% endif %}
+            {% if block.settings.color_2 != blank %}<div class="euphree-swatch" style="background: {{ block.settings.color_2 }};"></div>{% endif %}
+            {% if block.settings.color_3 != blank %}<div class="euphree-swatch" style="background: {{ block.settings.color_3 }};"></div>{% endif %}
+            {% if block.settings.color_4 != blank %}<div class="euphree-swatch" style="background: {{ block.settings.color_4 }};"></div>{% endif %}
+            {% if block.settings.color_5 != blank %}<div class="euphree-swatch" style="background: {{ block.settings.color_5 }};"></div>{% endif %}
+          </div>
+          <a href="{{ card_url }}" class="euphree-btn-product">{{ card_btn }}</a>
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Euphree Product Cards",
+  "class": "section-euphree-product-cards",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow text",
+      "default": "Our Lineup"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Find Your Perfect Ride"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product_card",
+      "name": "Product Card",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Linked product",
+          "info": "Auto-fills image, name, price, and URL. Manual settings below override."
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Linked collection",
+          "info": "Use instead of product for collection pages (e.g. Stellar Falcon series)."
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Product image (override)"
+        },
+        {
+          "type": "text",
+          "id": "image_url",
+          "label": "Product image URL (fallback)",
+          "info": "Used when product image and image picker are both empty."
+        },
+        {
+          "type": "text",
+          "id": "badge_text",
+          "label": "Badge text",
+          "info": "Leave blank for no badge (e.g. \"$450 OFF\")"
+        },
+        {
+          "type": "header",
+          "content": "Specs bar"
+        },
+        {
+          "type": "text",
+          "id": "spec_1_value",
+          "label": "Spec 1 value",
+          "default": "500W"
+        },
+        {
+          "type": "select",
+          "id": "spec_1_icon",
+          "label": "Spec 1 icon",
+          "default": "bolt",
+          "options": [
+            { "value": "bolt", "label": "Bolt (power)" },
+            { "value": "battery", "label": "Battery (range)" },
+            { "value": "speed", "label": "Speed (clock)" },
+            { "value": "weight", "label": "Weight (heart)" },
+            { "value": "suspension", "label": "Suspension (tool)" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "spec_2_value",
+          "label": "Spec 2 value",
+          "default": "60 mi"
+        },
+        {
+          "type": "select",
+          "id": "spec_2_icon",
+          "label": "Spec 2 icon",
+          "default": "battery",
+          "options": [
+            { "value": "bolt", "label": "Bolt (power)" },
+            { "value": "battery", "label": "Battery (range)" },
+            { "value": "speed", "label": "Speed (clock)" },
+            { "value": "weight", "label": "Weight (heart)" },
+            { "value": "suspension", "label": "Suspension (tool)" }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "spec_3_value",
+          "label": "Spec 3 value",
+          "default": "28 mph"
+        },
+        {
+          "type": "select",
+          "id": "spec_3_icon",
+          "label": "Spec 3 icon",
+          "default": "speed",
+          "options": [
+            { "value": "bolt", "label": "Bolt (power)" },
+            { "value": "battery", "label": "Battery (range)" },
+            { "value": "speed", "label": "Speed (clock)" },
+            { "value": "weight", "label": "Weight (heart)" },
+            { "value": "suspension", "label": "Suspension (tool)" }
+          ]
+        },
+        {
+          "type": "header",
+          "content": "Product info"
+        },
+        {
+          "type": "text",
+          "id": "category",
+          "label": "Category",
+          "info": "e.g. \"Comfort · Best Seller\""
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Product name"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "sale_price",
+          "label": "Displayed price",
+          "info": "Always shown (e.g. \"$1,899\")"
+        },
+        {
+          "type": "text",
+          "id": "original_price",
+          "label": "Original price (struck-through)",
+          "info": "Leave blank if no sale (e.g. \"$2,349\")"
+        },
+        {
+          "type": "text",
+          "id": "rider_height",
+          "label": "Rider height",
+          "info": "e.g. \"Riders: 5'2\\\" – 6'0\\\"\""
+        },
+        {
+          "type": "header",
+          "content": "Color swatches"
+        },
+        {
+          "type": "color",
+          "id": "color_1",
+          "label": "Color 1"
+        },
+        {
+          "type": "color",
+          "id": "color_2",
+          "label": "Color 2"
+        },
+        {
+          "type": "color",
+          "id": "color_3",
+          "label": "Color 3"
+        },
+        {
+          "type": "color",
+          "id": "color_4",
+          "label": "Color 4"
+        },
+        {
+          "type": "color",
+          "id": "color_5",
+          "label": "Color 5"
+        },
+        {
+          "type": "header",
+          "content": "Button"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Euphree Product Cards",
+      "settings": {
+        "eyebrow": "Our Lineup",
+        "heading": "Find Your Perfect Ride"
+      },
+      "blocks": [
+        {
+          "type": "product_card",
+          "settings": {
+            "badge_text": "$450 OFF",
+            "spec_1_value": "500W",
+            "spec_1_icon": "bolt",
+            "spec_2_value": "60 mi",
+            "spec_2_icon": "battery",
+            "spec_3_value": "28 mph",
+            "spec_3_icon": "speed",
+            "category": "Comfort · Best Seller",
+            "name": "City Robin X+",
+            "description": "Easy step-through access, upright posture, and full suspension for the smoothest ride.",
+            "sale_price": "$1,899",
+            "original_price": "$2,349",
+            "rider_height": "Riders: 5'2\" – 6'0\"",
+            "color_1": "#4a7ab5",
+            "color_2": "#f0ece4",
+            "color_3": "#3a7a4a",
+            "color_4": "#1a1a1a",
+            "button_label": "Shop City Robin X+",
+            "button_url": "/products/city-robin-x-plus"
+          }
+        },
+        {
+          "type": "product_card",
+          "settings": {
+            "spec_1_value": "500W",
+            "spec_1_icon": "bolt",
+            "spec_2_value": "40 mi",
+            "spec_2_icon": "battery",
+            "spec_3_value": "54 lbs",
+            "spec_3_icon": "weight",
+            "category": "Lightweight",
+            "name": "Solar Sparrow",
+            "description": "Quiet Gates belt drive, 54 lbs, easy to lift & ride. Zero chain maintenance.",
+            "sale_price": "$1,999",
+            "rider_height": "Riders: 4'11\" – 5'10\"",
+            "color_1": "#d4643a",
+            "color_2": "#5a8a5a",
+            "color_3": "#7a5aaa",
+            "color_4": "#4a7ab5",
+            "color_5": "#6b4a3a",
+            "button_label": "Shop Solar Sparrow",
+            "button_url": "/products/solar-sparrow"
+          }
+        },
+        {
+          "type": "product_card",
+          "settings": {
+            "badge_text": "$500 OFF",
+            "spec_1_value": "750W",
+            "spec_1_icon": "bolt",
+            "spec_2_value": "70 mi",
+            "spec_2_icon": "battery",
+            "spec_3_value": "Air Susp.",
+            "spec_3_icon": "suspension",
+            "category": "Power · All-Terrain",
+            "name": "Stellar Falcon",
+            "description": "Air suspension, torque & cadence sensor, hill-ready 750W power for any terrain.",
+            "sale_price": "$1,999",
+            "original_price": "$2,499",
+            "rider_height": "Step-Thru (5'2\"–6'0\") & Mid-Step (5'4\"–6'2\")",
+            "color_1": "#a03030",
+            "color_2": "#1a1a1a",
+            "color_3": "#4a7ab5",
+            "color_4": "#5a2030",
+            "button_label": "Shop Stellar Falcon",
+            "button_url": "/collections/stellar-falcon-series"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

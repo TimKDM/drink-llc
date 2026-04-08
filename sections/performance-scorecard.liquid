@@ -1,0 +1,151 @@
+{%- comment -%}
+  Performance Scorecard — Grid of key spec cards with big numbers & icons
+  Teleported into the media column of main-product via JS
+{%- endcomment -%}
+
+{{ 'performance-scorecard.css' | asset_url | stylesheet_tag }}
+
+<div class="performance-scorecard section-{{ section.id }}" id="performance-scorecard-{{ section.id }}">
+  {%- if section.settings.title != blank -%}
+    <h2 class="performance-scorecard__heading">{{ section.settings.title | escape }}</h2>
+  {%- endif -%}
+
+  <div class="performance-scorecard__grid">
+    {%- for block in section.blocks -%}
+      <div class="performance-scorecard__card" {{ block.shopify_attributes }}>
+        {%- if block.settings.icon != blank -%}
+          <div class="performance-scorecard__icon">
+            <img src="{{ block.settings.icon | image_url: width: 80 }}" alt="" loading="lazy" width="40" height="40">
+          </div>
+        {%- elsif block.settings.svg_icon != blank -%}
+          <div class="performance-scorecard__icon">
+            {{ block.settings.svg_icon }}
+          </div>
+        {%- else -%}
+          <div class="performance-scorecard__icon performance-scorecard__icon--default">
+            {%- case block.settings.default_icon -%}
+              {%- when 'motor' -%}
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="20" cy="20" r="14"/><circle cx="20" cy="20" r="6"/><path d="M20 6v4M20 30v4M6 20h4M30 20h4"/></svg>
+              {%- when 'battery' -%}
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="10" width="20" height="22" rx="2"/><path d="M14 10V7h12v3"/><path d="M14 18h12M14 24h8"/></svg>
+              {%- when 'speed' -%}
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 30a16 16 0 0 1 28 0"/><path d="M20 28l4-10"/><circle cx="20" cy="28" r="2" fill="currentColor"/></svg>
+              {%- when 'range' -%}
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6l-2 8h4l-2 8"/><circle cx="20" cy="28" r="8"/><path d="M20 24v4"/></svg>
+              {%- when 'weight' -%}
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="20" cy="14" r="6"/><path d="M10 34l4-14h12l4 14H10z"/></svg>
+              {%- when 'payload' -%}
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="16" width="24" height="16" rx="2"/><path d="M14 16V12a6 6 0 0 1 12 0v4"/></svg>
+              {%- when 'sensor' -%}
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 28l6-8 5 4 7-10 6 6"/><rect x="6" y="8" width="28" height="24" rx="2"/></svg>
+              {%- when 'certification' -%}
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6l4 8 8 2-6 6 2 8-8-4-8 4 2-8-6-6 8-2z"/></svg>
+              {%- else -%}
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="20" cy="20" r="14"/><path d="M20 14v8M20 26v1"/></svg>
+            {%- endcase -%}
+          </div>
+        {%- endif -%}
+        <div class="performance-scorecard__value">{{ block.settings.value }}</div>
+        <div class="performance-scorecard__label">{{ block.settings.label | escape }}</div>
+        {%- if block.settings.detail != blank -%}
+          <div class="performance-scorecard__detail">{{ block.settings.detail | escape }}</div>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+
+<script>
+  (function() {
+    var scorecard = document.getElementById('performance-scorecard-{{ section.id }}');
+    var slot = document.getElementById('scorecard-slot');
+    if (scorecard && slot) {
+      slot.appendChild(scorecard);
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Performance scorecard",
+  "class": "section-performance-scorecard",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Performance at a Glance"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat card",
+      "settings": [
+        {
+          "type": "select",
+          "id": "default_icon",
+          "label": "Icon",
+          "default": "motor",
+          "options": [
+            { "label": "Motor", "value": "motor" },
+            { "label": "Battery", "value": "battery" },
+            { "label": "Speed", "value": "speed" },
+            { "label": "Range", "value": "range" },
+            { "label": "Weight", "value": "weight" },
+            { "label": "Payload", "value": "payload" },
+            { "label": "Sensor", "value": "sensor" },
+            { "label": "Certification", "value": "certification" },
+            { "label": "Other", "value": "other" }
+          ]
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Custom icon image",
+          "info": "Overrides the default icon if set"
+        },
+        {
+          "type": "liquid",
+          "id": "svg_icon",
+          "label": "Custom SVG icon",
+          "info": "Paste raw SVG. Overrides image icon if set"
+        },
+        {
+          "type": "text",
+          "id": "value",
+          "label": "Value",
+          "default": "500W"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Motor Power"
+        },
+        {
+          "type": "text",
+          "id": "detail",
+          "label": "Detail text",
+          "info": "Optional — small text under the label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Performance scorecard",
+      "blocks": [
+        { "type": "stat", "settings": { "default_icon": "motor", "value": "500W", "label": "Motor", "detail": "Bafang geared hub" } },
+        { "type": "stat", "settings": { "default_icon": "battery", "value": "672Wh", "label": "Battery", "detail": "48V 14Ah LG cells" } },
+        { "type": "stat", "settings": { "default_icon": "speed", "value": "28 mph", "label": "Top Speed", "detail": "Class 3" } },
+        { "type": "stat", "settings": { "default_icon": "range", "value": "60 mi", "label": "Range", "detail": "Up to" } },
+        { "type": "stat", "settings": { "default_icon": "weight", "value": "64 lbs", "label": "Bike Weight", "detail": "" } },
+        { "type": "stat", "settings": { "default_icon": "payload", "value": "350 lbs", "label": "Max Payload", "detail": "" } },
+        { "type": "stat", "settings": { "default_icon": "sensor", "value": "Torque", "label": "Sensor", "detail": "+ Cadence" } },
+        { "type": "stat", "settings": { "default_icon": "certification", "value": "SGS", "label": "Certified", "detail": "UL 2271 + 2849" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

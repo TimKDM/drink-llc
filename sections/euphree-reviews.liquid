@@ -1,0 +1,269 @@
+<!-- Euphree Reviews Section — Manually curated review cards, fully editable in Theme Customizer -->
+<style>
+.euphree-reviews {
+  padding: 80px 48px 60px;
+  background: #f5f5f3;
+  font-family: var(--base-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-sizing: border-box;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.euphree-reviews--has-bg-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+.euphree-reviews--has-bg-image .euphree-reviews-header,
+.euphree-reviews--has-bg-image .euphree-reviews-grid {
+  position: relative;
+  z-index: 1;
+}
+.euphree-reviews--has-bg-image .euphree-reviews-eyebrow,
+.euphree-reviews--has-bg-image .euphree-reviews-header h2,
+.euphree-reviews--has-bg-image .euphree-review-count {
+  color: #ffffff;
+}
+.euphree-reviews * { box-sizing: border-box; }
+.euphree-reviews-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.euphree-reviews-stars-header {
+  color: #FBBC04;
+  font-size: 28px;
+  letter-spacing: 4px;
+  display: block;
+  margin-bottom: 12px;
+}
+.euphree-reviews-eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #888888;
+  margin-bottom: 16px;
+}
+.euphree-reviews-header h2 {
+  font-family: var(--heading-font-family), serif;
+  font-size: 56px;
+  font-weight: 700;
+  color: #121212;
+  line-height: 1.1;
+}
+.euphree-review-count {
+  font-size: 20px;
+  color: #555555;
+  margin-top: 12px;
+  font-weight: 400;
+}
+
+/* ── Review cards grid ── */
+.euphree-reviews-grid {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.euphree-review-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+}
+.euphree-review-card__stars {
+  color: #FBBC04;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+.euphree-review-card__star--empty {
+  color: #d9d3c7;
+}
+.euphree-review-card__title {
+  font-family: var(--heading-font-family), serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #121212;
+  margin: 0 0 10px;
+}
+.euphree-review-card__body {
+  font-family: var(--heading-font-family), serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #333333;
+  font-style: italic;
+  flex: 1;
+  margin: 0 0 18px;
+}
+.euphree-review-card__author {
+  font-weight: 700;
+  font-size: 16px;
+  color: #121212;
+  font-family: var(--base-font-family), sans-serif;
+}
+.euphree-review-card__verified {
+  color: #1a4d2e;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .euphree-reviews-header h2 { font-size: 40px; }
+  .euphree-reviews-grid { grid-template-columns: repeat(2, 1fr); }
+}
+/* Mobile */
+@media (max-width: 768px) {
+  .euphree-reviews { padding: 48px 20px 40px; }
+  .euphree-reviews-header { margin-bottom: 28px; }
+  .euphree-reviews-header h2 { font-size: 32px; }
+  .euphree-reviews-stars-header { font-size: 22px; }
+  .euphree-review-count { font-size: 16px; }
+  .euphree-reviews-grid { grid-template-columns: 1fr; gap: 16px; }
+  .euphree-review-card { padding: 20px 16px; }
+  .euphree-review-card__body { font-size: 16px; }
+}
+@media (max-width: 480px) {
+  .euphree-reviews-header h2 { font-size: 28px; }
+}
+</style>
+
+<section class="euphree-reviews{% if section.settings.bg_image != blank %} euphree-reviews--has-bg-image{% endif %}"{% if section.settings.bg_image != blank %} style="background-image: url('{{ section.settings.bg_image | image_url: width: 2000 }}')"{% endif %}>
+  <div class="euphree-reviews-header">
+    <span class="euphree-reviews-stars-header">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+    <div class="euphree-reviews-eyebrow">{{ section.settings.eyebrow }}</div>
+    <h2>{{ section.settings.heading }}</h2>
+    <div class="euphree-review-count">{{ section.settings.subtitle }}</div>
+  </div>
+
+  {% if section.blocks.size > 0 %}
+    <div class="euphree-reviews-grid">
+      {% for block in section.blocks %}
+        <div class="euphree-review-card" {{ block.shopify_attributes }}>
+          <div class="euphree-review-card__stars">
+            {%- for i in (1..5) -%}
+              {%- if i <= block.settings.stars -%}
+                <span>&#9733;</span>
+              {%- else -%}
+                <span class="euphree-review-card__star--empty">&#9733;</span>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+          {% if block.settings.title != blank %}
+            <p class="euphree-review-card__title">{{ block.settings.title }}</p>
+          {% endif %}
+          <p class="euphree-review-card__body">"{{ block.settings.body }}"</p>
+          <div>
+            <div class="euphree-review-card__author">{{ block.settings.author }}</div>
+            {% if block.settings.verified %}
+              <div class="euphree-review-card__verified">&#10003; Verified Buyer</div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Euphree Reviews",
+  "class": "section-euphree-reviews",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Testimonials"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Why Riders Love Euphree"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Real Customer Stories · Join 5,000+ Happy Riders"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background image",
+      "info": "Optional. Adds a dark overlay so text remains readable."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "range",
+          "id": "stars",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Star rating",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Review title"
+        },
+        {
+          "type": "textarea",
+          "id": "body",
+          "label": "Review text",
+          "default": "This bike changed my life!"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Reviewer name",
+          "default": "Happy Rider"
+        },
+        {
+          "type": "checkbox",
+          "id": "verified",
+          "label": "Show verified buyer badge",
+          "default": true
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Euphree Reviews",
+      "settings": {
+        "eyebrow": "Testimonials",
+        "heading": "Why Riders Love Euphree",
+        "subtitle": "Real Customer Stories · Join 5,000+ Happy Riders"
+      },
+      "blocks": [
+        {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Best e-bike I've owned",
+            "body": "This bike changed my life!",
+            "author": "Happy Rider",
+            "verified": true
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
