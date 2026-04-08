@@ -1,0 +1,103 @@
+/*
+ * Performance Scorecard
+ * Teleported from its section wrapper into #scorecard-slot inside the media column.
+ * Hidden at original position, visible only inside the slot.
+ */
+
+/* Hide at original Shopify section position — prevent flash before teleport */
+.section-performance-scorecard .performance-scorecard {
+  display: none;
+}
+
+/* Show once inside the slot */
+#scorecard-slot .performance-scorecard {
+  display: block;
+  padding: 16px 0 0;
+}
+
+.performance-scorecard__heading {
+  font-family: var(--heading-font-family, 'DM Serif Display', serif);
+  font-size: 16px;
+  font-weight: 700;
+  color: #121212;
+  text-align: left;
+  margin: 0 0 10px;
+}
+
+.performance-scorecard__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.performance-scorecard__card {
+  background: #f8f8f6;
+  border-radius: 8px;
+  padding: 10px 6px;
+  text-align: center;
+  transition: box-shadow 0.25s ease;
+}
+.performance-scorecard__card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.performance-scorecard__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin: 0 auto 4px;
+  border-radius: 50%;
+  background: #eef2ff;
+  color: #2e72d2;
+}
+.performance-scorecard__icon svg {
+  width: 18px;
+  height: 18px;
+}
+.performance-scorecard__icon img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.performance-scorecard__value {
+  font-family: var(--heading-font-family, 'DM Serif Display', serif);
+  font-size: 15px;
+  font-weight: 700;
+  color: #121212;
+  line-height: 1.2;
+  margin-bottom: 1px;
+}
+
+.performance-scorecard__label {
+  font-size: 9px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+.performance-scorecard__detail {
+  font-size: 9px;
+  color: #999;
+  margin-top: 1px;
+  line-height: 1.2;
+}
+
+/* Collapse empty section wrapper */
+.section-performance-scorecard {
+  padding: 0 !important;
+  margin: 0 !important;
+  min-height: 0 !important;
+}
+
+/* Mobile — 2x4 grid */
+@media (max-width: 480px) {
+  .performance-scorecard__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+}

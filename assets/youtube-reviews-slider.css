@@ -1,0 +1,183 @@
+.youtube-reviews-slider {
+  padding: 60px 0;
+}
+.youtube-reviews-slider__bg-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.youtube-reviews-slider .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* Heading */
+.youtube-reviews-slider__heading {
+  font-family: var(--heading-font-family, 'DM Serif Display', serif);
+  font-size: 36px;
+  font-weight: 700;
+  color: #121212;
+  text-align: center;
+  margin: 0 0 8px;
+}
+.youtube-reviews-slider__subtitle {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+/* Slider track */
+.youtube-reviews-slider__track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+.youtube-reviews-slider__track::-webkit-scrollbar {
+  display: none;
+}
+
+/* Slide card */
+.youtube-reviews-slider__slide {
+  flex: 0 0 calc(33.333% - 16px);
+  min-width: 300px;
+  scroll-snap-align: start;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.25s ease;
+}
+.youtube-reviews-slider__slide:hover {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Video embed */
+.youtube-reviews-slider__video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+}
+lite-youtube {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+lite-youtube > .youtube-reviews-slider__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+lite-youtube:hover > .youtube-reviews-slider__play {
+  opacity: 1;
+}
+lite-youtube.is-activated {
+  cursor: default;
+}
+lite-youtube.is-activated > .youtube-reviews-slider__play {
+  display: none;
+}
+lite-youtube iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Info area */
+.youtube-reviews-slider__info {
+  padding: 16px 20px 20px;
+}
+.youtube-reviews-slider__channel {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #2e72d2;
+  margin-bottom: 4px;
+}
+.youtube-reviews-slider__title {
+  font-family: var(--heading-font-family, 'DM Serif Display', serif);
+  font-size: 16px;
+  font-weight: 600;
+  color: #121212;
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+.youtube-reviews-slider__quote {
+  font-size: 14px;
+  font-style: italic;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Nav arrows */
+.youtube-reviews-slider__nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+.youtube-reviews-slider__arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #e0e0e0;
+  background: #fff;
+  cursor: pointer;
+  color: #121212;
+  transition: border-color 0.2s, background 0.2s;
+}
+.youtube-reviews-slider__arrow:hover {
+  border-color: #121212;
+  background: #f8f8f8;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .youtube-reviews-slider__slide {
+    flex: 0 0 calc(50% - 12px);
+  }
+}
+@media (max-width: 640px) {
+  .youtube-reviews-slider {
+    padding: 40px 0;
+  }
+  .youtube-reviews-slider__heading {
+    font-size: 28px;
+  }
+  .youtube-reviews-slider__slide {
+    flex: 0 0 85%;
+    min-width: 260px;
+  }
+}
