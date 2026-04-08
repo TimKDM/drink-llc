@@ -368,15 +368,6 @@
           {% endfor %}
         </tr>
         <tr>
-          <th class="drink-row-label"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>Calories</th>
-          {% for block in section.blocks %}
-            {%- assign p = block.settings.product -%}
-            {%- assign v = block.settings.calories -%}
-            {%- if v == blank and p != blank and p.metafields[ns].calories != blank -%}{%- assign v = p.metafields[ns].calories.value -%}{%- endif -%}
-            <td class="drink-col-col-{{ forloop.index }}">{{ v }}</td>
-          {% endfor %}
-        </tr>
-        <tr>
           <th class="drink-row-label"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>Sugar</th>
           {% for block in section.blocks %}
             {%- assign p = block.settings.product -%}
@@ -386,7 +377,16 @@
           {% endfor %}
         </tr>
         <tr>
-          <th class="drink-row-label"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"></path></svg>Serving Size</th>
+          <th class="drink-row-label"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>Calories</th>
+          {% for block in section.blocks %}
+            {%- assign p = block.settings.product -%}
+            {%- assign v = block.settings.calories -%}
+            {%- if v == blank and p != blank and p.metafields[ns].calories != blank -%}{%- assign v = p.metafields[ns].calories.value -%}{%- endif -%}
+            <td class="drink-col-col-{{ forloop.index }}">{{ v }}</td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <th class="drink-row-label"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"></path></svg>Servings</th>
           {% for block in section.blocks %}
             {%- assign p = block.settings.product -%}
             {%- assign v = block.settings.serving_size -%}
@@ -395,63 +395,37 @@
           {% endfor %}
         </tr>
 
-        <!-- FLAVOR PROFILE -->
+        <!-- FORMULA -->
         <tr class="drink-cat-row">
-          <th class="drink-row-label">Flavor Profile</th>
+          <th class="drink-row-label">Formula</th>
           {% for block in section.blocks %}
             <td class="drink-col-col-{{ forloop.index }}"></td>
           {% endfor %}
         </tr>
         <tr>
-          <th class="drink-row-label"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path></svg>Taste Notes</th>
+          <th class="drink-row-label"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"></path></svg>Electrolytes</th>
           {% for block in section.blocks %}
             {%- assign p = block.settings.product -%}
-            {%- assign v = block.settings.taste_notes -%}
-            {%- if v == blank and p != blank and p.metafields[ns].taste_notes != blank -%}{%- assign v = p.metafields[ns].taste_notes.value -%}{%- endif -%}
+            {%- assign v = block.settings.electrolytes -%}
+            {%- if v == blank and p != blank and p.metafields[ns].electrolytes != blank -%}{%- assign v = p.metafields[ns].electrolytes.value -%}{%- endif -%}
             <td class="drink-col-col-{{ forloop.index }}">{{ v }}</td>
           {% endfor %}
         </tr>
         <tr>
-          <th class="drink-row-label"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>Sweetness</th>
+          <th class="drink-row-label"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>Caffeine</th>
           {% for block in section.blocks %}
             {%- assign p = block.settings.product -%}
-            {%- assign v = block.settings.sweetness -%}
-            {%- if v == blank and p != blank and p.metafields[ns].sweetness != blank -%}{%- assign v = p.metafields[ns].sweetness.value -%}{%- endif -%}
+            {%- assign v = block.settings.caffeine -%}
+            {%- if v == blank and p != blank and p.metafields[ns].caffeine != blank -%}{%- assign v = p.metafields[ns].caffeine.value -%}{%- endif -%}
             <td class="drink-col-col-{{ forloop.index }}">{{ v }}</td>
           {% endfor %}
         </tr>
         <tr>
-          <th class="drink-row-label"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75"></path></svg>Key Ingredient</th>
+          <th class="drink-row-label"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>Keto</th>
           {% for block in section.blocks %}
             {%- assign p = block.settings.product -%}
-            {%- assign v = block.settings.key_ingredient -%}
-            {%- if v == blank and p != blank and p.metafields[ns].key_ingredient != blank -%}{%- assign v = p.metafields[ns].key_ingredient.value -%}{%- endif -%}
-            <td class="drink-col-col-{{ forloop.index }}">{{ v }}</td>
-          {% endfor %}
-        </tr>
-        <tr>
-          <th class="drink-row-label"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>Artificial Flavors</th>
-          {% for block in section.blocks %}
-            {%- assign p = block.settings.product -%}
-            {%- assign v = block.settings.artificial -%}
-            {%- if v == blank and p != blank and p.metafields[ns].artificial != blank -%}{%- assign v = p.metafields[ns].artificial.value -%}{%- endif -%}
-            <td class="drink-col-col-{{ forloop.index }}">{{ v }}</td>
-          {% endfor %}
-        </tr>
-
-        <!-- BEST FOR -->
-        <tr class="drink-cat-row">
-          <th class="drink-row-label">Best For</th>
-          {% for block in section.blocks %}
-            <td class="drink-col-col-{{ forloop.index }}"></td>
-          {% endfor %}
-        </tr>
-        <tr>
-          <th class="drink-row-label"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>Ideal Moment</th>
-          {% for block in section.blocks %}
-            {%- assign p = block.settings.product -%}
-            {%- assign v = block.settings.ideal_moment -%}
-            {%- if v == blank and p != blank and p.metafields[ns].ideal_moment != blank -%}{%- assign v = p.metafields[ns].ideal_moment.value -%}{%- endif -%}
+            {%- assign v = block.settings.keto -%}
+            {%- if v == blank and p != blank and p.metafields[ns].keto != blank -%}{%- assign v = p.metafields[ns].keto.value -%}{%- endif -%}
             <td class="drink-col-col-{{ forloop.index }}">{{ v }}</td>
           {% endfor %}
         </tr>
@@ -610,58 +584,42 @@ function drinkToggleCol(colName, toggleEl) {
         },
         {
           "type": "text",
-          "id": "calories",
-          "label": "Calories",
-          "info": "Auto-filled from product metafields if blank."
-        },
-        {
-          "type": "text",
           "id": "sugar",
           "label": "Sugar",
           "info": "Auto-filled from product metafields if blank."
         },
         {
           "type": "text",
+          "id": "calories",
+          "label": "Calories",
+          "info": "Auto-filled from product metafields if blank."
+        },
+        {
+          "type": "text",
           "id": "serving_size",
-          "label": "Serving Size",
+          "label": "Servings",
           "info": "Auto-filled from product metafields if blank."
         },
         {
           "type": "header",
-          "content": "Flavor Profile"
+          "content": "Formula"
         },
         {
           "type": "text",
-          "id": "taste_notes",
-          "label": "Taste Notes",
+          "id": "electrolytes",
+          "label": "Electrolytes",
           "info": "Auto-filled from product metafields if blank."
         },
         {
           "type": "text",
-          "id": "sweetness",
-          "label": "Sweetness",
+          "id": "caffeine",
+          "label": "Caffeine",
           "info": "Auto-filled from product metafields if blank."
         },
         {
           "type": "text",
-          "id": "key_ingredient",
-          "label": "Key Ingredient",
-          "info": "Auto-filled from product metafields if blank."
-        },
-        {
-          "type": "text",
-          "id": "artificial",
-          "label": "Artificial Flavors",
-          "info": "Auto-filled from product metafields if blank."
-        },
-        {
-          "type": "header",
-          "content": "Best For"
-        },
-        {
-          "type": "textarea",
-          "id": "ideal_moment",
-          "label": "Ideal Moment",
+          "id": "keto",
+          "label": "Keto",
           "info": "Auto-filled from product metafields if blank."
         }
       ]
@@ -671,109 +629,99 @@ function drinkToggleCol(colName, toggleEl) {
     {
       "name": "Drink Compare Flavors",
       "settings": {
-        "eyebrow": "Side by Side",
-        "heading": "Compare Our Flavors",
-        "description": "Not sure which flavor is right for you? Toggle the drinks you want to compare."
+        "eyebrow": "Compare",
+        "heading": "Compare flavors.",
+        "description": "Same base. Different taste."
       },
       "blocks": [
         {
           "type": "model",
           "settings": {
-            "name": "Lemonade",
+            "name": "Lemonade DRiNK",
             "tagline": "Classic · Best Seller",
-            "price": "$3.99",
+            "price": "$24.99",
             "rating": "4.95",
             "review_count": "230 reviews",
-            "button_label": "Shop Lemonade →",
+            "button_label": "Shop Lemonade",
             "button_url": "/products/lemonade",
-            "calories": "90",
-            "sugar": "18g",
-            "serving_size": "12 oz",
-            "taste_notes": "Bright, tart, citrusy",
-            "sweetness": "Medium",
-            "key_ingredient": "Real lemon juice",
-            "artificial": "None",
-            "ideal_moment": "Hot summer days, backyard BBQs, everyday refreshment"
+            "sugar": "0g",
+            "calories": "10",
+            "serving_size": "30",
+            "electrolytes": "Ca, Mg, Na, K",
+            "caffeine": "0mg",
+            "keto": "Yes"
           }
         },
         {
           "type": "model",
           "settings": {
-            "name": "Lychee",
-            "tagline": "Exotic · Floral",
-            "price": "$4.29",
+            "name": "Lychee DRiNK",
+            "tagline": "Floral · Light",
+            "price": "$24.99",
             "rating": "4.88",
             "review_count": "95 reviews",
-            "button_label": "Shop Lychee →",
+            "button_label": "Shop Lychee",
             "button_url": "/products/lychee",
-            "calories": "85",
-            "sugar": "16g",
-            "serving_size": "12 oz",
-            "taste_notes": "Floral, sweet, delicate",
-            "sweetness": "Medium-High",
-            "key_ingredient": "Real lychee puree",
-            "artificial": "None",
-            "ideal_moment": "Elegant occasions, brunch, pairing with light meals"
+            "sugar": "0g",
+            "calories": "10",
+            "serving_size": "30",
+            "electrolytes": "Ca, Mg, Na, K",
+            "caffeine": "0mg",
+            "keto": "Yes"
           }
         },
         {
           "type": "model",
           "settings": {
-            "name": "Matcha",
-            "tagline": "Wellness · Energizing",
-            "price": "$4.49",
-            "rating": "4.92",
-            "review_count": "150 reviews",
-            "button_label": "Shop Matcha →",
-            "button_url": "/products/matcha",
-            "calories": "80",
-            "sugar": "12g",
-            "serving_size": "12 oz",
-            "taste_notes": "Earthy, smooth, umami",
-            "sweetness": "Low",
-            "key_ingredient": "Ceremonial-grade matcha",
-            "artificial": "None",
-            "ideal_moment": "Morning energy, focus sessions, wellness routines"
-          }
-        },
-        {
-          "type": "model",
-          "settings": {
-            "name": "Passion Fruit",
-            "tagline": "Tropical · Refreshing",
-            "price": "$4.29",
-            "rating": "4.90",
-            "review_count": "120 reviews",
-            "button_label": "Shop Passion Fruit →",
-            "button_url": "/products/passion-fruit",
-            "calories": "85",
-            "sugar": "17g",
-            "serving_size": "12 oz",
-            "taste_notes": "Tangy, tropical, bright",
-            "sweetness": "Medium",
-            "key_ingredient": "Real passion fruit juice",
-            "artificial": "None",
-            "ideal_moment": "Pool days, tropical cravings, party drinks"
-          }
-        },
-        {
-          "type": "model",
-          "settings": {
-            "name": "Peach Mango",
-            "tagline": "Sweet · Tropical",
-            "price": "$4.29",
+            "name": "Peach Mango DRiNK",
+            "tagline": "Tropical · Smooth",
+            "price": "$24.99",
             "rating": "4.93",
             "review_count": "180 reviews",
-            "button_label": "Shop Peach Mango →",
+            "button_label": "Shop Peach Mango",
             "button_url": "/products/peach-mango",
-            "calories": "95",
-            "sugar": "19g",
-            "serving_size": "12 oz",
-            "taste_notes": "Sweet, juicy, stone-fruit",
-            "sweetness": "Medium-High",
-            "key_ingredient": "Real peach & mango puree",
-            "artificial": "None",
-            "ideal_moment": "Afternoon treat, dessert pairing, anytime indulgence"
+            "sugar": "0g",
+            "calories": "10",
+            "serving_size": "30",
+            "electrolytes": "Ca, Mg, Na, K",
+            "caffeine": "0mg",
+            "keto": "Yes"
+          }
+        },
+        {
+          "type": "model",
+          "settings": {
+            "name": "Passion Fruit DRiNK",
+            "tagline": "Tangy · Bold",
+            "price": "$24.99",
+            "rating": "4.90",
+            "review_count": "120 reviews",
+            "button_label": "Shop Passion Fruit",
+            "button_url": "/products/passion-fruit",
+            "sugar": "0g",
+            "calories": "10",
+            "serving_size": "30",
+            "electrolytes": "Ca, Mg, Na, K",
+            "caffeine": "0mg",
+            "keto": "Yes"
+          }
+        },
+        {
+          "type": "model",
+          "settings": {
+            "name": "Matcha DRiNK",
+            "tagline": "Earthy · Clean",
+            "price": "$24.99",
+            "rating": "4.92",
+            "review_count": "150 reviews",
+            "button_label": "Shop Matcha",
+            "button_url": "/products/matcha",
+            "sugar": "0g",
+            "calories": "10",
+            "serving_size": "30",
+            "electrolytes": "Ca, Mg, Na, K",
+            "caffeine": "0mg",
+            "keto": "Yes"
           }
         }
       ]
