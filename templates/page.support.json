@@ -1,16 +1,16 @@
 {
   "sections": {
     "support_portal": {
-      "type": "euphree-support-portal",
+      "type": "drink-support-portal",
       "settings": {
-        "eyebrow": "Customer & Dealer Support",
+        "eyebrow": "Customer & Retailer Support",
         "heading": "How Can We Help?",
-        "subheading": "Our Houston-based team is here for you — bikes, orders, warranties, and everything in between.",
+        "subheading": "Our Houston-based team is here for you — beverages, orders, and everything in between.",
         "trust_1": "2-Year Warranty",
         "trust_2": "USA-Based Support",
-        "trust_3": "180+ Dealers Nationwide",
+        "trust_3": "100+ Retailers Nationwide",
         "trust_4": "Response Within 1 Business Day",
-        "hs_proxy_url": "/apps/euphree-hs-proxy",
+        "hs_proxy_url": "/apps/drink-hs-proxy",
         "hs_portal_id": "",
         "hs_form_id": "",
         "hs_pipeline_id": "",

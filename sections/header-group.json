@@ -17,7 +17,7 @@
         "779702cf-d8cf-4f96-b433-b424480b158b": {
           "type": "announcement",
           "settings": {
-            "text": "New Stellar Falcon 2.0 Is Here - Lets Ride!",
+            "text": "New Refreshing Beverages Are Here - Lets Sip!",
             "show_countdown": false,
             "hide_on_end": false,
             "end_date": "",
@@ -33,7 +33,7 @@
         "announcement_DD4WBT": {
           "type": "announcement",
           "settings": {
-            "text": "Save $200 on the Solar Sparrow — Now $1,799",
+            "text": "Save $2 on the Passion Fruit — Now $4.99",
             "show_countdown": true,
             "hide_on_end": true,
             "end_date": "2026-03-31",
@@ -49,7 +49,7 @@
         "announcement_RgTKyN": {
           "type": "announcement",
           "settings": {
-            "text": "American company from Houston, Texas. USA based support. Join the Flock.",
+            "text": "American company from Houston, Texas. USA based support. Join the Drink LLC family.",
             "show_countdown": false,
             "hide_on_end": false,
             "end_date": "",
@@ -65,7 +65,7 @@
         "announcement_jgzXqn": {
           "type": "announcement",
           "settings": {
-            "text": "2 year warranty on all ebikes",
+            "text": "100% satisfaction guarantee on all beverages",
             "show_countdown": false,
             "hide_on_end": false,
             "end_date": "",
@@ -102,20 +102,20 @@
         "menu_promotion_small_FtXFe8": {
           "type": "menu-promotion-small",
           "settings": {
-            "dropdown_link_title": "Ebikes",
-            "image": "shopify://shop_images/falcon_1_899_Limited_Time.png",
-            "title": "Shop The New Stellar Falcon!",
-            "link_url": "shopify://collections/electric-bikes"
+            "dropdown_link_title": "Beverages",
+            "image": "",
+            "title": "Shop Our Refreshing Beverages!",
+            "link_url": "shopify://collections/beverages"
           }
         },
         "menu_promotion_small_cgqEMQ": {
           "type": "menu-promotion-small",
           "disabled": true,
           "settings": {
-            "dropdown_link_title": "Ebikes",
-            "image": "shopify://shop_images/BlackFridayMenu.png",
+            "dropdown_link_title": "Beverages",
+            "image": "",
             "title": "SHOP OUR BIGGEST SALE OF THE YEAR",
-            "link_url": "shopify://collections/electric-bikes"
+            "link_url": "shopify://collections/beverages"
           }
         }
       },
@@ -124,13 +124,13 @@
         "menu_promotion_small_cgqEMQ"
       ],
       "settings": {
-        "logo": "shopify://shop_images/euphree-logo-black.svg",
+        "logo": "",
         "logo_img_width_int": 155,
         "mobile_logo_img_width_int": 135,
         "logo_h1": true,
         "enable_sticky": true,
         "enable_transparent": false,
-        "transparent_logo": "shopify://shop_images/euphree-logo-white.svg",
+        "transparent_logo": "",
         "transparent_color": "#ffffff",
         "transparent_fade": "#000000",
         "transparent_fade_strength": 40,
@@ -141,8 +141,8 @@
         "mobile_expand_with_entire_link": true,
         "enable_mobile_promo_carousel": false,
         "enable_nav_mob_products": true,
-        "nav_mob_products_title": "#1 in comfort",
-        "nav_mob_products_collection": "stellar-falcon-series",
+        "nav_mob_products_title": "#1 in refreshment",
+        "nav_mob_products_collection": "beverages",
         "enable_search": true,
         "search_recommendations_title": "",
         "search_recommendations_menu": "support-service",

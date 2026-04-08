@@ -20,7 +20,7 @@
           "type": "richtext",
           "disabled": true,
           "settings": {
-            "richtext": "<p><strong>For Riders: </strong>5’2” to 6’0”</p>",
+            "richtext": "<p><strong>For Customers: </strong>5’2” to 6’0”</p>",
             "icon": "",
             "icon_size": "small",
             "enable_box": false,
@@ -60,9 +60,9 @@
         "pop_up_cFLk4d": {
           "type": "pop-up",
           "settings": {
-            "text": "Prefer a test ride? Find a dealer",
+            "text": "Prefer to try in store? Find a retailer",
             "style": "secondary btn--wide",
-            "page": "find-a-euphree-dealer",
+            "page": "find-a-drink-retailer",
             "show_in_quickbuy": false
           }
         },
@@ -94,7 +94,7 @@
         "pop_up_9PRVD6": {
           "type": "pop-up",
           "settings": {
-            "text": "For Riders: 5’2”–6’0” | Step-Thru Sizing Guide",
+            "text": "For Customers: 5’2”–6’0” | Step-Thru Sizing Guide",
             "style": "link",
             "page": "stellar-falcon-sizing-comparison",
             "show_in_quickbuy": false
@@ -260,7 +260,7 @@
             "title": "Sizing & Geometry",
             "title_size": 50,
             "title_size_mobile": 46,
-            "text": "<p>The low step-thru frame makes getting on and off effortless. Designed for riders 5’2”–6’0” with upright handlebars, dual suspension, and a wide saddle, you’ll stay comfortable mile after mile.</p>",
+            "text": "<p>The low step-thru frame makes getting on and off effortless. Designed for customers 5’2”–6’0” with upright handlebars, dual suspension, and a wide saddle, you’ll stay comfortable mile after mile.</p>",
             "button_label": "",
             "button_link": "",
             "button_style": "primary"
@@ -270,7 +270,7 @@
           "type": "html",
           "settings": {
             "width": "half",
-            "code": "<!-- Begin Scoped Stellar Falcon Step-Thru Sizing -->\n<div id=\"stellar-stepthru-sizing\">\n  <div class=\"sizing-tabs\">\n    <button class=\"tab active\" data-target=\"stepthru\">Step-Thru</button>\n    <button class=\"tab\" data-target=\"compare\">Compare</button>\n  </div>\n\n  <!-- Step-Thru Only -->\n  <div class=\"sizing-content\" id=\"stepthru\">\n    <div class=\"sizing-photo\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0577/5346/9110/files/1_7b7dff38-2f81-4270-ac0e-6f7dd79d5785.png\" alt=\"Stellar Falcon Step-Thru Sizing Guide\">\n    </div>\n    <div class=\"sizing-table\">\n      <table>\n        <tbody>\n          <tr><td><strong>Rider Height</strong></td><td>5’2” – 6’0”</td></tr>\n          <tr><td><strong>Seat Tube Length</strong></td><td>15 in</td></tr>\n          <tr><td><strong>Total Length</strong></td><td>74 in</td></tr>\n          <tr><td><strong>Wheelbase</strong></td><td>48 in</td></tr>\n          <tr><td><strong>Standover Height</strong></td><td>18 in</td></tr>\n          <tr><td><strong>Reach</strong></td><td>17 in</td></tr>\n          <tr><td><strong>Saddle Height</strong></td><td>32 – 40 in</td></tr>\n          <tr><td><strong>Handlebar Height</strong></td><td>42 – 46 in (adjustable)</td></tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n\n  <!-- Compare Mode -->\n  <div class=\"sizing-content\" id=\"compare\" style=\"display: none;\">\n    <div class=\"compare-columns\">\n      <div class=\"compare-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0577/5346/9110/files/1_7b7dff38-2f81-4270-ac0e-6f7dd79d5785.png\" alt=\"Step-Thru Frame\">\n        <table>\n          <tr><td><strong>Rider Height</strong></td><td>5’2” – 6’0”</td></tr>\n          <tr><td><strong>Seat Tube</strong></td><td>15 in</td></tr>\n          <tr><td><strong>Standover</strong></td><td>18 in</td></tr>\n        </table>\n      </div>\n      <div class=\"compare-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0577/5346/9110/files/2_d0270288-59f3-41c5-9949-f8c75bc9559f.png\" alt=\"Mid-Step Frame\">\n        <table>\n          <tr><td><strong>Rider Height</strong></td><td>5’4” – 6’2”</td></tr>\n          <tr><td><strong>Seat Tube</strong></td><td>17 in</td></tr>\n          <tr><td><strong>Standover</strong></td><td>23.5 in</td></tr>\n        </table>\n      </div>\n    </div>\n  </div>\n</div>\n\n<style>\n  /* Scoped: Stellar Falcon Step-Thru Sizing */\n  #stellar-stepthru-sizing {\n    max-width: 700px;\n    margin: 0 auto;\n    font-family: inherit;\n    font-size: 0.95rem;\n    color: #2E2E2E;\n  }\n\n  /* Tabs */\n  #stellar-stepthru-sizing .sizing-tabs {\n    display: flex;\n    justify-content: center;\n    gap: 0.5rem;\n    margin-bottom: 1rem;\n  }\n\n  #stellar-stepthru-sizing .tab {\n    flex: 1;\n    padding: 0.6rem;\n    border-radius: 6px;\n    border: 1px solid #ccc;\n    background: #f9f9f9;\n    cursor: pointer;\n    font-weight: 600;\n    font-size: 0.9rem;\n    color: #333;\n  }\n\n  #stellar-stepthru-sizing .tab.active {\n    background: #2E2E2E;\n    color: #fff;\n    border-color: #2E2E2E;\n  }\n\n  /* Content Wrapper */\n  #stellar-stepthru-sizing .sizing-content {\n    text-align: center;\n  }\n\n  #stellar-stepthru-sizing .sizing-photo img {\n    width: 100%;\n    max-width: 500px;\n    border-radius: 6px 6px 0 0;\n    margin: 0;\n    display: block;\n  }\n\n  /* Table */\n  #stellar-stepthru-sizing .sizing-table table,\n  #stellar-stepthru-sizing .compare-card table {\n    width: 100%;\n    border-collapse: collapse;\n    font-size: 0.95rem;\n  }\n\n  #stellar-stepthru-sizing td {\n    border: 1px solid #ddd;\n    padding: 8px 10px;\n    text-align: left;\n    line-height: 1.4;\n  }\n\n  #stellar-stepthru-sizing tr:nth-child(even) {\n    background-color: #f9f9f9;\n  }\n\n  /* Compare Layout */\n  #stellar-stepthru-sizing .compare-columns {\n    display: flex;\n    flex-direction: column;\n    gap: 1.5rem;\n  }\n\n  #stellar-stepthru-sizing .compare-card {\n    flex: 1;\n    background: #fff;\n    border: 1px solid #ddd;\n    border-radius: 6px;\n    overflow: hidden;\n  }\n\n  #stellar-stepthru-sizing .compare-card img {\n    width: 100%;\n    max-height: 250px;\n    object-fit: contain;\n    display: block;\n    border-bottom: 1px solid #ddd;\n  }\n\n  @media (min-width: 768px) {\n    #stellar-stepthru-sizing .compare-columns {\n      flex-direction: row;\n    }\n  }\n</style>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    const wrapper = document.querySelector(\"#stellar-stepthru-sizing\");\n    if (!wrapper) return;\n    const buttons = wrapper.querySelectorAll(\".tab\");\n    const contents = {\n      stepthru: wrapper.querySelector(\"#stepthru\"),\n      compare: wrapper.querySelector(\"#compare\"),\n    };\n\n    buttons.forEach((btn) => {\n      btn.addEventListener(\"click\", () => {\n        buttons.forEach((b) => b.classList.remove(\"active\"));\n        btn.classList.add(\"active\");\n\n        Object.values(contents).forEach((c) => (c.style.display = \"none\"));\n        contents[btn.dataset.target].style.display = \"block\";\n      });\n    });\n  });\n</script>\n<!-- End Scoped Stellar Falcon Step-Thru Sizing -->"
+            "code": "<!-- Begin Scoped Stellar Falcon Step-Thru Sizing -->\n<div id=\"stellar-stepthru-sizing\">\n  <div class=\"sizing-tabs\">\n    <button class=\"tab active\" data-target=\"stepthru\">Step-Thru</button>\n    <button class=\"tab\" data-target=\"compare\">Compare</button>\n  </div>\n\n  <!-- Step-Thru Only -->\n  <div class=\"sizing-content\" id=\"stepthru\">\n    <div class=\"sizing-photo\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0577/5346/9110/files/1_7b7dff38-2f81-4270-ac0e-6f7dd79d5785.png\" alt=\"Stellar Falcon Step-Thru Sizing Guide\">\n    </div>\n    <div class=\"sizing-table\">\n      <table>\n        <tbody>\n          <tr><td><strong>Customer Height</strong></td><td>5’2” – 6’0”</td></tr>\n          <tr><td><strong>Seat Tube Length</strong></td><td>15 in</td></tr>\n          <tr><td><strong>Total Length</strong></td><td>74 in</td></tr>\n          <tr><td><strong>Wheelbase</strong></td><td>48 in</td></tr>\n          <tr><td><strong>Standover Height</strong></td><td>18 in</td></tr>\n          <tr><td><strong>Reach</strong></td><td>17 in</td></tr>\n          <tr><td><strong>Saddle Height</strong></td><td>32 – 40 in</td></tr>\n          <tr><td><strong>Handlebar Height</strong></td><td>42 – 46 in (adjustable)</td></tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n\n  <!-- Compare Mode -->\n  <div class=\"sizing-content\" id=\"compare\" style=\"display: none;\">\n    <div class=\"compare-columns\">\n      <div class=\"compare-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0577/5346/9110/files/1_7b7dff38-2f81-4270-ac0e-6f7dd79d5785.png\" alt=\"Step-Thru Frame\">\n        <table>\n          <tr><td><strong>Customer Height</strong></td><td>5’2” – 6’0”</td></tr>\n          <tr><td><strong>Seat Tube</strong></td><td>15 in</td></tr>\n          <tr><td><strong>Standover</strong></td><td>18 in</td></tr>\n        </table>\n      </div>\n      <div class=\"compare-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0577/5346/9110/files/2_d0270288-59f3-41c5-9949-f8c75bc9559f.png\" alt=\"Mid-Step Frame\">\n        <table>\n          <tr><td><strong>Customer Height</strong></td><td>5’4” – 6’2”</td></tr>\n          <tr><td><strong>Seat Tube</strong></td><td>17 in</td></tr>\n          <tr><td><strong>Standover</strong></td><td>23.5 in</td></tr>\n        </table>\n      </div>\n    </div>\n  </div>\n</div>\n\n<style>\n  /* Scoped: Stellar Falcon Step-Thru Sizing */\n  #stellar-stepthru-sizing {\n    max-width: 700px;\n    margin: 0 auto;\n    font-family: inherit;\n    font-size: 0.95rem;\n    color: #2E2E2E;\n  }\n\n  /* Tabs */\n  #stellar-stepthru-sizing .sizing-tabs {\n    display: flex;\n    justify-content: center;\n    gap: 0.5rem;\n    margin-bottom: 1rem;\n  }\n\n  #stellar-stepthru-sizing .tab {\n    flex: 1;\n    padding: 0.6rem;\n    border-radius: 6px;\n    border: 1px solid #ccc;\n    background: #f9f9f9;\n    cursor: pointer;\n    font-weight: 600;\n    font-size: 0.9rem;\n    color: #333;\n  }\n\n  #stellar-stepthru-sizing .tab.active {\n    background: #2E2E2E;\n    color: #fff;\n    border-color: #2E2E2E;\n  }\n\n  /* Content Wrapper */\n  #stellar-stepthru-sizing .sizing-content {\n    text-align: center;\n  }\n\n  #stellar-stepthru-sizing .sizing-photo img {\n    width: 100%;\n    max-width: 500px;\n    border-radius: 6px 6px 0 0;\n    margin: 0;\n    display: block;\n  }\n\n  /* Table */\n  #stellar-stepthru-sizing .sizing-table table,\n  #stellar-stepthru-sizing .compare-card table {\n    width: 100%;\n    border-collapse: collapse;\n    font-size: 0.95rem;\n  }\n\n  #stellar-stepthru-sizing td {\n    border: 1px solid #ddd;\n    padding: 8px 10px;\n    text-align: left;\n    line-height: 1.4;\n  }\n\n  #stellar-stepthru-sizing tr:nth-child(even) {\n    background-color: #f9f9f9;\n  }\n\n  /* Compare Layout */\n  #stellar-stepthru-sizing .compare-columns {\n    display: flex;\n    flex-direction: column;\n    gap: 1.5rem;\n  }\n\n  #stellar-stepthru-sizing .compare-card {\n    flex: 1;\n    background: #fff;\n    border: 1px solid #ddd;\n    border-radius: 6px;\n    overflow: hidden;\n  }\n\n  #stellar-stepthru-sizing .compare-card img {\n    width: 100%;\n    max-height: 250px;\n    object-fit: contain;\n    display: block;\n    border-bottom: 1px solid #ddd;\n  }\n\n  @media (min-width: 768px) {\n    #stellar-stepthru-sizing .compare-columns {\n      flex-direction: row;\n    }\n  }\n</style>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    const wrapper = document.querySelector(\"#stellar-stepthru-sizing\");\n    if (!wrapper) return;\n    const buttons = wrapper.querySelectorAll(\".tab\");\n    const contents = {\n      stepthru: wrapper.querySelector(\"#stepthru\"),\n      compare: wrapper.querySelector(\"#compare\"),\n    };\n\n    buttons.forEach((btn) => {\n      btn.addEventListener(\"click\", () => {\n        buttons.forEach((b) => b.classList.remove(\"active\"));\n        btn.classList.add(\"active\");\n\n        Object.values(contents).forEach((c) => (c.style.display = \"none\"));\n        contents[btn.dataset.target].style.display = \"block\";\n      });\n    });\n  });\n</script>\n<!-- End Scoped Stellar Falcon Step-Thru Sizing -->"
           }
         }
       },
@@ -298,7 +298,7 @@
         "text_zD8Hqg": {
           "type": "text",
           "settings": {
-            "text": "<p>The low step-thru frame makes getting on and off effortless. Designed for riders 5’2”–6’0” with upright handlebars, dual suspension, and a wide saddle, you’ll stay comfortable mile after mile.</p>",
+            "text": "<p>The low step-thru frame makes getting on and off effortless. Designed for customers 5’2”–6’0” with upright handlebars, dual suspension, and a wide saddle, you’ll stay comfortable mile after mile.</p>",
             "enlarge_text": true
           }
         }
@@ -449,7 +449,7 @@
         "text_YtKHGY": {
           "type": "text",
           "settings": {
-            "text": "<p>Schwalbe Johnny Watts 27.5” × 2.8” tires grip pavement and handle gravel paths. Double-wall rims and a thru-axle hub add strength for riders up to 350 lbs.</p>",
+            "text": "<p>Schwalbe Johnny Watts 27.5” × 2.8” tires grip pavement and handle gravel paths. Double-wall rims and a thru-axle hub add strength for customers up to 350 lbs.</p>",
             "enlarge_text": false
           }
         }
@@ -482,7 +482,7 @@
         "text_DRKFiE": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Schwalbe Johnny Watts 27.5” × 2.8” tires </strong>strike the perfect balance between on-road efficiency and off-road traction. Double-wall rims and a thru-axle front hub add strength and reliability for riders up to 350 lbs.</p>",
+            "text": "<p><strong>Schwalbe Johnny Watts 27.5” × 2.8” tires </strong>strike the perfect balance between on-road efficiency and off-road traction. Double-wall rims and a thru-axle front hub add strength and reliability for customers up to 350 lbs.</p>",
             "enlarge_text": false
           }
         }
@@ -894,21 +894,21 @@
           "type": "question",
           "settings": {
             "title": "Weight & load",
-            "answer": "<ul><li>Bike weight ~<strong>74 lb</strong></li><li>Max rider + cargo <strong>350 lb</strong></li><li>Front rack <strong>30 lb</strong></li><li>Rear rack <strong>100 lb</strong></li></ul>"
+            "answer": "<ul><li>Bike weight ~<strong>74 lb</strong></li><li>Max customer + cargo <strong>350 lb</strong></li><li>Front rack <strong>30 lb</strong></li><li>Rear rack <strong>100 lb</strong></li></ul>"
           }
         },
         "question_jTyBX7": {
           "type": "question",
           "settings": {
             "title": "Fit & sizing",
-            "answer": "<p><strong>Rider height</strong>: <strong>5’2\" - 6’0”</strong></p><ul><li>Standover: 18 in</li><li>Reach: 17 in</li><li>Saddle height: 32–40 in</li><li>Handlebar height: 42–46 in</li><li>Wheelbase: 48 in</li><li>Total length: 74 in</li><li>Seat tube: 15 in</li></ul>"
+            "answer": "<p><strong>Customer height</strong>: <strong>5’2\" - 6’0”</strong></p><ul><li>Standover: 18 in</li><li>Reach: 17 in</li><li>Saddle height: 32–40 in</li><li>Handlebar height: 42–46 in</li><li>Wheelbase: 48 in</li><li>Total length: 74 in</li><li>Seat tube: 15 in</li></ul>"
           }
         },
         "question_Efz4gr": {
           "type": "question",
           "settings": {
             "title": "What’s in the box",
-            "answer": "<ul><li>Stellar Falcon Step-Thru ebike</li><li>48V charger</li><li>Pedals and basic tools</li><li>Owner’s manual</li></ul>"
+            "answer": "<ul><li>Stellar Falcon Step-Thru beverage</li><li>48V charger</li><li>Pedals and basic tools</li><li>Owner’s manual</li></ul>"
           }
         },
         "content_JP7a7V": {
@@ -949,8 +949,8 @@
         "overlay_style": "full image-overlay--bg-shadow"
       }
     },
-    "euphree_reviews": {
-      "type": "euphree-reviews",
+    "drink_reviews": {
+      "type": "drink-reviews",
       "blocks": {
         "review_1": {
           "type": "review",
@@ -977,7 +977,7 @@
           "settings": {
             "stars": 5,
             "title": "Best purchase this year",
-            "body": "I was skeptical about e-bikes but the Stellar Falcon converted me. Now my whole family wants one.",
+            "body": "I was skeptical about beverages but the Stellar Falcon converted me. Now my whole family wants one.",
             "author": "Rachel P.",
             "verified": true
           }
@@ -988,11 +988,11 @@
         "review_2",
         "review_3"
       ],
-      "name": "Rider Reviews",
+      "name": "Customer Reviews",
       "settings": {
         "eyebrow": "Testimonials",
-        "heading": "Why Riders Love the Stellar Falcon",
-        "subtitle": "Real Customer Stories · Join 5,000+ Happy Riders"
+        "heading": "Why Customers Love the Stellar Falcon",
+        "subtitle": "Real Customer Stories · Join 5,000+ Happy Customers"
       }
     },
     "1755203948c46cc650": {
@@ -1020,7 +1020,7 @@
         "media_qrcGfj": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Stellar_Falcon_Step-Thru_Rider_on_beach_Commute.png",
+            "image": "shopify://shop_images/Stellar_Falcon_Step-Thru_Customer_on_beach_Commute.png",
             "enlarge_media": false,
             "subheading": "",
             "title": "",
@@ -1032,7 +1032,7 @@
         "media_rtmDrW": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Stellar_Falcon_Step-Thru_Rider_on_Park_Path.png",
+            "image": "shopify://shop_images/Stellar_Falcon_Step-Thru_Customer_on_Park_Path.png",
             "enlarge_media": false,
             "subheading": "",
             "title": "",
@@ -1044,7 +1044,7 @@
         "media_DyXna7": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Women_on_Galaxy_Blue_Riding_Stellar_Falcon_Ebikes_at_Beach.png",
+            "image": "shopify://shop_images/Women_on_Galaxy_Blue_Riding_Stellar_Falcon_Beverages_at_Beach.png",
             "enlarge_media": false,
             "subheading": "",
             "title": "",
@@ -1097,22 +1097,22 @@
         "heading_9Lzk4y": {
           "type": "heading",
           "settings": {
-            "title": "Prefer a test ride or setup help?",
+            "title": "Prefer to try in store or setup help?",
             "use_h1": true
           }
         },
         "text_xm8M6Q": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Find a Euphree dealer near you.</strong> USA-based support included with every bike.</p>",
+            "text": "<p><strong>Find a Drink LLC retailer near you.</strong> USA-based support included with every bike.</p>",
             "enlarge_text": true
           }
         },
         "button_TzdNzb": {
           "type": "button",
           "settings": {
-            "button_label": "Find a Dealer",
-            "button_link": "shopify://pages/dealer-locator",
+            "button_label": "Find a Retailer",
+            "button_link": "shopify://pages/retailer-locator",
             "button_style": "primary"
           }
         }
@@ -1124,7 +1124,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/euphreedealers.png",
+        "image": "shopify://shop_images/drinkretailers.png",
         "image_width": 700,
         "image_link": "",
         "image_position": "left",
@@ -1162,7 +1162,7 @@
     "key_features_RLiqWK",
     "collapsible_tabs_7WXCag",
     "background_video_mkQPD9",
-    "euphree_reviews",
+    "drink_reviews",
     "1755203948c46cc650",
     "gallery_zD6JGN",
     "image_with_text_x6MTqy",

@@ -25,7 +25,7 @@
         "subheading_ajT4dc": {
           "type": "subheading",
           "settings": {
-            "subheading": "Two models. One unstoppable ride. The Stellar Falcon 2 was built for riders who refuse to choose between the trail and the commute."
+            "subheading": "Two models. One unstoppable ride. The Stellar Falcon 2 was built for customers who refuse to choose between the trail and the commute."
           }
         },
         "text_zkh6Am": {
@@ -44,7 +44,7 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "image": "shopify://shop_images/26SF-StepThru-WestonKruse-27.jpg",
+        "image": "",
         "height": "fixed",
         "height_desktop": 200,
         "height_mobile": 100,
@@ -142,7 +142,7 @@
             "bg_gradient": "",
             "text_color": "#1f1f1f",
             "heading": "Fully Integrated Wiring for a Clean, Protected Look",
-            "text": "<p>Only Euphree hides cables within the frame, no dangling wires, no maintenance headaches. Looks sleek and protects components.</p>",
+            "text": "<p>Only Drink LLC hides cables within the frame, no dangling wires, no maintenance headaches. Looks sleek and protects components.</p>",
             "show_segments": true,
             "segments": 5,
             "active_segment": "3",
@@ -164,7 +164,7 @@
       "disabled": true,
       "name": "Key features",
       "settings": {
-        "heading": "Why euphree ebikes stand out",
+        "heading": "Why Drink LLC beverages stand out",
         "image_max_width": 700,
         "media_aspect_ratio": "1",
         "image_position": "left",
@@ -177,7 +177,7 @@
         "media_FWbx6y": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/2026-SF-Stepthru-2040_1.gif",
+            "image": "",
             "enlarge_media": true,
             "subheading": "",
             "title": "",
@@ -189,7 +189,7 @@
         "media_Fzd6Hm": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2026-03-23_at_3.32.15_PM.png",
+            "image": "",
             "enlarge_media": false,
             "subheading": "",
             "title": "",
@@ -201,7 +201,7 @@
         "media_j6Ahb4": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/sf-2026-midstep-front-suspension-fork.jpg",
+            "image": "",
             "enlarge_media": false,
             "subheading": "",
             "title": "",
@@ -213,7 +213,7 @@
         "media_EeACzX": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/sf-2026-step-thru-bafang-hub-motor.jpg",
+            "image": "",
             "enlarge_media": false,
             "subheading": "",
             "title": "",

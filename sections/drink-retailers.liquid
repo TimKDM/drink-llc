@@ -1,14 +1,14 @@
-<!-- Euphree Dealer Section -->
-<!-- 2-column: photo mosaic left, dealer content + perks right -->
+<!-- Drink Retailers Section -->
+<!-- 2-column: photo mosaic left, retailer content + perks right -->
 <style>
-.euphree-dealers {
+.drink-retailers {
   padding: 120px 48px;
   background: #ffffff;
   font-family: var(--base-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   box-sizing: border-box;
 }
-.euphree-dealers * { box-sizing: border-box; margin: 0; padding: 0; }
-.euphree-dealer-grid {
+.drink-retailers * { box-sizing: border-box; margin: 0; padding: 0; }
+.drink-retailer-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
@@ -16,27 +16,27 @@
   max-width: 1300px;
   margin: 0 auto;
 }
-.euphree-dealer-visual {
+.drink-retailer-visual {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
-.euphree-dealer-img {
+.drink-retailer-img {
   aspect-ratio: 1;
   border-radius: 12px;
   overflow: hidden;
 }
-.euphree-dealer-img:first-child {
+.drink-retailer-img:first-child {
   grid-row: span 2;
   aspect-ratio: auto;
 }
-.euphree-dealer-img img {
+.drink-retailer-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
-.euphree-dealer-eyebrow {
+.drink-retailer-eyebrow {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2.5px;
@@ -44,7 +44,7 @@
   color: #888888;
   margin-bottom: 16px;
 }
-.euphree-dealer-content h2 {
+.drink-retailer-content h2 {
   font-family: var(--heading-font-family), serif;
   font-size: 52px;
   font-weight: 700;
@@ -52,19 +52,19 @@
   margin-bottom: 24px;
   color: #121212;
 }
-.euphree-dealer-content p {
+.drink-retailer-content p {
   font-size: 18px;
   line-height: 1.7;
   color: #555555;
   margin-bottom: 32px;
 }
-.euphree-dealer-perks {
+.drink-retailer-perks {
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin-bottom: 40px;
 }
-.euphree-perk {
+.drink-perk {
   display: flex;
   align-items: center;
   gap: 14px;
@@ -72,7 +72,7 @@
   font-weight: 500;
   color: #333333;
 }
-.euphree-perk-icon {
+.drink-perk-icon {
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -83,8 +83,8 @@
   justify-content: center;
   flex-shrink: 0;
 }
-.euphree-perk-icon svg { width: 18px; height: 18px; color: #333333; }
-.euphree-dealers .euphree-btn-dealer {
+.drink-perk-icon svg { width: 18px; height: 18px; color: #333333; }
+.drink-retailers .drink-btn-retailer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -101,7 +101,7 @@
   transition: all 0.25s;
   letter-spacing: 0.3px;
 }
-.euphree-dealers .euphree-btn-dealer:hover {
+.drink-retailers .drink-btn-retailer:hover {
   background: #2563b8;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(46,114,210,0.3);
@@ -109,45 +109,45 @@
 
 /* Tablet */
 @media (max-width: 1024px) {
-  .euphree-dealer-grid { grid-template-columns: 1fr; gap: 48px; }
-  .euphree-dealer-content h2 { font-size: 40px; }
-  .euphree-dealer-visual { gap: 8px; }
+  .drink-retailer-grid { grid-template-columns: 1fr; gap: 48px; }
+  .drink-retailer-content h2 { font-size: 40px; }
+  .drink-retailer-visual { gap: 8px; }
 }
 /* Mobile */
 @media (max-width: 768px) {
-  .euphree-dealers { padding: 64px 20px; }
-  .euphree-dealer-grid { gap: 40px; }
-  .euphree-dealer-content h2 { font-size: 32px; }
-  .euphree-dealer-content p { font-size: 16px; }
-  .euphree-dealer-visual { gap: 8px; }
-  .euphree-dealer-img { border-radius: 8px; }
+  .drink-retailers { padding: 64px 20px; }
+  .drink-retailer-grid { gap: 40px; }
+  .drink-retailer-content h2 { font-size: 32px; }
+  .drink-retailer-content p { font-size: 16px; }
+  .drink-retailer-visual { gap: 8px; }
+  .drink-retailer-img { border-radius: 8px; }
 }
 @media (max-width: 480px) {
-  .euphree-dealer-content h2 { font-size: 28px; }
-  .euphree-dealer-visual { grid-template-columns: 1fr; }
-  .euphree-dealer-img:first-child { grid-row: auto; }
-  .euphree-dealers .euphree-btn-dealer { width: 100%; text-align: center; justify-content: center; font-size: 16px; padding: 16px 28px; }
+  .drink-retailer-content h2 { font-size: 28px; }
+  .drink-retailer-visual { grid-template-columns: 1fr; }
+  .drink-retailer-img:first-child { grid-row: auto; }
+  .drink-retailers .drink-btn-retailer { width: 100%; text-align: center; justify-content: center; font-size: 16px; padding: 16px 28px; }
 }
 </style>
 
-<section class="euphree-dealers">
-  <div class="euphree-dealer-grid">
-    <div class="euphree-dealer-visual">
-      <div class="euphree-dealer-img">
+<section class="drink-retailers">
+  <div class="drink-retailer-grid">
+    <div class="drink-retailer-visual">
+      <div class="drink-retailer-img">
         {% if section.settings.image_1 != blank %}
           <img src="{{ section.settings.image_1 | image_url: width: 1024 }}" alt="{{ section.settings.image_1_alt }}" width="{{ section.settings.image_1.width }}" height="{{ section.settings.image_1.height }}" loading="lazy">
         {% else %}
           <div class="placeholder-image">{{- 'image' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
         {% endif %}
       </div>
-      <div class="euphree-dealer-img">
+      <div class="drink-retailer-img">
         {% if section.settings.image_2 != blank %}
           <img src="{{ section.settings.image_2 | image_url: width: 800 }}" alt="{{ section.settings.image_2_alt }}" width="{{ section.settings.image_2.width }}" height="{{ section.settings.image_2.height }}" loading="lazy">
         {% else %}
           <div class="placeholder-image">{{- 'image' | placeholder_svg_tag: 'placeholder-svg' -}}</div>
         {% endif %}
       </div>
-      <div class="euphree-dealer-img">
+      <div class="drink-retailer-img">
         {% if section.settings.image_3 != blank %}
           <img src="{{ section.settings.image_3 | image_url: width: 800 }}" alt="{{ section.settings.image_3_alt }}" width="{{ section.settings.image_3.width }}" height="{{ section.settings.image_3.height }}" loading="lazy">
         {% else %}
@@ -155,15 +155,15 @@
         {% endif %}
       </div>
     </div>
-    <div class="euphree-dealer-content">
-      <div class="euphree-dealer-eyebrow">{{ section.settings.eyebrow }}</div>
+    <div class="drink-retailer-content">
+      <div class="drink-retailer-eyebrow">{{ section.settings.eyebrow }}</div>
       <h2>{{ section.settings.heading }}</h2>
       <p>{{ section.settings.description }}</p>
-      <div class="euphree-dealer-perks">
+      <div class="drink-retailer-perks">
         {% for block in section.blocks %}
           {% if block.type == 'perk' %}
-            <div class="euphree-perk" {{ block.shopify_attributes }}>
-              <div class="euphree-perk-icon">
+            <div class="drink-perk" {{ block.shopify_attributes }}>
+              <div class="drink-perk-icon">
                 {% case block.settings.icon %}
                   {% when 'people' %}
                     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
@@ -183,7 +183,7 @@
         {% endfor %}
       </div>
       {% if section.settings.button_label != blank %}
-        <a href="{{ section.settings.button_url }}" class="euphree-btn-dealer">{{ section.settings.button_label }}</a>
+        <a href="{{ section.settings.button_url }}" class="drink-btn-retailer">{{ section.settings.button_label }}</a>
       {% endif %}
     </div>
   </div>
@@ -191,8 +191,8 @@
 
 {% schema %}
 {
-  "name": "Euphree Dealer Section",
-  "class": "section-euphree-dealer-section",
+  "name": "Drink Retailers",
+  "class": "section-drink-retailers",
   "settings": [
     {
       "type": "image_picker",
@@ -203,7 +203,7 @@
       "type": "text",
       "id": "image_1_alt",
       "label": "Main Image Alt Text",
-      "default": "Euphree bikes in dealer showroom"
+      "default": "Drink beverages on retail shelf"
     },
     {
       "type": "image_picker",
@@ -214,7 +214,7 @@
       "type": "text",
       "id": "image_2_alt",
       "label": "Top Right Image Alt Text",
-      "default": "Euphree bike tour group ride"
+      "default": "Drink beverages at a local store"
     },
     {
       "type": "image_picker",
@@ -225,31 +225,31 @@
       "type": "text",
       "id": "image_3_alt",
       "label": "Bottom Right Image Alt Text",
-      "default": "Euphree riders group photo"
+      "default": "Happy customers enjoying Drink"
     },
     {
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow Text",
-      "default": "Buy Local"
+      "default": "Find Us Near You"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Test Ride at Your Local Dealer"
+      "default": "Find Drink at a Store Near You"
     },
     {
       "type": "textarea",
       "id": "description",
       "label": "Description",
-      "default": "With 180+ bike shops nationwide, you can see, touch, and test ride your Euphree before you commit. Real local service from real bike people."
+      "default": "Drink is available at select grocery stores, cafes, and specialty retailers nationwide. Find your nearest location and grab your favorite flavor today."
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "Button Label",
-      "default": "Find a Dealer Near You →"
+      "default": "Find a Retailer Near You →"
     },
     {
       "type": "url",
@@ -286,27 +286,27 @@
   ],
   "presets": [
     {
-      "name": "Euphree Dealer Section",
+      "name": "Drink Retailers",
       "blocks": [
         {
           "type": "perk",
           "settings": {
-            "icon": "people",
-            "text": "Expert-guided test rides"
-          }
-        },
-        {
-          "type": "perk",
-          "settings": {
-            "icon": "wrench",
-            "text": "Professional assembly & tune-ups"
-          }
-        },
-        {
-          "type": "perk",
-          "settings": {
             "icon": "location",
-            "text": "Local warranty service"
+            "text": "Available at select stores nationwide"
+          }
+        },
+        {
+          "type": "perk",
+          "settings": {
+            "icon": "checkmark",
+            "text": "Always fresh, always in stock"
+          }
+        },
+        {
+          "type": "perk",
+          "settings": {
+            "icon": "people",
+            "text": "Taste samples at partner locations"
           }
         }
       ]
