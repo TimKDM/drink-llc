@@ -91,11 +91,11 @@ p {
 
 /* Labels / Tags */
 .label {
-  font-family: var(--font-body);
+  font-family: var(--font-mono, 'JetBrains Mono', monospace);
   font-weight: 500;
   font-size: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.15em;
   color: var(--color-ash);
 }
 

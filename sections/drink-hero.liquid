@@ -50,7 +50,7 @@
       {%- case block.type -%}
         {%- when 'badge' -%}
           {%- if block.settings.text != blank -%}
-            <span class="drink-mono-label" style="background: #fff; border-color: var(--drink-sepia); color: var(--drink-rust);" {{ block.shopify_attributes }}>{{ block.settings.text }}</span>
+            <span class="drink-hero__badge" {{ block.shopify_attributes }}>{{ block.settings.text }}</span>
           {%- endif -%}
 
         {%- when 'heading' -%}

@@ -73,7 +73,7 @@
           {{ 'collection-' | append: forloop.index | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
         <div class="drink-category-card__content">
-          <span class="drink-mono-label" style="background: var(--drink-matcha); color: #fff; border: none; margin-bottom: 8px;">{{ block.settings.subtitle | default: 'Explore' }}</span>
+          <span class="drink-category-badge">{{ block.settings.subtitle | default: 'Explore' }}</span>
           <h3>{{ block.settings.heading | default: collection.title }}</h3>
         </div>
       </a>
