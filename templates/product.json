@@ -31,29 +31,12 @@
             "hide_quick_view": false
           }
         },
-        "spacer": {
-          "type": "spacer",
-          "settings": {
-            "column": "left",
-            "margin_top": 0,
-            "hide_quick_view": false
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-            "column": "under-gallery",
-            "margin_top": 0,
-            "text_size": "medium",
-            "hide_quick_view": false
-          }
-        },
-        "buy_buttons": {
+        "variant_picker": {
           "type": "buy_buttons",
           "settings": {
             "column": "left",
             "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true,
+            "show_gift_card_recipient": false,
             "picker_type": "button",
             "swatch_shape": "circle",
             "margin_top": 0,
@@ -65,42 +48,16 @@
             "hide_quick_view": false
           }
         },
-        "product_tags": {
-          "type": "product_tags",
+        "in_stock_text": {
+          "type": "custom_liquid",
           "settings": {
             "column": "left",
-            "max_tags": 5,
-            "show_benefits": true,
-            "show_flavors": true,
-            "show_dietary": false,
-            "margin_top": 0,
-            "hide_quick_view": false
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "column": "left",
-            "text": "<p>No GMO. Dairy Free. Gluten Free. Peanut Free</p>",
-            "text_style": "body",
-            "text_block_size": "small",
-            "show_text_background": true,
-            "margin_top": 0,
-            "color_scheme_1": "option-2",
-            "hide_quick_view": true
-          }
-        },
-        "inventory": {
-          "type": "inventory",
-          "settings": {
-            "column": "left",
-            "inventory_threshold": 10,
-            "show_inventory_quantity": false,
+            "custom_liquid": "<p style=\"display:flex;align-items:center;gap:6px;font-family:var(--font-mono,'JetBrains Mono',monospace);font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:#5A9A10;margin:8px 0 0;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M22 11.08V12a10 10 0 1 1-5.93-9.14\"/><polyline points=\"22 4 12 14.01 9 11.01\"/></svg> In Stock &amp; Ready to Ship</p>",
             "margin_top": 0,
             "hide_quick_view": true
           }
         },
-        "dynamic_card_icons": {
+        "trust_icons": {
           "type": "dynamic_card_icons",
           "settings": {
             "column": "left",
@@ -117,63 +74,85 @@
             "hide_quick_view": true
           }
         },
-        "delivery_estimator": {
-          "type": "delivery_estimator",
-          "disabled": true,
+        "product_tags": {
+          "type": "product_tags",
           "settings": {
             "column": "left",
-            "delivery_estimator_text": "Delivery between",
-            "earliest_delivery": "5",
-            "latest_delivery": "9",
-            "color_scheme_1": "option-2",
-            "margin_top": 10,
-            "hide_mobile": false,
-            "hide_desktop": false,
+            "max_tags": 5,
+            "show_benefits": true,
+            "show_flavors": true,
+            "show_dietary": true,
+            "margin_top": 0,
+            "hide_quick_view": false
+          }
+        },
+        "dietary_info": {
+          "type": "custom_liquid",
+          "settings": {
+            "column": "left",
+            "custom_liquid": "<div style=\"display:flex;flex-wrap:wrap;gap:12px;padding:16px 0;border-top:1px solid rgba(212,196,168,0.4);\"><span style=\"display:flex;align-items:center;gap:4px;font-family:var(--font-mono,'JetBrains Mono',monospace);font-size:0.65rem;letter-spacing:0.06em;text-transform:uppercase;color:#6B7B6E;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#5A9A10\" stroke-width=\"2\"><polyline points=\"20 6 9 17 4 12\"/></svg> Zero Sugar</span><span style=\"display:flex;align-items:center;gap:4px;font-family:var(--font-mono,'JetBrains Mono',monospace);font-size:0.65rem;letter-spacing:0.06em;text-transform:uppercase;color:#6B7B6E;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#5A9A10\" stroke-width=\"2\"><polyline points=\"20 6 9 17 4 12\"/></svg> Dairy Free</span><span style=\"display:flex;align-items:center;gap:4px;font-family:var(--font-mono,'JetBrains Mono',monospace);font-size:0.65rem;letter-spacing:0.06em;text-transform:uppercase;color:#6B7B6E;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#5A9A10\" stroke-width=\"2\"><polyline points=\"20 6 9 17 4 12\"/></svg> Non-GMO</span><span style=\"display:flex;align-items:center;gap:4px;font-family:var(--font-mono,'JetBrains Mono',monospace);font-size:0.65rem;letter-spacing:0.06em;text-transform:uppercase;color:#6B7B6E;\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#5A9A10\" stroke-width=\"2\"><polyline points=\"20 6 9 17 4 12\"/></svg> Vegan</span></div>",
+            "margin_top": 0,
             "hide_quick_view": true
           }
         },
-        "ingredient_details": {
-          "type": "ingredient_details",
-          "disabled": true,
+        "ingredients_tab": {
+          "type": "collapsible_tab",
           "settings": {
-            "column": "right",
-            "heading": "Nutritional information",
-            "heading_size": "medium",
-            "heading_tag": "h4",
-            "left_column_label": "Typical values",
-            "right_column_label": "Per 100g",
-            "content": "<p>Energy, 210 kJ / 50 kcal<br/>Fat, 2g<br/>- of which: Saturates, 0.3g <br/>Carbohydrate, 15g <br/>- of which: Sugars, 6g <br/>Fiber, 5g <br/>Protein, 3g <br/>Salt, 0.02g</p>",
-            "open_first_collapsible_row": false,
+            "column": "left",
+            "heading": "Ingredients & Nutrition",
+            "icon": "",
+            "content": "<p><strong>Active Ingredients:</strong> Sodium, Potassium, Magnesium, Calcium, Zinc</p><p><strong>Other Ingredients:</strong> Citric Acid, Natural Flavors, Stevia Leaf Extract, Silicon Dioxide</p><p><strong>Per Serving:</strong> 0g Sugar · 10 Calories · 800mg Electrolytes</p>",
+            "open": false,
             "margin_top": 0,
-            "color_scheme_1": "option-2",
             "hide_quick_view": true
           }
         },
-        "payment_enable_1": {
-          "type": "payment_enable",
+        "howto_tab": {
+          "type": "collapsible_tab",
           "settings": {
             "column": "left",
+            "heading": "How to Use",
+            "icon": "",
+            "content": "<p>1. Tear open one packet<br>2. Pour into 16 oz of water<br>3. Stir or shake until dissolved<br>4. Drink before, during, or after activity</p><p><strong>Pro tip:</strong> For best taste, use cold water and shake vigorously for 10 seconds.</p>",
+            "open": false,
             "margin_top": 0,
-            "hide_mobile": false,
-            "hide_desktop": true,
             "hide_quick_view": true
           }
         },
-        "payment_enable_2": {
-          "type": "payment_enable",
+        "shipping_tab": {
+          "type": "collapsible_tab",
+          "settings": {
+            "column": "left",
+            "heading": "Shipping & Returns",
+            "icon": "",
+            "content": "<p><strong>Free shipping</strong> on orders over $50.</p><p>Standard shipping: 3–5 business days<br>Express shipping: 1–2 business days</p><p>Not satisfied? Return within 30 days for a full refund — no questions asked.</p>",
+            "open": false,
+            "margin_top": 0,
+            "hide_quick_view": true
+          }
+        },
+        "sharing": {
+          "type": "share",
           "settings": {
             "column": "left",
             "margin_top": 0,
-            "hide_mobile": true,
-            "hide_desktop": false,
             "hide_quick_view": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "column": "under-gallery",
+            "margin_top": 0,
+            "text_size": "medium",
+            "hide_quick_view": false
           }
         },
         "complementary": {
           "type": "complementary",
           "settings": {
             "column": "under-gallery",
-            "block_heading": "Pairs nicely with",
+            "block_heading": "Pairs Well With",
             "product_list_limit": 10,
             "image_ratio": "square",
             "enable_quick_add": false,
@@ -188,17 +167,16 @@
       "block_order": [
         "title",
         "price",
-        "spacer",
-        "description",
-        "buy_buttons",
+        "variant_picker",
+        "in_stock_text",
         "product_tags",
-        "text",
-        "inventory",
-        "dynamic_card_icons",
-        "delivery_estimator",
-        "ingredient_details",
-        "payment_enable_1",
-        "payment_enable_2",
+        "dietary_info",
+        "trust_icons",
+        "ingredients_tab",
+        "howto_tab",
+        "shipping_tab",
+        "sharing",
+        "description",
         "complementary"
       ],
       "settings": {
@@ -214,8 +192,6 @@
         "enable_video_looping": false,
         "quantity_selector": 4,
         "color_scheme": "option-1",
-        "in_stock_background_color": "#a8c5a0",
-        "in_stock_color": "#1d1d1d",
         "under_gallery": "second",
         "mobile_thumbnails": "show",
         "padding_top": 0,
@@ -223,197 +199,318 @@
         "ignore_spacing": false
       }
     },
-    "custom_schema": {
-      "type": "custom-schema",
-      "settings": {
-        "enable_schema": true,
-        "schema_type": "product",
-        "gtin": "",
-        "mpn": "",
-        "material": "",
-        "category": "Food, Beverages & Tobacco > Beverages > Tea & Infusions",
-        "additional_type": "",
-        "custom_json": ""
-      }
-    },
-    "product_trust_bar": {
+    "trust_bar": {
       "type": "drink-trust-bar",
       "blocks": {
-        "trust_item_Fx79gx": {
+        "trust_1": {
           "type": "trust_item",
           "settings": {
             "icon": "shield",
-            "text": "<strong>USDA</strong> Certified Organic",
+            "text": "<strong>Lab Tested</strong> for Purity",
             "link": ""
           }
         },
-        "trust_item_zeXLhi": {
+        "trust_2": {
           "type": "trust_item",
           "settings": {
-            "icon": "shield",
-            "text": "<strong>Free Ship</strong> on Orders $75+",
+            "icon": "check",
+            "text": "<strong>Zero</strong> Sugar · No Dyes",
             "link": ""
           }
         },
-        "trust_item_P6KGtD": {
+        "trust_3": {
           "type": "trust_item",
           "settings": {
-            "icon": "shield",
-            "text": "<strong>Zero</strong> Additives. Ever.",
+            "icon": "package",
+            "text": "<strong>Free Ship</strong> on $50+",
             "link": ""
           }
         },
-        "trust_item_DcDi4t": {
+        "trust_4": {
           "type": "trust_item",
           "settings": {
-            "icon": "shield",
-            "text": "<strong>Every Batch</strong> Lab Tested",
+            "icon": "leaf",
+            "text": "<strong>Real</strong> Fruit Flavors",
             "link": ""
           }
         }
       },
       "block_order": [
-        "trust_item_Fx79gx",
-        "trust_item_zeXLhi",
-        "trust_item_P6KGtD",
-        "trust_item_DcDi4t"
+        "trust_1",
+        "trust_2",
+        "trust_3",
+        "trust_4"
       ],
       "settings": {
-        "background_color": "#E8F0DC",
-        "text_color": "#000000",
+        "background_color": "",
+        "text_color": "",
         "icon_color": "",
-        "border_color": "#D4DED0",
+        "border_color": "",
         "padding_top": 20,
         "padding_bottom": 20,
-        "margin_top": 48,
-        "margin_bottom": 48
+        "margin_top": 0,
+        "margin_bottom": 0
       }
     },
-    "tabs": {
-      "type": "tabs",
+    "how_it_works": {
+      "type": "drink-how-it-works",
       "blocks": {
-        "tab_1": {
-          "type": "tab",
+        "step_1": {
+          "type": "step",
           "settings": {
-            "heading": "How to Use",
-            "image": "",
-            "tab_image_width": 1000,
-            "hide_image": false,
-            "row_content": "<p>Every product page includes specific usage instructions, but here are a few general tips:</p><ul><li><strong>Powders &amp; Superfoods</strong> — Start with ½ to 1 tsp. Mix into smoothies, lattes, oatmeal, or baked goods.</li><li><strong>Loose Leaf Teas</strong> — Use 1–2 tsp per 8 oz of water. Steep at the recommended temperature for the best flavor.</li><li><strong>Spices &amp; Seasonings</strong> — Add to taste during cooking or as a finishing touch. A little goes a long way with high-quality ingredients.</li></ul><p>Store in a cool, dry place away from direct sunlight to preserve freshness and potency.</p>",
-            "button_label": "",
-            "button_link": "",
-            "open_new_tab_1": false,
-            "button_style_secondary": false
+            "icon": "tear",
+            "title": "Tear & Pour",
+            "description": "Tear open a single-serve packet and pour the clean formula into 16oz of water."
           }
         },
-        "tab_2": {
-          "type": "tab",
+        "step_2": {
+          "type": "step",
           "settings": {
-            "heading": "Ingredients & Sourcing",
-            "tab_image_width": 1000,
-            "hide_image": false,
-            "row_content": "<p>We source every ingredient directly from certified organic farms we know and trust — no middlemen, no compromises.</p><ul><li><strong>Certifications</strong> — USDA Organic, CCOF Certified</li><li><strong>Testing</strong> — Every batch independently lab-verified for purity, potency, heavy metals, and allergen safety</li><li><strong>Traceability</strong> — Full farm-to-shelf transparency on every product</li><li><strong>Free from</strong> — Synthetic additives, artificial colors, preservatives, fillers, and GMOs</li></ul><p>Check individual product listings for origin country, farm details, and batch-specific certifications.</p>",
-            "button_label": "",
-            "button_link": "",
-            "open_new_tab_1": false,
-            "button_style_secondary": false
+            "icon": "mix",
+            "title": "Mix & Shake",
+            "description": "Give it a quick stir or shake. Dissolves instantly — no clumps, no grit, no aftertaste."
           }
         },
-        "tab_3": {
-          "type": "tab",
+        "step_3": {
+          "type": "step",
           "settings": {
-            "heading": "Shipping & Returns",
-            "tab_image_width": 1000,
-            "hide_image": false,
-            "row_content": "<h2>Returns policy</h2><ul><li>Dispatch: Within 24 Hours</li><li>Free shipping across all products on a minimum purchase of $50.</li><li>International delivery time - 7-10 business days</li><li>Cash on delivery might be available</li><li>Easy 30 days returns and exchanges</li></ul><h2>Shipping policy</h2><p>We offer standard and expedited shipping options at checkout. Standard shipping typically takes 3-7 business days, while expedited shipping arrives in 2-3 business days. Shipping costs are calculated based on the weight of the order and the selected shipping method. Free standard shipping is available on orders over $50.</p>",
-            "button_label": "",
-            "button_link": "",
-            "open_new_tab_1": false,
-            "button_style_secondary": false
+            "icon": "lightning",
+            "title": "Hydrate & Perform",
+            "description": "Electrolytes and minerals get to work fast. Better hydration, better recovery, zero sugar crash."
           }
         }
       },
       "block_order": [
-        "tab_1",
-        "tab_2",
-        "tab_3"
+        "step_1",
+        "step_2",
+        "step_3"
       ],
       "settings": {
-        "tabs_style": "style-2",
-        "full_width": true,
-        "color_scheme": "option-1",
-        "color_scheme_1": "option-2",
-        "padding_top": 84,
-        "padding_bottom": 36,
-        "ignore_spacing": true,
-        "margin_spacing": "negative",
-        "margin_top": 0
+        "caption": "The Science",
+        "title": "How It Works",
+        "subtitle": "Clean hydration in three simple steps. No sugar, no shortcuts — just results.",
+        "button_label": "",
+        "button_link": "",
+        "use_alt_bg": true,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "margin_top": 0,
+        "margin_bottom": 0
       }
     },
-    "collapsible_content": {
+    "product_description": {
+      "type": "rich-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "Why Drink?"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Clean Hydration, Real Results",
+            "use_h1": false
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Drink is performance hydration and recovery crafted with clean, transparent ingredients. No junk, no proprietary blends — just the electrolytes, minerals, and real fruit flavors your body needs to perform at its best.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "caption",
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": true,
+        "color_scheme": "2"
+      }
+    },
+    "detail_ingredients": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Ingredients You Can Actually Pronounce",
+            "use_h1": false
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every Drink formula uses real fruit extracts, essential electrolytes, and zero artificial sweeteners or dyes. Every batch is independently lab-tested for purity and potency. We don't do \"proprietary blends\" — you see exactly what's inside.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "show_top_border": false,
+        "color_scheme": "default"
+      }
+    },
+    "detail_recovery": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Recovery That Keeps Up With You",
+            "use_h1": false
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether it's post-workout, after a long day, or just staying sharp — Drink delivers fast-acting electrolytes dosed for real recovery. 800mg of electrolytes per serving, backed by science, not marketing.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "show_top_border": false,
+        "color_scheme": "default"
+      }
+    },
+    "reviews": {
+      "type": "drink-testimonials",
+      "blocks": {
+        "review_1": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Lychee Drink is unreal. I drink it after every run and the recovery difference is noticeable. Also it actually tastes like lychee, not fake candy.",
+            "author": "Sarah M.",
+            "role": "Marathon Runner"
+          }
+        },
+        "review_2": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Finally a hydration mix that isn't loaded with sugar and artificial garbage. The Peach Mango is my daily go-to. Clean label, clean taste.",
+            "author": "James K.",
+            "role": "CrossFit Coach"
+          }
+        },
+        "review_3": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "text": "Switched from the big-name electrolyte brand everyone uses. Drink is cleaner, tastes better, and doesn't have that weird aftertaste. Passion Fruit is elite.",
+            "author": "Michelle T.",
+            "role": "Personal Trainer"
+          }
+        }
+      },
+      "block_order": [
+        "review_1",
+        "review_2",
+        "review_3"
+      ],
+      "settings": {
+        "caption": "Real People, Real Talk",
+        "title": "Why People Love This Flavor",
+        "use_alt_bg": true,
+        "background_color": "",
+        "text_color": "",
+        "accent_color": "",
+        "card_background_color": "",
+        "card_border_color": "",
+        "star_color": "",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
+    },
+    "faq": {
       "type": "collapsible-content",
       "blocks": {
-        "collapsible_row_1": {
+        "q_what": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Are Drink Ingredients products organic?",
+            "heading": "What's in Drink?",
             "icon": "question_mark",
-            "row_content": "<p>Every single one. USDA certified organic and CCOF certified, sourced from certified farms, and independently lab-tested. We don't use the word \"organic\" lightly — we can back it up.</p>",
+            "row_content": "<p>Every Drink formula contains essential electrolytes (sodium, potassium, magnesium, calcium, zinc), real fruit flavors, and zero sugar. No artificial sweeteners, dyes, or fillers. Every batch is independently lab-tested.</p>",
             "page": ""
           }
         },
-        "collapsible_row_2": {
+        "q_how": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Where do you source your ingredients?",
+            "heading": "How do I use it?",
             "icon": "question_mark",
-            "row_content": "<p>Direct from certified organic farms across Japan, India, Sri Lanka, and beyond. We know our growers personally — every partnership is built on trust, fair trade, and a shared commitment to doing things right.</p>",
+            "row_content": "<p>Tear open one packet, pour into 16oz of water, stir or shake, and enjoy. Best consumed cold. Great before, during, or after physical activity — or anytime you need hydration.</p>",
             "page": ""
           }
         },
-        "collapsible_row_3": {
+        "q_sugar": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Do you offer bulk or wholesale pricing?",
+            "heading": "Is it really zero sugar?",
             "icon": "question_mark",
-            "row_content": "<p>We do! Cafés, restaurants, wellness brands, food manufacturers — if you're buying in volume, we've got you. Check out our wholesale collection or reach out for custom pricing.</p>",
+            "row_content": "<p>Yes. Drink uses stevia leaf extract for a clean, natural sweetness with zero grams of sugar per serving. No artificial sweeteners like sucralose or aspartame either.</p>",
             "page": ""
           }
         },
-        "collapsible_row_4": {
+        "q_dietary": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How do you ensure product quality?",
+            "heading": "Is Drink keto / vegan / gluten-free?",
             "icon": "question_mark",
-            "row_content": "<p>Every batch is independently lab-tested for purity, potency, heavy metals, and allergen safety. Full traceability from farm to your kitchen. Facts over claims — that's how we operate.</p>",
+            "row_content": "<p>Yes to all three. Drink is zero sugar, low carb, vegan, dairy-free, gluten-free, non-GMO, and peanut-free. Designed to fit your lifestyle.</p>",
             "page": ""
           }
         },
-        "collapsible_row_5": {
+        "q_shipping": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Are there any additives or preservatives in your products?",
+            "heading": "What's the shipping policy?",
             "icon": "question_mark",
-            "row_content": "<p>Never. Everything we sell is free from synthetic additives, artificial colors, preservatives, fillers, and GMOs. Clean ingredients — nothing more, nothing less.</p>",
+            "row_content": "<p>Free shipping on orders over $50. Standard delivery takes 3–5 business days, express 1–2 business days. We ship nationwide and offer easy 30-day returns.</p>",
             "page": ""
           }
         }
       },
       "block_order": [
-        "collapsible_row_1",
-        "collapsible_row_2",
-        "collapsible_row_3",
-        "collapsible_row_4",
-        "collapsible_row_5"
+        "q_what",
+        "q_how",
+        "q_sugar",
+        "q_dietary",
+        "q_shipping"
       ],
-      "disabled": true,
       "settings": {
-        "caption": "",
+        "caption": "Got Questions?",
         "text_style": "caption-with-letter-spacing",
         "text_size": "medium",
-        "heading": "faq",
+        "heading": "Frequently Asked Questions",
         "heading_size": "medium",
-        "heading_style": "uppercase",
+        "heading_style": "default",
         "heading_tag": "h2",
         "heading_alignment": "center",
         "open_first_collapsible_row": false,
@@ -422,89 +519,23 @@
         "color_scheme_1": "option-2",
         "padding_top": 48,
         "padding_bottom": 48,
-        "ignore_spacing": true,
-        "margin_spacing": "negative",
+        "ignore_spacing": false,
+        "margin_spacing": "positive",
         "margin_top": 0
       }
     },
-    "testimonials": {
-      "type": "testimonials",
-      "blocks": {
-        "column_1": {
-          "type": "column",
-          "settings": {
-            "rating": true,
-            "rating_stars": "5-star",
-            "text": "<p>This ceremonial matcha is unreal — best I've found outside Japan. Our regulars literally ask what brand we use.</p>",
-            "title": "Sarah M.",
-            "hide_image": true,
-            "product": "supreme-matcha"
-          }
-        },
-        "column_2": {
-          "type": "column",
-          "settings": {
-            "rating": true,
-            "rating_stars": "5-star",
-            "text": "<p>I needed a source for organic turmeric I could truly trust. Lab-tested, consistent quality, and the bulk pricing works perfectly for our practice.</p>",
-            "title": "Dr. James K.",
-            "hide_image": true,
-            "product": ""
-          }
-        },
-        "column_3": {
-          "type": "column",
-          "settings": {
-            "rating": true,
-            "rating_stars": "5-star",
-            "text": "<p>Switched all my baking ingredients to Drink and honestly — night and day. Everything just tastes more real.</p>",
-            "title": "Michelle T.",
-            "hide_image": true,
-            "product": "mumbai-chai"
-          }
-        }
-      },
-      "block_order": [
-        "column_1",
-        "column_2",
-        "column_3"
-      ],
-      "settings": {
-        "title": "Hear It From the Community",
-        "heading_size": "medium",
-        "heading_tag": "h2",
-        "caption": "Real People, Real Talk",
-        "text_style": "caption-with-letter-spacing",
-        "text_size": "medium",
-        "button_label": "",
-        "button_link": "",
-        "open_new_tab_1": false,
-        "testimonials_style": "style-2",
-        "columns_desktop": 3,
-        "enable_desktop_slider": true,
-        "color_scheme": "option-2",
-        "color_scheme_1": "option-1",
-        "padding_top": 36,
-        "padding_bottom": 0,
-        "ignore_spacing": false,
-        "margin_spacing": "negative",
-        "margin_top": 0,
-        "swipe_on_mobile": true,
-        "disable_arrow_mobile": true
-      }
-    },
-    "related-products": {
+    "related_products": {
       "type": "related-products",
       "settings": {
-        "caption": "",
+        "caption": "You Might Also Like",
         "text_style": "caption-with-letter-spacing",
         "text_size": "medium",
-        "heading": "Related Products",
+        "heading": "Other Flavors",
         "heading_size": "medium",
         "heading_style": "default",
         "heading_tag": "h2",
-        "products_to_show": 5,
-        "columns_desktop": 5,
+        "products_to_show": 4,
+        "columns_desktop": 4,
         "enable_desktop_slider": true,
         "image_ratio": "square",
         "show_secondary_image": true,
@@ -514,20 +545,20 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "ignore_spacing": false,
-        "margin_spacing": "negative",
-        "margin_top": 52,
+        "margin_spacing": "positive",
+        "margin_top": 0,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "disable_arrow_mobile": true
       }
     },
-    "recently_viewed_products": {
+    "recently_viewed": {
       "type": "recently-viewed-products",
       "settings": {
         "caption": "",
         "text_style": "caption-with-letter-spacing",
         "text_size": "medium",
-        "heading": "Recently viewed",
+        "heading": "Recently Viewed",
         "heading_size": "medium",
         "heading_tag": "h2",
         "color_scheme": "option-2",
@@ -536,93 +567,21 @@
         "padding_bottom": 48,
         "ignore_spacing": false,
         "columns_mobile": "3",
-        "margin_spacing": "negative",
+        "margin_spacing": "positive",
         "margin_top": 0
-      }
-    },
-    "certification_logos": {
-      "type": "image-gallery",
-      "blocks": {
-        "logo_1": {
-          "type": "text",
-          "settings": {
-            "image": ""
-          }
-        },
-        "logo_2": {
-          "type": "text",
-          "settings": {
-            "image": ""
-          }
-        },
-        "logo_3": {
-          "type": "text",
-          "settings": {
-            "image": ""
-          }
-        },
-        "logo_4": {
-          "type": "text",
-          "settings": {
-            "image": ""
-          }
-        }
-      },
-      "block_order": [
-        "logo_1",
-        "logo_2",
-        "logo_3",
-        "logo_4"
-      ],
-      "settings": {
-        "caption": "Committed to Quality",
-        "text_style": "caption-with-letter-spacing",
-        "text_size": "medium",
-        "title": "Certified for Your Confidence",
-        "heading_size": "medium",
-        "heading_style": "default",
-        "heading_tag": "h2",
-        "scroll_direction": "ltc",
-        "scroll_speed": 60,
-        "scroll_height": 200,
-        "hover_stop": true,
-        "color_scheme": "option-2",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "ignore_spacing": true,
-        "scroll_height_mobile": 120,
-        "margin_spacing": "negative",
-        "margin_top": 0
-      }
-    },
-    "sticky_add_to_cart": {
-      "type": "sticky-add-to-cart",
-      "settings": {
-        "enable_section": true,
-        "hide_desktop": false,
-        "hide_mobile": false,
-        "heading_size": "medium",
-        "heading_tag": "h3",
-        "hide_img": false,
-        "hide_quantity_input": false,
-        "hide_select_variant": false,
-        "btn_style": "primary",
-        "color_scheme": "option-2",
-        "padding_top": 8,
-        "padding_bottom": 8
       }
     }
   },
   "order": [
     "main",
-    "custom_schema",
-    "product_trust_bar",
-    "tabs",
-    "collapsible_content",
-    "testimonials",
-    "related-products",
-    "recently_viewed_products",
-    "certification_logos",
-    "sticky_add_to_cart"
+    "trust_bar",
+    "how_it_works",
+    "product_description",
+    "detail_ingredients",
+    "detail_recovery",
+    "reviews",
+    "faq",
+    "related_products",
+    "recently_viewed"
   ]
 }
