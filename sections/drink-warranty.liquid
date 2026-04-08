@@ -3,7 +3,7 @@
 <style>
 .drink-warranty {
   padding: 120px 48px;
-  background: #0D0D0D;
+  background: #FFFFFF;
   font-family: var(--base-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   box-sizing: border-box;
 }
@@ -30,12 +30,12 @@
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 24px;
-  color: #F5F5F0;
+  color: #1A1A1A;
 }
 .drink-warranty-content p {
   font-size: 18px;
   line-height: 1.7;
-  color: #aaaaaa;
+  color: #555555;
   margin-bottom: 32px;
 }
 .drink-warranty-features {
@@ -50,8 +50,8 @@
   gap: 12px;
 }
 .drink-warranty-feat svg { width: 24px; height: 24px; color: #7CB518; flex-shrink: 0; margin-top: 2px; }
-.drink-warranty-feat-text strong { display: block; font-size: 15px; margin-bottom: 2px; color: #F5F5F0; }
-.drink-warranty-feat-text span { font-size: 14px; color: #999999; }
+.drink-warranty-feat-text strong { display: block; font-size: 15px; margin-bottom: 2px; color: #1A1A1A; }
+.drink-warranty-feat-text span { font-size: 14px; color: #555555; }
 .drink-warranty-visual {
   aspect-ratio: 4/3;
   border-radius: 20px;
@@ -68,7 +68,7 @@
   width: 100%;
   height: 100%;
   border-radius: 12px;
-  background: linear-gradient(135deg, #1a1a1a, #222222);
+  background: linear-gradient(135deg, #F5F5F5, #EEEEEE);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,7 +78,7 @@
 }
 .drink-warranty-visual-placeholder svg { margin-bottom: 12px; }
 .drink-warranty-visual-placeholder p {
-  color: rgba(255,255,255,0.4);
+  color: #999999;
   font-size: 14px;
   margin-top: 16px;
   font-weight: 600;
@@ -88,8 +88,8 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: #F5F5F0;
-  color: #0D0D0D;
+  background: #1A1A1A;
+  color: #FFFFFF;
   padding: 18px 36px;
   border-radius: 8px;
   font-size: 17px;
@@ -98,7 +98,7 @@
   transition: all 0.25s;
 }
 .drink-warranty .drink-btn-warranty:hover {
-  background: #e0e0d8;
+  background: #333333;
   transform: translateY(-2px);
 }
 
@@ -152,7 +152,7 @@
         <img src="{{ section.settings.image | image_url: width: 1024 }}" alt="{{ section.settings.heading }}" width="{{ section.settings.image.width }}" height="{{ section.settings.image.height }}" loading="lazy">
       {% else %}
         <div class="drink-warranty-visual-placeholder">
-          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"></path></svg>
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#E0E0E0" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"></path></svg>
           <p>Add an image in the theme editor</p>
         </div>
       {% endif %}

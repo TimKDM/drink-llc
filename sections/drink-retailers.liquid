@@ -3,7 +3,7 @@
 <style>
 .drink-retailers {
   padding: 120px 48px;
-  background: #0D0D0D;
+  background: #FFFFFF;
   font-family: var(--base-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   box-sizing: border-box;
 }
@@ -50,12 +50,12 @@
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 24px;
-  color: #F5F5F0;
+  color: #1A1A1A;
 }
 .drink-retailer-content p {
   font-size: 18px;
   line-height: 1.7;
-  color: #aaaaaa;
+  color: #555555;
   margin-bottom: 32px;
 }
 .drink-retailer-perks {
@@ -70,27 +70,29 @@
   gap: 14px;
   font-size: 16px;
   font-weight: 500;
-  color: #cccccc;
+  color: #1A1A1A;
 }
 .drink-perk-icon {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #1a1a1a;
-  border: 1px solid #333333;
+  background: #FFF8E1;
+  border: 1px solid #EEEEEE;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
-.drink-perk-icon svg { width: 18px; height: 18px; color: #F5F5F0; }
+.drink-perk-icon svg { width: 18px; height: 18px; color: #1A1A1A; }
+.drink-perk:nth-child(2) .drink-perk-icon { background: #FFE8F0; }
+.drink-perk:nth-child(3) .drink-perk-icon { background: #E8F5E9; }
 .drink-retailers .drink-btn-retailer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background: #F5F5F0;
-  color: #0D0D0D;
+  background: #1A1A1A;
+  color: #FFFFFF;
   padding: 20px 40px;
   border-radius: 8px;
   font-size: 18px;
@@ -102,9 +104,9 @@
   letter-spacing: 0.3px;
 }
 .drink-retailers .drink-btn-retailer:hover {
-  background: #e0e0d8;
+  background: #333333;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(245,245,240,0.15);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 /* Tablet */
