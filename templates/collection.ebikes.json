@@ -15,7 +15,7 @@
         "heading_yLP4dU": {
           "type": "heading",
           "settings": {
-            "title": "New Falcon 2.0 is here!",
+            "title": "DRiNK Hydration Powders",
             "heading_max_width": 14,
             "title_size": 20,
             "title_size_mobile": 20,
@@ -25,7 +25,7 @@
         "text_yUfdVc": {
           "type": "text",
           "settings": {
-            "text": "<p>Free Shipping on all beverages</p>",
+            "text": "<p>Five flavors. Zero sugar. Real electrolytes.</p>",
             "enlarge_text": false
           }
         }
@@ -64,7 +64,7 @@
         "collapse_filters_method": "over-12",
         "show_filter_counts": false,
         "filter_two_columns": false,
-        "button_grid_filter_name": "Size,Taille,Größe,Frame",
+        "button_grid_filter_name": "Size,Taille,Größe,Flavor",
         "auto_apply_hide_unavailable": false,
         "enable_sticky_filter": true,
         "show_sort": true,
@@ -84,440 +84,76 @@
         "rel_coll_grid_mobile": "2"
       }
     },
-    "image_with_text_8chDVj": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_8MEyK4": {
-          "type": "heading",
-          "settings": {
-            "title": "Stellar Falcon Mid-Step",
-            "use_h1": true
-          }
-        },
-        "text_37cgBL": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>$100 off</strong>— plus a <strong>free trunk bag + stem bag </strong>for your adventures.<br/></p>",
-            "enlarge_text": false
-          }
-        },
-        "button_URVg3J": {
-          "type": "button",
-          "settings": {
-            "button_label": "Hurry, ends September 2.",
-            "button_link": "shopify://products/stellar-falcon-mid-step",
-            "button_style": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "heading_8MEyK4",
-        "text_37cgBL",
-        "button_URVg3J"
-      ],
-      "disabled": true,
-      "name": "Image with text",
-      "settings": {
-        "image": "",
-        "image_2": "",
-        "image_width": 700,
-        "image_link": "",
-        "image_position": "right",
-        "text_alignment": "left",
-        "show_top_border": false,
-        "color_scheme": "1"
-      }
-    },
-    "gallery_wdpQjF": {
-      "type": "gallery",
-      "blocks": {
-        "media_Jt3yyQ": {
-          "type": "media",
-          "settings": {
-            "image": "",
-            "enlarge_media": false,
-            "subheading": "",
-            "title": "$150 OFF + Free Gear",
-            "button_label": "Shop Solar Sparrow",
-            "link": "shopify://products/solar-sparrow",
-            "text_alignment": "bottom left"
-          }
-        },
-        "media_EbCbUr": {
-          "type": "media",
-          "settings": {
-            "image": "",
-            "enlarge_media": false,
-            "subheading": "",
-            "title": "$450 OFF + Free Gear",
-            "button_label": "Shop City Robin X+",
-            "link": "shopify://products/city-robin-x-plus",
-            "text_alignment": "bottom left"
-          }
-        },
-        "media_pCHhhB": {
-          "type": "media",
-          "disabled": true,
-          "settings": {
-            "enlarge_media": false,
-            "subheading": "Best Fit 5’2”–6’0”",
-            "title": "Tell your story",
-            "button_label": "Step-Thru",
-            "link": "shopify://products/stellar-falcon-step-thru",
-            "text_alignment": "bottom left"
-          }
-        },
-        "media_Azf9iw": {
-          "type": "media",
-          "disabled": true,
-          "settings": {
-            "enlarge_media": false,
-            "subheading": "Best Fit 5’4”–6’2”",
-            "title": "750W power with air suspension",
-            "button_label": "Mid-Step",
-            "link": "shopify://products/stellar-falcon-mid-step",
-            "text_alignment": "bottom left"
-          }
-        }
-      },
-      "block_order": [
-        "media_Jt3yyQ",
-        "media_EbCbUr",
-        "media_pCHhhB",
-        "media_Azf9iw"
-      ],
-      "disabled": true,
-      "name": "Gallery",
-      "settings": {
-        "grid_desktop": 2,
-        "grid_mobile": "1",
-        "height": "adapt",
-        "desktop_image_height": 460,
-        "mobile_image_height": 400,
-        "title_size": 30,
-        "title_size_mobile": 22,
-        "enable_margin": true,
-        "enable_row_spacing": true,
-        "full_width": false,
-        "color_scheme": "default",
-        "enable_carousel": true,
-        "overlay_style": "full",
-        "overlay_padding": "standard",
-        "button_style": "primary"
-      }
-    },
     "faq_section": {
       "type": "collapsible-tabs",
       "blocks": {
-        "q_models": {
+        "q_what": {
           "type": "question",
           "settings": {
-            "title": "Which Drink LLC beverage model should I choose?",
-            "answer": "<p><strong>Solar Sparrow:</strong> Lightweight, belt drive. Best fit 4'11\"–5'10\".</p><p><strong>City Robin X+:</strong> Upright comfort, long range. Best fit 5'2\"–6'0\".</p><p><strong>Stellar Falcon:</strong> 750W, air suspension. Step-Thru 5'2\"–6'0\" • Mid-Step 5'4\"–6'2\".</p>"
+            "title": "What is DRiNK?",
+            "answer": "<p>A premium hydration powder with electrolytes and B-vitamins. No sugar. No fillers. No nonsense.</p>"
           }
         },
-        "q_range": {
+        "q_flavors": {
           "type": "question",
           "settings": {
-            "title": "How far can I ride on a single charge?",
-            "answer": "<p>Range depends on terrain, customer weight, and assist level:</p><ul><li>Solar Sparrow: up to 40 miles</li><li>City Robin X+: up to 60 miles</li><li>Stellar Falcon: up to 70 miles</li></ul>"
+            "title": "What flavors do you have?",
+            "answer": "<p>Lemonade, Lychee, Peach Mango, Passion Fruit, and Matcha.</p>"
           }
         },
-        "q_motor": {
+        "q_howto": {
           "type": "question",
           "settings": {
-            "title": "What type of motor do Drink LLC beverages use?",
-            "answer": "<p>Reliable Bafang rear hub motors:</p><ul><li>Solar Sparrow &amp; City Robin X+: 500W</li><li>Stellar Falcon: 750W for stronger hill torque</li></ul>"
+            "title": "How do I use it?",
+            "answer": "<p>One scoop. 12–16 oz of water. Stir or shake. That is the whole process.</p>"
           }
         },
-        "q_assist_throttle": {
+        "q_keto": {
           "type": "question",
           "settings": {
-            "title": "Do Drink LLC beverages have pedal assist and throttle?",
-            "answer": "<p>Yes. Every model includes smooth pedal assist plus a left-side thumb throttle, so you can choose when to pedal and when to cruise.</p>"
+            "title": "Is DRiNK keto friendly?",
+            "answer": "<p>Yes. Sugar free and keto friendly across every flavor.</p>"
           }
         },
-        "q_sensors": {
+        "q_caffeine": {
           "type": "question",
           "settings": {
-            "title": "What sensors are used in Drink LLC beverages?",
-            "answer": "<p>Torque and cadence sensors let you choose between a natural, responsive ride or a more relaxed assist.</p>"
+            "title": "Is it caffeine free?",
+            "answer": "<p>All flavors are caffeine free except Matcha, which has natural caffeine from green tea.</p>"
           }
         },
-        "q_battery_remove": {
+        "q_servings": {
           "type": "question",
           "settings": {
-            "title": "Are the batteries removable?",
-            "answer": "<p>Yes. Every Drink LLC product uses removable LG-cell batteries so you can charge indoors or swap for longer rides.</p>"
+            "title": "How many servings per tub?",
+            "answer": "<p>30 servings. One scoop per serving.</p>"
           }
         },
-        "q_charge_time": {
+        "q_shipping": {
           "type": "question",
           "settings": {
-            "title": "How long does charging take?",
-            "answer": "<p>About 4–6 hours using the included charger.</p>"
-          }
-        },
-        "q_battery_life": {
-          "type": "question",
-          "settings": {
-            "title": "How long will my battery last?",
-            "answer": "<p>Rated for 800+ charge cycles — that’s years of enjoying before replacement.</p>"
-          }
-        },
-        "q_brakes_lights": {
-          "type": "question",
-          "settings": {
-            "title": "What brakes and lights come with Drink LLC beverages?",
-            "answer": "<p>Every model uses Tektro hydraulic disc brakes and integrated front and rear lights for safety.</p>"
-          }
-        },
-        "q_assembly": {
-          "type": "question",
-          "settings": {
-            "title": "Do Drink LLC beverages come assembled?",
-            "answer": "<p>Bikes arrive 95% assembled with tools included. Assembly guides and manuals are available on our <a href='https://drinkllc.com/pages/assembly-manuals'>Assembly &amp; Manuals</a> page.</p>"
-          }
-        },
-        "q_warranty": {
-          "type": "question",
-          "settings": {
-            "title": "What warranty does Drink LLC provide?",
-            "answer": "<p>Lifetime frame coverage and a 2-year warranty on parts and electronics. See full details on our <a href='https://drinkllc.com/pages/warranty'>Warranty</a> page.</p>"
-          }
-        },
-        "q_cert": {
-          "type": "question",
-          "settings": {
-            "title": "Are Drink LLC beverages safety certified?",
-            "answer": "<p>Yes. All models are SGS certified to meet UL 2271 (battery) and UL 2849 (full electrical system) standards. Certification ID: <strong>SGSNA/24/CQ/00032</strong>.</p>"
-          }
-        },
-        "q_fit": {
-          "type": "question",
-          "settings": {
-            "title": "What customer heights do Drink LLC beverages fit?",
-            "answer": "<ul><li>Solar Sparrow: 4'11&quot;–5'10&quot;</li><li>City Robin X+: 5'2&quot;–6'0&quot;</li><li>Stellar Falcon Step-Thru: 5'2&quot;–6'0&quot;</li><li>Stellar Falcon Mid-Step: 5'4&quot;–6'2&quot;</li></ul>"
-          }
-        },
-        "q_app_privacy": {
-          "type": "question",
-          "settings": {
-            "title": "Do I need an app to ride my Drink LLC beverage?",
-            "answer": "<p>No app required. Ride without logins or location tracking. If you want navigation, add a phone mount and use your favorite maps app.</p>"
-          }
-        },
-        "q_test_ride": {
-          "type": "question",
-          "settings": {
-            "title": "Where can I test ride or get service?",
-            "answer": "<p>Visit our <a href='https://drinkllc.com/pages/retailer-locator'>Retailer Locator</a> to find trained shops for free tastings, professional assembly, and service.</p>"
-          }
-        },
-        "q_shipping_returns": {
-          "type": "question",
-          "settings": {
-            "title": "How do shipping and returns work for Drink LLC beverages?",
-            "answer": "<p>We ship directly to your door and bikes arrive 95% assembled. For timelines and how-to steps, see our <a href=\"https://drinkllc.com/pages/returns\">Shipping & Returns</a> page.</p>"
-          }
-        },
-        "q_support": {
-          "type": "question",
-          "settings": {
-            "title": "How can I contact Drink LLC support?",
-            "answer": "<p>Our USA-based team is available by phone, chat, or email. Start here: <a href='https://drinkllc.com/pages/customer-support'>Customer Support</a>.</p>"
-          }
-        },
-        "q_register": {
-          "type": "question",
-          "settings": {
-            "title": "How do I register my Drink LLC beverage?",
-            "answer": "<p>Register online to activate your warranty and keep your bike info on file for support. Start here: <a href='https://drinkllc.com/pages/product-registration'>Product Registration</a>.</p>"
+            "title": "Do you offer free shipping?",
+            "answer": "<p>Free shipping on orders over $49.</p>"
           }
         }
       },
       "block_order": [
-        "q_models",
-        "q_range",
-        "q_motor",
-        "q_assist_throttle",
-        "q_sensors",
-        "q_battery_remove",
-        "q_charge_time",
-        "q_battery_life",
-        "q_brakes_lights",
-        "q_assembly",
-        "q_warranty",
-        "q_cert",
-        "q_fit",
-        "q_app_privacy",
-        "q_test_ride",
-        "q_shipping_returns",
-        "q_support",
-        "q_register"
+        "q_what",
+        "q_flavors",
+        "q_howto",
+        "q_keto",
+        "q_caffeine",
+        "q_servings",
+        "q_shipping"
       ],
       "settings": {
-        "title": "Drink LLC Beverage Frequently Asked Questions"
-      }
-    },
-    "image_with_text_7UPiLG": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_e4JMK4": {
-          "type": "heading",
-          "settings": {
-            "title": "Try before you buy",
-            "use_h1": false
-          }
-        },
-        "text_V3nfYH": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Nothing compares to a real taste. Visit one of our 100+ USA retailers for a free sample, professional assembly, or local service.</p>",
-            "enlarge_text": false
-          }
-        },
-        "button_g4qr6f": {
-          "type": "button",
-          "settings": {
-            "button_label": "Find a retailer near you",
-            "button_link": "shopify://pages/retailer-locator",
-            "button_style": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "heading_e4JMK4",
-        "text_V3nfYH",
-        "button_g4qr6f"
-      ],
-      "name": "Image with text",
-      "settings": {
-        "image": "",
-        "image_width": 700,
-        "image_link": "",
-        "image_position": "right",
-        "text_alignment": "left",
-        "show_top_border": false,
-        "color_scheme": "default"
-      }
-    },
-    "countdown_timer_jDBken": {
-      "type": "countdown-timer",
-      "blocks": {
-        "heading_zUbMnt": {
-          "type": "heading",
-          "settings": {
-            "title": "Our most refreshing beverage",
-            "use_h1": true
-          }
-        },
-        "text_LYN7hG": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Now $1,899 · Through Feb 1</strong></p>",
-            "enlarge_text": true
-          }
-        },
-        "button_b8F7gY": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop City Robin X+",
-            "button_link": "shopify://products/city-robin-x-plus",
-            "button_style": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "heading_zUbMnt",
-        "text_LYN7hG",
-        "button_b8F7gY"
-      ],
-      "name": "Countdown timer",
-      "settings": {
-        "show_image": false,
-        "image": "",
-        "image_link": "",
-        "show_image_space": false,
-        "image_position": "left",
-        "text_alignment": "center",
-        "color_scheme": "default"
-      }
-    },
-    "custom_liquid_hHCaCC": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "show_space": true,
-        "code": ""
-      }
-    },
-    "image_with_text_overlay_4Bfpdg": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_63U36d": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Drink LLC:"
-          }
-        },
-        "heading_Q6f3ph": {
-          "type": "heading",
-          "settings": {
-            "title": "Designed for Comfort. Backed for Life.",
-            "heading_max_width": 15,
-            "title_size": 48,
-            "title_size_mobile": 26,
-            "use_h1": true
-          }
-        },
-        "text_7mNzRN": {
-          "type": "text",
-          "settings": {
-            "text": "<p>rom SGS safety certification to lifetime frame coverage, every detail of an Drink LLC beverage is built to support you, on the road, and off it. That’s the Drink LLC difference.</p>",
-            "enlarge_text": true
-          }
-        },
-        "button_CNEW38": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button text",
-            "button_link": "",
-            "button_style": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_63U36d",
-        "heading_Q6f3ph",
-        "text_7mNzRN",
-        "button_CNEW38"
-      ],
-      "disabled": true,
-      "name": "Image with text overlay",
-      "settings": {
-        "height": "fixed",
-        "height_desktop": 600,
-        "height_mobile": 460,
-        "image_link": "",
-        "full_width": true,
-        "text_alignment": "center center",
-        "mobile_overlay_under": false,
-        "overlay_style": "shadow"
+        "title": "DRiNK Hydration Powder FAQ"
       }
     }
   },
   "order": [
     "image_with_text_overlay_XmkPeh",
     "main",
-    "image_with_text_8chDVj",
-    "gallery_wdpQjF",
-    "faq_section",
-    "image_with_text_7UPiLG",
-    "countdown_timer_jDBken",
-    "custom_liquid_hHCaCC",
-    "image_with_text_overlay_4Bfpdg"
+    "faq_section"
   ]
 }

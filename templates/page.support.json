@@ -3,12 +3,12 @@
     "support_portal": {
       "type": "drink-support-portal",
       "settings": {
-        "eyebrow": "Customer & Retailer Support",
+        "eyebrow": "DRiNK Support",
         "heading": "How Can We Help?",
-        "subheading": "Our Houston-based team is here for you — beverages, orders, and everything in between.",
-        "trust_1": "2-Year Warranty",
+        "subheading": "Our Houston-based team is here for you. Orders, flavors, questions.",
+        "trust_1": "Free Shipping Over $49",
         "trust_2": "USA-Based Support",
-        "trust_3": "100+ Retailers Nationwide",
+        "trust_3": "Made in Houston, TX",
         "trust_4": "Response Within 1 Business Day",
         "hs_proxy_url": "/apps/drink-hs-proxy",
         "hs_portal_id": "",

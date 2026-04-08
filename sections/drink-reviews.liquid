@@ -2,7 +2,7 @@
 <style>
 .drink-reviews {
   padding: 80px 48px 60px;
-  background: #f5f5f3;
+  background: #0D0D0D;
   font-family: var(--base-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   box-sizing: border-box;
   position: relative;
@@ -44,19 +44,19 @@
   font-weight: 700;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #888888;
+  color: #777777;
   margin-bottom: 16px;
 }
 .drink-reviews-header h2 {
   font-family: var(--heading-font-family), serif;
   font-size: 56px;
   font-weight: 700;
-  color: #121212;
+  color: #F5F5F0;
   line-height: 1.1;
 }
 .drink-review-count {
   font-size: 20px;
-  color: #555555;
+  color: #aaaaaa;
   margin-top: 12px;
   font-weight: 400;
 }
@@ -70,7 +70,7 @@
   gap: 24px;
 }
 .drink-review-card {
-  background: #ffffff;
+  background: #1a1a1a;
   border-radius: 16px;
   padding: 28px 24px;
   display: flex;
@@ -89,7 +89,7 @@
   font-family: var(--heading-font-family), serif;
   font-weight: 700;
   font-size: 18px;
-  color: #121212;
+  color: #F5F5F0;
   margin: 0 0 10px;
 }
 .drink-review-card__body {
@@ -97,7 +97,7 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 1.5;
-  color: #333333;
+  color: #cccccc;
   font-style: italic;
   flex: 1;
   margin: 0 0 18px;
@@ -105,11 +105,11 @@
 .drink-review-card__author {
   font-weight: 700;
   font-size: 16px;
-  color: #121212;
+  color: #F5F5F0;
   font-family: var(--base-font-family), sans-serif;
 }
 .drink-review-card__verified {
-  color: #1a4d2e;
+  color: #7CB518;
   font-size: 13px;
   font-weight: 500;
   margin-top: 4px;
@@ -182,19 +182,19 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Testimonials"
+      "default": "Reviews"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Why Customers Love Drink"
+      "default": "Don't take our word for it."
     },
     {
       "type": "text",
       "id": "subtitle",
       "label": "Subtitle",
-      "default": "Real Customer Stories · Join 1,000+ Happy Customers"
+      "default": "Real reviews from real people."
     },
     {
       "type": "image_picker",
@@ -226,7 +226,7 @@
           "type": "textarea",
           "id": "body",
           "label": "Review text",
-      "default": "The best natural beverages I've ever tasted!"
+      "default": "Tastes good. No sugar. That's all I needed to hear."
         },
         {
           "type": "text",
@@ -247,18 +247,18 @@
     {
       "name": "Drink Reviews",
       "settings": {
-        "eyebrow": "Testimonials",
-        "heading": "Why Customers Love Drink",
-        "subtitle": "Real Customer Stories · Join 1,000+ Happy Customers"
+        "eyebrow": "Reviews",
+        "heading": "Don't take our word for it.",
+        "subtitle": "Real reviews from real people."
       },
       "blocks": [
         {
           "type": "review",
           "settings": {
             "stars": 5,
-            "title": "Best natural beverage I've tried",
-            "body": "The Passion Fruit flavor is absolutely incredible. So refreshing and you can taste the real fruit!",
-            "author": "Happy Customer",
+            "title": "Finally, a hydration mix that isn't sweet",
+            "body": "Lemonade flavor is clean and not overpowering. I drink it every morning. No complaints.",
+            "author": "Verified Buyer",
             "verified": true
           }
         }
