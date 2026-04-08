@@ -1220,37 +1220,32 @@ header-drawer summary {
 
 /* ============================================
    SITEWIDE CIRCULAR PRODUCT IMAGES
-   Applies to: product cards across all pages,
-   product detail gallery, thumbnails, related,
-   featured, complementary, cart upsells
+   Applies to: product cards, thumbnails, related,
+   featured, complementary, cart upsells.
+   NOTE: Product detail page uses rounded corners
+   (not circles) to show the full product image.
    ============================================ */
 
-/* --- Product detail page main gallery --- */
+/* --- Product detail page main gallery — rounded, not circular --- */
 .product__media-wrapper .product__media,
 .product__media-wrapper .media,
 .product-single__media-wrapper .media {
-  border-radius: 50% !important;
+  border-radius: var(--radius-md, 8px);
   overflow: hidden;
-  aspect-ratio: 1;
-  max-width: 420px;
-  max-height: 420px;
-  margin-inline: auto;
 }
 
 /* Thumbnail strip on product pages */
 .thumbnail-list .thumbnail-list__item .media,
 .thumbnail-list .thumbnail-list__item img {
-  border-radius: 50%;
+  border-radius: var(--radius-md, 8px);
   overflow: hidden;
-  aspect-ratio: 1;
 }
 
 /* Featured product section */
 .featured-product .product__media,
 .featured-product .media {
-  border-radius: 50%;
+  border-radius: var(--radius-md, 8px);
   overflow: hidden;
-  aspect-ratio: 1;
 }
 
 /* Cart page — line item images */
@@ -1262,9 +1257,8 @@ header-drawer summary {
 /* Quick-add modal product image */
 .quick-add-modal .product__media,
 .quick-add-modal .media {
-  border-radius: 50%;
+  border-radius: var(--radius-md, 8px);
   overflow: hidden;
-  aspect-ratio: 1;
 }
 
 /* Complementary products */
