@@ -57,7 +57,7 @@
 }
 
 /* -----------------------------------------
-   Global Font Overrides — Josefin Sans + Jost
+   Global Font Overrides — DM Serif Display + DM Sans
    Applied site-wide over theme defaults
 ----------------------------------------- */
 body,
@@ -1140,17 +1140,17 @@ header-drawer summary {
    Drink-branded, full-width, uniform height
    ============================================ */
 .product-form__buttons {
-  display: flex !important;
-  flex-direction: column !important;
+  display: flex;
+  flex-direction: column;
   gap: 16px;
-  width: 100% !important;
+  width: 100%;
 }
 
 .product-form__buttons .product-form__submit,
 .product-form__buttons .shopify-payment-button {
-  width: 100% !important;
-  max-width: 100% !important;
-  flex: 0 0 auto !important;
+  width: 100%;
+  max-width: 100%;
+  flex: 0 0 auto;
   box-sizing: border-box;
 }
 
@@ -1250,7 +1250,7 @@ header-drawer summary {
 
 /* Cart page — line item images */
 .cart-item__image {
-  border-radius: 50%;
+  border-radius: var(--radius-md, 8px);
   overflow: hidden;
 }
 
@@ -1264,24 +1264,19 @@ header-drawer summary {
 /* Complementary products */
 .complementary-products .card .card-inner .card-media,
 .product-recommendations .card .card-inner .card-media {
-  border-radius: 50%;
+  border-radius: var(--radius-md, 8px);
   overflow: hidden;
-  aspect-ratio: 1;
 }
 
-/* Recently viewed products — circular images
-   The JS template now uses .card-media (single dash) which inherits
-   the global circular rules from component-card.css.  These overrides
-   ensure the inner .media / .global-media-settings layers also clip
-   to a circle. */
+/* Recently viewed products */
 .recently-viewed .card-media .media,
 .recently-viewed .card-media .global-media-settings {
-  border-radius: 50% !important;
-  overflow: hidden !important;
+  border-radius: var(--radius-md, 8px);
+  overflow: hidden;
 }
 
 .recently-viewed .card-media .global-media-settings:after {
-  border-radius: 50% !important;
+  border-radius: var(--radius-md, 8px);
 }
 
 /* ============================================

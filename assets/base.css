@@ -13,10 +13,10 @@
 /* --- Root Tokens --- */
 :root {
   /* Colors — Fresh & Bold palette */
-  --color-void: #FFFFFF;
-  --color-carbon: #E2E6DE;
+  --color-void: #0D0D0D;
+  --color-carbon: #2A2A2A;
   --color-ash: #6B7B6E;
-  --color-offwhite: #1A1A1A;
+  --color-offwhite: #F5F5F0;
 
   /* Flavor Accents */
   --color-lemonade: #FFE566;
@@ -29,8 +29,9 @@
   --color-accent: var(--color-matcha);
 
   /* Typography */
-  --font-display: 'Bebas Neue', sans-serif;
+  --font-display: 'DM Serif Display', serif;
   --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 
   /* Spacing */
   --space-xs: 4px;
@@ -61,18 +62,18 @@ body {
   font-family: var(--font-body);
   font-weight: 300;
   line-height: 1.7;
-  color: var(--color-offwhite);
-  background-color: var(--color-void);
+  color: #1A1A1A;
+  background-color: #F5F7F2;
 }
 
 /* --- Typography --- */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  text-transform: none;
+  letter-spacing: -0.01em;
   line-height: 1.1;
-  color: var(--color-offwhite);
+  color: #1A1A1A;
 }
 
 h1 { font-size: clamp(2.5rem, 6vw, 5rem); letter-spacing: 0.1em; }

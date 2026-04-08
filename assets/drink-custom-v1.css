@@ -95,52 +95,31 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
   .section-padding { padding: 60px 0; }
 }
 
-/* --- Improved Product Cards (iconic circle style) --- */
+/* --- Product Cards (clean card style for collection pages) --- */
 .card-product {
-  background: transparent !important;
-  border: none !important;
+  background: transparent;
+  border: none;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.card-product .media {
-  border-radius: 50% !important;
-  background: var(--drink-bg-cream) !important;
-  border: 1px solid var(--drink-border) !important;
-  padding: 15% !important;
-  transition: transform 0.4s ease;
-  aspect-ratio: 1 / 1 !important;
-  width: 100% !important;
-  max-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.card-product:hover .media {
-  transform: scale(1.03);
 }
 
 .card-product .card__heading {
-  font-family: var(--font-heading) !important;
-  font-size: 1.5rem !important;
-  margin-top: 20px !important;
-  margin-bottom: 8px !important;
-  line-height: 1.2;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  line-height: 1.3;
 }
 
 .card-product .price {
-  font-family: var(--font-mono) !important;
-  font-size: 0.9rem !important;
-  color: var(--drink-rust) !important;
-  justify-content: center !important;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--drink-rust);
 }
 
 /* --- Collection Grid Adjustments --- */
 .product-grid {
-  row-gap: 64px !important;
-  column-gap: 32px !important;
+  row-gap: 40px;
+  column-gap: 24px;
 }
 
 /* --- Announcement Bar Clean Fix --- */

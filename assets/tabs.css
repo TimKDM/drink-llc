@@ -37,7 +37,7 @@
 
 /* Tab content — Drink body font */
 .tabs .tab-content-wrapper {
-  font-family: 'Jost', var(--font-body-family), sans-serif;
+  font-family: 'DM Sans', var(--font-body-family), sans-serif;
   font-size: 15px;
   line-height: 1.75;
   color: #6B7B6E;
@@ -61,7 +61,7 @@
 
 /* Tab links — Drink heading font */
 .tabs .tab-item a {
-  font-family: 'Josefin Sans', var(--font-heading-family), sans-serif;
+  font-family: 'DM Serif Display', var(--font-heading-family), serif;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -140,7 +140,7 @@
 }
 
 .tab-content h2 {
-  font-family: 'Josefin Sans', var(--font-heading-family), sans-serif;
+  font-family: 'DM Serif Display', var(--font-heading-family), serif;
   font-weight: 600;
   font-size: 18px;
   color: #1A1A1A;
@@ -180,7 +180,7 @@
 }
 
 .product-section .tabs .tab-content-wrapper {
-  font-family: 'Jost', var(--font-body-family), sans-serif;
+  font-family: 'DM Sans', var(--font-body-family), sans-serif;
   font-size: 15px;
   line-height: 1.75;
   color: #6B7B6E;

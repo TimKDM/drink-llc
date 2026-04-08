@@ -175,8 +175,7 @@
   overflow: hidden;
   /* Fix for Safari border bug on hover */
   z-index: 0;
-  border-radius: 50%;
-  aspect-ratio: 1;         /* enforce square — prevents ovals on non-square containers */
+  border-radius: var(--radius-md, 8px);
 }
 
 .collection .card--card:after,
@@ -186,7 +185,7 @@
 }
 
 .card--card .card-inner .card-media {
-  border-radius: 50%;
+  border-radius: var(--radius-md, 8px);
 }
 
 .card--standard.card--text {
@@ -469,13 +468,14 @@
 }
 
 .card-media .media img:hover {
-  transform: translateY(-50px);
+  transform: scale(1.03);
+  transition: transform 0.4s ease;
 }
 
 .collection-style-three .card-media .media img:hover,
 .collection-style-two .card-media .media img:hover,
 .collection-style-one .card-media .media img:hover {
-  transform: translateY(30px);
+  transform: scale(1.03);
 }
 
 .card-inner:not(.ratio) > .card-content {
@@ -483,10 +483,10 @@
 }
 
 .card-information .card-heading {
-  font-family: 'Josefin Sans', var(--font-heading-family), sans-serif;
+  font-family: 'DM Serif Display', var(--font-heading-family), serif;
   font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.01em;
+  font-weight: 400;
+  letter-spacing: -0.01em;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0;
@@ -674,8 +674,9 @@
 
 .card-information > .price {
   color: rgb(var(--color-foreground));
-  font-family: 'Jost', var(--font-body-family), sans-serif;
-  font-weight: 600;
+  font-family: 'JetBrains Mono', var(--font-body-family), monospace;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
 .card--horizontal .card-information > .price {

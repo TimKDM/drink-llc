@@ -18,13 +18,13 @@
 
 .testimonials-title .title {
   margin-top: 0;
-  font-family: 'Josefin Sans', var(--font-heading-family), sans-serif;
+  font-family: 'DM Serif Display', var(--font-heading-family), serif;
   font-weight: 400;
   letter-spacing: -0.01em;
 }
 
 .testimonials-title .image-with-text-text--caption {
-  font-family: 'Josefin Sans', var(--font-heading-family), sans-serif;
+  font-family: 'DM Serif Display', var(--font-heading-family), serif;
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -140,7 +140,7 @@
 .testimonials-info h4,
 .testimonials .testimonials-author,
 .testimonials .product__title {
-  font-family: 'Josefin Sans', var(--font-heading-family), sans-serif;
+  font-family: 'DM Serif Display', var(--font-heading-family), serif;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 0.02em;

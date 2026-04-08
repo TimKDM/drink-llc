@@ -4,7 +4,7 @@
 
 .related-products__heading {
   margin: 0 0 1rem;
-  font-family: 'Josefin Sans', var(--font-heading-family), sans-serif;
+  font-family: 'DM Serif Display', var(--font-heading-family), serif;
   font-weight: 400;
   letter-spacing: -0.01em;
   color: #1A1A1A;
@@ -12,9 +12,9 @@
 
 .related-products p.caption-with-letter-spacing {
     margin-bottom: 0;
-    font-family: 'Josefin Sans', var(--font-heading-family), sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.15em;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #5A9A10;
     font-size: 11px;
@@ -23,10 +23,6 @@
 .related-products .card--media,
 .related-products .card-inner {
   background: transparent;
-}
-
-.related-products .quick-add {
-  display: none;
 }
 
 @media screen and (max-width: 990px) {
