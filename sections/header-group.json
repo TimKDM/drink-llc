@@ -17,7 +17,7 @@
         "779702cf-d8cf-4f96-b433-b424480b158b": {
           "type": "announcement",
           "settings": {
-            "text": "New Refreshing Beverages Are Here - Lets Sip!",
+            "text": "Free shipping over $49.",
             "show_countdown": false,
             "hide_on_end": false,
             "end_date": "",
@@ -33,13 +33,13 @@
         "announcement_DD4WBT": {
           "type": "announcement",
           "settings": {
-            "text": "Save $2 on the Passion Fruit — Now $4.99",
-            "show_countdown": true,
-            "hide_on_end": true,
-            "end_date": "2026-03-31",
+            "text": "Zero sugar. Zero nonsense. Just hydration.",
+            "show_countdown": false,
+            "hide_on_end": false,
+            "end_date": "",
             "end_time": "",
-            "number_font": "heading",
-            "countdown_separator": "space",
+            "number_font": "base",
+            "countdown_separator": "dash",
             "use_custom_colors": false,
             "bg_color": "#4a4a4a",
             "bg_gradient": "",
@@ -49,7 +49,7 @@
         "announcement_RgTKyN": {
           "type": "announcement",
           "settings": {
-            "text": "American company from Houston, Texas. USA based support. Join the Drink LLC family.",
+            "text": "New flavor: Matcha DRiNK.",
             "show_countdown": false,
             "hide_on_end": false,
             "end_date": "",
@@ -65,7 +65,7 @@
         "announcement_jgzXqn": {
           "type": "announcement",
           "settings": {
-            "text": "100% satisfaction guarantee on all beverages",
+            "text": "Keto · Sugar Free · Electrolytes · B-Vitamins.",
             "show_countdown": false,
             "hide_on_end": false,
             "end_date": "",
@@ -102,9 +102,9 @@
         "menu_promotion_small_FtXFe8": {
           "type": "menu-promotion-small",
           "settings": {
-            "dropdown_link_title": "Beverages",
+            "dropdown_link_title": "Hydration Powders",
             "image": "",
-            "title": "Shop Our Refreshing Beverages!",
+            "title": "Shop DRiNK Hydration Powders",
             "link_url": "shopify://collections/beverages"
           }
         },
@@ -112,9 +112,9 @@
           "type": "menu-promotion-small",
           "disabled": true,
           "settings": {
-            "dropdown_link_title": "Beverages",
+            "dropdown_link_title": "Hydration Powders",
             "image": "",
-            "title": "SHOP OUR BIGGEST SALE OF THE YEAR",
+            "title": "Five flavors. Zero sugar. Pick yours.",
             "link_url": "shopify://collections/beverages"
           }
         }
@@ -136,12 +136,12 @@
         "transparent_fade_strength": 40,
         "menu_linklist": "main-menu",
         "menu_layout": "inline-menu-left",
-        "nav_featured_link": "Clearance",
+        "nav_featured_link": "",
         "menu_linklist_mobile": "mobile-menu",
         "mobile_expand_with_entire_link": true,
         "enable_mobile_promo_carousel": false,
         "enable_nav_mob_products": true,
-        "nav_mob_products_title": "#1 in refreshment",
+        "nav_mob_products_title": "DRiNK Hydration Powders",
         "nav_mob_products_collection": "beverages",
         "enable_search": true,
         "search_recommendations_title": "",

@@ -3,7 +3,7 @@
 <style>
 .drink-products {
   padding: 100px 48px;
-  background: #f5f5f3;
+  background: #141414;
   font-family: var(--base-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   box-sizing: border-box;
 }
@@ -17,14 +17,14 @@
   font-weight: 700;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #888888;
+  color: #777777;
   margin-bottom: 16px;
 }
 .drink-products-header h2 {
   font-family: var(--heading-font-family), serif;
   font-size: 56px;
   font-weight: 700;
-  color: #121212;
+  color: #F5F5F0;
   line-height: 1.1;
 }
 .drink-product-grid {
@@ -35,7 +35,7 @@
   margin: 0 auto;
 }
 .drink-product-card {
-  background: #ffffff;
+  background: #1a1a1a;
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -43,12 +43,12 @@
 }
 .drink-product-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
 }
 .drink-product-img {
   position: relative;
   padding: 40px 32px 20px;
-  background: linear-gradient(180deg, #f8f8f6 0%, #ffffff 100%);
+  background: linear-gradient(180deg, #222222 0%, #1a1a1a 100%);
   text-align: center;
 }
 .drink-product-img img { width: 100%; max-width: 380px; height: auto; }
@@ -56,8 +56,8 @@
   position: absolute;
   top: 16px;
   left: 16px;
-  background: #2e72d2;
-  color: #ffffff;
+  background: #FFE566;
+  color: #0D0D0D;
   padding: 6px 14px;
   border-radius: 4px;
   font-size: 13px;
@@ -68,7 +68,7 @@
   justify-content: center;
   gap: 20px;
   padding: 12px 0;
-  border-top: 1px solid rgba(0,0,0,0.06);
+  border-top: 1px solid rgba(255,255,255,0.08);
   margin: 0 24px;
 }
 .drink-spec-item {
@@ -77,7 +77,7 @@
   gap: 6px;
   font-size: 13px;
   font-weight: 600;
-  color: #555555;
+  color: #aaaaaa;
 }
 .drink-spec-item svg { width: 16px; height: 16px; opacity: 0.6; }
 .drink-product-info { padding: 20px 28px 28px; }
@@ -86,7 +86,7 @@
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #888888;
+  color: #777777;
   margin-bottom: 8px;
 }
 .drink-product-name {
@@ -94,11 +94,11 @@
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 8px;
-  color: #121212;
+  color: #F5F5F0;
 }
 .drink-product-desc {
   font-size: 15px;
-  color: #888888;
+  color: #999999;
   line-height: 1.5;
   margin-bottom: 16px;
 }
@@ -121,11 +121,11 @@
 .drink-price-regular {
   font-size: 28px;
   font-weight: 800;
-  color: #121212;
+  color: #F5F5F0;
 }
 .drink-product-height {
   font-size: 13px;
-  color: #888888;
+  color: #777777;
   margin-bottom: 16px;
 }
 .drink-color-swatches {
@@ -145,8 +145,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background: #2e72d2;
-  color: #ffffff;
+  background: #F5F5F0;
+  color: #0D0D0D;
   padding: 16px;
   border-radius: 8px;
   font-size: 16px;
@@ -159,9 +159,9 @@
   text-align: center;
 }
 .drink-product-card .drink-btn-product:hover {
-  background: #2563b8;
+  background: #e0e0d8;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(46,114,210,0.3);
+  box-shadow: 0 8px 25px rgba(245,245,240,0.15);
 }
 
 /* Tablet */
@@ -327,13 +327,13 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow text",
-      "default": "Our Flavors"
+      "default": "Hydration Powder"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Find Your Perfect Flavor"
+      "default": "Pick your flavor."
     }
   ],
   "blocks": [
@@ -378,7 +378,7 @@
           "type": "text",
           "id": "spec_1_value",
           "label": "Spec 1 value",
-          "default": "90 cal"
+          "default": "0g sugar"
         },
         {
           "type": "select",
@@ -386,9 +386,9 @@
           "label": "Spec 1 icon",
           "default": "bolt",
           "options": [
-            { "value": "bolt", "label": "Calories" },
-            { "value": "battery", "label": "Serving Size" },
-            { "value": "speed", "label": "Key Ingredient" },
+            { "value": "bolt", "label": "Calories / Sugar" },
+            { "value": "battery", "label": "Servings" },
+            { "value": "speed", "label": "Electrolytes" },
             { "value": "weight", "label": "Flavor" },
             { "value": "suspension", "label": "Other" }
           ]
@@ -397,7 +397,7 @@
           "type": "text",
           "id": "spec_2_value",
           "label": "Spec 2 value",
-          "default": "12 oz"
+          "default": "30 servings"
         },
         {
           "type": "select",
@@ -405,9 +405,9 @@
           "label": "Spec 2 icon",
           "default": "battery",
           "options": [
-            { "value": "bolt", "label": "Calories" },
-            { "value": "battery", "label": "Serving Size" },
-            { "value": "speed", "label": "Key Ingredient" },
+            { "value": "bolt", "label": "Calories / Sugar" },
+            { "value": "battery", "label": "Servings" },
+            { "value": "speed", "label": "Electrolytes" },
             { "value": "weight", "label": "Flavor" },
             { "value": "suspension", "label": "Other" }
           ]
@@ -416,7 +416,7 @@
           "type": "text",
           "id": "spec_3_value",
           "label": "Spec 3 value",
-          "default": "Real Fruit"
+          "default": "6 electrolytes"
         },
         {
           "type": "select",
@@ -424,9 +424,9 @@
           "label": "Spec 3 icon",
           "default": "speed",
           "options": [
-            { "value": "bolt", "label": "Calories" },
-            { "value": "battery", "label": "Serving Size" },
-            { "value": "speed", "label": "Key Ingredient" },
+            { "value": "bolt", "label": "Calories / Sugar" },
+            { "value": "battery", "label": "Servings" },
+            { "value": "speed", "label": "Electrolytes" },
             { "value": "weight", "label": "Flavor" },
             { "value": "suspension", "label": "Other" }
           ]
@@ -519,27 +519,26 @@
     {
       "name": "Drink Product Cards",
       "settings": {
-        "eyebrow": "Our Flavors",
-        "heading": "Find Your Perfect Flavor"
+        "eyebrow": "Hydration Powder",
+        "heading": "Pick your flavor."
       },
       "blocks": [
         {
           "type": "product_card",
           "settings": {
             "badge_text": "Best Seller",
-            "spec_1_value": "90 cal",
+            "spec_1_value": "0g sugar",
             "spec_1_icon": "bolt",
-            "spec_2_value": "12 oz",
+            "spec_2_value": "30 servings",
             "spec_2_icon": "battery",
-            "spec_3_value": "Real Lemon",
+            "spec_3_value": "6 electrolytes",
             "spec_3_icon": "speed",
-            "category": "Citrus · Best Seller",
-            "name": "Lemonade",
-            "description": "Classic and refreshing, made with real lemon juice and a hint of natural sweetness.",
-            "sale_price": "$3.99",
-            "rider_height": "Serving size: 12 oz",
-            "color_1": "#f5e642",
-            "color_2": "#f0ece4",
+            "category": "Hydration Powder",
+            "name": "Lemonade DRiNK",
+            "description": "Tart. Clean. The one everyone starts with.",
+            "sale_price": "$24.99",
+            "rider_height": "0g sugar · 30 servings per tub",
+            "color_1": "#FFE566",
             "button_label": "Shop Lemonade",
             "button_url": "/products/lemonade"
           }
@@ -547,19 +546,18 @@
         {
           "type": "product_card",
           "settings": {
-            "spec_1_value": "80 cal",
+            "spec_1_value": "0g sugar",
             "spec_1_icon": "bolt",
-            "spec_2_value": "12 oz",
+            "spec_2_value": "30 servings",
             "spec_2_icon": "battery",
-            "spec_3_value": "Ceremonial Grade",
+            "spec_3_value": "6 electrolytes",
             "spec_3_icon": "speed",
-            "category": "Wellness · Energizing",
-            "name": "Matcha",
-            "description": "Smooth, earthy, and naturally energizing. Made with ceremonial-grade matcha.",
-            "sale_price": "$4.49",
-            "rider_height": "Serving size: 12 oz",
-            "color_1": "#4a7a3a",
-            "color_2": "#d4e8c4",
+            "category": "Hydration Powder",
+            "name": "Matcha DRiNK",
+            "description": "Earthy. Smooth. No caffeine crash.",
+            "sale_price": "$24.99",
+            "rider_height": "0g sugar · 30 servings per tub",
+            "color_1": "#7CB518",
             "button_label": "Shop Matcha",
             "button_url": "/products/matcha"
           }
@@ -567,20 +565,18 @@
         {
           "type": "product_card",
           "settings": {
-            "badge_text": "New Flavor",
-            "spec_1_value": "85 cal",
+            "spec_1_value": "0g sugar",
             "spec_1_icon": "bolt",
-            "spec_2_value": "12 oz",
+            "spec_2_value": "30 servings",
             "spec_2_icon": "battery",
-            "spec_3_value": "Real Passion Fruit",
+            "spec_3_value": "6 electrolytes",
             "spec_3_icon": "speed",
-            "category": "Tropical · Refreshing",
-            "name": "Passion Fruit",
-            "description": "Bright, tangy, and bursting with tropical flavor. A taste of paradise in every sip.",
-            "sale_price": "$4.29",
-            "rider_height": "Serving size: 12 oz",
-            "color_1": "#e8a030",
-            "color_2": "#f5d060",
+            "category": "Hydration Powder",
+            "name": "Passion Fruit DRiNK",
+            "description": "Tropical. Tangy. Zero guilt.",
+            "sale_price": "$24.99",
+            "rider_height": "0g sugar · 30 servings per tub",
+            "color_1": "#C77DFF",
             "button_label": "Shop Passion Fruit",
             "button_url": "/products/passion-fruit"
           }
