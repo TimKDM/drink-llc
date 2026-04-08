@@ -72,9 +72,8 @@
   padding: 20px;
 }
 .product__media.media {
-  border-radius: 50%;
+  border-radius: var(--radius-md, 8px);
   overflow: hidden;
-  aspect-ratio: 1;
 }
 .jdgm-star {
   padding: 0 1px !important;
