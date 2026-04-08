@@ -1,28 +1,42 @@
 {%- style -%}
   #shopify-section-{{ section.id }} .drink-section {
-    background-color: {{ section.settings.background_color }};
+    {% if section.settings.background_color != blank and section.settings.background_color != 'rgba(0,0,0,0)' %}
+      background-color: {{ section.settings.background_color }};
+    {% endif %}
     margin-top: {{ section.settings.margin_top }}px;
     margin-bottom: {{ section.settings.margin_bottom }}px;
-    padding-top: {{ section.settings.padding_top | times: 0.75 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
-  #shopify-section-{{ section.id }} .drink-section-label {
-    color: {{ section.settings.accent_color }};
-  }
+  {% if section.settings.accent_color != blank and section.settings.accent_color != 'rgba(0,0,0,0)' %}
+    #shopify-section-{{ section.id }} .drink-section-label {
+      color: {{ section.settings.accent_color }};
+    }
+  {% endif %}
 
-  #shopify-section-{{ section.id }} .drink-section-title {
-    color: {{ section.settings.text_color }};
-  }
+  {% if section.settings.text_color != blank and section.settings.text_color != 'rgba(0,0,0,0)' %}
+    #shopify-section-{{ section.id }} .drink-section-title {
+      color: {{ section.settings.text_color }};
+    }
+  {% endif %}
 
-  #shopify-section-{{ section.id }} .drink-testimonial-card {
-    background-color: {{ section.settings.card_background_color }};
-    border-color: {{ section.settings.card_border_color }};
-  }
+  {% if section.settings.card_background_color != blank and section.settings.card_background_color != 'rgba(0,0,0,0)' or section.settings.card_border_color != blank and section.settings.card_border_color != 'rgba(0,0,0,0)' %}
+    #shopify-section-{{ section.id }} .drink-testimonial-card {
+      {% if section.settings.card_background_color != blank and section.settings.card_background_color != 'rgba(0,0,0,0)' %}
+        background-color: {{ section.settings.card_background_color }};
+      {% endif %}
+      {% if section.settings.card_border_color != blank and section.settings.card_border_color != 'rgba(0,0,0,0)' %}
+        border-color: {{ section.settings.card_border_color }};
+      {% endif %}
+    }
+  {% endif %}
 
-  #shopify-section-{{ section.id }} .drink-testimonial-stars svg {
-    fill: {{ section.settings.star_color }};
-  }
+  {% if section.settings.star_color != blank and section.settings.star_color != 'rgba(0,0,0,0)' %}
+    #shopify-section-{{ section.id }} .drink-testimonial-stars svg {
+      fill: {{ section.settings.star_color }};
+    }
+  {% endif %}
 
   @media screen and (min-width: 750px) {
     #shopify-section-{{ section.id }} .drink-section {

@@ -1,24 +1,25 @@
 {%- style -%}
   #shopify-section-{{ section.id }} .drink-section {
-    background-color: {{ section.settings.background_color }};
+    {% if section.settings.background_color != blank and section.settings.background_color != 'rgba(0,0,0,0)' %}
+      background-color: {{ section.settings.background_color }};
+    {% endif %}
     margin-top: {{ section.settings.margin_top }}px;
     margin-bottom: {{ section.settings.margin_bottom }}px;
-    padding-top: {{ section.settings.padding_top | times: 0.75 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
-  #shopify-section-{{ section.id }} .drink-section-label {
-    color: {{ section.settings.accent_color }};
-  }
+  {% if section.settings.accent_color != blank and section.settings.accent_color != 'rgba(0,0,0,0)' %}
+    #shopify-section-{{ section.id }} .drink-section-label {
+      color: {{ section.settings.accent_color }};
+    }
+  {% endif %}
 
-  #shopify-section-{{ section.id }} .drink-section-title {
-    color: {{ section.settings.text_color }};
-  }
-
-  #shopify-section-{{ section.id }} .drink-category-card__content h3,
-  #shopify-section-{{ section.id }} .drink-category-card__content p {
-    color: {{ section.settings.text_color }};
-  }
+  {% if section.settings.text_color != blank and section.settings.text_color != 'rgba(0,0,0,0)' %}
+    #shopify-section-{{ section.id }} .drink-section-title {
+      color: {{ section.settings.text_color }};
+    }
+  {% endif %}
 
   @media screen and (min-width: 750px) {
     #shopify-section-{{ section.id }} .drink-section {
@@ -73,7 +74,7 @@
         {%- endif -%}
         <div class="drink-category-card__content">
           <span class="drink-mono-label" style="background: var(--drink-matcha); color: #fff; border: none; margin-bottom: 8px;">{{ block.settings.subtitle | default: 'Explore' }}</span>
-          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; text-shadow: none; color: var(--drink-black);">{{ block.settings.heading | default: collection.title }}</h3>
+          <h3>{{ block.settings.heading | default: collection.title }}</h3>
         </div>
       </a>
     {%- endfor -%}

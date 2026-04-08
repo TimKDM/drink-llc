@@ -45,13 +45,13 @@
       {%- endif -%}
     </div>
 
-    <div class="drink-brand-story__content py-12">
+    <div class="drink-brand-story__content">
       {%- if section.settings.heading != blank -%}
-        <h2 style="font-family: var(--font-heading); font-size: 3.5rem; line-height: 1.1; margin-bottom: 24px;">{{ section.settings.heading }}</h2>
+        <h2>{{ section.settings.heading }}</h2>
       {%- endif -%}
 
       {%- if section.settings.text != blank -%}
-        <p style="font-family: var(--font-body); font-size: 1.25rem; line-height: 1.6; color: var(--drink-black); opacity: 0.8;">{{ section.settings.text }}</p>
+        <p>{{ section.settings.text }}</p>
       {%- endif -%}
 
       {%- if section.settings.button_label != blank -%}
