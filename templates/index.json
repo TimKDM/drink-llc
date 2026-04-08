@@ -1,0 +1,1143 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_ijXhFa": {
+      "type": "slideshow",
+      "blocks": {
+        "image_nAbMMn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Stellar-falcon-2026.jpg",
+            "mobile_image": "shopify://shop_images/Stellar-falcon-2026.jpg",
+            "slide_link": "",
+            "subheading": "NEW · Stellar Falcon",
+            "title": "Ride the Ultimate SUV — Conquer the Trail to the City",
+            "heading_max_width": 37,
+            "title_size": 32,
+            "title_size_mobile": 20,
+            "use_h1": true,
+            "text": "<p>Meet the New Stellar Falcon 2 — built for every terrain with air suspension, 750W power, and a switchable torque & cadence sensor.</p>",
+            "enlarge_text": true,
+            "button_label_1": "Shop Stellar Falcon",
+            "button_url_1": "shopify://collections/stellar-falcon-series",
+            "button_label_2": "Learn More",
+            "button_url_2": "shopify://products/stellar-falcon-2-step-thru",
+            "text_alignment": "center left"
+          }
+        },
+        "image_NtLFBg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/DSC03351.jpg",
+            "mobile_image": "shopify://shop_images/Solar_Sparrow_in___Canyon_Flame.png",
+            "slide_link": "",
+            "subheading": "ENDS MARCH 31",
+            "title": "Save $200 on the Solar Sparrow ",
+            "heading_max_width": 34,
+            "title_size": 30,
+            "title_size_mobile": 30,
+            "use_h1": true,
+            "text": "<p>Lightweight. Low maintenance. Comfortable.</p>",
+            "enlarge_text": true,
+            "button_label_1": "SHOP EBIKE SALE",
+            "button_url_1": "shopify://products/solar-sparrow",
+            "button_label_2": "",
+            "button_url_2": "",
+            "text_alignment": "center center"
+          }
+        },
+        "image_Kw6WbB": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/cityrobinpeople.png",
+            "mobile_image": "shopify://shop_images/Untitled_1024_x_1024_px.png",
+            "slide_link": "",
+            "subheading": "Limited Time Sale",
+            "title": "The Most Comfortable Ebike Is Now On Sale!",
+            "heading_max_width": 28,
+            "title_size": 36,
+            "title_size_mobile": 20,
+            "use_h1": true,
+            "text": "<p>Save $350 on the City Robin X+ — now just $1,999 with full suspension comfort, torque sensor, and premium Shimano & Tektro components.</p>",
+            "enlarge_text": false,
+            "button_label_1": "Get $350 Off Today",
+            "button_url_1": "shopify://products/city-robin-x-plus",
+            "button_label_2": "Compare Models",
+            "button_url_2": "#euphree-compare",
+            "text_alignment": "center left"
+          }
+        }
+      },
+      "block_order": [
+        "image_nAbMMn",
+        "image_NtLFBg",
+        "image_Kw6WbB"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 800,
+        "height_mobile": 580,
+        "full_width": true,
+        "mobile_overlay_under": false,
+        "overlay_style": "full image-overlay--bg-shadow",
+        "transition": "fade",
+        "navigation": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "accessibility_info": ""
+      }
+    },
+    "trust_bar_custom_liquid": {
+      "type": "custom-liquid",
+      "name": "Trust Bar",
+      "settings": {
+        "full_width": true,
+        "show_space": false,
+        "code": "<!-- Euphree Trust Bar — drop into Elfsight Custom HTML or Shopify Custom Liquid -->\n<style>\n.euphree-trust-bar {\n  background: linear-gradient(135deg, #1a3d6e 0%, #1e4f8a 50%, #2e72d2 100%);\n  padding: 22px 48px;\n  display: flex;\n  justify-content: center;\n  gap: 60px;\n  flex-wrap: wrap;\n  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\n  box-sizing: border-box;\n}\n.euphree-trust-bar * { box-sizing: border-box; margin: 0; padding: 0; }\n.euphree-trust-item {\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  color: #ffffff;\n  font-size: 15px;\n  font-weight: 600;\n  letter-spacing: 0.3px;\n  white-space: nowrap;\n}\n.euphree-trust-icon {\n  width: 40px;\n  height: 40px;\n  border-radius: 50%;\n  background: rgba(255,255,255,0.1);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-shrink: 0;\n}\n.euphree-trust-icon svg { width: 20px; height: 20px; }\n/* Tablet */\n@media (max-width: 1024px) {\n  .euphree-trust-bar { gap: 32px; padding: 20px 32px; }\n  .euphree-trust-item { font-size: 14px; }\n}\n/* Mobile */\n@media (max-width: 768px) {\n  .euphree-trust-bar {\n    padding: 20px 16px;\n    gap: 16px;\n    flex-direction: column;\n    align-items: center;\n  }\n  .euphree-trust-item { font-size: 13px; gap: 10px; }\n  .euphree-trust-icon { width: 32px; height: 32px; }\n  .euphree-trust-icon svg { width: 16px; height: 16px; }\n}\n</style>\n<div class=\"euphree-trust-bar\">\n  <div class=\"euphree-trust-item\">\n    <div class=\"euphree-trust-icon\">\n      <svg fill=\"none\" stroke=\"white\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"></path></svg>\n    </div>\n    SGS Certified Quality\n  </div>\n  <div class=\"euphree-trust-item\">\n    <div class=\"euphree-trust-icon\">\n      <svg fill=\"none\" stroke=\"white\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"M9 12l2 2 4-4\"></path><circle cx=\"12\" cy=\"12\" r=\"10\"></circle></svg>\n    </div>\n    2-Year Warranty\n  </div>\n  <div class=\"euphree-trust-item\">\n    <div class=\"euphree-trust-icon\">\n      <svg viewBox=\"280 275 940 915\" fill=\"white\" width=\"20\" height=\"20\"><path d=\"M 1195.898438 765.714844 C 1203.410156 753.390625 1198.550781 737.511719 1193.558594 723.976562 C 1189.601562 713.269531 1185.597656 702.566406 1181.683594 691.90625 C 1179.929688 687.136719 1178.132812 682.414062 1175.386719 678.144531 C 1172.78125 674.183594 1169.363281 670.8125 1167.292969 666.492188 C 1164.953125 661.546875 1164.683594 655.878906 1164.503906 650.4375 C 1163.15625 613.601562 1162.976562 576.71875 1163.785156 539.839844 C 1163.828125 538.085938 1163.738281 536.105469 1162.390625 534.980469 C 1161.355469 534.125 1159.871094 534.125 1158.523438 534.125 C 1138.28125 533.855469 1120.292969 522.070312 1103.199219 511.234375 C 1097.894531 507.90625 1092.40625 504.484375 1086.242188 503.136719 C 1079.453125 501.699219 1072.390625 502.820312 1065.554688 503.992188 C 1053.769531 505.96875 1042.03125 507.996094 1030.203125 509.972656 C 1027.863281 510.378906 1025.34375 510.828125 1023.410156 512.175781 C 1020.980469 513.839844 1019.542969 516.675781 1017.382812 518.609375 C 1010.234375 524.949219 999.078125 519.867188 991.117188 514.605469 C 988.507812 512.898438 985.898438 511.1875 983.382812 509.570312 C 975.375 504.351562 962.78125 500.078125 958.058594 508.355469 C 956.753906 510.601562 956.214844 513.707031 953.832031 514.605469 C 952.75 515.011719 951.539062 514.875 950.367188 514.652344 C 939.976562 512.851562 929.949219 509.253906 920.726562 504.035156 C 917.984375 502.507812 915.0625 500.753906 911.914062 501.023438 C 908.179688 501.382812 905.210938 504.574219 901.476562 505.386719 C 894.597656 506.824219 889.289062 499.808594 883.847656 495.3125 C 864.550781 479.613281 832.304688 494.050781 812.558594 478.9375 C 808.195312 475.609375 804.777344 470.933594 799.785156 468.640625 C 793.890625 465.894531 787.011719 466.929688 780.535156 465.941406 C 771.539062 464.546875 761.957031 458.835938 757.460938 450.964844 L 757.460938 294.578125 L 546.25 294.578125 L 546.25 664.109375 L 300.582031 664.109375 C 299.097656 669.550781 302.246094 676.300781 306.566406 679.941406 C 309.984375 682.777344 314.570312 684.035156 317.765625 687.183594 C 322.21875 691.589844 322.800781 698.609375 326.625 703.644531 C 330.988281 709.355469 338.5 711.246094 344.480469 715.25 C 348.886719 718.21875 352.308594 722.308594 355.769531 726.359375 C 365.082031 737.242188 374.75 748.082031 386.757812 755.863281 C 392.113281 759.328125 397.914062 762.160156 402.90625 766.164062 C 413.429688 774.527344 419.636719 786.988281 425.484375 799.085938 C 427.6875 803.628906 429.890625 808.21875 431.015625 813.121094 C 432.367188 818.875 432.230469 824.8125 433.265625 830.617188 C 436.863281 850.539062 453.460938 865.292969 470.101562 876.851562 C 488.183594 889.355469 507.476562 899.925781 526.726562 910.496094 C 530.144531 912.339844 534.015625 914.273438 537.703125 913.148438 C 540.265625 912.382812 542.15625 910.316406 543.953125 908.335938 C 552.320312 899.027344 560.957031 889.265625 564.058594 877.167969 C 566.441406 867.765625 566.757812 855.578125 575.753906 851.933594 C 579.667969 850.316406 584.164062 851.082031 588.167969 849.730469 C 593.699219 847.839844 598.242188 841.949219 604.042969 842.9375 C 607.148438 843.433594 609.484375 845.816406 612.230469 847.390625 C 621.855469 852.789062 633.863281 846.898438 644.929688 847.75 C 657.160156 848.695312 667.011719 857.917969 675.691406 866.550781 C 693.503906 884.183594 712.035156 903.117188 718.015625 927.496094 C 727.011719 963.929688 753.097656 994.289062 779.722656 1020.644531 C 783.90625 1024.78125 788.40625 1029.054688 790.023438 1034.722656 C 791.375 1039.535156 790.472656 1044.617188 790.519531 1049.609375 C 790.609375 1070.34375 806.753906 1087.300781 812.960938 1107.089844 C 814.175781 1110.957031 815.03125 1114.917969 817.011719 1118.425781 C 820.742188 1124.902344 827.894531 1128.589844 834.640625 1131.828125 C 853.847656 1141.136719 873.5 1150.582031 894.777344 1152.875 C 902.871094 1153.730469 911.507812 1153.6875 918.480469 1157.914062 C 923.695312 1161.109375 927.519531 1166.503906 933.367188 1168.257812 C 943.441406 1171.363281 953.5625 1161.152344 954.957031 1150.671875 C 956.351562 1140.191406 951.988281 1129.9375 948.703125 1119.910156 C 936.019531 1081.722656 938.492188 1036.339844 964.085938 1005.308594 C 971.777344 995.996094 981.175781 988.261719 990.53125 980.660156 C 1002.046875 971.257812 1013.515625 961.859375 1026.019531 953.941406 C 1038.34375 946.117188 1051.613281 939.683594 1063.84375 931.722656 C 1099.558594 908.246094 1127.800781 870.195312 1169.632812 861.289062 C 1175.882812 859.941406 1184.429688 855.984375 1182.046875 850.089844 C 1181.054688 847.707031 1178.402344 846.359375 1177.097656 844.0625 C 1175.792969 841.816406 1177.816406 837.765625 1179.976562 839.117188 C 1189.464844 834.257812 1189.421875 819.6875 1187.578125 809.117188 C 1185.777344 798.636719 1182.496094 787.210938 1187.441406 777.765625 C 1189.644531 773.269531 1193.335938 769.984375 1195.851562 765.804688 Z M 1195.898438 765.714844\"/></svg>\n    </div>\n    Houston, Texas\n  </div>\n  <div class=\"euphree-trust-item\">\n    <div class=\"euphree-trust-icon\">\n      <svg viewBox=\"280 290 940 870\" fill=\"white\" width=\"20\" height=\"20\"><defs><clipPath id=\"bs1\"><path d=\"M 300.222656 306 L 1199.472656 306 L 1199.472656 1140 L 300.222656 1140 Z\" clip-rule=\"nonzero\"/></clipPath></defs><g clip-path=\"url(#bs1)\"><path d=\"M 1199.765625 584.542969 L 1199.765625 556.722656 C 1199.765625 555.222656 1199.597656 553.890625 1199.101562 552.390625 C 1199.101562 552.058594 1198.933594 551.726562 1198.765625 551.390625 C 1198.765625 551.226562 1198.765625 551.058594 1198.765625 550.890625 L 1149.792969 420.457031 L 1149.792969 390.140625 C 1149.792969 344.164062 1112.476562 306.847656 1066.5 306.847656 L 433.488281 306.847656 C 387.511719 306.847656 350.199219 344.164062 350.199219 390.140625 L 350.199219 420.457031 L 301.222656 550.890625 C 301.222656 550.890625 301.222656 551.226562 301.222656 551.390625 C 301.222656 551.726562 301.054688 552.058594 300.890625 552.390625 C 300.390625 553.890625 300.222656 555.222656 300.222656 556.722656 L 300.222656 584.542969 C 300.222656 625.855469 328.542969 660.667969 366.855469 670.332031 L 366.855469 1106.441406 L 316.882812 1106.441406 C 307.71875 1106.441406 300.222656 1113.9375 300.222656 1123.101562 C 300.222656 1132.261719 307.71875 1139.757812 316.882812 1139.757812 L 1183.109375 1139.757812 C 1192.269531 1139.757812 1199.765625 1132.261719 1199.765625 1123.101562 C 1199.765625 1113.9375 1192.269531 1106.441406 1183.109375 1106.441406 L 1133.132812 1106.441406 L 1133.132812 670.332031 C 1171.445312 660.667969 1199.765625 625.855469 1199.765625 584.542969 Z M 378.351562 440.113281 L 473.136719 440.113281 L 448.148438 540.0625 L 340.871094 540.0625 Z M 1121.640625 440.113281 L 1159.121094 540.0625 L 1051.839844 540.0625 L 1026.855469 440.113281 Z M 742.164062 969.84375 C 739.667969 968.679688 737.667969 966.847656 736.167969 964.515625 L 735.835938 964.015625 L 644.382812 826.917969 L 628.554688 860.066406 C 659.207031 880.558594 679.53125 915.539062 679.53125 955.1875 C 679.53125 1018.488281 628.054688 1069.960938 564.753906 1069.960938 C 501.453125 1069.960938 450.148438 1018.488281 450.148438 955.1875 C 450.148438 891.886719 501.621094 840.578125 564.753906 840.578125 C 576.582031 840.578125 587.910156 842.410156 598.570312 845.574219 L 627.222656 785.605469 L 658.707031 719.304688 C 661.539062 713.476562 667.371094 709.8125 673.699219 709.8125 L 717.34375 709.8125 C 726.507812 709.8125 734.003906 717.308594 734.003906 726.46875 C 734.003906 735.632812 726.507812 743.128906 717.34375 743.128906 L 684.195312 743.128906 L 668.871094 775.277344 L 817.292969 775.277344 L 824.789062 759.453125 L 820.792969 759.453125 C 811.628906 759.453125 804.132812 752.121094 804.132812 742.792969 C 804.132812 733.464844 811.628906 726.136719 820.792969 726.136719 L 875.265625 726.136719 C 884.425781 726.136719 891.921875 733.632812 891.921875 742.792969 C 891.921875 751.957031 884.425781 759.453125 875.265625 759.453125 L 861.769531 759.453125 L 846.277344 791.9375 L 886.257812 851.738281 C 901.085938 844.574219 917.742188 840.578125 935.234375 840.578125 C 998.367188 840.578125 1049.84375 892.050781 1049.84375 955.1875 C 1049.84375 1018.320312 998.367188 1069.960938 935.234375 1069.960938 C 877.597656 1069.960938 829.789062 1027.316406 821.792969 971.84375 L 749.996094 971.84375 C 748.660156 971.84375 747.328125 971.679688 745.996094 971.34375 C 744.664062 971.011719 743.332031 970.511719 742.164062 969.847656 Z M 992.371094 440.113281 L 1017.359375 540.0625 L 909.082031 540.0625 L 896.585938 440.113281 Z M 637.050781 440.113281 L 733.335938 440.113281 L 733.335938 540.0625 L 624.558594 540.0625 Z M 862.9375 440.113281 L 875.429688 540.0625 L 766.652344 540.0625 L 766.652344 440.113281 Z M 622.226562 573.378906 L 733.335938 573.378906 L 733.335938 584.542969 C 733.335938 615.027344 708.347656 640.011719 677.863281 640.011719 C 647.378906 640.011719 622.226562 615.027344 622.226562 584.542969 Z M 766.652344 573.378906 L 877.761719 573.378906 L 877.761719 584.542969 C 877.761719 615.027344 852.777344 640.011719 822.125 640.011719 C 791.472656 640.011719 766.652344 615.027344 766.652344 584.542969 Z M 966.550781 640.011719 C 935.898438 640.011719 911.078125 615.027344 911.078125 584.542969 L 911.078125 573.378906 L 1022.023438 573.378906 L 1022.023438 584.542969 C 1022.023438 615.027344 997.203125 640.011719 966.550781 640.011719 Z M 507.617188 440.113281 L 603.402344 440.113281 L 590.910156 540.0625 L 482.628906 540.0625 Z M 477.964844 573.378906 L 588.910156 573.378906 L 588.910156 584.542969 C 588.910156 615.027344 564.089844 640.011719 533.4375 640.011719 C 502.785156 640.011719 477.964844 615.027344 477.964844 584.542969 Z M 1166.449219 584.542969 C 1166.449219 615.027344 1141.460938 640.011719 1110.976562 640.011719 C 1080.492188 640.011719 1055.339844 615.027344 1055.339844 584.542969 L 1055.339844 573.378906 L 1166.449219 573.378906 Z M 333.539062 584.542969 L 333.539062 573.378906 L 444.648438 573.378906 L 444.648438 584.542969 C 444.648438 615.027344 419.664062 640.011719 389.011719 640.011719 C 358.359375 640.011719 333.539062 615.027344 333.539062 584.542969 Z M 333.539062 584.542969\"/></g><path fill=\"white\" d=\"M 904.082031 938.527344 L 877.097656 898.214844 C 866.4375 909.210938 858.773438 923.035156 855.609375 938.527344 Z M 904.082031 938.527344\"/><path fill=\"white\" d=\"M 949.894531 963.015625 C 946.894531 968.511719 941.230469 971.84375 935.234375 971.84375 L 855.609375 971.84375 C 863.105469 1008.824219 895.921875 1036.644531 935.234375 1036.644531 C 980.042969 1036.644531 1016.527344 1000.164062 1016.527344 955.1875 C 1016.527344 910.210938 980.042969 873.894531 935.234375 873.894531 C 924.574219 873.894531 914.246094 876.058594 904.914062 879.726562 L 949.058594 946.023438 C 952.390625 951.023438 952.726562 957.683594 949.894531 963.015625 Z M 949.894531 963.015625\"/><path fill=\"white\" d=\"M 821.792969 938.527344 C 825.621094 911.542969 839.117188 887.554688 858.441406 870.230469 L 829.621094 826.917969 L 776.316406 938.527344 Z M 821.792969 938.527344\"/><path fill=\"white\" d=\"M 672.199219 808.59375 L 747.664062 921.535156 L 801.300781 808.59375 Z M 672.199219 808.59375\"/><path fill=\"white\" d=\"M 614.0625 890.71875 L 579.914062 962.347656 C 577.082031 968.347656 571.085938 971.84375 564.753906 971.84375 C 562.421875 971.84375 559.925781 971.34375 557.757812 970.34375 C 549.429688 966.347656 545.765625 956.351562 549.761719 948.023438 L 583.914062 876.226562 C 577.75 874.726562 571.417969 873.894531 564.753906 873.894531 C 519.945312 873.894531 483.464844 910.375 483.464844 955.1875 C 483.464844 999.996094 519.945312 1036.644531 564.753906 1036.644531 C 609.566406 1036.644531 646.214844 1000.164062 646.214844 955.1875 C 646.214844 928.867188 633.554688 905.378906 614.0625 890.71875 Z M 614.0625 890.71875\"/></svg>\n    </div>\n    180+ Dealers Nationwide\n  </div>\n  <div class=\"euphree-trust-item\">\n    <div class=\"euphree-trust-icon\">\n      <svg fill=\"none\" stroke=\"white\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><polygon points=\"12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2\"></polygon></svg>\n    </div>\n    8,000+ Happy Riders\n  </div>\n</div>"
+      }
+    },
+    "compact_messages_cC7PNV": {
+      "type": "compact-messages",
+      "blocks": {
+        "message_mGVEkV": {
+          "type": "message",
+          "settings": {
+            "heading": "Message",
+            "subheading": "Add important information here",
+            "link_url": ""
+          }
+        },
+        "message_eedeJm": {
+          "type": "message",
+          "settings": {
+            "heading": "Message",
+            "subheading": "Add important information here",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "message_mGVEkV",
+        "message_eedeJm"
+      ],
+      "disabled": true,
+      "name": "Store messages",
+      "settings": {
+        "head_not_col_bg": "#f4f6f8",
+        "head_not_col_txt1": "#171717",
+        "head_not_col_txt2": "#4c4c4b",
+        "head_not_mob_show": true,
+        "head_not_mob_text": "CALL US:",
+        "head_not_mob_url": ""
+      }
+    },
+    "euphree_bold_claim_dJR9F6": {
+      "type": "euphree-bold-claim",
+      "name": "Euphree Bold Claim",
+      "settings": {
+        "heading_start": "Euphree Makes the",
+        "heading_highlight": "Most Comfortable",
+        "heading_end": "Premium Electric Bikes for Daily Use",
+        "subheading": "Designed in Houston. Built with the industry's best components. Backed by real people who ride what they sell."
+      }
+    },
+    "euphree_about_houston_yj3yEU": {
+      "type": "euphree-about-houston",
+      "blocks": {
+        "stat_4HJxMf": {
+          "type": "stat",
+          "settings": {
+            "number": "180+",
+            "label": "Dealers Nationwide"
+          }
+        },
+        "stat_KtBMcV": {
+          "type": "stat",
+          "settings": {
+            "number": "8000+",
+            "label": "Happy Riders"
+          }
+        },
+        "stat_WqQBVB": {
+          "type": "stat",
+          "settings": {
+            "number": "2 yr",
+            "label": "Full Warranty"
+          }
+        }
+      },
+      "block_order": [
+        "stat_4HJxMf",
+        "stat_KtBMcV",
+        "stat_WqQBVB"
+      ],
+      "name": "Euphree About Houston",
+      "settings": {
+        "image": "shopify://shop_images/Bonitas_2026_bike_tour.png",
+        "eyebrow": "About Euphree",
+        "heading": "An American Company from Houston, Texas",
+        "description_1": "We back American jobs and stand behind every rider who joins The Flock. From your first ride to years down the road, we're here as your riding partner for life.",
+        "description_2": "Every Euphree is designed in Houston and built with premium, name-brand components. We don't cut corners — because the ride matters.",
+        "button_label": "About Euphree →",
+        "button_url": "shopify://pages/about-us"
+      }
+    },
+    "logo_list_T9fT8F": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_yBHP3Y": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Bafang_logo.svg",
+            "image_width": 160,
+            "link": "",
+            "title": "Smooth, reliable, and powerful ebike motors."
+          }
+        },
+        "logo_fyHGGt": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/sricon.svg",
+            "image_width": 280,
+            "link": "shopify://pages/warranty",
+            "title": "SR Suntour Suspension – proven comfort on any road"
+          }
+        },
+        "logo_EEUKT7": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Shimicon.svg",
+            "image_width": 280,
+            "link": "shopify://pages/assembly-manuals",
+            "title": "Shimano Drivetrains – smooth shifting worldwide"
+          }
+        },
+        "logo_VkQfLw": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/LG_Electronics_Logo.svg",
+            "image_width": 280,
+            "link": "shopify://pages/bike-registration",
+            "title": "LG Battery Cells – long-lasting and reliable"
+          }
+        },
+        "logo_HNG3cL": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/TEKICON.svg",
+            "image_width": 280,
+            "link": "shopify://pages/military-first-responder-discount",
+            "title": "Tektro Hydraulic Brakes – confident stopping power"
+          }
+        }
+      },
+      "block_order": [
+        "logo_yBHP3Y",
+        "logo_fyHGGt",
+        "logo_EEUKT7",
+        "logo_VkQfLw",
+        "logo_HNG3cL"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "title": "Built With the Best in the Business",
+        "image_opacity": 100,
+        "color_scheme": "default"
+      }
+    },
+    "euphree_product_cards_eTzR4Q": {
+      "type": "euphree-product-cards",
+      "blocks": {
+        "prod_2": {
+          "type": "product_card",
+          "settings": {
+            "product": "solar-sparrow",
+            "collection": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0577/5346/9110/files/SolarSparrowIvy.png?v=1760958285&width=800",
+            "badge_text": "$200 OFF",
+            "spec_1_value": "500W",
+            "spec_1_icon": "bolt",
+            "spec_2_value": "40 mi",
+            "spec_2_icon": "battery",
+            "spec_3_value": "54 lbs",
+            "spec_3_icon": "weight",
+            "category": "Lightweight",
+            "name": "Solar Sparrow",
+            "description": "Quiet Gates belt drive, 54 lbs, easy to lift & ride. Zero chain maintenance.",
+            "sale_price": "$1,799",
+            "original_price": "1999",
+            "rider_height": "Riders: 4'11\" – 5'10\"",
+            "color_1": "#d4643a",
+            "color_2": "#5a8a5a",
+            "color_3": "#7a5aaa",
+            "color_4": "#4a7ab5",
+            "color_5": "#6b4a3a",
+            "button_label": "Shop Solar Sparrow",
+            "button_url": "/products/solar-sparrow"
+          }
+        },
+        "prod_3": {
+          "type": "product_card",
+          "settings": {
+            "product": "stellar-falcon-2-mid-step",
+            "collection": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0577/5346/9110/files/Stellar-Falcon-Mid-Step-Crimson-Comet-Red.png?v=1743716148&width=800",
+            "badge_text": "NEW!",
+            "spec_1_value": "750W",
+            "spec_1_icon": "bolt",
+            "spec_2_value": "70 mi",
+            "spec_2_icon": "battery",
+            "spec_3_value": "Air Susp.",
+            "spec_3_icon": "suspension",
+            "category": "Power · All-Terrain",
+            "name": "Stellar Falcon 2",
+            "description": "Air suspension, torque & cadence sensor, hill-ready 750W power for any terrain.",
+            "sale_price": "$2,299",
+            "original_price": "",
+            "rider_height": "Step-Thru (5'2\"–6'0\") & Mid-Step (5'4\"–6'2\")",
+            "color_1": "#a03030",
+            "color_2": "#1a1a1a",
+            "color_3": "#4a7ab5",
+            "color_4": "#5a2030",
+            "color_5": "",
+            "button_label": "Shop Stellar Falcon",
+            "button_url": "/collections/stellar-falcon-series"
+          }
+        },
+        "prod_1": {
+          "type": "product_card",
+          "settings": {
+            "product": "city-robin-x-plus",
+            "collection": "",
+            "image_url": "https://cdn.shopify.com/s/files/1/0577/5346/9110/files/Rebel_Blue_City_Robin_X.png?v=1758742497&width=800",
+            "badge_text": "$450 OFF",
+            "spec_1_value": "500W",
+            "spec_1_icon": "bolt",
+            "spec_2_value": "60 mi",
+            "spec_2_icon": "battery",
+            "spec_3_value": "28 mph",
+            "spec_3_icon": "speed",
+            "category": "Comfort · Best Seller",
+            "name": "City Robin X+",
+            "description": "Easy step-through access, upright posture, and full suspension for the smoothest ride.",
+            "sale_price": "$1,999",
+            "original_price": "$2,349",
+            "rider_height": "Riders: 5'2\" – 6'0\"",
+            "color_1": "#4a7ab5",
+            "color_2": "#f0ece4",
+            "color_3": "#3a7a4a",
+            "color_4": "#1a1a1a",
+            "color_5": "",
+            "button_label": "Shop City Robin X+",
+            "button_url": "/products/city-robin-x-plus"
+          }
+        }
+      },
+      "block_order": [
+        "prod_2",
+        "prod_3",
+        "prod_1"
+      ],
+      "name": "Euphree Product Cards",
+      "settings": {
+        "eyebrow": "Our Lineup",
+        "heading": "Find Your Perfect Ride"
+      }
+    },
+    "euphree_accessories_eweHnP": {
+      "type": "euphree-accessories",
+      "blocks": {
+        "accessory_iYrPAQ": {
+          "type": "accessory",
+          "settings": {
+            "image": "shopify://shop_images/Euphree_Front_Basket_Top_Angle.png",
+            "name": "Front Basket",
+            "description": "Lightweight aluminum basket for added front storage while keeping your steering steady. ",
+            "link": "shopify://products/front-basket"
+          }
+        },
+        "accessory_p9DWWb": {
+          "type": "accessory",
+          "settings": {
+            "image": "shopify://shop_images/4_eb6c40c9-94d0-4ecc-aa35-a5d06ab94380.png",
+            "name": "Rear Basket",
+            "description": "Lightweight aluminum basket with a secure MIK mount for stable, quiet carrying.",
+            "link": "shopify://products/rear-basket"
+          }
+        },
+        "accessory_NNVRJf": {
+          "type": "accessory",
+          "settings": {
+            "image": "shopify://shop_images/Black-Stem-Bag-Front-Euphree-Dark-Gray-Liner_a3452368-e2ef-4578-a6ca-b8778bf26dcb.png",
+            "name": "Stem Bag",
+            "description": "Add quick access storage to your ride with a stem bag.",
+            "link": "shopify://products/euphree-stem-bag"
+          }
+        },
+        "accessory_iwTfxG": {
+          "type": "accessory",
+          "settings": {
+            "image": "shopify://shop_images/Euphree_Trunk_Bag_Front_View_ca95ff33-65af-42c2-919c-de9ed9c1f35e.png",
+            "name": "Trunk Bag",
+            "description": "Carry tools, clothing, or daily items on your rear rack with easy organization. ",
+            "link": "shopify://products/trunk-bag-euphree"
+          }
+        }
+      },
+      "block_order": [
+        "accessory_iYrPAQ",
+        "accessory_p9DWWb",
+        "accessory_NNVRJf",
+        "accessory_iwTfxG"
+      ],
+      "name": "Euphree Accessories",
+      "settings": {
+        "eyebrow": "Designed to Fit",
+        "heading": "Good Accessories Are the Key to Getting the Most Out of Your Bike",
+        "intro_text": "<p>Without accessories, it's just a bike and a backpack — and a sweaty back. A lot of brands don't have their own accessories, or they have cheap ones that don't fit the bike. <strong>Euphree designed a full line of bags, baskets, locks, and panniers that fit our bikes perfectly.</strong> No mix and match. No compromise.</p>",
+        "highlight_image": "shopify://shop_images/2026-SF-Stepthru-2040_1.gif",
+        "highlight_heading": "Designed Specifically for Euphree Bikes",
+        "highlight_description": "Most brands don't have their own accessories — or they have cheap ones that don't fit well. Euphree designed every bag, basket, and lock to integrate perfectly with your bike. Customers consistently tell us they'd choose a well-accessorized bike over a higher-spec bare one.",
+        "highlight_button_label": "Shop All Accessories →",
+        "highlight_button_url": "",
+        "bg_image": "shopify://shop_images/1_a27d5531-64ae-4428-8f51-91497c577619.png",
+        "overlay_color": "rgba(255,255,255,0.75)"
+      }
+    },
+    "1617292342c63ff855": {
+      "type": "multi-column",
+      "blocks": {
+        "1617292342c63ff855-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Rebel_Blue_City_Robin_X.png",
+            "title": "Comfort",
+            "text": "<p><a href=\"/products/city-robin-x-plus\" target=\"_blank\" title=\"City Robin X+\"><strong>City Robin X+</strong></a><strong> </strong>– Easy step-through access, upright riding posture, and full suspension.</p>",
+            "button_label": "Shop City Robin X+",
+            "link": "shopify://products/city-robin-x-plus"
+          }
+        },
+        "1617292342c63ff855-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/SolarSparrowIvy.png",
+            "title": "Lightweight",
+            "text": "<p><a href=\"/products/solar-sparrow\" target=\"_blank\" title=\"Solar Sparrow\"><strong>Solar Sparrow</strong></a> – Quiet Gates belt drive, 53 lbs, easy to lift & ride. No maintenance required </p>",
+            "button_label": "Shop Solar Sparrow",
+            "link": "shopify://products/solar-sparrow"
+          }
+        },
+        "b1086ec6-bafc-4093-9ed5-2e8e87ac77ac": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Stellar-Falcon-Mid-Step-Crimson-Comet-Red.png",
+            "title": "Power",
+            "text": "<p><a href=\"/collections/stellar-falcon-series\" target=\"_blank\" title=\"Stellar Falcon Ebikes\"><strong>Stellar Falcon</strong></a> – Air suspension, torque/cadence sensor, hill-ready strength.</p>",
+            "button_label": "Shop Stellar Falcon",
+            "link": "shopify://collections/stellar-falcon-series"
+          }
+        }
+      },
+      "block_order": [
+        "1617292342c63ff855-1",
+        "1617292342c63ff855-0",
+        "b1086ec6-bafc-4093-9ed5-2e8e87ac77ac"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Shop by Rider Style",
+        "media_aspect_ratio": "s",
+        "media_width": 700,
+        "text_alignment": "left",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
+    "50830f37-1ae2-4f43-8f92-52e9c5c1d736": {
+      "type": "shop-the-look",
+      "blocks": {
+        "template--20584145715223__50830f37-1ae2-4f43-8f92-52e9c5c1d736-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Accessories to Match Your Ride",
+            "heading_max_width": 28,
+            "title_size": 26,
+            "title_size_mobile": 20,
+            "use_h1": true
+          }
+        },
+        "template--20584145715223__50830f37-1ae2-4f43-8f92-52e9c5c1d736-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Add simple upgrades for comfort, storage, & visibility</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_NhzHYR": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop All Accessories",
+            "button_link": "shopify://collections/electric-bike-accessories",
+            "button_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--20584145715223__50830f37-1ae2-4f43-8f92-52e9c5c1d736-heading-1",
+        "template--20584145715223__50830f37-1ae2-4f43-8f92-52e9c5c1d736-text-1",
+        "button_NhzHYR"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/4_6bffd65e-3aeb-4f94-b835-52b6c2206eb6.png",
+        "video_external": "",
+        "video_description": "",
+        "height": "adapt",
+        "height_desktop": 800,
+        "height_mobile": 240,
+        "product_list": [
+          "front-basket",
+          "front-basket-liner",
+          "city-robin-x-plus",
+          "solar-sparrow"
+        ],
+        "products_alignment": "bottom left",
+        "product_card_layout": "portrait",
+        "show_swatches": true,
+        "full_width": true,
+        "text_alignment": "top left",
+        "mobile_overlay_over": true,
+        "overlay_style": "full image-overlay--bg-shadow"
+      }
+    },
+    "1755291397b88ccb93": {
+      "type": "reviews-with-background",
+      "blocks": {
+        "klaviyo_reviews_featured_reviews_carousel_BKx3zJ": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/featured-reviews-carousel/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_featured_reviews_carousel_BKx3zJ"
+      ],
+      "settings": {
+        "title": "Why Riders Love Euphree",
+        "bg_image": "shopify://shop_images/4_425baa55-02c7-4ad4-844d-dd5cac4ffaff.png",
+        "bg_color": "#1a1a1a",
+        "overlay_color": "#000000",
+        "overlay_opacity": 50,
+        "text_color": "#ffffff",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "euphree_dealer_section_wGjJzg": {
+      "type": "euphree-dealer-section",
+      "name": "Euphree Dealer Section",
+      "settings": {
+        "image_1": "shopify://shop_images/4_ef108add-9394-4c57-be51-400d0deb2d24.png",
+        "image_1_alt": "Euphree bikes in dealer showroom",
+        "image_2": "shopify://shop_images/hollywood_bike_shop_with_euphree.png",
+        "image_2_alt": "Euphree bike tour group ride",
+        "image_3": "shopify://shop_images/village.png",
+        "image_3_alt": "Euphree riders group photo",
+        "eyebrow": "Buy Local",
+        "heading": "Test Ride at Your Local Dealer",
+        "description": "With 180+ bike shops nationwide, you can see, touch, and test ride your Euphree before you commit. Real local service from real bike people.",
+        "button_label": "Find a Dealer Near You →",
+        "button_url": "shopify://pages/dealer-locator"
+      }
+    },
+    "scrolling_banner_4ErW9V": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "image_6wHcc8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RebelRed.svg",
+            "image_width": 100,
+            "link": ""
+          }
+        },
+        "text_we3Dkx": {
+          "type": "text",
+          "settings": {
+            "text": "Limited time: All models now $1,999 while inventory lasts.",
+            "color": "#113702",
+            "link": "shopify://products/city-robin-x-plus",
+            "use_h1": true,
+            "stencil_all_text": false,
+            "stencil_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_6wHcc8",
+        "text_we3Dkx"
+      ],
+      "disabled": true,
+      "name": "Scrolling banner",
+      "settings": {
+        "full_width": true,
+        "color_scheme": "default",
+        "text_size": 50,
+        "vertical_padding": 20,
+        "speed": 14.5,
+        "direction": "left",
+        "font": "base",
+        "space": 35
+      }
+    },
+    "custom_content_pkGWkD": {
+      "type": "custom-content",
+      "blocks": {
+        "text_9NbUnc": {
+          "type": "text",
+          "settings": {
+            "width": "third",
+            "text_alignment": "left",
+            "center_on_mobile": true,
+            "icon": "",
+            "icon_color": "rgba(0,0,0,0)",
+            "subheading": "",
+            "title": "Your Next Ride, Now on Sale",
+            "title_size": 24,
+            "title_size_mobile": 24,
+            "text": "",
+            "button_label": "",
+            "button_link": "#",
+            "button_style": "secondary"
+          }
+        },
+        "countdown_fRAMXk": {
+          "type": "countdown",
+          "settings": {
+            "width": "third",
+            "end_date": "",
+            "end_time": "",
+            "end_text": "",
+            "hide_on_end": false,
+            "number_size": 28,
+            "number_font": "heading",
+            "divider_type": "colon",
+            "show_timer_labels": true
+          }
+        },
+        "text_db3XfD": {
+          "type": "text",
+          "settings": {
+            "width": "third",
+            "text_alignment": "center",
+            "center_on_mobile": true,
+            "icon": "",
+            "icon_color": "rgba(0,0,0,0)",
+            "subheading": "",
+            "title": "",
+            "title_size": 84,
+            "title_size_mobile": 46,
+            "text": "",
+            "button_label": "SHOP CLEARANCE",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "text_9NbUnc",
+        "countdown_fRAMXk",
+        "text_db3XfD"
+      ],
+      "disabled": true,
+      "name": "Custom content",
+      "settings": {
+        "spacing": "small",
+        "alignment": "middle",
+        "color_scheme": "default"
+      }
+    },
+    "gallery_3HQxcH": {
+      "type": "gallery",
+      "blocks": {
+        "media_HiDMCk": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_RzzYxL": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_HFhnVa": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_4YQeaM": {
+          "type": "media",
+          "disabled": true,
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "Gallery",
+            "title": "Tell your story",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "media_HiDMCk",
+        "media_RzzYxL",
+        "media_HFhnVa",
+        "media_4YQeaM"
+      ],
+      "disabled": true,
+      "name": "Gallery",
+      "settings": {
+        "grid_desktop": 2,
+        "grid_mobile": "2",
+        "height": "fixed",
+        "desktop_image_height": 360,
+        "mobile_image_height": 200,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "color_scheme": "default",
+        "enable_carousel": true,
+        "overlay_style": "full image-overlay--bg-shadow",
+        "overlay_padding": "large",
+        "button_style": "secondary"
+      }
+    },
+    "key_features_zhmCPq": {
+      "type": "key-features",
+      "blocks": {
+        "feature_rXbKmz": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/Stellar_Falcon_Front_Fork_Suspension_View.png",
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "Fully Integrated Wiring for a Clean, Protected Look",
+            "text": "<p>Only Euphree hides cables within the frame, no dangling wires, no maintenance headaches. Looks sleek and protects components.</p>",
+            "show_segments": false,
+            "segments": 4,
+            "active_segment": "2",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_f7Mipw": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/beltdrive_07b44b90-7609-42c4-8be9-c4df42a2047a.png",
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "Precision-Welded Frame for a Seamless Ride",
+            "text": "<p>Our frames feature ultra-smooth welding and refined tube joining,vno visible seams, no irritation, just elegant strength.</p>",
+            "show_segments": false,
+            "segments": 4,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_x4cwVw": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/CityRobinX_SeatpostSuspension.png",
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#505050",
+            "heading": "Complimentary Comfort Kit Included",
+            "text": "<p>Each model includes a cushioned wide saddle and a Seatpost Suspension because comfort, convenience, and quality should come standard, not optional.</p>",
+            "show_segments": false,
+            "segments": 4,
+            "active_segment": "3",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        }
+      },
+      "block_order": [
+        "feature_rXbKmz",
+        "feature_f7Mipw",
+        "feature_x4cwVw"
+      ],
+      "disabled": true,
+      "name": "Key features",
+      "settings": {
+        "heading": "details even the $10,000 bikes miss",
+        "image_max_width": 700,
+        "media_aspect_ratio": "1",
+        "image_position": "left",
+        "segment_position": "under-text"
+      }
+    },
+    "image_with_text_kVRWNz": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_qfVYNT": {
+          "type": "heading",
+          "settings": {
+            "title": "Meet & Ride With Euphree",
+            "use_h1": true
+          }
+        },
+        "text_9RmwJz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Join Euphree’s founder and team for demos, group rides, pastries, drinks, giveaways, and raffles at select bike shops.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_hmngNT": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "https://www.facebook.com/euphree/events",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qfVYNT",
+        "text_9RmwJz",
+        "button_hmngNT"
+      ],
+      "disabled": true,
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/1_b5b84f71-9131-4c64-8b26-b0556324e861.png",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "show_top_border": false,
+        "color_scheme": "default"
+      }
+    },
+    "1617293273c37b524b": {
+      "type": "rich-text",
+      "blocks": {
+        "icon_xXTPnR": {
+          "type": "icon",
+          "settings": {
+            "icon": "world",
+            "icon_color": "#2e2fa3"
+          }
+        },
+        "74d4f957-8922-4307-ac16-bee3d887612a": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "2 Year Warranty & Free Shipping + Returns on all ebikes"
+          }
+        },
+        "text_ccDNHG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>2 Year Warranty + Lifetime Frame Coverage</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "icon_xXTPnR",
+        "74d4f957-8922-4307-ac16-bee3d887612a",
+        "text_ccDNHG"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "featured_collection_eJBFTR": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "Featured collection",
+      "settings": {
+        "title": "Comfort is what matters after the first week. We build bikes with higher quality parts because reliability is part of comfort.",
+        "collection": "electric-bikes",
+        "show_vendor": false,
+        "enable_carousel": true,
+        "grid": 4,
+        "rows": 1,
+        "color_scheme": "default",
+        "show_view_all": true,
+        "full_width": true
+      }
+    },
+    "newsletter_e6MJwL": {
+      "type": "newsletter",
+      "disabled": true,
+      "name": "Newsletter",
+      "settings": {
+        "title": "Join the Flock",
+        "subheading": "<p>Get riding tips, comfort setup advice, customer stories, and product updates from Euphree.</p>",
+        "color_scheme": "default"
+      }
+    },
+    "euphree_compare_models_axpeJb": {
+      "type": "euphree-compare-models",
+      "blocks": {
+        "model_1": {
+          "type": "model",
+          "settings": {
+            "product": "solar-sparrow",
+            "collection": "",
+            "name": "Solar Sparrow",
+            "tagline": "Lightest · Belt Drive",
+            "image_url": "https://cdn.shopify.com/s/files/1/0577/5346/9110/files/SolarSparrowIvy.png?v=1760958285&width=800",
+            "price": "$1,999",
+            "original_price": "",
+            "rating": "4.91",
+            "review_count": "11 reviews",
+            "button_label": "Shop Solar Sparrow →",
+            "button_url": "/products/solar-sparrow",
+            "motor": "500W Bafang hub",
+            "peak_power": "900W peak",
+            "torque": "80 Nm",
+            "battery": "48V 10.5Ah · LG cells",
+            "range": "Up to 40 mi",
+            "top_speed": "28 mph (Class 3)",
+            "sensor": "Torque + Cadence",
+            "front_fork": "Uni fork · ~30mm travel",
+            "seatpost": "SR Suntour NCX · 50mm",
+            "tires": "27.5\" comfort tires",
+            "drivetrain": "Gates Carbon Belt Drive",
+            "brakes": "Tektro hydraulic disc",
+            "rider_height": "4'11\" – 5'10\"",
+            "standover": "16\" (lowest)",
+            "frame_style": "Step-Through",
+            "weight": "~54 lb (w/o battery)",
+            "max_payload": "300 lb",
+            "certification": "SGS · UL 2271 + 2849",
+            "ideal_rider": "Lightweight cruising, apartment storage, easy handling"
+          }
+        },
+        "model_2": {
+          "type": "model",
+          "settings": {
+            "product": "city-robin-x-plus",
+            "collection": "",
+            "name": "City Robin X+",
+            "tagline": "Best Seller · Comfort",
+            "image_url": "https://cdn.shopify.com/s/files/1/0577/5346/9110/files/Rebel_Blue_City_Robin_X.png?v=1758742497&width=800",
+            "price": "$1,999",
+            "original_price": "$2,349",
+            "rating": "4.98",
+            "review_count": "118 reviews",
+            "button_label": "Shop City Robin X+ →",
+            "button_url": "/products/city-robin-x-plus",
+            "motor": "500W Bafang geared hub",
+            "peak_power": "900W peak",
+            "torque": "80 Nm",
+            "battery": "48V 14Ah · Samsung cells",
+            "range": "Up to 60 mi",
+            "top_speed": "28 mph (Class 3)",
+            "sensor": "Torque + Cadence",
+            "front_fork": "Zoom hydraulic lockout · 80mm",
+            "seatpost": "SR Suntour NCX · 50mm",
+            "tires": "Schwalbe Super Moto-X 27.5x2.4\"",
+            "drivetrain": "Shimano 7-speed",
+            "brakes": "Tektro E350 hydraulic disc",
+            "rider_height": "5'2\" – 6'0\"",
+            "standover": "17\"",
+            "frame_style": "Step-Through",
+            "weight": "~64 lb",
+            "max_payload": "350 lb",
+            "certification": "SGS · UL 2271 + 2849",
+            "ideal_rider": "Daily commuters, comfort seekers, long rides"
+          }
+        },
+        "model_3": {
+          "type": "model",
+          "settings": {
+            "product": "stellar-falcon-2-step-thru",
+            "collection": "",
+            "name": "Falcon 2 Step-Thru",
+            "tagline": "750W · Easy Mount",
+            "image_url": "",
+            "price": "2,299.99",
+            "original_price": "",
+            "rating": "4.87",
+            "review_count": "15 reviews",
+            "button_label": "",
+            "button_url": "",
+            "motor": "750W Bafang geared hub",
+            "peak_power": "1,200W peak",
+            "torque": "90 Nm",
+            "battery": "48V 15Ah · LG cells · 720Wh",
+            "range": "Up to 70 mi",
+            "top_speed": "28 mph (Class 2/3)",
+            "sensor": "Torque + Cadence (switchable)",
+            "front_fork": "SR Suntour XCM 32 Air · 90mml",
+            "seatpost": "SR Suntour NCX · 50mm",
+            "tires": "Schwalbe Johnny Watts 27.5x2.8\"",
+            "drivetrain": "Shimano Altus 8-speed",
+            "brakes": "Tektro E350 Hydraulic",
+            "rider_height": "5'2\" – 6'0\"",
+            "standover": "16\"",
+            "frame_style": "Step-Thru",
+            "weight": "~74 lb",
+            "max_payload": "350 lb",
+            "certification": "SGS · UL 2271 + 2849",
+            "ideal_rider": "Easy mount/dismount, comfort-first riders, limited mobility"
+          }
+        },
+        "model_4": {
+          "type": "model",
+          "settings": {
+            "product": "stellar-falcon-2-mid-step",
+            "collection": "",
+            "name": "Falcon 2 Mid-Step",
+            "tagline": "750W · Sportier Frame",
+            "image_url": "",
+            "price": "$2,299",
+            "original_price": "",
+            "rating": "5.0",
+            "review_count": "17 reviews",
+            "button_label": "Shop Falcon 2 Mid-Step →",
+            "button_url": "",
+            "motor": "750W Bafang geared hub",
+            "peak_power": "1,200W peak",
+            "torque": "90 Nm",
+            "battery": "48V 15Ah · LG cells · 720Wh",
+            "range": "Up to 70 mi",
+            "top_speed": "28 mph (Class 2/3)",
+            "sensor": "Torque + Cadence (switchable)",
+            "front_fork": "SR Suntour XCM 32 Air · 90mm",
+            "seatpost": "SR Suntour NCX · 50mm",
+            "tires": "Schwalbe Johnny Watts 27.5x2.8\"",
+            "drivetrain": "Shimano Altus 8-speed",
+            "brakes": "Tektro E350 Hydraulic",
+            "rider_height": "5'4\" – 6'2\"",
+            "standover": "17\"",
+            "frame_style": "Mid-Step",
+            "weight": "~74 lb",
+            "max_payload": "350 lb",
+            "certification": "SGS · UL 2271 + 2849",
+            "ideal_rider": "Sportier riders, taller frames, trails & mixed terrain"
+          }
+        }
+      },
+      "block_order": [
+        "model_1",
+        "model_2",
+        "model_3",
+        "model_4"
+      ],
+      "name": "Euphree Compare Models",
+      "settings": {
+        "eyebrow": "Side by Side",
+        "heading": "Compare Our Models",
+        "description": "Not sure which Euphree is right for you? Toggle the bikes you want to compare.",
+        "metafield_namespace": "custom"
+      }
+    },
+    "euphree_warranty_RxdwPz": {
+      "type": "euphree-warranty",
+      "name": "Euphree Warranty",
+      "settings": {
+        "eyebrow": "Peace of Mind",
+        "heading": "We've Got Your Back — Literally",
+        "description": "Every Euphree comes with a comprehensive 2-year warranty and Houston-based customer support from people who actually ride ebikes.",
+        "button_label": "Call Us: (866) 729-8075 →",
+        "phone_number": "8667298075",
+        "button_url": "",
+        "image": "shopify://shop_images/Warehouse.00_00_20_23.Still001.jpg"
+      }
+    },
+    "custom_liquid_TfJHxB": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "show_space": false,
+        "code": "<!-- Elfsight Instagram Feed | Untitled Instagram Feed -->\n<script src=\"https://static.elfsight.com/platform/platform.js\" async></script>\n<div class=\"elfsight-app-d0859147-75ab-4c02-bf03-e2551ca43757\" data-elfsight-app-lazy></div>"
+      }
+    }
+  },
+  "order": [
+    "slideshow_ijXhFa",
+    "trust_bar_custom_liquid",
+    "compact_messages_cC7PNV",
+    "euphree_bold_claim_dJR9F6",
+    "euphree_about_houston_yj3yEU",
+    "logo_list_T9fT8F",
+    "euphree_product_cards_eTzR4Q",
+    "euphree_accessories_eweHnP",
+    "1617292342c63ff855",
+    "50830f37-1ae2-4f43-8f92-52e9c5c1d736",
+    "1755291397b88ccb93",
+    "euphree_dealer_section_wGjJzg",
+    "scrolling_banner_4ErW9V",
+    "custom_content_pkGWkD",
+    "gallery_3HQxcH",
+    "key_features_zhmCPq",
+    "image_with_text_kVRWNz",
+    "1617293273c37b524b",
+    "featured_collection_eJBFTR",
+    "newsletter_e6MJwL",
+    "euphree_compare_models_axpeJb",
+    "euphree_warranty_RxdwPz",
+    "custom_liquid_TfJHxB"
+  ]
+}

@@ -1,0 +1,938 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "variant-picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": false,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": true,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "enable_payment_button": false,
+            "show_backorder_text": false,
+            "show_pickup_availability": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "pop_up_RF8rei": {
+          "type": "pop-up",
+          "settings": {
+            "text": "Prefer a test ride? Find a dealer",
+            "style": "secondary btn--wide",
+            "page": "find-a-euphree-dealer",
+            "show_in_quickbuy": false
+          }
+        },
+        "icon_columns_NiXx6C": {
+          "type": "icon-columns",
+          "settings": {
+            "icon_size": "medium",
+            "text_size": "sm",
+            "enable_box": true,
+            "box_color": "#ffffff",
+            "icon_1": "truck",
+            "icon_1_color": "rgba(0,0,0,0)",
+            "custom_icon_1": "shopify://shop_images/Artboard_1_aab0e27a-ebf4-436a-9f8e-2a4ce3df3896.svg",
+            "icon_1_heading": "2 Year Warranty",
+            "icon_1_text": "",
+            "icon_2": "map_pin",
+            "icon_2_color": "rgba(0,0,0,0)",
+            "custom_icon_2": "shopify://shop_images/USA1_411be68c-93db-4977-8ba6-6f5340a9a4f1.svg",
+            "icon_2_heading": "14 Day FREE Trial",
+            "icon_2_text": "",
+            "icon_3": "gift",
+            "icon_3_color": "rgba(0,0,0,0)",
+            "custom_icon_3": "shopify://shop_images/SGSCertification.svg",
+            "icon_3_heading": "SGS Certified",
+            "icon_3_text": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "pop_up_qDN3Eq": {
+          "type": "pop-up",
+          "settings": {
+            "text": "For Riders: 5’4\" - 6’2” | Mid-Step Sizing Guide",
+            "style": "link",
+            "page": "stellar-falcon-sizing-comparison",
+            "show_in_quickbuy": false
+          }
+        },
+        "accordion_eQw38r": {
+          "type": "accordion",
+          "settings": {
+            "title": "Technical Specifications",
+            "icon": "",
+            "content": "",
+            "page": "stellar-falcon-step-thru-electric-bike-specs",
+            "custom_liquid": "",
+            "open": false,
+            "show_in_quickbuy": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variant-picker",
+        "buy-buttons",
+        "pop_up_RF8rei",
+        "icon_columns_NiXx6C",
+        "pop_up_qDN3Eq",
+        "accordion_eQw38r",
+        "description"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": false,
+        "enable_sticky_columns": true,
+        "enable_sticky_atc": false,
+        "sticky_atc_position": "end",
+        "sticky_atc_mobile": true,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "secondary",
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe,Frame,"
+      }
+    },
+    "bike_overview_video": {
+      "type": "video",
+      "blocks": {
+        "video_heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Meet the Stellar Falcon",
+            "heading_max_width": 15,
+            "title_size": 64,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "video_play": {
+          "type": "play-button",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "video_heading",
+        "video_play"
+      ],
+      "disabled": true,
+      "name": "Bike Overview Video",
+      "settings": {
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "Stellar Falcon — Bike Overview by Daniel",
+        "text_alignment": "center center",
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "stellar_icons_4JtU83": {
+      "type": "stellar-icons",
+      "name": "Stellar Icons",
+      "settings": {}
+    },
+    "custom_liquid_W9nWiA": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "show_space": false,
+        "code": "<script src=\"https://static.elfsight.com/platform/platform.js\" async></script><div class=\"elfsight-app-778f9122-54e5-48a5-9dd4-9515f58970dd\" data-elfsight-app-lazy></div>"
+      }
+    },
+    "rich_text_d9b6cG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_x9n97w": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Comfort Without Compromise",
+            "use_h1": true
+          }
+        },
+        "text_GEk7ka": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Mid-Step frame gives you extra stability while still being easier to mount than a traditional step-over. Designed for riders 5’4”–6’2”, it balances comfort with a sportier ride feel.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_x9n97w",
+        "text_GEk7ka"
+      ],
+      "disabled": true,
+      "name": "Rich text",
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": true,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_TeLBhL": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9Ft46m": {
+          "type": "heading",
+          "settings": {
+            "title": "Power That Keeps Up With You.",
+            "use_h1": true
+          }
+        },
+        "text_B9ADrb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The 750W Bafang motor delivers strong, quiet power up to 28 mph. With torque and cadence sensors, the Falcon responds naturally to your pedaling, giving you steady acceleration and control.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_9Ft46m",
+        "text_B9ADrb"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/Stellar_Falcon_Motor_product_photo.png",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "show_top_border": false,
+        "color_scheme": "default"
+      }
+    },
+    "custom_content_nCdbM9": {
+      "type": "custom-content",
+      "blocks": {
+        "text_E4mF7d": {
+          "type": "text",
+          "settings": {
+            "width": "half",
+            "text_alignment": "center",
+            "center_on_mobile": true,
+            "icon": "ruler",
+            "icon_color": "rgba(0,0,0,0)",
+            "subheading": "",
+            "title": "Sizing",
+            "title_size": 52,
+            "title_size_mobile": 20,
+            "text": "<p>The Mid-Step frame gives you extra stability while still being easier to mount than a traditional step-over. Designed for riders 5’4”–6’2”, it balances comfort with a sportier ride feel.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "html_CYEFPN": {
+          "type": "html",
+          "settings": {
+            "width": "half",
+            "code": "<!-- Begin Scoped Stellar Falcon Mid-Step Sizing -->\n<div id=\"stellar-midstep-sizing\">\n  <div class=\"sizing-tabs\">\n    <button class=\"tab active\" data-target=\"midstep\">Mid-Step</button>\n    <button class=\"tab\" data-target=\"compare\">Compare</button>\n  </div>\n\n  <!-- Mid-Step Only -->\n  <div class=\"sizing-content\" id=\"midstep\">\n    <div class=\"sizing-photo\">\n      <img src=\"https://cdn.shopify.com/s/files/1/0577/5346/9110/files/2_d0270288-59f3-41c5-9949-f8c75bc9559f.png\" alt=\"Stellar Falcon Mid-Step Sizing Guide\">\n    </div>\n    <div class=\"sizing-table\">\n      <table>\n        <tbody>\n          <tr><td><strong>Rider Height</strong></td><td>5’4” – 6’2”</td></tr>\n          <tr><td><strong>Seat Tube Length</strong></td><td>17 in</td></tr>\n          <tr><td><strong>Total Length</strong></td><td>73 in</td></tr>\n          <tr><td><strong>Wheelbase</strong></td><td>47 in</td></tr>\n          <tr><td><strong>Standover Height</strong></td><td>23.5 in</td></tr>\n          <tr><td><strong>Reach</strong></td><td>18 in</td></tr>\n          <tr><td><strong>Saddle Height</strong></td><td>34 – 42 in</td></tr>\n          <tr><td><strong>Handlebar Height</strong></td><td>44 – 48 in (adjustable)</td></tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n\n  <!-- Compare Mode -->\n  <div class=\"sizing-content\" id=\"compare\" style=\"display: none;\">\n    <div class=\"compare-columns\">\n      <div class=\"compare-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0577/5346/9110/files/2_d0270288-59f3-41c5-9949-f8c75bc9559f.png\" alt=\"Mid-Step Frame\">\n        <table>\n          <tr><td><strong>Rider Height</strong></td><td>5’4” – 6’2”</td></tr>\n          <tr><td><strong>Seat Tube</strong></td><td>17 in</td></tr>\n          <tr><td><strong>Standover</strong></td><td>23.5 in</td></tr>\n        </table>\n      </div>\n      <div class=\"compare-card\">\n        <img src=\"https://cdn.shopify.com/s/files/1/0577/5346/9110/files/1_7b7dff38-2f81-4270-ac0e-6f7dd79d5785.png\" alt=\"Step-Thru Frame\">\n        <table>\n          <tr><td><strong>Rider Height</strong></td><td>5’2” – 6’0”</td></tr>\n          <tr><td><strong>Seat Tube</strong></td><td>15 in</td></tr>\n          <tr><td><strong>Standover</strong></td><td>18 in</td></tr>\n        </table>\n      </div>\n    </div>\n  </div>\n</div>\n\n<style>\n  /* Scoped: Stellar Falcon Mid-Step Sizing */\n  #stellar-midstep-sizing {\n    max-width: 700px;\n    margin: 0 auto;\n    font-family: inherit;\n    font-size: 0.95rem;\n    color: #2E2E2E;\n  }\n\n  /* Tabs */\n  #stellar-midstep-sizing .sizing-tabs {\n    display: flex;\n    justify-content: center;\n    gap: 0.5rem;\n    margin-bottom: 1rem;\n  }\n\n  #stellar-midstep-sizing .tab {\n    flex: 1;\n    padding: 0.6rem;\n    border-radius: 6px;\n    border: 1px solid #ccc;\n    background: #f9f9f9;\n    cursor: pointer;\n    font-weight: 600;\n    font-size: 0.9rem;\n    color: #333;\n  }\n\n  #stellar-midstep-sizing .tab.active {\n    background: #2E2E2E;\n    color: #fff;\n    border-color: #2E2E2E;\n  }\n\n  /* Content Wrapper */\n  #stellar-midstep-sizing .sizing-content {\n    text-align: center;\n  }\n\n  #stellar-midstep-sizing .sizing-photo img {\n    width: 100%;\n    max-width: 500px;\n    border-radius: 6px 6px 0 0;\n    margin: 0;\n    display: block;\n  }\n\n  /* Table */\n  #stellar-midstep-sizing .sizing-table table,\n  #stellar-midstep-sizing .compare-card table {\n    width: 100%;\n    border-collapse: collapse;\n    font-size: 0.95rem;\n  }\n\n  #stellar-midstep-sizing td {\n    border: 1px solid #ddd;\n    padding: 8px 10px;\n    text-align: left;\n    line-height: 1.4;\n  }\n\n  #stellar-midstep-sizing tr:nth-child(even) {\n    background-color: #f9f9f9;\n  }\n\n  /* Compare Layout */\n  #stellar-midstep-sizing .compare-columns {\n    display: flex;\n    flex-direction: column;\n    gap: 1.5rem;\n  }\n\n  #stellar-midstep-sizing .compare-card {\n    flex: 1;\n    background: #fff;\n    border: 1px solid #ddd;\n    border-radius: 6px;\n    overflow: hidden;\n  }\n\n  #stellar-midstep-sizing .compare-card img {\n    width: 100%;\n    max-height: 250px;\n    object-fit: contain;\n    display: block;\n    border-bottom: 1px solid #ddd;\n  }\n\n  @media (min-width: 768px) {\n    #stellar-midstep-sizing .compare-columns {\n      flex-direction: row;\n    }\n  }\n</style>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    const wrapper = document.querySelector(\"#stellar-midstep-sizing\");\n    if (!wrapper) return;\n    const buttons = wrapper.querySelectorAll(\".tab\");\n    const contents = {\n      midstep: wrapper.querySelector(\"#midstep\"),\n      compare: wrapper.querySelector(\"#compare\"),\n    };\n\n    buttons.forEach((btn) => {\n      btn.addEventListener(\"click\", () => {\n        buttons.forEach((b) => b.classList.remove(\"active\"));\n        btn.classList.add(\"active\");\n\n        Object.values(contents).forEach((c) => (c.style.display = \"none\"));\n        contents[btn.dataset.target].style.display = \"block\";\n      });\n    });\n  });\n</script>\n<!-- End Scoped Stellar Falcon Mid-Step Sizing -->"
+          }
+        }
+      },
+      "block_order": [
+        "text_E4mF7d",
+        "html_CYEFPN"
+      ],
+      "name": "Custom content",
+      "settings": {
+        "spacing": "medium",
+        "alignment": "middle",
+        "color_scheme": "default"
+      }
+    },
+    "key_features_RLiqWK": {
+      "type": "key-features",
+      "blocks": {
+        "feature_JVzUKF": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/stellarfalconmotor.png",
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#1f1f1f",
+            "heading": "Performance That Doesn’t Make You Work For It",
+            "text": "<p>750 W rear-hub motor with 90 Nm of torque launches you up steep hills, punches through headwinds, and keeps you cruising effortlessly at 28 mph.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_DWbMFp": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/stellarfalcontires_df51a1fb-8cf8-4ad6-8793-9dfc9f162288.png",
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#1f1f1f",
+            "heading": "Confident Tire Grip",
+            "text": "<p>Schwalbe Johnny Watts 27.5 × 2.8″ tires offer excellent control on pavement or gravel without slowing you down.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        },
+        "feature_wCxpte": {
+          "type": "feature",
+          "settings": {
+            "bg_color": "#ffffff",
+            "bg_gradient": "",
+            "text_color": "#1f1f1f",
+            "heading": "Fully Equipped",
+            "text": "<p>Outfitted with full-metal fenders, a 58 lb cargo rack, integrated lights, and SP Connect phone mount so you’re ready to ride. No expensive add-ons required.</p>",
+            "show_segments": true,
+            "segments": 5,
+            "active_segment": "4",
+            "fill_segments": true,
+            "show_labels": true,
+            "label_left": "",
+            "label_middle": "",
+            "label_right": "",
+            "show_icon": false,
+            "icon": "star"
+          }
+        }
+      },
+      "block_order": [
+        "feature_JVzUKF",
+        "feature_DWbMFp",
+        "feature_wCxpte"
+      ],
+      "disabled": true,
+      "name": "Key features",
+      "settings": {
+        "heading": "Key features",
+        "image_max_width": 700,
+        "media_aspect_ratio": "1",
+        "image_position": "left",
+        "segment_position": "over-text"
+      }
+    },
+    "multi_column_a7T7Q6": {
+      "type": "multi-column",
+      "blocks": {
+        "text_block_XdqFRV": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/CityRobinX_AirSuspension.png",
+            "title": "Comfort, Not Just Suspension",
+            "text": "<p>110 mm air-suspension fork + premium SR Suntour NCX seatpost soften rough roads and trails so you stay fresher, go farther, and ride more often.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "text_block_aJA8ja": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/StellarFalconMidStepView.png",
+            "title": "Mid-Step = Accessible Adventure",
+            "text": "<p>750 W Bafang motor (1200 W peak, 90 Nm torque) delivers fast, smooth acceleration.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_XdqFRV",
+        "text_block_aJA8ja"
+      ],
+      "disabled": true,
+      "name": "Multi-column",
+      "settings": {
+        "title": "Comfort, Not Just Suspension",
+        "media_aspect_ratio": "s",
+        "media_width": 700,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_VERaqi": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_nJXVeN": {
+          "type": "heading",
+          "settings": {
+            "title": "Suspension That Works Both Ways.",
+            "use_h1": true
+          }
+        },
+        "text_3HDwHf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The SR Suntour XCM 32 air fork with 110mm travel softens rough paths, while the NCX suspension seatpost reduces impact on your back and hips. City potholes or gravel trails. The Falcon adapts to both.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_nJXVeN",
+        "text_3HDwHf"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/StellarFalconAirSuspension.png",
+        "image_2": "shopify://shop_images/StellarFalconSeatpost.png",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "show_top_border": false,
+        "color_scheme": "default"
+      }
+    },
+    "logo_list_ybQxjq": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_w7hnj4": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Shimicon.svg",
+            "image_width": 160,
+            "link": "",
+            "title": "Drivetrain: Shimano Altus 8-speed."
+          }
+        },
+        "logo_YQcQVT": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/TEKICON.svg",
+            "image_width": 160,
+            "link": "",
+            "title": "Brakes: Tektro hydraulic disc brakes"
+          }
+        },
+        "logo_pYrE6M": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/BAFICON.svg",
+            "image_width": 160,
+            "link": "",
+            "title": "Motor: Bafang 750W Up to 28 mph"
+          }
+        },
+        "logo_xVNBUz": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/schwalbelogo.svg",
+            "image_width": 160,
+            "link": "",
+            "title": "Tires: Johnny Watts 27.5” × 2.8”"
+          }
+        }
+      },
+      "block_order": [
+        "logo_w7hnj4",
+        "logo_YQcQVT",
+        "logo_pYrE6M",
+        "logo_xVNBUz"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "title": "",
+        "image_opacity": 75,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_tEJYmb": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_KMhfPg": {
+          "type": "heading",
+          "settings": {
+            "title": "Safety You Can Trust.",
+            "use_h1": true
+          }
+        },
+        "text_GRxCRJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Stellar Falcon Mid-Step is SGS certified to UL 2271 & UL 2849 (SGSNA/24/CQ/00032). A 200-lumen headlight, rear brake light with 220° visibility, and Tektro hydraulic disc brakes keep you safe and in control day or night.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_KMhfPg",
+        "text_GRxCRJ"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/StellarFalcon_Textro.png",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "show_top_border": false,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_LwHNeL": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_zyJVLg": {
+          "type": "heading",
+          "settings": {
+            "title": "Wide Tires for Grip and Stability.",
+            "use_h1": true
+          }
+        },
+        "text_6wNQDw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Schwalbe Johnny Watts 27.5” × 2.8” tires give you secure traction on pavement and light trails. Double-wall rims and a thru-axle hub add strength for a 350 lb capacity.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_zyJVLg",
+        "text_6wNQDw"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/stellarfalcontires_df51a1fb-8cf8-4ad6-8793-9dfc9f162288.png",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "show_top_border": false,
+        "color_scheme": "default"
+      }
+    },
+    "collapsible_tabs_7mcHkA": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_4dAJnz": {
+          "type": "question",
+          "settings": {
+            "title": "Drivetrain",
+            "answer": "<ul><li>Shimano Altus <strong>8-speed</strong></li><li>Freewheel <strong>11–34T</strong></li><li>KMC anti-rust chain</li><li>170 mm alloy crank, ~50T chainring</li><li>Polypropylene pedals</li></ul>"
+          }
+        },
+        "question_wqVWj8": {
+          "type": "question",
+          "settings": {
+            "title": "Frame & cargo",
+            "answer": "<ul><li>6061 aluminum <strong>mid-step</strong></li><li><strong>Welded</strong> rear rack (100 lb), front rack (30 lb)</li><li>Full-coverage metal fenders</li></ul>"
+          }
+        },
+        "question_pHCAtC": {
+          "type": "question",
+          "settings": {
+            "title": "Suspension & wheelset",
+            "answer": "<ul><li><strong>SR Suntour air fork, 110 mm travel</strong></li><li><strong>SR Suntour NCX</strong> suspension seatpost</li><li>Double-wall rims, 13G front / 12G rear spokes</li><li>Thru-axle front hub</li><li><strong>Schwalbe Johnny Watts 27.5 × 2.8</strong></li></ul>"
+          }
+        },
+        "question_cAkGhd": {
+          "type": "question",
+          "settings": {
+            "title": "Electronics",
+            "answer": "<ul><li>Bafang geared rear hub <strong>750W</strong> (up to 1200W peak)</li><li>LG-cell battery <strong>48V 15Ah (720 Wh)</strong></li><li>In-frame 48V controller, 25A</li><li>Left-side color LCD with USB-C</li><li>Integrated front and rear lights</li><li>Left thumb throttle</li><li>Torque + cadence sensors</li></ul>"
+          }
+        },
+        "question_Yx7EiW": {
+          "type": "question",
+          "settings": {
+            "title": "Brakes",
+            "answer": "<ul><li><strong>Tektro E350 hydraulic</strong></li><li>180 mm rotors, motor cut-off levers</li></ul>"
+          }
+        },
+        "question_jngkFM": {
+          "type": "question",
+          "settings": {
+            "title": "Weight & load",
+            "answer": "<ul><li>Bike weight ~<strong>74 lb</strong></li><li>Max rider + cargo <strong>350 lb</strong></li><li>Front rack <strong>30 lb</strong></li><li>Rear rack <strong>100 lb</strong></li></ul>"
+          }
+        },
+        "question_xtHJh8": {
+          "type": "question",
+          "settings": {
+            "title": "Fit & sizing",
+            "answer": "<p><strong>Rider height</strong>: <strong>5’4″–6’2″</strong></p><ul><li>Standover: 23.5 in</li><li>Reach: 18 in</li><li>Saddle height: 34–42 in</li><li>Handlebar height: 44–48 in</li><li>Wheelbase: 47 in</li><li>Total length: 73 in</li><li>Seat tube: 17 in</li></ul>"
+          }
+        },
+        "question_bqHKga": {
+          "type": "question",
+          "settings": {
+            "title": "What’s in the box",
+            "answer": "<p>Every Stellar Falcon Mid-Step comes with:</p><ul><li>Integrated rear rack (100 lb capacity)</li><li>Full-coverage aluminum fenders</li><li>Adjustable kickstand</li><li>Bell</li><li>Charger & USB-C port</li><li>2-Year Comprehensive Warranty + Lifetime Frame Warranty</li></ul>"
+          }
+        },
+        "content_aan3hD": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "content": "<p><strong>Safety & compliance</strong>: SGS certified under <strong>SGSNA/24/CQ/00032</strong> in accordance with <strong>UL 2271</strong> and <strong>UL 2849</strong>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_4dAJnz",
+        "question_wqVWj8",
+        "question_pHCAtC",
+        "question_cAkGhd",
+        "question_Yx7EiW",
+        "question_jngkFM",
+        "question_xtHJh8",
+        "question_bqHKga",
+        "content_aan3hD"
+      ],
+      "name": "Collapsible tabs",
+      "settings": {
+        "title": "Technical Specifications"
+      }
+    },
+    "background_video_txnWbN": {
+      "type": "background-video",
+      "name": "Background video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/Father.mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "text_alignment": "center center",
+        "height_desktop": 700,
+        "height_mobile": 500,
+        "full_width": true,
+        "overlay_style": "full image-overlay--bg-shadow"
+      }
+    },
+    "euphree_reviews": {
+      "type": "euphree-reviews",
+      "blocks": {
+        "review_1": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Changed how I get around",
+            "body": "The Stellar Falcon is the perfect blend of power and elegance. I ride it everywhere now — errands, trails, you name it.",
+            "author": "Linda K.",
+            "verified": true
+          }
+        },
+        "review_2": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Incredible quality",
+            "body": "From the frame to the motor, everything about this bike feels premium. Customer service was amazing too.",
+            "author": "David M.",
+            "verified": true
+          }
+        },
+        "review_3": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Best purchase this year",
+            "body": "I was skeptical about e-bikes but the Stellar Falcon converted me. Now my whole family wants one.",
+            "author": "Rachel P.",
+            "verified": true
+          }
+        }
+      },
+      "block_order": [
+        "review_1",
+        "review_2",
+        "review_3"
+      ],
+      "name": "Rider Reviews",
+      "settings": {
+        "eyebrow": "Testimonials",
+        "heading": "Why Riders Love the Stellar Falcon",
+        "subtitle": "Real Customer Stories · Join 5,000+ Happy Riders"
+      }
+    },
+    "1755203948c46cc650": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_product_reviews_list_gq3iWB": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews-list/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_product_reviews_list_gq3iWB"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "full_width": false,
+        "show_space": true,
+        "bg_color": "rgba(0,0,0,0)"
+      }
+    },
+    "gallery_zD6JGN": {
+      "type": "gallery",
+      "blocks": {
+        "media_qrcGfj": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Black_Cherry_Euphree_Stellar_Falcon_Mid-Step_Electric_Bike.png",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_rtmDrW": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/stellar-falcon-black-cherry-galaxy-blue-couple-park-ride.png",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_DyXna7": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/midstepblog1.png",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_3aHFTg": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/Man_on_Crimson_Red_MidStep_Ebike.png",
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "media_qrcGfj",
+        "media_rtmDrW",
+        "media_DyXna7",
+        "media_3aHFTg"
+      ],
+      "name": "Gallery",
+      "settings": {
+        "grid_desktop": 2,
+        "grid_mobile": "1",
+        "height": "adapt",
+        "desktop_image_height": 460,
+        "mobile_image_height": 400,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": true,
+        "full_width": false,
+        "color_scheme": "default",
+        "enable_carousel": true,
+        "overlay_style": "full",
+        "overlay_padding": "standard",
+        "button_style": "primary"
+      }
+    },
+    "image_with_text_x6MTqy": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9Lzk4y": {
+          "type": "heading",
+          "settings": {
+            "title": "Prefer a test ride or setup help?",
+            "use_h1": true
+          }
+        },
+        "text_xm8M6Q": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Find a Euphree dealer near you.</strong> USA-based support included with every bike.</p>",
+            "enlarge_text": true
+          }
+        },
+        "button_TzdNzb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find a Dealer",
+            "button_link": "shopify://pages/dealer-locator",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9Lzk4y",
+        "text_xm8M6Q",
+        "button_TzdNzb"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/Beach_Days_Euphree_Style.png",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "show_top_border": false,
+        "color_scheme": "default"
+      }
+    },
+    "collapsible_tabs_TzyYNg": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question_FF9wff": {
+          "type": "question",
+          "settings": {
+            "title": "Why choose Mid-Step over Step-Thru?",
+            "answer": "<p>Mid-Step offers a stronger frame and more clearance, great for taller riders or those who prefer a sportier geometry.</p>"
+          }
+        },
+        "question_Uh7Fgw": {
+          "type": "question",
+          "settings": {
+            "title": "Is the bike stable for heavier riders?",
+            "answer": "<p>Yes. The reinforced frame, wide tires, and thru-axle hub make it stable up to 350 lbs.</p>"
+          }
+        },
+        "question_Xwi9qt": {
+          "type": "question",
+          "settings": {
+            "title": "Can I adjust the fork?",
+            "answer": "<p>Yes. The air fork can be tuned to your weight and preferred stiffness for maximum comfort.</p>"
+          }
+        },
+        "question_erMhPX": {
+          "type": "question",
+          "settings": {
+            "title": "What’s the real-world range?",
+            "answer": "<p>Up to 70 miles depending on assist level, terrain, and rider weight.</p>"
+          }
+        },
+        "question_FeNRBW": {
+          "type": "question",
+          "settings": {
+            "title": "Do I need an app?",
+            "answer": "<p>No. Your rides stay private — no apps, no tracking.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_FF9wff",
+        "question_Uh7Fgw",
+        "question_Xwi9qt",
+        "question_erMhPX",
+        "question_FeNRBW"
+      ],
+      "disabled": true,
+      "name": "Collapsible tabs",
+      "settings": {
+        "title": "Stellar Falcon FAQ"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "title": "Make Your Ride Even Better",
+        "show_vendor": false,
+        "grid": 4
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bike_overview_video",
+    "stellar_icons_4JtU83",
+    "custom_liquid_W9nWiA",
+    "rich_text_d9b6cG",
+    "image_with_text_TeLBhL",
+    "custom_content_nCdbM9",
+    "key_features_RLiqWK",
+    "multi_column_a7T7Q6",
+    "image_with_text_VERaqi",
+    "logo_list_ybQxjq",
+    "image_with_text_tEJYmb",
+    "image_with_text_LwHNeL",
+    "collapsible_tabs_7mcHkA",
+    "background_video_txnWbN",
+    "euphree_reviews",
+    "1755203948c46cc650",
+    "gallery_zD6JGN",
+    "image_with_text_x6MTqy",
+    "collapsible_tabs_TzyYNg",
+    "related-products"
+  ]
+}

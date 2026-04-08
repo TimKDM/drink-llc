@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "support_portal": {
+      "type": "euphree-support-portal",
+      "settings": {
+        "eyebrow": "Customer & Dealer Support",
+        "heading": "How Can We Help?",
+        "subheading": "Our Houston-based team is here for you — bikes, orders, warranties, and everything in between.",
+        "trust_1": "2-Year Warranty",
+        "trust_2": "USA-Based Support",
+        "trust_3": "180+ Dealers Nationwide",
+        "trust_4": "Response Within 1 Business Day",
+        "hs_proxy_url": "/apps/euphree-hs-proxy",
+        "hs_portal_id": "",
+        "hs_form_id": "",
+        "hs_pipeline_id": "",
+        "hs_stage_new": ""
+      }
+    }
+  },
+  "order": [
+    "support_portal"
+  ]
+}

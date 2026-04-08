@@ -1,0 +1,1101 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "inventory_level": {
+          "type": "inventory-level",
+          "settings": {
+            "show_inventory_notice": "low",
+            "show_inventory_count": "low",
+            "inventory_threshold": 10,
+            "enable_box": false,
+            "enable_pulse": true,
+            "show_in_quickbuy": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": false,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": true,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": false,
+            "show_pickup_availability": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "dealer_popup": {
+          "type": "pop-up",
+          "settings": {
+            "text": "Prefer a test ride? Find a dealer",
+            "style": "secondary btn--wide",
+            "page": "dealer-locator",
+            "show_in_quickbuy": false
+          }
+        },
+        "sizing_trigger": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<button type=\"button\" data-open-sizing-drawer style=\"display:flex;align-items:center;gap:8px;width:100%;padding:14px 0;background:none;border:none;border-top:1px solid #e8e8e8;cursor:pointer;font-size:15px;font-weight:600;color:#121212;justify-content:space-between;\">Sizing Guide <svg width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"M9 18l6-6-6-6\"></path></svg></button>",
+            "show_in_quickbuy": false
+          }
+        },
+        "specs_trigger": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<button type=\"button\" data-open-specs-drawer style=\"display:flex;align-items:center;gap:8px;width:100%;padding:14px 0;background:none;border:none;border-top:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;cursor:pointer;font-size:15px;font-weight:600;color:#121212;justify-content:space-between;\">Technical Specifications <svg width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"M9 18l6-6-6-6\"></path></svg></button>",
+            "show_in_quickbuy": false
+          }
+        },
+        "sharing": {
+          "type": "sharing",
+          "settings": {
+            "show_twitter": true,
+            "show_facebook": true,
+            "show_pinterest": true
+          }
+        },
+        "trust_icons": {
+          "type": "icon-columns",
+          "settings": {
+            "icon_size": "medium",
+            "text_size": "sm",
+            "enable_box": true,
+            "box_color": "#ffffff",
+            "icon_1": "truck",
+            "icon_1_color": "rgba(0,0,0,0)",
+            "custom_icon_1": "shopify://shop_images/Artboard_1_aab0e27a-ebf4-436a-9f8e-2a4ce3df3896.svg",
+            "icon_1_heading": "Free Shipping",
+            "icon_1_text": "",
+            "icon_2": "map_pin",
+            "icon_2_color": "rgba(0,0,0,0)",
+            "custom_icon_2": "shopify://shop_images/USA1_411be68c-93db-4977-8ba6-6f5340a9a4f1.svg",
+            "icon_2_heading": "2-Year Warranty",
+            "icon_2_text": "",
+            "icon_3": "gift",
+            "icon_3_color": "rgba(0,0,0,0)",
+            "custom_icon_3": "shopify://shop_images/SGSCertification.svg",
+            "icon_3_heading": "SGS Certified",
+            "icon_3_text": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "inventory_level",
+        "variant_picker",
+        "buy_buttons",
+        "dealer_popup",
+        "sizing_trigger",
+        "specs_trigger",
+        "sharing",
+        "trust_icons",
+        "description"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "end",
+        "sticky_atc_mobile": true,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "secondary",
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe,Frame,"
+      }
+    },
+    "performance_scorecard": {
+      "type": "performance-scorecard",
+      "blocks": {
+        "stat_motor": {
+          "type": "stat",
+          "settings": {
+            "default_icon": "motor",
+            "svg_icon": "",
+            "value": "750W",
+            "label": "Motor",
+            "detail": "Bafang geared hub"
+          }
+        },
+        "stat_battery": {
+          "type": "stat",
+          "settings": {
+            "default_icon": "battery",
+            "svg_icon": "",
+            "value": "720Wh",
+            "label": "Battery",
+            "detail": "48V 15Ah LG cells"
+          }
+        },
+        "stat_speed": {
+          "type": "stat",
+          "settings": {
+            "default_icon": "speed",
+            "svg_icon": "",
+            "value": "28 mph",
+            "label": "Top Speed",
+            "detail": "Class 3"
+          }
+        },
+        "stat_range": {
+          "type": "stat",
+          "settings": {
+            "default_icon": "range",
+            "svg_icon": "",
+            "value": "70 mile",
+            "label": "Range",
+            "detail": "up to"
+          }
+        },
+        "stat_weight": {
+          "type": "stat",
+          "settings": {
+            "default_icon": "weight",
+            "svg_icon": "",
+            "value": "64 lbs",
+            "label": "Bike Weight",
+            "detail": ""
+          }
+        },
+        "stat_payload": {
+          "type": "stat",
+          "settings": {
+            "default_icon": "payload",
+            "svg_icon": "",
+            "value": "350 lbs",
+            "label": "Max Payload",
+            "detail": ""
+          }
+        },
+        "stat_sensor": {
+          "type": "stat",
+          "settings": {
+            "default_icon": "sensor",
+            "svg_icon": "",
+            "value": "Torque",
+            "label": "Sensor",
+            "detail": "+ Cadence"
+          }
+        },
+        "stat_cert": {
+          "type": "stat",
+          "settings": {
+            "default_icon": "certification",
+            "svg_icon": "",
+            "value": "SGS",
+            "label": "Certified",
+            "detail": "UL 2271 + 2849"
+          }
+        }
+      },
+      "block_order": [
+        "stat_motor",
+        "stat_battery",
+        "stat_speed",
+        "stat_range",
+        "stat_weight",
+        "stat_payload",
+        "stat_sensor",
+        "stat_cert"
+      ],
+      "name": "Performance Scorecard",
+      "settings": {
+        "title": "Performance at a Glance"
+      }
+    },
+    "youtube_reviews": {
+      "type": "youtube-reviews-slider",
+      "blocks": {
+        "yt_1": {
+          "type": "video",
+          "settings": {
+            "video_id": "jfsvEP3qsPg",
+            "video_title": "New Stellar Falcon Review",
+            "channel_name": "Ebike Reviewer",
+            "quote": "One of the most comfortable ebikes I've tested."
+          }
+        },
+        "yt_2": {
+          "type": "video",
+          "settings": {
+            "video_id": "_9VUPq3SxOc",
+            "video_title": "City Robin X First Look",
+            "channel_name": "Tech Rides",
+            "quote": "Great value for the components."
+          }
+        },
+        "yt_3": {
+          "type": "video",
+          "settings": {
+            "video_id": "_9VUPq3SxOc",
+            "video_title": "Best Comfort Ebike 2025",
+            "channel_name": "Bike Reviews",
+            "quote": "The torque sensor makes all the difference."
+          }
+        }
+      },
+      "block_order": [
+        "yt_1",
+        "yt_2",
+        "yt_3"
+      ],
+      "name": "YouTube Reviews",
+      "settings": {
+        "title": "What Reviewers Are Saying",
+        "subtitle": "See what top ebike reviewers think about Euphree"
+      }
+    },
+    "description_intro": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Your Everyday Comfort Ebike",
+            "use_h1": true
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Designed for riders who want comfort, safety, and control — whether commuting, running errands, or enjoying weekend rides. Built with name-brand components and backed by real support from Houston, Texas.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "name": "Product Description",
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": true,
+        "color_scheme": "1"
+      }
+    },
+    "feature_highlights": {
+      "type": "multi-column",
+      "blocks": {
+        "feature_2": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "title": "Full Suspension",
+            "text": "<p>SR Suntour Air Front fork + seatpost suspension smooth out bumps for all-day comfort.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "feature_1": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "title": "Torque  Sensor",
+            "text": "<p>Responsive pedal assist that adjusts to your effort naturally — no jerky starts.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "feature_3": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "title": "Premium Components",
+            "text": "<p>Shimano shifting, Tektro hydraulic brakes, and LG battery cells.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "feature_4": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "title": "Fully Equipped",
+            "text": "<p>Lights, fenders, signal bell and rear rack all come standard</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_2",
+        "feature_1",
+        "feature_3",
+        "feature_4"
+      ],
+      "name": "Feature Highlights",
+      "settings": {
+        "title": "",
+        "media_aspect_ratio": "1",
+        "media_width": 700,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
+    "product_details_image_1": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Responsive Power, Smooth Pedaling",
+            "use_h1": true
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Bafang motor delivers smooth, responsive assist. Torque + cadence sensors adjust power naturally to your effort, so the ride feels steady and intuitive.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "name": "Detail: Motor",
+      "settings": {
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "color_scheme": "default"
+      }
+    },
+    "product_details_image_2": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Comfort You Can Feel From the First Ride",
+            "use_h1": true
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Built for riders who want to sit upright, relax their shoulders, and keep pressure off wrists and knees.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "name": "Detail: Comfort",
+      "settings": {
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "color_scheme": "default"
+      }
+    },
+    "lifestyle_banner": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Ride Your Way",
+            "heading_max_width": 15,
+            "title_size": 84,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "name": "Lifestyle Banner",
+      "settings": {
+        "height": "fixed",
+        "height_desktop": 600,
+        "height_mobile": 400,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center center",
+        "mobile_overlay_under": false,
+        "overlay_style": "full image-overlay--bg-shadow"
+      }
+    },
+    "reviews_carousel": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_carousel": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/featured-reviews-carousel/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_carousel"
+      ],
+      "name": "Rider Reviews",
+      "settings": {
+        "full_width": true,
+        "show_space": false
+      }
+    },
+    "reviews_full": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_list": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews-list/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_list"
+      ],
+      "name": "What Riders Are Saying",
+      "settings": {
+        "full_width": false,
+        "show_space": true
+      }
+    },
+    "lifestyle_gallery": {
+      "type": "gallery",
+      "blocks": {
+        "media_1": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_2": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_3": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "media_4": {
+          "type": "media",
+          "settings": {
+            "enlarge_media": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "media_1",
+        "media_2",
+        "media_3",
+        "media_4"
+      ],
+      "name": "Lifestyle Gallery",
+      "settings": {
+        "grid_desktop": 4,
+        "grid_mobile": "2",
+        "height": "adapt",
+        "desktop_image_height": 400,
+        "mobile_image_height": 250,
+        "title_size": 20,
+        "title_size_mobile": 18,
+        "enable_margin": true,
+        "enable_row_spacing": false,
+        "full_width": true,
+        "color_scheme": "default",
+        "enable_carousel": true,
+        "overlay_style": "full",
+        "overlay_padding": "standard",
+        "button_style": "secondary"
+      }
+    },
+    "accessories_grid": {
+      "type": "product-accessories",
+      "blocks": {
+        "acc_1": {
+          "type": "product",
+          "settings": {
+            "product": "front-basket"
+          }
+        },
+        "acc_2": {
+          "type": "product",
+          "settings": {
+            "product": "front-basket-liner"
+          }
+        },
+        "acc_3": {
+          "type": "product",
+          "settings": {
+            "product": "stem-bag"
+          }
+        },
+        "acc_4": {
+          "type": "product",
+          "settings": {
+            "product": "trunk-bag"
+          }
+        }
+      },
+      "block_order": [
+        "acc_1",
+        "acc_2",
+        "acc_3",
+        "acc_4"
+      ],
+      "name": "Accessories Grid",
+      "settings": {
+        "title": "Accessories to Match Your Ride",
+        "subtitle": "Custom-designed to fit your Euphree perfectly. Add comfort, storage, and security.",
+        "view_all_label": "Shop All Accessories",
+        "view_all_url": "shopify://collections/electric-bike-accessories"
+      }
+    },
+    "howto_video": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "How-To Videos",
+            "use_h1": true
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Watch step-by-step guides for assembly, setup, and getting the most out of your Euphree.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "View All Videos",
+            "button_link": "shopify://pages/assembly-manuals",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "name": "How-To Videos",
+      "settings": {
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "autoplay": false,
+        "video_position": "left",
+        "text_alignment": "center",
+        "color_scheme": "default"
+      }
+    },
+    "faq_tabs": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "q_who": {
+          "type": "question",
+          "settings": {
+            "title": "Who is this bike for?",
+            "answer": "<p>Riders looking for comfort, safety, and control — whether commuting, running errands, or enjoying weekend rides.</p>"
+          }
+        },
+        "q_range": {
+          "type": "question",
+          "settings": {
+            "title": "What's the range?",
+            "answer": "<p>Range varies by model. Check the product specs above for details.</p>"
+          }
+        },
+        "q_weight": {
+          "type": "question",
+          "settings": {
+            "title": "How heavy is it?",
+            "answer": "<p>Weight varies by model. Check the product specs above for details.</p>"
+          }
+        },
+        "q_service": {
+          "type": "question",
+          "settings": {
+            "title": "Can I service it locally?",
+            "answer": "<p>Yes. We partner with 180+ USA dealers for professional service and test rides. <a href=\"/pages/dealer-locator\" target=\"_blank\" title=\"Dealer Locator\">Find a dealer near you</a>.</p>"
+          }
+        },
+        "q_warranty": {
+          "type": "question",
+          "settings": {
+            "title": "What warranty is included?",
+            "answer": "<p>Every Euphree comes with a 2-year full warranty covering frame, motor, battery, and components — plus lifetime frame coverage.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q_who",
+        "q_range",
+        "q_weight",
+        "q_service",
+        "q_warranty"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "title": "Frequently Asked Questions"
+      }
+    },
+    "brand_trust": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_1": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/RebelRed.svg",
+            "image_width": 100,
+            "link": "",
+            "title": "Comfort-focused designs tested by real riders"
+          }
+        },
+        "logo_2": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/USA1_411be68c-93db-4977-8ba6-6f5340a9a4f1.svg",
+            "image_width": 100,
+            "link": "",
+            "title": "USA-based support team in Houston, Texas"
+          }
+        },
+        "logo_3": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/black2.svg",
+            "image_width": 110,
+            "link": "",
+            "title": "Lifetime frame coverage + 2-year warranty"
+          }
+        },
+        "logo_4": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Bafang_logo.svg",
+            "image_width": 100,
+            "link": "",
+            "title": "Name-brand components mechanics trust"
+          }
+        }
+      },
+      "block_order": [
+        "logo_1",
+        "logo_2",
+        "logo_3",
+        "logo_4"
+      ],
+      "name": "Why Riders Choose Euphree",
+      "settings": {
+        "title": "Why Riders Choose Euphree",
+        "image_opacity": 75,
+        "color_scheme": "default"
+      }
+    },
+    "dealer_cta": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Prefer a Test Ride or Setup Help?",
+            "use_h1": false
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Find a Euphree dealer near you.</strong> USA-based support included with every bike.</p>",
+            "enlarge_text": true
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Book a Local Test Ride",
+            "button_link": "shopify://pages/dealer-locator",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "name": "Dealer CTA",
+      "settings": {
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "autoplay": true,
+        "video_position": "left",
+        "text_alignment": "center",
+        "color_scheme": "default"
+      }
+    },
+    "background_video": {
+      "type": "background-video",
+      "name": "Background video",
+      "settings": {
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "text_alignment": "center center",
+        "height_desktop": 500,
+        "height_mobile": 400,
+        "full_width": true,
+        "overlay_style": "full image-overlay--bg-shadow"
+      }
+    },
+    "newsletter_cta": {
+      "type": "newsletter",
+      "name": "Join the Flock",
+      "settings": {
+        "title": "the latest on Euphree deals & gear",
+        "subheading": "<p>Be the first to know about new products, sales, and riding tips.</p>",
+        "color_scheme": "default"
+      }
+    },
+    "sizing_drawer": {
+      "type": "sizing-drawer",
+      "blocks": {
+        "sizing_img": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_7b7dff38-2f81-4270-ac0e-6f7dd79d5785.png",
+            "caption": ""
+          }
+        },
+        "cat_fit": {
+          "type": "heading",
+          "settings": {
+            "title": "Fit Details"
+          }
+        },
+        "m_height": {
+          "type": "measurement",
+          "settings": {
+            "label": "Rider Height",
+            "value": "5'2\" – 6'0\""
+          }
+        },
+        "m_standover": {
+          "type": "measurement",
+          "settings": {
+            "label": "Standover Height",
+            "value": "Check product specs"
+          }
+        },
+        "m_seat": {
+          "type": "measurement",
+          "settings": {
+            "label": "Seat Height Range",
+            "value": "Check product specs"
+          }
+        },
+        "m_handlebar": {
+          "type": "measurement",
+          "settings": {
+            "label": "Handlebar Height",
+            "value": "Check product specs"
+          }
+        },
+        "m_frame": {
+          "type": "measurement",
+          "settings": {
+            "label": "Frame Style",
+            "value": "Step-Through"
+          }
+        },
+        "m_payload": {
+          "type": "measurement",
+          "settings": {
+            "label": "Max Payload",
+            "value": "350 lbs"
+          }
+        }
+      },
+      "block_order": [
+        "sizing_img",
+        "cat_fit",
+        "m_height",
+        "m_standover",
+        "m_seat",
+        "m_handlebar",
+        "m_frame",
+        "m_payload"
+      ],
+      "name": "Sizing Drawer",
+      "settings": {
+        "title": "Sizing Guide",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "specs_drawer": {
+      "type": "specs-drawer",
+      "blocks": {
+        "cat_power": {
+          "type": "category",
+          "settings": {
+            "title": "Power & Range"
+          }
+        },
+        "spec_motor": {
+          "type": "spec",
+          "settings": {
+            "label": "Motor",
+            "value": "500W Bafang geared hub"
+          }
+        },
+        "spec_peak": {
+          "type": "spec",
+          "settings": {
+            "label": "Peak Power",
+            "value": "900W"
+          }
+        },
+        "spec_battery": {
+          "type": "spec",
+          "settings": {
+            "label": "Battery",
+            "value": "48V 14Ah (672Wh)"
+          }
+        },
+        "spec_range": {
+          "type": "spec",
+          "settings": {
+            "label": "Range",
+            "value": "Up to 60 miles"
+          }
+        },
+        "spec_speed": {
+          "type": "spec",
+          "settings": {
+            "label": "Top Speed",
+            "value": "28 mph (Class 3)"
+          }
+        },
+        "spec_sensor": {
+          "type": "spec",
+          "settings": {
+            "label": "Sensor",
+            "value": "Torque + Cadence"
+          }
+        },
+        "cat_comfort": {
+          "type": "category",
+          "settings": {
+            "title": "Comfort & Suspension"
+          }
+        },
+        "spec_fork": {
+          "type": "spec",
+          "settings": {
+            "label": "Front Fork",
+            "value": "SR Suntour, 100mm travel"
+          }
+        },
+        "spec_seat": {
+          "type": "spec",
+          "settings": {
+            "label": "Seatpost",
+            "value": "SR Suntour NCX, 50mm"
+          }
+        },
+        "spec_tires": {
+          "type": "spec",
+          "settings": {
+            "label": "Tires",
+            "value": "Schwalbe Super Moto-X 27.5×2.4\""
+          }
+        },
+        "cat_drive": {
+          "type": "category",
+          "settings": {
+            "title": "Drivetrain & Brakes"
+          }
+        },
+        "spec_shifter": {
+          "type": "spec",
+          "settings": {
+            "label": "Shifter",
+            "value": "Shimano Altus 7-speed"
+          }
+        },
+        "spec_brakes": {
+          "type": "spec",
+          "settings": {
+            "label": "Brakes",
+            "value": "Tektro hydraulic disc, 180mm"
+          }
+        },
+        "cat_fit": {
+          "type": "category",
+          "settings": {
+            "title": "Fit & Weight"
+          }
+        },
+        "spec_height": {
+          "type": "spec",
+          "settings": {
+            "label": "Rider Height",
+            "value": "5'2\" – 6'0\""
+          }
+        },
+        "spec_weight": {
+          "type": "spec",
+          "settings": {
+            "label": "Bike Weight",
+            "value": "64 lbs"
+          }
+        },
+        "spec_payload": {
+          "type": "spec",
+          "settings": {
+            "label": "Max Payload",
+            "value": "350 lbs"
+          }
+        },
+        "spec_cert": {
+          "type": "spec",
+          "settings": {
+            "label": "Certification",
+            "value": "SGS · UL 2271 + 2849"
+          }
+        }
+      },
+      "block_order": [
+        "cat_power",
+        "spec_motor",
+        "spec_peak",
+        "spec_battery",
+        "spec_range",
+        "spec_speed",
+        "spec_sensor",
+        "cat_comfort",
+        "spec_fork",
+        "spec_seat",
+        "spec_tires",
+        "cat_drive",
+        "spec_shifter",
+        "spec_brakes",
+        "cat_fit",
+        "spec_height",
+        "spec_weight",
+        "spec_payload",
+        "spec_cert"
+      ],
+      "name": "Specs Drawer",
+      "settings": {
+        "title": "Technical Specifications",
+        "button_label": "Shop This Bike",
+        "button_url": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "performance_scorecard",
+    "youtube_reviews",
+    "description_intro",
+    "feature_highlights",
+    "product_details_image_1",
+    "product_details_image_2",
+    "lifestyle_banner",
+    "reviews_full",
+    "lifestyle_gallery",
+    "accessories_grid",
+    "howto_video",
+    "faq_tabs",
+    "brand_trust",
+    "dealer_cta",
+    "background_video",
+    "reviews_carousel",
+    "newsletter_cta",
+    "sizing_drawer",
+    "specs_drawer"
+  ]
+}

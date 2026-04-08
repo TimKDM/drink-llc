@@ -1,0 +1,1044 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": false,
+            "enable_product_reviews_by_price": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant-picker",
+          "settings": {
+            "show_single": false,
+            "selector_style": "listed",
+            "dynamic_availability": "show",
+            "enable_size_chart": true,
+            "size_chart_label": "Size guide",
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "richtext_yRyiaN": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<h6>In Stock & ready to ship! </h6>",
+            "icon": "",
+            "icon_size": "small",
+            "enable_box": false,
+            "box_color": "#e0f4d5",
+            "show_in_quickbuy": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "show_backorder_text": false,
+            "show_pickup_availability": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "dealer_popup": {
+          "type": "pop-up",
+          "settings": {
+            "text": "Prefer a test ride? Find a dealer",
+            "style": "secondary btn--wide",
+            "page": "dealer-locator",
+            "show_in_quickbuy": false
+          }
+        },
+        "sizing_trigger": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<button type=\"button\" data-open-sizing-drawer style=\"display:flex;align-items:center;gap:8px;width:100%;padding:14px 0;background:none;border:none;border-top:1px solid #e8e8e8;cursor:pointer;font-size:15px;font-weight:600;color:#121212;justify-content:space-between;\">Sizing Guide <svg width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"M9 18l6-6-6-6\"></path></svg></button>",
+            "show_in_quickbuy": false
+          }
+        },
+        "specs_trigger": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "<button type=\"button\" data-open-specs-drawer style=\"display:flex;align-items:center;gap:8px;width:100%;padding:14px 0;background:none;border:none;border-top:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;cursor:pointer;font-size:15px;font-weight:600;color:#121212;justify-content:space-between;\">Technical Specifications <svg width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" viewBox=\"0 0 24 24\"><path d=\"M9 18l6-6-6-6\"></path></svg></button>",
+            "show_in_quickbuy": false
+          }
+        },
+        "sharing": {
+          "type": "sharing",
+          "settings": {
+            "show_twitter": true,
+            "show_facebook": true,
+            "show_pinterest": true
+          }
+        },
+        "trust_icons": {
+          "type": "icon-columns",
+          "settings": {
+            "icon_size": "medium",
+            "text_size": "sm",
+            "enable_box": true,
+            "box_color": "#ffffff",
+            "icon_1": "truck",
+            "icon_1_color": "rgba(0,0,0,0)",
+            "custom_icon_1": "shopify://shop_images/Artboard_1_aab0e27a-ebf4-436a-9f8e-2a4ce3df3896.svg",
+            "icon_1_heading": "Free Shipping",
+            "icon_1_text": "",
+            "icon_2": "map_pin",
+            "icon_2_color": "rgba(0,0,0,0)",
+            "custom_icon_2": "shopify://shop_images/USA1_411be68c-93db-4977-8ba6-6f5340a9a4f1.svg",
+            "icon_2_heading": "2-Year Warranty",
+            "icon_2_text": "",
+            "icon_3": "gift",
+            "icon_3_color": "rgba(0,0,0,0)",
+            "custom_icon_3": "shopify://shop_images/SGSCertification.svg",
+            "icon_3_heading": "SGS Certified",
+            "icon_3_text": "",
+            "show_in_quickbuy": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "show_in_tab": false,
+            "open_tab": false,
+            "icon": "",
+            "show_in_quickbuy": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variant_picker",
+        "richtext_yRyiaN",
+        "buy_buttons",
+        "dealer_popup",
+        "sizing_trigger",
+        "specs_trigger",
+        "sharing",
+        "trust_icons",
+        "description"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "select_first_variant": true,
+        "show_location_underneath": false,
+        "inventory_transfers_enable": true,
+        "enable_sticky_columns": true,
+        "enable_sticky_atc": true,
+        "sticky_atc_position": "end",
+        "sticky_atc_mobile": true,
+        "sticky_atc_behavior": "add_to_cart",
+        "sticky_atc_button_style": "secondary",
+        "gallery_size": "medium",
+        "gallery_layout": "carousel-under",
+        "enable_zoom": true,
+        "show_alt_text": false,
+        "alt_text_icon": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "enable_media_grouping": false,
+        "media_grouping_option": "Color,Colour,Couleur,Farbe,Frame,"
+      }
+    },
+    "bike_overview_video": {
+      "type": "video",
+      "blocks": {
+        "video_heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Meet the Stellar Falcon 2",
+            "heading_max_width": 15,
+            "title_size": 64,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "video_play": {
+          "type": "play-button",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "video_heading",
+        "video_play"
+      ],
+      "name": "Bike Overview Video",
+      "settings": {
+        "video_external": "https://www.youtube.com/watch?v=Ug_bDULzWWQ&t",
+        "video_description": "Stellar Falcon 2 Step-Thru — Bike Overview by Daniel",
+        "placeholder_image": "shopify://shop_images/DSC04874.jpg",
+        "text_alignment": "center center",
+        "full_width": true,
+        "overlay_style": "shadow"
+      }
+    },
+    "performance_scorecard": {
+      "type": "performance-scorecard",
+      "blocks": {
+        "stat_motor": {
+          "type": "stat",
+          "settings": {
+            "default_icon": "motor",
+            "svg_icon": "",
+            "value": "750W",
+            "label": "Motor",
+            "detail": "Bafang geared hub"
+          }
+        },
+        "stat_battery": {
+          "type": "stat",
+          "settings": {
+            "default_icon": "battery",
+            "svg_icon": "",
+            "value": "720Wh",
+            "label": "Battery",
+            "detail": "48V 15Ah LG cells"
+          }
+        },
+        "stat_speed": {
+          "type": "stat",
+          "settings": {
+            "default_icon": "speed",
+            "svg_icon": "",
+            "value": "28 mph",
+            "label": "Top Speed",
+            "detail": "Class 3"
+          }
+        },
+        "stat_range": {
+          "type": "stat",
+          "settings": {
+            "default_icon": "range",
+            "svg_icon": "",
+            "value": "70 mile",
+            "label": "Range",
+            "detail": "up to"
+          }
+        },
+        "stat_weight": {
+          "type": "stat",
+          "settings": {
+            "default_icon": "weight",
+            "svg_icon": "",
+            "value": "74 lbs",
+            "label": "Bike Weight",
+            "detail": ""
+          }
+        },
+        "stat_payload": {
+          "type": "stat",
+          "settings": {
+            "default_icon": "payload",
+            "svg_icon": "",
+            "value": "350 lbs",
+            "label": "Max Payload",
+            "detail": ""
+          }
+        },
+        "stat_sensor": {
+          "type": "stat",
+          "settings": {
+            "default_icon": "sensor",
+            "svg_icon": "",
+            "value": "Torque",
+            "label": "Sensor",
+            "detail": "+ Cadence"
+          }
+        },
+        "stat_cert": {
+          "type": "stat",
+          "settings": {
+            "default_icon": "certification",
+            "svg_icon": "",
+            "value": "SGS",
+            "label": "Certified",
+            "detail": "UL 2271 + 2849"
+          }
+        }
+      },
+      "block_order": [
+        "stat_motor",
+        "stat_battery",
+        "stat_speed",
+        "stat_range",
+        "stat_weight",
+        "stat_payload",
+        "stat_sensor",
+        "stat_cert"
+      ],
+      "name": "Performance Scorecard",
+      "settings": {
+        "title": "Performance at a Glance"
+      }
+    },
+    "youtube_reviews": {
+      "type": "youtube-reviews-slider",
+      "blocks": {
+        "video_xMMaQn": {
+          "type": "video",
+          "settings": {
+            "video_id": "BItn36WFGD8",
+            "video_title": "New Stellar Falcon Review",
+            "channel_name": "CitizenCycle",
+            "quote": ""
+          }
+        },
+        "yt_1": {
+          "type": "video",
+          "settings": {
+            "video_id": "jfsvEP3qsPg",
+            "video_title": "New Stellar Falcon Review",
+            "channel_name": "Ebike Reviewer",
+            "quote": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_xMMaQn",
+        "yt_1"
+      ],
+      "disabled": true,
+      "name": "YouTube Reviews",
+      "settings": {
+        "title": "What Reviewers Are Saying",
+        "subtitle": "See what top ebike reviewers think about Euphree",
+        "bg_color": "rgba(0,0,0,0)"
+      }
+    },
+    "description_intro": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Your Ultimate All Terrain Ebike",
+            "use_h1": true
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Designed for riders who want no bounds and total control — whether on a trail, commuting or enjoying weekend rides.  The Stellar Falcon is built with premium name-brand components and backed by real support from Houston, Texas.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "custom_css": [],
+      "name": "Product Description",
+      "settings": {
+        "height": "small",
+        "text_alignment": "center",
+        "full_width": true,
+        "color_scheme": "2"
+      }
+    },
+    "feature_highlights": {
+      "type": "multi-column",
+      "blocks": {
+        "feature_2": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/sf-2026-step-thru-front-suspension-fork.jpg",
+            "title": "Air Front Fork",
+            "text": "<p>SR Suntour Air Front Fork Suspension, 90 mm with boost front hub spacing </p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "feature_1": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/sf-2026-step-thru-saddle-seatpost.jpg",
+            "title": "Seat Post Suspension",
+            "text": "<p>NCX Suspension seat post has 50 mm of vertical and lateral travel providing natural suspension dampening on bumps.</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "feature_3": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/Screenshot_2026-03-23_at_3.28.35_PM.png",
+            "title": "Shimano Drivetrain",
+            "text": "<p>Shimano Altus derailleur, 8 speed trigger shifter paired with a custom 10 x 32T freewheel and KMC chain</p>",
+            "button_label": "",
+            "link": ""
+          }
+        },
+        "feature_4": {
+          "type": "text_block",
+          "settings": {
+            "enable_media": true,
+            "image": "shopify://shop_images/sf-2026-step-thru-rear-rack.jpg",
+            "title": "Fully Equipped",
+            "text": "<p>MIK compatible rear rack, front and rear lights, fenders, signal bell and kickstand all come standard</p>",
+            "button_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_2",
+        "feature_1",
+        "feature_3",
+        "feature_4"
+      ],
+      "name": "Feature Highlights",
+      "settings": {
+        "title": "",
+        "media_aspect_ratio": "s",
+        "media_width": 700,
+        "text_alignment": "center",
+        "button_style": "primary",
+        "color_scheme": "default"
+      }
+    },
+    "product_details_image_1": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Responsive Power, Smooth Pedaling",
+            "use_h1": true
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Bafang motor delivers smooth, responsive pedal assist. Torque + cadence sensors adjust power naturally to your effort, so the ride feels steady and intuitive.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "name": "Detail: Motor",
+      "settings": {
+        "image": "shopify://shop_images/Hector-SF-Stepthru-1.jpg",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "show_top_border": false,
+        "color_scheme": "default"
+      }
+    },
+    "product_details_image_2": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Comfort You Can Feel From the First Ride",
+            "use_h1": true
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Adjust the stem angle to your body size and reach to relax your your shoulders and peek pressure off your wrists.  A comfortable fit keeps you in the saddle longer! </p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "name": "Detail: Comfort",
+      "settings": {
+        "image": "shopify://shop_images/Stepthru-Stem-Animated.gif",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "left",
+        "show_top_border": false,
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_x9Ycr4": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_dBCrkF": {
+          "type": "heading",
+          "settings": {
+            "title": "More Accessories For All Your Trips",
+            "use_h1": true
+          }
+        },
+        "text_aGG3py": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Load up the Falcon with front and rear baskets, lock, stem bag and more to accomplish any task or trip.</p>",
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dBCrkF",
+        "text_aGG3py"
+      ],
+      "name": "Detail: Comfort",
+      "settings": {
+        "image": "shopify://shop_images/2026-SF-Stepthru-2040_1.gif",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "right",
+        "text_alignment": "left",
+        "show_top_border": false,
+        "color_scheme": "default"
+      }
+    },
+    "reviews_carousel": {
+      "type": "euphree-reviews",
+      "blocks": {
+        "review_2": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Stellar Falcon, High End Value in a DTC Product!!!",
+            "body": "I feel the Euphree Stellar Falcon is the highest quality collection of name brand components that you can buy for the money in a direct to consumer e-bike!",
+            "author": "Andrew S.",
+            "verified": true
+          }
+        },
+        "review_1": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "Significant Other approved!",
+            "body": "Bought this bike for my partner and she absolutely loves it!",
+            "author": "Philip R.",
+            "verified": true
+          }
+        },
+        "review_3": {
+          "type": "review",
+          "settings": {
+            "stars": 5,
+            "title": "BEST E-BIKE YET!",
+            "body": "This is my third e-bike. In 2020 I bought a hub drive and in 2022 I bought a mid-drive; both Canadian. This bike is the best build by far. Terrific craftsmanship, plenty of power, smooth ride and lighter weight. Very agile w/a lot of bite.",
+            "author": "Andy H.",
+            "verified": true
+          }
+        }
+      },
+      "block_order": [
+        "review_2",
+        "review_1",
+        "review_3"
+      ],
+      "name": "Rider Reviews",
+      "settings": {
+        "eyebrow": "Testimonials",
+        "heading": "Why Riders Love the Stellar Falcon",
+        "subtitle": "Real Customer Stories · Join 8,000+ Happy Riders",
+        "bg_image": "shopify://shop_images/2_f0c891b8-f99e-41fe-b948-1356c35036ec.png"
+      }
+    },
+    "accessories_grid": {
+      "type": "product-accessories",
+      "blocks": {
+        "acc_1": {
+          "type": "product",
+          "settings": {
+            "product": "front-basket"
+          }
+        },
+        "acc_2": {
+          "type": "product",
+          "settings": {
+            "product": "front-basket-liner"
+          }
+        },
+        "acc_3": {
+          "type": "product",
+          "settings": {
+            "product": "stem-bag"
+          }
+        },
+        "acc_4": {
+          "type": "product",
+          "settings": {
+            "product": "trunk-bag"
+          }
+        }
+      },
+      "block_order": [
+        "acc_1",
+        "acc_2",
+        "acc_3",
+        "acc_4"
+      ],
+      "name": "Accessories Grid",
+      "settings": {
+        "title": "Accessories to Match Your Ride",
+        "subtitle": "Custom-designed to fit your Euphree perfectly. Add comfort, storage, and security.",
+        "view_all_label": "Shop All Accessories",
+        "view_all_url": "shopify://collections/electric-bike-accessories"
+      }
+    },
+    "howto_video": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "How-To Videos",
+            "use_h1": true
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Watch step-by-step guides for assembly, setup, and getting the most out of your Euphree.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "View All Videos",
+            "button_link": "shopify://pages/assembly-manuals",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "disabled": true,
+      "name": "How-To Videos",
+      "settings": {
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "autoplay": false,
+        "video_position": "left",
+        "text_alignment": "center",
+        "color_scheme": "default"
+      }
+    },
+    "image_with_text_LPTxV3": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_gQEPY8": {
+          "type": "heading",
+          "settings": {
+            "title": "Prefer a Test Ride or Setup Help?",
+            "use_h1": true
+          }
+        },
+        "text_YEHntD": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Find a Euphree dealer near you. </strong>USA-Based spupport included with every bike.</p>",
+            "enlarge_text": true
+          }
+        },
+        "button_X7WcwG": {
+          "type": "button",
+          "settings": {
+            "button_label": "Book A Local Test Ride",
+            "button_link": "shopify://pages/dealer-locator",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gQEPY8",
+        "text_YEHntD",
+        "button_X7WcwG"
+      ],
+      "name": "Detail: Comfort",
+      "settings": {
+        "image": "shopify://shop_images/Screenshot_2026-03-23_at_4.45.04_PM.png",
+        "image_width": 700,
+        "image_link": "",
+        "image_position": "left",
+        "text_alignment": "center",
+        "show_top_border": false,
+        "color_scheme": "default"
+      }
+    },
+    "faq_tabs": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "q_who": {
+          "type": "question",
+          "settings": {
+            "title": "Who is this bike for?",
+            "answer": "<p>Riders looking for comfort, safety, and control — whether commuting, running errands, or enjoying weekend rides.</p>"
+          }
+        },
+        "q_range": {
+          "type": "question",
+          "settings": {
+            "title": "What's the range?",
+            "answer": "<p>The Stellar Falcon Step-Thru model has a up to a 70 mile range. </p>"
+          }
+        },
+        "q_weight": {
+          "type": "question",
+          "settings": {
+            "title": "How heavy is it?",
+            "answer": "<p>The Stellar Falcon Step-Thru model weighs 74lbs with the battery. </p>"
+          }
+        },
+        "q_service": {
+          "type": "question",
+          "settings": {
+            "title": "Can I service it locally?",
+            "answer": "<p>Yes. We partner with 180+ USA dealers for professional service and test rides. <a href=\"/pages/dealer-locator\" target=\"_blank\" title=\"Dealer Locator\">Find a dealer near you</a>.</p>"
+          }
+        },
+        "q_warranty": {
+          "type": "question",
+          "settings": {
+            "title": "What warranty is included?",
+            "answer": "<p>Every Euphree comes with a 2-year full warranty covering frame, motor, battery, and components — plus lifetime frame coverage.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q_who",
+        "q_range",
+        "q_weight",
+        "q_service",
+        "q_warranty"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "title": "Frequently Asked Questions"
+      }
+    },
+    "reviews_full": {
+      "type": "apps",
+      "blocks": {
+        "klaviyo_reviews_list": {
+          "type": "shopify://apps/klaviyo-reviews/blocks/product-reviews-list/db20e365-d984-4ac4-9655-e1588d951ca9",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "klaviyo_reviews_list"
+      ],
+      "name": "What Riders Are Saying",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "full_width": false,
+        "show_space": true,
+        "bg_color": "rgba(0,0,0,0)"
+      }
+    },
+    "background_video": {
+      "type": "background-video",
+      "name": "Background video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/Euphreevideo.mp4",
+        "video_external": "",
+        "video_description": "",
+        "text_alignment": "center center",
+        "height_desktop": 500,
+        "height_mobile": 400,
+        "full_width": true,
+        "overlay_style": "full image-overlay--bg-shadow"
+      }
+    },
+    "sizing_drawer": {
+      "type": "sizing-drawer",
+      "blocks": {
+        "sizing_img": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Stellar-Falcon-Geometry.png",
+            "caption": ""
+          }
+        },
+        "cat_fit": {
+          "type": "heading",
+          "settings": {
+            "title": "Fit Details"
+          }
+        },
+        "m_height": {
+          "type": "measurement",
+          "settings": {
+            "label": "Rider Height",
+            "value": "5'2\" – 6'0\""
+          }
+        },
+        "measurement_dtbmej": {
+          "type": "measurement",
+          "settings": {
+            "label": "Seatpost",
+            "value": "SR Suntour NCX · 50mm"
+          }
+        },
+        "m_standover": {
+          "type": "measurement",
+          "settings": {
+            "label": "Standover Height",
+            "value": "16”"
+          }
+        },
+        "m_handlebar": {
+          "type": "measurement",
+          "settings": {
+            "label": "Handlebar Height",
+            "value": "42–45” adjustable"
+          }
+        },
+        "m_frame": {
+          "type": "measurement",
+          "settings": {
+            "label": "Frame Style",
+            "value": "Step-Through"
+          }
+        },
+        "m_payload": {
+          "type": "measurement",
+          "settings": {
+            "label": "Max Payload",
+            "value": "350 lbs"
+          }
+        },
+        "measurement_NryAHJ": {
+          "type": "measurement",
+          "settings": {
+            "label": "Total Bike Weight",
+            "value": "74 lbs"
+          }
+        }
+      },
+      "block_order": [
+        "sizing_img",
+        "cat_fit",
+        "m_height",
+        "measurement_dtbmej",
+        "m_standover",
+        "m_handlebar",
+        "m_frame",
+        "m_payload",
+        "measurement_NryAHJ"
+      ],
+      "name": "Sizing Drawer",
+      "settings": {
+        "title": "Sizing Guide",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
+    "specs_drawer": {
+      "type": "specs-drawer",
+      "blocks": {
+        "cat_power": {
+          "type": "category",
+          "settings": {
+            "title": "Power & Range"
+          }
+        },
+        "spec_motor": {
+          "type": "spec",
+          "settings": {
+            "label": "Motor",
+            "value": "750W Bafang geared hub"
+          }
+        },
+        "spec_peak": {
+          "type": "spec",
+          "settings": {
+            "label": "Peak Power",
+            "value": "1,200W peak"
+          }
+        },
+        "spec_battery": {
+          "type": "spec",
+          "settings": {
+            "label": "Battery",
+            "value": "48V, 15Ah (720Wh)"
+          }
+        },
+        "spec_range": {
+          "type": "spec",
+          "settings": {
+            "label": "Range",
+            "value": "Up to 70 miles"
+          }
+        },
+        "spec_speed": {
+          "type": "spec",
+          "settings": {
+            "label": "Top Speed",
+            "value": "28 mph (Class 3)"
+          }
+        },
+        "spec_sensor": {
+          "type": "spec",
+          "settings": {
+            "label": "Sensor",
+            "value": "Torque + Cadence"
+          }
+        },
+        "cat_comfort": {
+          "type": "category",
+          "settings": {
+            "title": "Comfort & Suspension"
+          }
+        },
+        "spec_fork": {
+          "type": "spec",
+          "settings": {
+            "label": "Front Fork",
+            "value": "SR Suntour XCM 32 Air, 90mm travel"
+          }
+        },
+        "spec_seat": {
+          "type": "spec",
+          "settings": {
+            "label": "Seatpost",
+            "value": "SR Suntour NCX Suspension, 50mm travel"
+          }
+        },
+        "spec_tires": {
+          "type": "spec",
+          "settings": {
+            "label": "Tires",
+            "value": "Schwalbe Johnny Watts 27.5 x 2.8”"
+          }
+        },
+        "cat_drive": {
+          "type": "category",
+          "settings": {
+            "title": "Drivetrain & Brakes"
+          }
+        },
+        "spec_shifter": {
+          "type": "spec",
+          "settings": {
+            "label": "Derailleur",
+            "value": "Shimano Altus, 8-speed"
+          }
+        },
+        "spec_brakes": {
+          "type": "spec",
+          "settings": {
+            "label": "Brakes",
+            "value": "Tektro E350 Hydraulic"
+          }
+        },
+        "cat_fit": {
+          "type": "category",
+          "settings": {
+            "title": "Fit & Weight"
+          }
+        },
+        "spec_height": {
+          "type": "spec",
+          "settings": {
+            "label": "Rider Height",
+            "value": "5'2\" – 6'0\""
+          }
+        },
+        "spec_weight": {
+          "type": "spec",
+          "settings": {
+            "label": "Bike Weight",
+            "value": "74 lbs"
+          }
+        },
+        "spec_payload": {
+          "type": "spec",
+          "settings": {
+            "label": "Max Payload",
+            "value": "350 lbs"
+          }
+        },
+        "spec_cert": {
+          "type": "spec",
+          "settings": {
+            "label": "Certification",
+            "value": "SGS · UL 2271 + 2849"
+          }
+        }
+      },
+      "block_order": [
+        "cat_power",
+        "spec_motor",
+        "spec_peak",
+        "spec_battery",
+        "spec_range",
+        "spec_speed",
+        "spec_sensor",
+        "cat_comfort",
+        "spec_fork",
+        "spec_seat",
+        "spec_tires",
+        "cat_drive",
+        "spec_shifter",
+        "spec_brakes",
+        "cat_fit",
+        "spec_height",
+        "spec_weight",
+        "spec_payload",
+        "spec_cert"
+      ],
+      "name": "Specs Drawer",
+      "settings": {
+        "title": "Technical Specifications",
+        "button_label": "Shop This Bike",
+        "button_url": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bike_overview_video",
+    "performance_scorecard",
+    "youtube_reviews",
+    "description_intro",
+    "feature_highlights",
+    "product_details_image_1",
+    "product_details_image_2",
+    "image_with_text_x9Ycr4",
+    "reviews_carousel",
+    "accessories_grid",
+    "howto_video",
+    "image_with_text_LPTxV3",
+    "faq_tabs",
+    "reviews_full",
+    "background_video",
+    "sizing_drawer",
+    "specs_drawer"
+  ]
+}
