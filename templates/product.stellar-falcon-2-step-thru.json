@@ -56,12 +56,12 @@
             "show_gift_card_recipient": false
           }
         },
-        "dealer_popup": {
+        "retailer_popup": {
           "type": "pop-up",
           "settings": {
-            "text": "Prefer a test ride? Find a dealer",
+            "text": "Prefer to try in store? Find a retailer",
             "style": "secondary btn--wide",
-            "page": "dealer-locator",
+            "page": "retailer-locator",
             "show_in_quickbuy": false
           }
         },
@@ -129,7 +129,7 @@
         "variant_picker",
         "richtext_yRyiaN",
         "buy_buttons",
-        "dealer_popup",
+        "retailer_popup",
         "sizing_trigger",
         "specs_trigger",
         "sharing",
@@ -306,7 +306,7 @@
           "settings": {
             "video_id": "jfsvEP3qsPg",
             "video_title": "New Stellar Falcon Review",
-            "channel_name": "Ebike Reviewer",
+            "channel_name": "Beverage Reviewer",
             "quote": ""
           }
         }
@@ -319,7 +319,7 @@
       "name": "YouTube Reviews",
       "settings": {
         "title": "What Reviewers Are Saying",
-        "subtitle": "See what top ebike reviewers think about Euphree",
+        "subtitle": "See what top beverage reviewers think about Drink LLC",
         "bg_color": "rgba(0,0,0,0)"
       }
     },
@@ -329,14 +329,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "title": "Your Ultimate All Terrain Ebike",
+            "title": "Your Ultimate All Terrain Beverage",
             "use_h1": true
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Designed for riders who want no bounds and total control — whether on a trail, commuting or enjoying weekend rides.  The Stellar Falcon is built with premium name-brand components and backed by real support from Houston, Texas.</p>",
+            "text": "<p>Designed for customers who want no bounds and total control — whether on a trail, commuting or enjoying weekend rides.  The Stellar Falcon is built with premium name-brand components and backed by real support from Houston, Texas.</p>",
             "enlarge_text": false
           }
         }
@@ -525,7 +525,7 @@
           "settings": {
             "stars": 5,
             "title": "Stellar Falcon, High End Value in a DTC Product!!!",
-            "body": "I feel the Euphree Stellar Falcon is the highest quality collection of name brand components that you can buy for the money in a direct to consumer e-bike!",
+            "body": "I feel the Drink LLC Stellar Falcon is the highest quality collection of name brand components that you can buy for the money in a direct to consumer beverage!",
             "author": "Andrew S.",
             "verified": true
           }
@@ -545,7 +545,7 @@
           "settings": {
             "stars": 5,
             "title": "BEST E-BIKE YET!",
-            "body": "This is my third e-bike. In 2020 I bought a hub drive and in 2022 I bought a mid-drive; both Canadian. This bike is the best build by far. Terrific craftsmanship, plenty of power, smooth ride and lighter weight. Very agile w/a lot of bite.",
+            "body": "This is my third beverage. In 2020 I bought a hub drive and in 2022 I bought a mid-drive; both Canadian. This bike is the best build by far. Terrific craftsmanship, plenty of power, smooth ride and lighter weight. Very agile w/a lot of bite.",
             "author": "Andy H.",
             "verified": true
           }
@@ -556,11 +556,11 @@
         "review_1",
         "review_3"
       ],
-      "name": "Rider Reviews",
+      "name": "Customer Reviews",
       "settings": {
         "eyebrow": "Testimonials",
-        "heading": "Why Riders Love the Stellar Falcon",
-        "subtitle": "Real Customer Stories · Join 8,000+ Happy Riders",
+        "heading": "Why Customers Love the Stellar Falcon",
+        "subtitle": "Real Customer Stories · Join 8,000+ Happy Customers",
         "bg_image": "shopify://shop_images/2_f0c891b8-f99e-41fe-b948-1356c35036ec.png"
       }
     },
@@ -601,7 +601,7 @@
       "name": "Accessories Grid",
       "settings": {
         "title": "Accessories to Match Your Ride",
-        "subtitle": "Custom-designed to fit your Euphree perfectly. Add comfort, storage, and security.",
+        "subtitle": "Custom-designed to fit your Drink LLC product perfectly. Add comfort, storage, and security.",
         "view_all_label": "Shop All Accessories",
         "view_all_url": "shopify://collections/electric-bike-accessories"
       }
@@ -619,7 +619,7 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Watch step-by-step guides for assembly, setup, and getting the most out of your Euphree.</p>",
+            "text": "<p>Watch step-by-step guides for assembly, setup, and getting the most out of your Drink LLC product.</p>",
             "enlarge_text": false
           }
         },
@@ -654,14 +654,14 @@
         "heading_gQEPY8": {
           "type": "heading",
           "settings": {
-            "title": "Prefer a Test Ride or Setup Help?",
+            "title": "Prefer to Try In Store?",
             "use_h1": true
           }
         },
         "text_YEHntD": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Find a Euphree dealer near you. </strong>USA-Based spupport included with every bike.</p>",
+            "text": "<p><strong>Find a Drink LLC retailer near you. </strong>USA-Based spupport included with every bike.</p>",
             "enlarge_text": true
           }
         },
@@ -669,7 +669,7 @@
           "type": "button",
           "settings": {
             "button_label": "Book A Local Test Ride",
-            "button_link": "shopify://pages/dealer-locator",
+            "button_link": "shopify://pages/retailer-locator",
             "button_style": "primary"
           }
         }
@@ -697,7 +697,7 @@
           "type": "question",
           "settings": {
             "title": "Who is this bike for?",
-            "answer": "<p>Riders looking for comfort, safety, and control — whether commuting, running errands, or enjoying weekend rides.</p>"
+            "answer": "<p>Customers looking for comfort, safety, and control — whether commuting, running errands, or enjoying weekend rides.</p>"
           }
         },
         "q_range": {
@@ -718,14 +718,14 @@
           "type": "question",
           "settings": {
             "title": "Can I service it locally?",
-            "answer": "<p>Yes. We partner with 180+ USA dealers for professional service and test rides. <a href=\"/pages/dealer-locator\" target=\"_blank\" title=\"Dealer Locator\">Find a dealer near you</a>.</p>"
+            "answer": "<p>Yes. We partner with 100+ USA retailers for professional service and free tastings. <a href=\"/pages/retailer-locator\" target=\"_blank\" title=\"Retailer Locator\">Find a retailer near you</a>.</p>"
           }
         },
         "q_warranty": {
           "type": "question",
           "settings": {
             "title": "What warranty is included?",
-            "answer": "<p>Every Euphree comes with a 2-year full warranty covering frame, motor, battery, and components — plus lifetime frame coverage.</p>"
+            "answer": "<p>Every Drink LLC product comes with a 2-year full warranty covering frame, motor, battery, and components — plus lifetime frame coverage.</p>"
           }
         }
       },
@@ -752,7 +752,7 @@
       "block_order": [
         "klaviyo_reviews_list"
       ],
-      "name": "What Riders Are Saying",
+      "name": "What Customers Are Saying",
       "settings": {
         "heading": "",
         "subheading": "",
@@ -765,7 +765,7 @@
       "type": "background-video",
       "name": "Background video",
       "settings": {
-        "video_shopify": "shopify://files/videos/Euphreevideo.mp4",
+        "video_shopify": "shopify://files/videos/Drink LLCvideo.mp4",
         "video_external": "",
         "video_description": "",
         "text_alignment": "center center",
@@ -794,7 +794,7 @@
         "m_height": {
           "type": "measurement",
           "settings": {
-            "label": "Rider Height",
+            "label": "Customer Height",
             "value": "5'2\" – 6'0\""
           }
         },
@@ -966,7 +966,7 @@
         "spec_height": {
           "type": "spec",
           "settings": {
-            "label": "Rider Height",
+            "label": "Customer Height",
             "value": "5'2\" – 6'0\""
           }
         },

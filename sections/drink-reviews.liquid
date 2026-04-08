@@ -1,6 +1,6 @@
-<!-- Euphree Reviews Section — Manually curated review cards, fully editable in Theme Customizer -->
+<!-- Drink Reviews Section — Manually curated review cards, fully editable in Theme Customizer -->
 <style>
-.euphree-reviews {
+.drink-reviews {
   padding: 80px 48px 60px;
   background: #f5f5f3;
   font-family: var(--base-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -10,36 +10,36 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.euphree-reviews--has-bg-image::before {
+.drink-reviews--has-bg-image::before {
   content: '';
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
   z-index: 0;
 }
-.euphree-reviews--has-bg-image .euphree-reviews-header,
-.euphree-reviews--has-bg-image .euphree-reviews-grid {
+.drink-reviews--has-bg-image .drink-reviews-header,
+.drink-reviews--has-bg-image .drink-reviews-grid {
   position: relative;
   z-index: 1;
 }
-.euphree-reviews--has-bg-image .euphree-reviews-eyebrow,
-.euphree-reviews--has-bg-image .euphree-reviews-header h2,
-.euphree-reviews--has-bg-image .euphree-review-count {
+.drink-reviews--has-bg-image .drink-reviews-eyebrow,
+.drink-reviews--has-bg-image .drink-reviews-header h2,
+.drink-reviews--has-bg-image .drink-review-count {
   color: #ffffff;
 }
-.euphree-reviews * { box-sizing: border-box; }
-.euphree-reviews-header {
+.drink-reviews * { box-sizing: border-box; }
+.drink-reviews-header {
   text-align: center;
   margin-bottom: 40px;
 }
-.euphree-reviews-stars-header {
+.drink-reviews-stars-header {
   color: #FBBC04;
   font-size: 28px;
   letter-spacing: 4px;
   display: block;
   margin-bottom: 12px;
 }
-.euphree-reviews-eyebrow {
+.drink-reviews-eyebrow {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2.5px;
@@ -47,14 +47,14 @@
   color: #888888;
   margin-bottom: 16px;
 }
-.euphree-reviews-header h2 {
+.drink-reviews-header h2 {
   font-family: var(--heading-font-family), serif;
   font-size: 56px;
   font-weight: 700;
   color: #121212;
   line-height: 1.1;
 }
-.euphree-review-count {
+.drink-review-count {
   font-size: 20px;
   color: #555555;
   margin-top: 12px;
@@ -62,37 +62,37 @@
 }
 
 /* ── Review cards grid ── */
-.euphree-reviews-grid {
+.drink-reviews-grid {
   max-width: 1300px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-.euphree-review-card {
+.drink-review-card {
   background: #ffffff;
   border-radius: 16px;
   padding: 28px 24px;
   display: flex;
   flex-direction: column;
 }
-.euphree-review-card__stars {
+.drink-review-card__stars {
   color: #FBBC04;
   font-size: 20px;
   letter-spacing: 2px;
   margin-bottom: 14px;
 }
-.euphree-review-card__star--empty {
+.drink-review-card__star--empty {
   color: #d9d3c7;
 }
-.euphree-review-card__title {
+.drink-review-card__title {
   font-family: var(--heading-font-family), serif;
   font-weight: 700;
   font-size: 18px;
   color: #121212;
   margin: 0 0 10px;
 }
-.euphree-review-card__body {
+.drink-review-card__body {
   font-family: var(--heading-font-family), serif;
   font-size: 18px;
   font-weight: 500;
@@ -102,13 +102,13 @@
   flex: 1;
   margin: 0 0 18px;
 }
-.euphree-review-card__author {
+.drink-review-card__author {
   font-weight: 700;
   font-size: 16px;
   color: #121212;
   font-family: var(--base-font-family), sans-serif;
 }
-.euphree-review-card__verified {
+.drink-review-card__verified {
   color: #1a4d2e;
   font-size: 13px;
   font-weight: 500;
@@ -117,54 +117,54 @@
 
 /* Tablet */
 @media (max-width: 1024px) {
-  .euphree-reviews-header h2 { font-size: 40px; }
-  .euphree-reviews-grid { grid-template-columns: repeat(2, 1fr); }
+  .drink-reviews-header h2 { font-size: 40px; }
+  .drink-reviews-grid { grid-template-columns: repeat(2, 1fr); }
 }
 /* Mobile */
 @media (max-width: 768px) {
-  .euphree-reviews { padding: 48px 20px 40px; }
-  .euphree-reviews-header { margin-bottom: 28px; }
-  .euphree-reviews-header h2 { font-size: 32px; }
-  .euphree-reviews-stars-header { font-size: 22px; }
-  .euphree-review-count { font-size: 16px; }
-  .euphree-reviews-grid { grid-template-columns: 1fr; gap: 16px; }
-  .euphree-review-card { padding: 20px 16px; }
-  .euphree-review-card__body { font-size: 16px; }
+  .drink-reviews { padding: 48px 20px 40px; }
+  .drink-reviews-header { margin-bottom: 28px; }
+  .drink-reviews-header h2 { font-size: 32px; }
+  .drink-reviews-stars-header { font-size: 22px; }
+  .drink-review-count { font-size: 16px; }
+  .drink-reviews-grid { grid-template-columns: 1fr; gap: 16px; }
+  .drink-review-card { padding: 20px 16px; }
+  .drink-review-card__body { font-size: 16px; }
 }
 @media (max-width: 480px) {
-  .euphree-reviews-header h2 { font-size: 28px; }
+  .drink-reviews-header h2 { font-size: 28px; }
 }
 </style>
 
-<section class="euphree-reviews{% if section.settings.bg_image != blank %} euphree-reviews--has-bg-image{% endif %}"{% if section.settings.bg_image != blank %} style="background-image: url('{{ section.settings.bg_image | image_url: width: 2000 }}')"{% endif %}>
-  <div class="euphree-reviews-header">
-    <span class="euphree-reviews-stars-header">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-    <div class="euphree-reviews-eyebrow">{{ section.settings.eyebrow }}</div>
+<section class="drink-reviews{% if section.settings.bg_image != blank %} drink-reviews--has-bg-image{% endif %}"{% if section.settings.bg_image != blank %} style="background-image: url('{{ section.settings.bg_image | image_url: width: 2000 }}')"{% endif %}>
+  <div class="drink-reviews-header">
+    <span class="drink-reviews-stars-header">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+    <div class="drink-reviews-eyebrow">{{ section.settings.eyebrow }}</div>
     <h2>{{ section.settings.heading }}</h2>
-    <div class="euphree-review-count">{{ section.settings.subtitle }}</div>
+    <div class="drink-review-count">{{ section.settings.subtitle }}</div>
   </div>
 
   {% if section.blocks.size > 0 %}
-    <div class="euphree-reviews-grid">
+    <div class="drink-reviews-grid">
       {% for block in section.blocks %}
-        <div class="euphree-review-card" {{ block.shopify_attributes }}>
-          <div class="euphree-review-card__stars">
+        <div class="drink-review-card" {{ block.shopify_attributes }}>
+          <div class="drink-review-card__stars">
             {%- for i in (1..5) -%}
               {%- if i <= block.settings.stars -%}
                 <span>&#9733;</span>
               {%- else -%}
-                <span class="euphree-review-card__star--empty">&#9733;</span>
+                <span class="drink-review-card__star--empty">&#9733;</span>
               {%- endif -%}
             {%- endfor -%}
           </div>
           {% if block.settings.title != blank %}
-            <p class="euphree-review-card__title">{{ block.settings.title }}</p>
+            <p class="drink-review-card__title">{{ block.settings.title }}</p>
           {% endif %}
-          <p class="euphree-review-card__body">"{{ block.settings.body }}"</p>
+          <p class="drink-review-card__body">"{{ block.settings.body }}"</p>
           <div>
-            <div class="euphree-review-card__author">{{ block.settings.author }}</div>
+            <div class="drink-review-card__author">{{ block.settings.author }}</div>
             {% if block.settings.verified %}
-              <div class="euphree-review-card__verified">&#10003; Verified Buyer</div>
+              <div class="drink-review-card__verified">&#10003; Verified Buyer</div>
             {% endif %}
           </div>
         </div>
@@ -175,8 +175,8 @@
 
 {% schema %}
 {
-  "name": "Euphree Reviews",
-  "class": "section-euphree-reviews",
+  "name": "Drink Reviews",
+  "class": "section-drink-reviews",
   "settings": [
     {
       "type": "text",
@@ -188,13 +188,13 @@
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Why Riders Love Euphree"
+      "default": "Why Customers Love Drink"
     },
     {
       "type": "text",
       "id": "subtitle",
       "label": "Subtitle",
-      "default": "Real Customer Stories · Join 5,000+ Happy Riders"
+      "default": "Real Customer Stories · Join 1,000+ Happy Customers"
     },
     {
       "type": "image_picker",
@@ -226,13 +226,13 @@
           "type": "textarea",
           "id": "body",
           "label": "Review text",
-          "default": "This bike changed my life!"
+      "default": "The best natural beverages I've ever tasted!"
         },
         {
           "type": "text",
           "id": "author",
           "label": "Reviewer name",
-          "default": "Happy Rider"
+          "default": "Happy Customer"
         },
         {
           "type": "checkbox",
@@ -245,20 +245,20 @@
   ],
   "presets": [
     {
-      "name": "Euphree Reviews",
+      "name": "Drink Reviews",
       "settings": {
         "eyebrow": "Testimonials",
-        "heading": "Why Riders Love Euphree",
-        "subtitle": "Real Customer Stories · Join 5,000+ Happy Riders"
+        "heading": "Why Customers Love Drink",
+        "subtitle": "Real Customer Stories · Join 1,000+ Happy Customers"
       },
       "blocks": [
         {
           "type": "review",
           "settings": {
             "stars": 5,
-            "title": "Best e-bike I've owned",
-            "body": "This bike changed my life!",
-            "author": "Happy Rider",
+            "title": "Best natural beverage I've tried",
+            "body": "The Passion Fruit flavor is absolutely incredible. So refreshing and you can taste the real fruit!",
+            "author": "Happy Customer",
             "verified": true
           }
         }

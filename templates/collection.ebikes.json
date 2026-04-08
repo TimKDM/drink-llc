@@ -25,7 +25,7 @@
         "text_yUfdVc": {
           "type": "text",
           "settings": {
-            "text": "<p>Free Shipping on all ebikes</p>",
+            "text": "<p>Free Shipping on all beverages</p>",
             "enlarge_text": false
           }
         }
@@ -36,7 +36,7 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "image": "shopify://shop_images/Solar_sparrow_banner_in_park.png",
+        "image": "",
         "height": "fixed",
         "height_desktop": 200,
         "height_mobile": 140,
@@ -118,8 +118,8 @@
       "disabled": true,
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/Red-Khaki-Stem-Bag-Close-Up.png",
-        "image_2": "shopify://shop_images/euphree_trunk_bag_on_black_cherry_mid_step.png",
+        "image": "",
+        "image_2": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "right",
@@ -134,7 +134,7 @@
         "media_Jt3yyQ": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/Solar_Sparrow_in___Canyon_Flame.png",
+            "image": "",
             "enlarge_media": false,
             "subheading": "",
             "title": "$150 OFF + Free Gear",
@@ -146,7 +146,7 @@
         "media_EbCbUr": {
           "type": "media",
           "settings": {
-            "image": "shopify://shop_images/mobilefatherandsun_1df7671f-f149-4796-a8d6-88094dd7938e.png",
+            "image": "",
             "enlarge_media": false,
             "subheading": "",
             "title": "$450 OFF + Free Gear",
@@ -212,7 +212,7 @@
         "q_models": {
           "type": "question",
           "settings": {
-            "title": "Which Euphree electric bike model should I choose?",
+            "title": "Which Drink LLC beverage model should I choose?",
             "answer": "<p><strong>Solar Sparrow:</strong> Lightweight, belt drive. Best fit 4'11\"–5'10\".</p><p><strong>City Robin X+:</strong> Upright comfort, long range. Best fit 5'2\"–6'0\".</p><p><strong>Stellar Falcon:</strong> 750W, air suspension. Step-Thru 5'2\"–6'0\" • Mid-Step 5'4\"–6'2\".</p>"
           }
         },
@@ -220,27 +220,27 @@
           "type": "question",
           "settings": {
             "title": "How far can I ride on a single charge?",
-            "answer": "<p>Range depends on terrain, rider weight, and assist level:</p><ul><li>Solar Sparrow: up to 40 miles</li><li>City Robin X+: up to 60 miles</li><li>Stellar Falcon: up to 70 miles</li></ul>"
+            "answer": "<p>Range depends on terrain, customer weight, and assist level:</p><ul><li>Solar Sparrow: up to 40 miles</li><li>City Robin X+: up to 60 miles</li><li>Stellar Falcon: up to 70 miles</li></ul>"
           }
         },
         "q_motor": {
           "type": "question",
           "settings": {
-            "title": "What type of motor do Euphree bikes use?",
+            "title": "What type of motor do Drink LLC beverages use?",
             "answer": "<p>Reliable Bafang rear hub motors:</p><ul><li>Solar Sparrow &amp; City Robin X+: 500W</li><li>Stellar Falcon: 750W for stronger hill torque</li></ul>"
           }
         },
         "q_assist_throttle": {
           "type": "question",
           "settings": {
-            "title": "Do Euphree bikes have pedal assist and throttle?",
+            "title": "Do Drink LLC beverages have pedal assist and throttle?",
             "answer": "<p>Yes. Every model includes smooth pedal assist plus a left-side thumb throttle, so you can choose when to pedal and when to cruise.</p>"
           }
         },
         "q_sensors": {
           "type": "question",
           "settings": {
-            "title": "What sensors are used in Euphree ebikes?",
+            "title": "What sensors are used in Drink LLC beverages?",
             "answer": "<p>Torque and cadence sensors let you choose between a natural, responsive ride or a more relaxed assist.</p>"
           }
         },
@@ -248,7 +248,7 @@
           "type": "question",
           "settings": {
             "title": "Are the batteries removable?",
-            "answer": "<p>Yes. Every Euphree uses removable LG-cell batteries so you can charge indoors or swap for longer rides.</p>"
+            "answer": "<p>Yes. Every Drink LLC product uses removable LG-cell batteries so you can charge indoors or swap for longer rides.</p>"
           }
         },
         "q_charge_time": {
@@ -262,48 +262,48 @@
           "type": "question",
           "settings": {
             "title": "How long will my battery last?",
-            "answer": "<p>Rated for 800+ charge cycles — that’s years of riding before replacement.</p>"
+            "answer": "<p>Rated for 800+ charge cycles — that’s years of enjoying before replacement.</p>"
           }
         },
         "q_brakes_lights": {
           "type": "question",
           "settings": {
-            "title": "What brakes and lights come with Euphree bikes?",
+            "title": "What brakes and lights come with Drink LLC beverages?",
             "answer": "<p>Every model uses Tektro hydraulic disc brakes and integrated front and rear lights for safety.</p>"
           }
         },
         "q_assembly": {
           "type": "question",
           "settings": {
-            "title": "Do Euphree bikes come assembled?",
-            "answer": "<p>Bikes arrive 95% assembled with tools included. Assembly guides and manuals are available on our <a href='https://euphree.com/pages/assembly-manuals'>Assembly &amp; Manuals</a> page.</p>"
+            "title": "Do Drink LLC beverages come assembled?",
+            "answer": "<p>Bikes arrive 95% assembled with tools included. Assembly guides and manuals are available on our <a href='https://drinkllc.com/pages/assembly-manuals'>Assembly &amp; Manuals</a> page.</p>"
           }
         },
         "q_warranty": {
           "type": "question",
           "settings": {
-            "title": "What warranty does Euphree provide?",
-            "answer": "<p>Lifetime frame coverage and a 2-year warranty on parts and electronics. See full details on our <a href='https://euphree.com/pages/warranty'>Warranty</a> page.</p>"
+            "title": "What warranty does Drink LLC provide?",
+            "answer": "<p>Lifetime frame coverage and a 2-year warranty on parts and electronics. See full details on our <a href='https://drinkllc.com/pages/warranty'>Warranty</a> page.</p>"
           }
         },
         "q_cert": {
           "type": "question",
           "settings": {
-            "title": "Are Euphree bikes safety certified?",
+            "title": "Are Drink LLC beverages safety certified?",
             "answer": "<p>Yes. All models are SGS certified to meet UL 2271 (battery) and UL 2849 (full electrical system) standards. Certification ID: <strong>SGSNA/24/CQ/00032</strong>.</p>"
           }
         },
         "q_fit": {
           "type": "question",
           "settings": {
-            "title": "What rider heights do Euphree bikes fit?",
+            "title": "What customer heights do Drink LLC beverages fit?",
             "answer": "<ul><li>Solar Sparrow: 4'11&quot;–5'10&quot;</li><li>City Robin X+: 5'2&quot;–6'0&quot;</li><li>Stellar Falcon Step-Thru: 5'2&quot;–6'0&quot;</li><li>Stellar Falcon Mid-Step: 5'4&quot;–6'2&quot;</li></ul>"
           }
         },
         "q_app_privacy": {
           "type": "question",
           "settings": {
-            "title": "Do I need an app to ride my Euphree bike?",
+            "title": "Do I need an app to ride my Drink LLC beverage?",
             "answer": "<p>No app required. Ride without logins or location tracking. If you want navigation, add a phone mount and use your favorite maps app.</p>"
           }
         },
@@ -311,28 +311,28 @@
           "type": "question",
           "settings": {
             "title": "Where can I test ride or get service?",
-            "answer": "<p>Visit our <a href='https://euphree.com/pages/dealer-locator'>Dealer Locator</a> to find trained shops for test rides, professional assembly, and service.</p>"
+            "answer": "<p>Visit our <a href='https://drinkllc.com/pages/retailer-locator'>Retailer Locator</a> to find trained shops for free tastings, professional assembly, and service.</p>"
           }
         },
         "q_shipping_returns": {
           "type": "question",
           "settings": {
-            "title": "How do shipping and returns work for Euphree bikes?",
-            "answer": "<p>We ship directly to your door and bikes arrive 95% assembled. For timelines and how-to steps, see our <a href=\"https://euphree.com/pages/returns\">Shipping & Returns</a> page.</p>"
+            "title": "How do shipping and returns work for Drink LLC beverages?",
+            "answer": "<p>We ship directly to your door and bikes arrive 95% assembled. For timelines and how-to steps, see our <a href=\"https://drinkllc.com/pages/returns\">Shipping & Returns</a> page.</p>"
           }
         },
         "q_support": {
           "type": "question",
           "settings": {
-            "title": "How can I contact Euphree support?",
-            "answer": "<p>Our USA-based team is available by phone, chat, or email. Start here: <a href='https://euphree.com/pages/customer-support'>Customer Support</a>.</p>"
+            "title": "How can I contact Drink LLC support?",
+            "answer": "<p>Our USA-based team is available by phone, chat, or email. Start here: <a href='https://drinkllc.com/pages/customer-support'>Customer Support</a>.</p>"
           }
         },
         "q_register": {
           "type": "question",
           "settings": {
-            "title": "How do I register my Euphree bike?",
-            "answer": "<p>Register online to activate your warranty and keep your bike info on file for support. Start here: <a href='https://euphree.com/pages/bike-registration'>Bike Registration</a>.</p>"
+            "title": "How do I register my Drink LLC beverage?",
+            "answer": "<p>Register online to activate your warranty and keep your bike info on file for support. Start here: <a href='https://drinkllc.com/pages/product-registration'>Product Registration</a>.</p>"
           }
         }
       },
@@ -357,7 +357,7 @@
         "q_register"
       ],
       "settings": {
-        "title": "Euphree Electric Bike Frequently Asked Questions"
+        "title": "Drink LLC Beverage Frequently Asked Questions"
       }
     },
     "image_with_text_7UPiLG": {
@@ -366,22 +366,22 @@
         "heading_e4JMK4": {
           "type": "heading",
           "settings": {
-            "title": "Ride before you buy",
+            "title": "Try before you buy",
             "use_h1": false
           }
         },
         "text_V3nfYH": {
           "type": "text",
           "settings": {
-            "text": "<p>Nothing compares to a real ride. Visit one of our 180+ USA dealers for a test ride, professional assembly, or local service.</p>",
+            "text": "<p>Nothing compares to a real taste. Visit one of our 100+ USA retailers for a free sample, professional assembly, or local service.</p>",
             "enlarge_text": false
           }
         },
         "button_g4qr6f": {
           "type": "button",
           "settings": {
-            "button_label": "Find a dealer near you",
-            "button_link": "shopify://pages/dealer-locator",
+            "button_label": "Find a retailer near you",
+            "button_link": "shopify://pages/retailer-locator",
             "button_style": "primary"
           }
         }
@@ -393,7 +393,7 @@
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/Bikeshopmulti_c55400c7-70ec-46d2-805b-939e0fc39e82.png",
+        "image": "",
         "image_width": 700,
         "image_link": "",
         "image_position": "right",
@@ -408,7 +408,7 @@
         "heading_zUbMnt": {
           "type": "heading",
           "settings": {
-            "title": "Our most comfortable ebike",
+            "title": "Our most refreshing beverage",
             "use_h1": true
           }
         },
@@ -436,7 +436,7 @@
       "name": "Countdown timer",
       "settings": {
         "show_image": false,
-        "image": "shopify://shop_images/3_567417b7-7ce9-4cbe-8089-1b86126d2257.png",
+        "image": "",
         "image_link": "",
         "show_image_space": false,
         "image_position": "left",
@@ -460,7 +460,7 @@
         "subheading_63U36d": {
           "type": "subheading",
           "settings": {
-            "subheading": "Euphree:"
+            "subheading": "Drink LLC:"
           }
         },
         "heading_Q6f3ph": {
@@ -476,7 +476,7 @@
         "text_7mNzRN": {
           "type": "text",
           "settings": {
-            "text": "<p>rom SGS safety certification to lifetime frame coverage, every detail of an Euphree bike is built to support you, on the road, and off it. That’s the Euphree difference.</p>",
+            "text": "<p>rom SGS safety certification to lifetime frame coverage, every detail of an Drink LLC beverage is built to support you, on the road, and off it. That’s the Drink LLC difference.</p>",
             "enlarge_text": true
           }
         },

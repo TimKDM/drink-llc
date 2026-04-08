@@ -1,7 +1,7 @@
-<!-- Euphree Accessories Section — Shopify Custom Liquid with Theme Customizer editability -->
+<!-- Drink Accessories Section — Shopify Custom Liquid with Theme Customizer editability -->
 <!-- 4-card accessory grid + highlight callout section -->
 <style>
-.euphree-accessories {
+.drink-accessories {
   padding: 120px 48px;
   background: #ffffff;
   font-family: var(--base-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -9,31 +9,31 @@
   position: relative;
   overflow: hidden;
 }
-.euphree-accessories-bg {
+.drink-accessories-bg {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 0;
 }
-.euphree-accessories-bg img {
+.drink-accessories-bg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.euphree-accessories-overlay {
+.drink-accessories-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 1;
 }
-.euphree-accessories > *:not(.euphree-accessories-bg):not(.euphree-accessories-overlay) {
+.drink-accessories > *:not(.drink-accessories-bg):not(.drink-accessories-overlay) {
   position: relative;
   z-index: 2;
 }
-.euphree-accessories * { box-sizing: border-box; margin: 0; padding: 0; }
-.euphree-acc-header {
+.drink-accessories * { box-sizing: border-box; margin: 0; padding: 0; }
+.drink-acc-header {
   text-align: center;
   margin-bottom: 32px;
 }
-.euphree-acc-eyebrow {
+.drink-acc-eyebrow {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2.5px;
@@ -41,14 +41,14 @@
   color: #888888;
   margin-bottom: 16px;
 }
-.euphree-acc-header h2 {
+.drink-acc-header h2 {
   font-family: var(--heading-font-family), serif;
   font-size: 56px;
   font-weight: 700;
   color: #121212;
   line-height: 1.1;
 }
-.euphree-acc-intro {
+.drink-acc-intro {
   max-width: 700px;
   margin: 0 auto 64px;
   text-align: center;
@@ -56,15 +56,15 @@
   line-height: 1.7;
   color: #555555;
 }
-.euphree-acc-intro strong { color: #121212; }
-.euphree-acc-grid {
+.drink-acc-intro strong { color: #121212; }
+.drink-acc-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   max-width: 1300px;
   margin: 0 auto 48px;
 }
-.euphree-acc-card {
+.drink-acc-card {
   border-radius: 16px;
   overflow: hidden;
   background: #ffffff;
@@ -73,8 +73,8 @@
   display: flex;
   flex-direction: column;
 }
-.euphree-acc-card:hover { transform: translateY(-4px); }
-.euphree-acc-card a.euphree-acc-card-link {
+.drink-acc-card:hover { transform: translateY(-4px); }
+.drink-acc-card a.drink-acc-card-link {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -82,7 +82,7 @@
   text-decoration: none;
   color: inherit;
 }
-.euphree-acc-card-img {
+.drink-acc-card-img {
   width: 100%;
   aspect-ratio: 1;
   display: flex;
@@ -90,19 +90,19 @@
   justify-content: center;
   background: linear-gradient(180deg, #f5f5f3 0%, #eeeee8 100%);
 }
-.euphree-acc-card-img img {
+.drink-acc-card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.euphree-acc-card-label {
+.drink-acc-card-label {
   padding: 16px 20px;
   background: #ffffff;
   color: #121212;
 }
-.euphree-acc-card-label h4 { font-size: 18px; font-weight: 700; margin-bottom: 2px; color: #121212; }
-.euphree-acc-card-label p { font-size: 14px; color: #555555; }
-.euphree-acc-highlight {
+.drink-acc-card-label h4 { font-size: 18px; font-weight: 700; margin-bottom: 2px; color: #121212; }
+.drink-acc-card-label p { font-size: 14px; color: #555555; }
+.drink-acc-highlight {
   max-width: 1300px;
   margin: 0 auto;
   background: #f5f5f3;
@@ -113,17 +113,17 @@
   gap: 48px;
   align-items: center;
 }
-.euphree-acc-highlight-visual {
+.drink-acc-highlight-visual {
   border-radius: 12px;
   overflow: hidden;
 }
-.euphree-acc-highlight-visual img {
+.drink-acc-highlight-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
 }
-.euphree-acc-highlight h3 {
+.drink-acc-highlight h3 {
   font-family: var(--heading-font-family), serif;
   font-size: 36px;
   font-weight: 700;
@@ -131,13 +131,13 @@
   line-height: 1.2;
   color: #121212;
 }
-.euphree-acc-highlight p {
+.drink-acc-highlight p {
   font-size: 17px;
   line-height: 1.7;
   color: #555555;
   margin-bottom: 24px;
 }
-.euphree-acc-highlight .euphree-btn-acc {
+.drink-acc-highlight .drink-btn-acc {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -153,7 +153,7 @@
   cursor: pointer;
   transition: all 0.25s;
 }
-.euphree-acc-highlight .euphree-btn-acc:hover {
+.drink-acc-highlight .drink-btn-acc:hover {
   background: #2563b8;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(46,114,210,0.3);
@@ -161,57 +161,57 @@
 
 /* Tablet */
 @media (max-width: 1024px) {
-  .euphree-acc-grid { grid-template-columns: repeat(2, 1fr); }
-  .euphree-acc-highlight { grid-template-columns: 1fr; padding: 40px; }
-  .euphree-acc-header h2 { font-size: 40px; }
+  .drink-acc-grid { grid-template-columns: repeat(2, 1fr); }
+  .drink-acc-highlight { grid-template-columns: 1fr; padding: 40px; }
+  .drink-acc-header h2 { font-size: 40px; }
 }
 /* Mobile */
 @media (max-width: 768px) {
-  .euphree-accessories { padding: 64px 20px; }
-  .euphree-acc-header h2 { font-size: 32px; }
-  .euphree-acc-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-  .euphree-acc-intro { font-size: 15px; margin-bottom: 40px; padding: 0; }
-  .euphree-acc-highlight { padding: 24px; gap: 24px; border-radius: 16px; }
-  .euphree-acc-highlight h3 { font-size: 26px; }
-  .euphree-acc-highlight p { font-size: 15px; }
-  .euphree-acc-card-label h4 { font-size: 15px; }
-  .euphree-acc-card-label p { font-size: 12px; }
-  .euphree-acc-card-label { padding: 14px; }
+  .drink-accessories { padding: 64px 20px; }
+  .drink-acc-header h2 { font-size: 32px; }
+  .drink-acc-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .drink-acc-intro { font-size: 15px; margin-bottom: 40px; padding: 0; }
+  .drink-acc-highlight { padding: 24px; gap: 24px; border-radius: 16px; }
+  .drink-acc-highlight h3 { font-size: 26px; }
+  .drink-acc-highlight p { font-size: 15px; }
+  .drink-acc-card-label h4 { font-size: 15px; }
+  .drink-acc-card-label p { font-size: 12px; }
+  .drink-acc-card-label { padding: 14px; }
 }
 @media (max-width: 480px) {
-  .euphree-acc-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
-  .euphree-acc-highlight h3 { font-size: 22px; }
-  .euphree-acc-header h2 { font-size: 28px; }
+  .drink-acc-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .drink-acc-highlight h3 { font-size: 22px; }
+  .drink-acc-header h2 { font-size: 28px; }
 }
 </style>
 
-<section class="euphree-accessories">
+<section class="drink-accessories">
   {% if section.settings.bg_image != blank %}
-    <div class="euphree-accessories-bg">
+    <div class="drink-accessories-bg">
       <img src="{{ section.settings.bg_image | image_url: width: 1920 }}" alt="" width="{{ section.settings.bg_image.width }}" height="{{ section.settings.bg_image.height }}" loading="lazy">
     </div>
-    <div class="euphree-accessories-overlay" style="background: {{ section.settings.overlay_color }}"></div>
+    <div class="drink-accessories-overlay" style="background: {{ section.settings.overlay_color }}"></div>
   {% endif %}
-  <div class="euphree-acc-header">
-    <div class="euphree-acc-eyebrow">{{ section.settings.eyebrow }}</div>
+  <div class="drink-acc-header">
+    <div class="drink-acc-eyebrow">{{ section.settings.eyebrow }}</div>
     <h2>{{ section.settings.heading }}</h2>
   </div>
-  <div class="euphree-acc-intro">
+  <div class="drink-acc-intro">
     {{ section.settings.intro_text }}
   </div>
 
-  <div class="euphree-acc-grid">
+  <div class="drink-acc-grid">
     {% for block in section.blocks %}
-      <div class="euphree-acc-card" {{ block.shopify_attributes }}>
+      <div class="drink-acc-card" {{ block.shopify_attributes }}>
         {% if block.settings.link != blank %}
-          <a href="{{ block.settings.link }}" class="euphree-acc-card-link">
+          <a href="{{ block.settings.link }}" class="drink-acc-card-link">
         {% endif %}
-          <div class="euphree-acc-card-img">
+          <div class="drink-acc-card-img">
             {% if block.settings.image != blank %}
               <img src="{{ block.settings.image | image_url: width: 900 }}" alt="{{ block.settings.name }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" loading="lazy">
             {% endif %}
           </div>
-          <div class="euphree-acc-card-label">
+          <div class="drink-acc-card-label">
             <h4>{{ block.settings.name }}</h4>
             <p>{{ block.settings.description }}</p>
           </div>
@@ -223,8 +223,8 @@
   </div>
 
   <!-- Highlight callout -->
-  <div class="euphree-acc-highlight">
-    <div class="euphree-acc-highlight-visual">
+  <div class="drink-acc-highlight">
+    <div class="drink-acc-highlight-visual">
       {% if section.settings.highlight_image != blank %}
         <img src="{{ section.settings.highlight_image | image_url: width: 800 }}" alt="{{ section.settings.highlight_heading }}" width="{{ section.settings.highlight_image.width }}" height="{{ section.settings.highlight_image.height }}" loading="lazy">
       {% endif %}
@@ -233,7 +233,7 @@
       <h3>{{ section.settings.highlight_heading }}</h3>
       <p>{{ section.settings.highlight_description }}</p>
       {% if section.settings.highlight_button_label != blank %}
-        <a href="{{ section.settings.highlight_button_url }}" class="euphree-btn-acc">{{ section.settings.highlight_button_label }}</a>
+        <a href="{{ section.settings.highlight_button_url }}" class="drink-btn-acc">{{ section.settings.highlight_button_label }}</a>
       {% endif %}
     </div>
   </div>
@@ -241,26 +241,26 @@
 
 {% schema %}
 {
-  "name": "Euphree Accessories",
-  "class": "section-euphree-accessories",
+  "name": "Drink Accessories",
+  "class": "section-drink-accessories",
   "settings": [
     {
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow",
-      "default": "Designed to Fit"
+      "default": "Extras & Gifts"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Good Accessories Are the Key to Getting the Most Out of Your Bike"
+      "default": "Complete Your Drink Experience"
     },
     {
       "type": "richtext",
       "id": "intro_text",
       "label": "Intro Text",
-      "default": "<p>Without accessories, it's just a bike and a backpack — and a sweaty back. A lot of brands don't have their own accessories, or they have cheap ones that don't fit the bike. <strong>Euphree designed a full line of bags, baskets, locks, and panniers that fit our bikes perfectly.</strong> No mix and match. No compromise.</p>"
+      "default": "<p>From tumblers and gift sets to variety packs, we have everything you need to enjoy Drink wherever you go. <strong>Every accessory is designed to complement our beverages and make the perfect gift.</strong></p>"
     },
     {
       "type": "image_picker",
@@ -271,19 +271,19 @@
       "type": "text",
       "id": "highlight_heading",
       "label": "Highlight Heading",
-      "default": "Designed Specifically for Euphree Bikes"
+      "default": "The Perfect Gift for Any Occasion"
     },
     {
       "type": "textarea",
       "id": "highlight_description",
       "label": "Highlight Description",
-      "default": "Most brands don't have their own accessories — or they have cheap ones that don't fit well. Euphree designed every bag, basket, and lock to integrate perfectly with your bike. Customers consistently tell us they'd choose a well-accessorized bike over a higher-spec bare one."
+      "default": "Whether it's a birthday, holiday, or just because — our gift sets and variety packs let you share the refreshment. Curated collections featuring all five of our signature flavors."
     },
     {
       "type": "text",
       "id": "highlight_button_label",
       "label": "Highlight Button Label",
-      "default": "Shop All Accessories →"
+      "default": "Shop All Extras →"
     },
     {
       "type": "url",
@@ -339,43 +339,43 @@
   ],
   "presets": [
     {
-      "name": "Euphree Accessories",
+      "name": "Drink Accessories",
       "settings": {
-        "eyebrow": "Designed to Fit",
-        "heading": "Good Accessories Are the Key to Getting the Most Out of Your Bike",
-        "intro_text": "<p>Without accessories, it's just a bike and a backpack — and a sweaty back. A lot of brands don't have their own accessories, or they have cheap ones that don't fit the bike. <strong>Euphree designed a full line of bags, baskets, locks, and panniers that fit our bikes perfectly.<\/strong> No mix and match. No compromise.<\/p>",
-        "highlight_heading": "Designed Specifically for Euphree Bikes",
-        "highlight_description": "Most brands don't have their own accessories — or they have cheap ones that don't fit well. Euphree designed every bag, basket, and lock to integrate perfectly with your bike. Customers consistently tell us they'd choose a well-accessorized bike over a higher-spec bare one.",
-        "highlight_button_label": "Shop All Accessories →",
-        "highlight_button_url": "/collections/electric-bike-accessories"
+        "eyebrow": "Extras & Gifts",
+        "heading": "Complete Your Drink Experience",
+        "intro_text": "<p>From tumblers and gift sets to variety packs, we have everything you need to enjoy Drink wherever you go. <strong>Every accessory is designed to complement our beverages and make the perfect gift.<\/strong><\/p>",
+        "highlight_heading": "The Perfect Gift for Any Occasion",
+        "highlight_description": "Whether it's a birthday, holiday, or just because — our gift sets and variety packs let you share the refreshment. Curated collections featuring all five of our signature flavors.",
+        "highlight_button_label": "Shop All Extras →",
+        "highlight_button_url": "/collections/accessories"
       },
       "blocks": [
         {
           "type": "accessory",
           "settings": {
-            "name": "Front Basket",
-            "description": "Aluminum, 25lb capacity"
+            "name": "Insulated Tumbler",
+            "description": "Keeps drinks cold for 12 hours"
           }
         },
         {
           "type": "accessory",
           "settings": {
-            "name": "Stem Bag",
-            "description": "Quick-access essentials"
+            "name": "5-Flavor Gift Set",
+            "description": "One of each flavor, beautifully boxed"
           }
         },
         {
           "type": "accessory",
           "settings": {
-            "name": "Trunk Bag",
-            "description": "Secure, spacious rear storage"
+            "name": "Variety Pack (12-ct)",
+            "description": "Mix of all five flavors"
           }
         },
         {
           "type": "accessory",
           "settings": {
-            "name": "Cafe Lock Chain",
-            "description": "Steel folding security"
+            "name": "Branded Tote Bag",
+            "description": "Reusable, eco-friendly carry bag"
           }
         }
       ]

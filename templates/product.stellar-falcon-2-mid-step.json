@@ -67,12 +67,12 @@
             "show_gift_card_recipient": false
           }
         },
-        "dealer_popup": {
+        "retailer_popup": {
           "type": "pop-up",
           "settings": {
-            "text": "Prefer a test ride? Find a dealer",
+            "text": "Prefer to try in store? Find a retailer",
             "style": "secondary btn--wide",
-            "page": "dealer-locator",
+            "page": "retailer-locator",
             "show_in_quickbuy": false
           }
         },
@@ -141,7 +141,7 @@
         "variant_picker",
         "richtext_UDrAtU",
         "buy_buttons",
-        "dealer_popup",
+        "retailer_popup",
         "sizing_trigger",
         "specs_trigger",
         "sharing",
@@ -318,7 +318,7 @@
           "settings": {
             "video_id": "jfsvEP3qsPg",
             "video_title": "New Stellar Falcon Review",
-            "channel_name": "Ebike Reviewer",
+            "channel_name": "Beverage Reviewer",
             "quote": ""
           }
         }
@@ -331,7 +331,7 @@
       "name": "YouTube Reviews",
       "settings": {
         "title": "What Reviewers Are Saying",
-        "subtitle": "See what top ebike reviewers think about Euphree",
+        "subtitle": "See what top beverage reviewers think about Drink LLC",
         "bg_color": "rgba(0,0,0,0)"
       }
     },
@@ -341,14 +341,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "title": "Your Ultimate All Terrain Ebike",
+            "title": "Your Ultimate All Terrain Beverage",
             "use_h1": true
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Designed for riders who want no bounds and total control — whether on a trail, commuting or enjoying weekend rides.  The Stellar Falcon is built with premium name-brand components and backed by real support from Houston, Texas.</p>",
+            "text": "<p>Designed for customers who want no bounds and total control — whether on a trail, commuting or enjoying weekend rides.  The Stellar Falcon is built with premium name-brand components and backed by real support from Houston, Texas.</p>",
             "enlarge_text": false
           }
         }
@@ -571,7 +571,7 @@
           "settings": {
             "stars": 5,
             "title": "Awesome bike and excellent customer service!",
-            "body": "Great so far after just a month. Had some initial shipping issues but Euphree made everything right and did so quickly. Their customer service has been top notch. It is a high quality bike and I couldn't be happier with the purchase.",
+            "body": "Great so far after just a month. Had some initial shipping issues but Drink LLC made everything right and did so quickly. Their customer service has been top notch. It is a high quality bike and I couldn't be happier with the purchase.",
             "author": "Matt W.",
             "verified": true
           }
@@ -602,11 +602,11 @@
         "review_2",
         "review_3"
       ],
-      "name": "Rider Reviews",
+      "name": "Customer Reviews",
       "settings": {
         "eyebrow": "Testimonials",
-        "heading": "Why Riders Love the Stellar Falcon",
-        "subtitle": "Real Customer Stories · Join 8,000+ Happy Riders"
+        "heading": "Why Customers Love the Stellar Falcon",
+        "subtitle": "Real Customer Stories · Join 8,000+ Happy Customers"
       }
     },
     "image_with_text_e4V8hw": {
@@ -615,22 +615,22 @@
         "heading_Ggfqpz": {
           "type": "heading",
           "settings": {
-            "title": "Prefer a Test Ride or Setup Help?",
+            "title": "Prefer to Try In Store?",
             "use_h1": true
           }
         },
         "text_Tht3dK": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Find a Euphree dealer near you. </strong>USA-based support included with every bike.</p>",
+            "text": "<p><strong>Find a Drink LLC retailer near you. </strong>USA-based support included with every bike.</p>",
             "enlarge_text": true
           }
         },
         "button_tfA8Xd": {
           "type": "button",
           "settings": {
-            "button_label": "Bike Shop Dealer Locator",
-            "button_link": "shopify://pages/dealer-locator",
+            "button_label": "Bike Shop Retailer Locator",
+            "button_link": "shopify://pages/retailer-locator",
             "button_style": "primary"
           }
         }
@@ -688,7 +688,7 @@
       "name": "Accessories Grid",
       "settings": {
         "title": "Accessories to Match Your Ride",
-        "subtitle": "Custom-designed to fit your Euphree perfectly. Add comfort, storage, and security.",
+        "subtitle": "Custom-designed to fit your Drink LLC product perfectly. Add comfort, storage, and security.",
         "view_all_label": "Shop All Accessories",
         "view_all_url": "shopify://collections/electric-bike-accessories"
       }
@@ -700,7 +700,7 @@
           "type": "question",
           "settings": {
             "title": "Who is this bike for?",
-            "answer": "<p>Riders looking for comfort, safety, and control — whether commuting, running errands, or enjoying weekend rides.</p>"
+            "answer": "<p>Customers looking for comfort, safety, and control — whether commuting, running errands, or enjoying weekend rides.</p>"
           }
         },
         "q_range": {
@@ -721,14 +721,14 @@
           "type": "question",
           "settings": {
             "title": "Can I service it locally?",
-            "answer": "<p>Yes. We partner with 180+ USA dealers for professional service and test rides. <a href=\"/pages/dealer-locator\" target=\"_blank\" title=\"Dealer Locator\">Find a dealer near you</a>.</p>"
+            "answer": "<p>Yes. We partner with 100+ USA retailers for professional service and free tastings. <a href=\"/pages/retailer-locator\" target=\"_blank\" title=\"Retailer Locator\">Find a retailer near you</a>.</p>"
           }
         },
         "q_warranty": {
           "type": "question",
           "settings": {
             "title": "What warranty is included?",
-            "answer": "<p>Every Euphree comes with a 2-year full warranty covering frame, motor, battery, and components — plus lifetime frame coverage.</p>"
+            "answer": "<p>Every Drink LLC product comes with a 2-year full warranty covering frame, motor, battery, and components — plus lifetime frame coverage.</p>"
           }
         }
       },
@@ -755,7 +755,7 @@
       "block_order": [
         "klaviyo_reviews_list"
       ],
-      "name": "What Riders Are Saying",
+      "name": "What Customers Are Saying",
       "settings": {
         "heading": "",
         "subheading": "",
@@ -768,7 +768,7 @@
       "type": "background-video",
       "name": "Background video",
       "settings": {
-        "video_shopify": "shopify://files/videos/Euphreevideo.mp4",
+        "video_shopify": "shopify://files/videos/Drink LLCvideo.mp4",
         "video_external": "",
         "video_description": "",
         "text_alignment": "center center",
@@ -811,7 +811,7 @@
         "m_height": {
           "type": "measurement",
           "settings": {
-            "label": "Rider Heights",
+            "label": "Customer Heights",
             "value": "5'4\" – 6'2\""
           }
         },

@@ -1,27 +1,27 @@
-{{ 'euphree-support-portal.css' | asset_url | stylesheet_tag }}
+{{ 'drink-support-portal.css' | asset_url | stylesheet_tag }}
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
-<div id="eu-portal">
+<div id="drink-portal">
 
 <!-- Page Header -->
-<div class="eu-page-header">
-  <div class="eu-eyebrow">{{ section.settings.eyebrow }}</div>
+<div class="drink-page-header">
+  <div class="drink-eyebrow">{{ section.settings.eyebrow }}</div>
   <h1>{{ section.settings.heading }}</h1>
   <p>{{ section.settings.subheading }}</p>
-  <div class="eu-trust-strip">
-    <div class="eu-trust-item">
+  <div class="drink-trust-strip">
+    <div class="drink-trust-item">
       <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
       {{ section.settings.trust_1 }}
     </div>
-    <div class="eu-trust-item">
+    <div class="drink-trust-item">
       <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.14 2.2 2 2 0 012.11 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006 6l1.27-.46a2 2 0 012.11.45 12.84 12.84 0 002.81.7A2 2 0 0121 16.92z"/></svg>
       {{ section.settings.trust_2 }}
     </div>
-    <div class="eu-trust-item">
+    <div class="drink-trust-item">
       <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
       {{ section.settings.trust_3 }}
     </div>
-    <div class="eu-trust-item">
+    <div class="drink-trust-item">
       <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
       {{ section.settings.trust_4 }}
     </div>
@@ -29,36 +29,36 @@
 </div>
 
 <!-- Main Body -->
-<div class="eu-body">
+<div class="drink-body">
 
   <!-- S0: Choose Audience -->
-  <div class="eu-screen eu-active" id="eu-s0">
-    <div class="eu-aud-grid">
-      <button class="eu-aud-btn" onclick="euSetAud('dtc')">
-        <div class="eu-aud-ico">
+  <div class="drink-screen drink-active" id="drink-s0">
+    <div class="drink-aud-grid">
+      <button class="drink-aud-btn" onclick="drinkSetAud('dtc')">
+        <div class="drink-aud-ico">
           <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
         </div>
-        <div class="eu-aud-title">I'm a Customer</div>
-        <div class="eu-aud-desc">Pre-purchase questions, shipping issues, warranty support, or help with your Euphree bike.</div>
-        <div class="eu-aud-tags">
-          <span class="eu-aud-tag">Product Questions</span>
-          <span class="eu-aud-tag">Shipping Issues</span>
-          <span class="eu-aud-tag">Warranty &amp; Repairs</span>
+        <div class="drink-aud-title">I'm a Customer</div>
+        <div class="drink-aud-desc">Pre-purchase questions, shipping issues, satisfaction guarantee, or help with your Drink order.</div>
+        <div class="drink-aud-tags">
+          <span class="drink-aud-tag">Product Questions</span>
+          <span class="drink-aud-tag">Shipping Issues</span>
+          <span class="drink-aud-tag">Returns &amp; Refunds</span>
         </div>
-        <div class="eu-aud-cta">Get Help <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="drink-aud-cta">Get Help <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
       </button>
-      <button class="eu-aud-btn" onclick="euSetAud('dlr')">
-        <div class="eu-aud-ico">
+      <button class="drink-aud-btn" onclick="drinkSetAud('dlr')">
+        <div class="drink-aud-ico">
           <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         </div>
-        <div class="eu-aud-title">I'm a Dealer</div>
-        <div class="eu-aud-desc">Shipping damage claims, floor bike issues, or submit a customer warranty on behalf of your shop.</div>
-        <div class="eu-aud-tags">
-          <span class="eu-aud-tag">Shipping Damage</span>
-          <span class="eu-aud-tag">Floor Bikes</span>
-          <span class="eu-aud-tag">Customer Warranty</span>
+        <div class="drink-aud-title">I'm a Dealer</div>
+        <div class="drink-aud-desc">Shipping damage claims, display stock issues, or submit a customer return on behalf of your store.</div>
+        <div class="drink-aud-tags">
+          <span class="drink-aud-tag">Shipping Damage</span>
+          <span class="drink-aud-tag">Product Display</span>
+          <span class="drink-aud-tag">Customer Returns</span>
         </div>
-        <div class="eu-aud-cta">Submit Request <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        <div class="drink-aud-cta">Submit Request <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
       </button>
     </div>
   </div>
@@ -66,189 +66,189 @@
   <!-- DTC FLOW -->
 
   <!-- DTC-1: Issue Category -->
-  <div class="eu-screen" id="eu-dtc1">
-    <div class="eu-progress">
-      <div class="eu-prog-step eu-curr"><div class="eu-prog-dot">1</div><div class="eu-prog-label">Category</div></div>
-      <div class="eu-prog-line"></div>
-      <div class="eu-prog-step"><div class="eu-prog-dot">2</div><div class="eu-prog-label">Details</div></div>
-      <div class="eu-prog-line"></div>
-      <div class="eu-prog-step"><div class="eu-prog-dot">3</div><div class="eu-prog-label">Review</div></div>
+  <div class="drink-screen" id="drink-dtc1">
+    <div class="drink-progress">
+      <div class="drink-prog-step drink-curr"><div class="drink-prog-dot">1</div><div class="drink-prog-label">Category</div></div>
+      <div class="drink-prog-line"></div>
+      <div class="drink-prog-step"><div class="drink-prog-dot">2</div><div class="drink-prog-label">Details</div></div>
+      <div class="drink-prog-line"></div>
+      <div class="drink-prog-step"><div class="drink-prog-dot">3</div><div class="drink-prog-label">Review</div></div>
     </div>
-    <div class="eu-card">
-      <div class="eu-card-title">What can we help with?</div>
-      <div class="eu-card-sub">Choose the option that best describes your situation.</div>
-      <div class="eu-issue-grid eu-two">
-        <button class="eu-issue-btn" onclick="euPickDtc('inquiry')" id="eu-dtc-inquiry">
-          <div class="eu-issue-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
-          <div class="eu-issue-title">General Product Inquiry</div>
-          <div class="eu-issue-desc">Questions before you buy — models, sizing, features.</div>
+    <div class="drink-card">
+      <div class="drink-card-title">What can we help with?</div>
+      <div class="drink-card-sub">Choose the option that best describes your situation.</div>
+      <div class="drink-issue-grid drink-two">
+        <button class="drink-issue-btn" onclick="drinkPickDtc('inquiry')" id="drink-dtc-inquiry">
+          <div class="drink-issue-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+          <div class="drink-issue-title">General Product Inquiry</div>
+          <div class="drink-issue-desc">Questions before you buy — flavors, ingredients, nutrition.</div>
         </button>
-        <button class="eu-issue-btn" onclick="euPickDtc('existing')" id="eu-dtc-existing">
-          <div class="eu-issue-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6l-4 11M5.5 17.5L9 8h6l3.5 9.5M9 8l2-2h2"/><path d="M8 14h7"/></svg></div>
-          <div class="eu-issue-title">Issue with My Bike or Order</div>
-          <div class="eu-issue-desc">Already own an Euphree — shipping, warranty, or bike problem.</div>
+        <button class="drink-issue-btn" onclick="drinkPickDtc('existing')" id="drink-dtc-existing">
+          <div class="drink-issue-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6l-4 11M5.5 17.5L9 8h6l3.5 9.5M9 8l2-2h2"/><path d="M8 14h7"/></svg></div>
+          <div class="drink-issue-title">Issue with My Order or Product</div>
+          <div class="drink-issue-desc">Already purchased Drink — shipping, quality, or order problem.</div>
         </button>
       </div>
-      <div class="eu-btn-row">
-        <button class="eu-btn-back" onclick="euGo('eu-s0')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
-        <button class="eu-btn-next" id="eu-dtc1-next" disabled onclick="euDtc1Next()">Continue <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      <div class="drink-btn-row">
+        <button class="drink-btn-back" onclick="drinkGo('drink-s0')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
+        <button class="drink-btn-next" id="drink-dtc1-next" disabled onclick="drinkDtc1Next()">Continue <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
       </div>
     </div>
   </div>
 
   <!-- DTC-2a: General Inquiry form -->
-  <div class="eu-screen" id="eu-dtc2a">
-    <div class="eu-progress">
-      <div class="eu-prog-step eu-done"><div class="eu-prog-dot">&#10003;</div><div class="eu-prog-label">Category</div></div>
-      <div class="eu-prog-line eu-done"></div>
-      <div class="eu-prog-step eu-curr"><div class="eu-prog-dot">2</div><div class="eu-prog-label">Details</div></div>
-      <div class="eu-prog-line"></div>
-      <div class="eu-prog-step"><div class="eu-prog-dot">3</div><div class="eu-prog-label">Review</div></div>
+  <div class="drink-screen" id="drink-dtc2a">
+    <div class="drink-progress">
+      <div class="drink-prog-step drink-done"><div class="drink-prog-dot">&#10003;</div><div class="drink-prog-label">Category</div></div>
+      <div class="drink-prog-line drink-done"></div>
+      <div class="drink-prog-step drink-curr"><div class="drink-prog-dot">2</div><div class="drink-prog-label">Details</div></div>
+      <div class="drink-prog-line"></div>
+      <div class="drink-prog-step"><div class="drink-prog-dot">3</div><div class="drink-prog-label">Review</div></div>
     </div>
-    <div class="eu-card">
-      <div class="eu-card-title">General Product Inquiry</div>
-      <div class="eu-card-sub">Ask us anything — we'll respond within one business day.</div>
-      <div class="eu-grid">
-        <div class="eu-field"><label class="eu-label">Your Name <span class="eu-req">*</span></label><input type="text" id="dtc-inq-name" placeholder="First & Last Name"></div>
-        <div class="eu-field"><label class="eu-label">Email Address <span class="eu-req">*</span></label><input type="email" id="dtc-inq-email" placeholder="you@email.com"></div>
-        <div class="eu-field eu-full"><label class="eu-label">Your Question <span class="eu-req">*</span></label><textarea id="dtc-inq-q" style="min-height:120px" placeholder="Ask about specific models, sizing, features, accessories — whatever you need to know."></textarea></div>
+    <div class="drink-card">
+      <div class="drink-card-title">General Product Inquiry</div>
+      <div class="drink-card-sub">Ask us anything — we'll respond within one business day.</div>
+      <div class="drink-grid">
+        <div class="drink-field"><label class="drink-label">Your Name <span class="drink-req">*</span></label><input type="text" id="dtc-inq-name" placeholder="First & Last Name"></div>
+        <div class="drink-field"><label class="drink-label">Email Address <span class="drink-req">*</span></label><input type="email" id="dtc-inq-email" placeholder="you@email.com"></div>
+        <div class="drink-field drink-full"><label class="drink-label">Your Question <span class="drink-req">*</span></label><textarea id="dtc-inq-q" style="min-height:120px" placeholder="Ask about flavors, ingredients, nutrition, availability — whatever you need to know."></textarea></div>
       </div>
-      <div class="eu-btn-row">
-        <button class="eu-btn-back" onclick="euGo('eu-dtc1')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
-        <button class="eu-btn-next" onclick="euReview('dtc-inquiry')">Review &amp; Submit <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      <div class="drink-btn-row">
+        <button class="drink-btn-back" onclick="drinkGo('drink-dtc1')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
+        <button class="drink-btn-next" onclick="drinkReview('dtc-inquiry')">Review &amp; Submit <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
       </div>
     </div>
   </div>
 
   <!-- DTC-2b: Issue sub-category -->
-  <div class="eu-screen" id="eu-dtc2b">
-    <div class="eu-progress">
-      <div class="eu-prog-step eu-done"><div class="eu-prog-dot">&#10003;</div><div class="eu-prog-label">Category</div></div>
-      <div class="eu-prog-line eu-done"></div>
-      <div class="eu-prog-step eu-curr"><div class="eu-prog-dot">2</div><div class="eu-prog-label">Details</div></div>
-      <div class="eu-prog-line"></div>
-      <div class="eu-prog-step"><div class="eu-prog-dot">3</div><div class="eu-prog-label">Review</div></div>
+  <div class="drink-screen" id="drink-dtc2b">
+    <div class="drink-progress">
+      <div class="drink-prog-step drink-done"><div class="drink-prog-dot">&#10003;</div><div class="drink-prog-label">Category</div></div>
+      <div class="drink-prog-line drink-done"></div>
+      <div class="drink-prog-step drink-curr"><div class="drink-prog-dot">2</div><div class="drink-prog-label">Details</div></div>
+      <div class="drink-prog-line"></div>
+      <div class="drink-prog-step"><div class="drink-prog-dot">3</div><div class="drink-prog-label">Review</div></div>
     </div>
-    <div class="eu-card">
-      <div class="eu-card-title">What type of issue?</div>
-      <div class="eu-card-sub">Select the category that best fits your situation.</div>
-      <div class="eu-issue-grid">
-        <button class="eu-issue-btn" onclick="euPickSub('ship')" id="eu-sub-ship">
-          <div class="eu-claim-pill">&#9888; Claim</div>
-          <div class="eu-issue-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
-          <div class="eu-issue-title">Shipping Issue</div>
-          <div class="eu-issue-desc">Arrived damaged or missing items.</div>
+    <div class="drink-card">
+      <div class="drink-card-title">What type of issue?</div>
+      <div class="drink-card-sub">Select the category that best fits your situation.</div>
+      <div class="drink-issue-grid">
+        <button class="drink-issue-btn" onclick="drinkPickSub('ship')" id="drink-sub-ship">
+          <div class="drink-claim-pill">&#9888; Claim</div>
+          <div class="drink-issue-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+          <div class="drink-issue-title">Shipping Issue</div>
+          <div class="drink-issue-desc">Arrived damaged or missing items.</div>
         </button>
-        <button class="eu-issue-btn" onclick="euPickSub('bike')" id="eu-sub-bike">
-          <div class="eu-issue-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
-          <div class="eu-issue-title">Bike Problem</div>
-          <div class="eu-issue-desc">Something isn't working correctly.</div>
+        <button class="drink-issue-btn" onclick="drinkPickSub('bike')" id="drink-sub-bike">
+          <div class="drink-issue-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+          <div class="drink-issue-title">Product Issue</div>
+          <div class="drink-issue-desc">Something isn't working correctly.</div>
         </button>
-        <button class="eu-issue-btn" onclick="euPickSub('pq')" id="eu-sub-pq">
-          <div class="eu-issue-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
-          <div class="eu-issue-title">Product Question</div>
-          <div class="eu-issue-desc">Question about your existing bike or accessory.</div>
+        <button class="drink-issue-btn" onclick="drinkPickSub('pq')" id="drink-sub-pq">
+          <div class="drink-issue-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+          <div class="drink-issue-title">Product Question</div>
+          <div class="drink-issue-desc">Question about your existing order or product.</div>
         </button>
       </div>
-      <div class="eu-btn-row">
-        <button class="eu-btn-back" onclick="euGo('eu-dtc1')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
-        <button class="eu-btn-next" id="eu-dtc2b-next" disabled onclick="euSub2Next()">Continue <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      <div class="drink-btn-row">
+        <button class="drink-btn-back" onclick="drinkGo('drink-dtc1')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
+        <button class="drink-btn-next" id="drink-dtc2b-next" disabled onclick="drinkSub2Next()">Continue <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
       </div>
     </div>
   </div>
 
   <!-- DTC-3a: Shipping Issue -->
-  <div class="eu-screen" id="eu-dtc3a">
-    <div class="eu-progress">
-      <div class="eu-prog-step eu-done"><div class="eu-prog-dot">&#10003;</div><div class="eu-prog-label">Category</div></div>
-      <div class="eu-prog-line eu-done"></div>
-      <div class="eu-prog-step eu-done"><div class="eu-prog-dot">&#10003;</div><div class="eu-prog-label">Issue Type</div></div>
-      <div class="eu-prog-line eu-done"></div>
-      <div class="eu-prog-step eu-curr"><div class="eu-prog-dot">3</div><div class="eu-prog-label">Your Info</div></div>
+  <div class="drink-screen" id="drink-dtc3a">
+    <div class="drink-progress">
+      <div class="drink-prog-step drink-done"><div class="drink-prog-dot">&#10003;</div><div class="drink-prog-label">Category</div></div>
+      <div class="drink-prog-line drink-done"></div>
+      <div class="drink-prog-step drink-done"><div class="drink-prog-dot">&#10003;</div><div class="drink-prog-label">Issue Type</div></div>
+      <div class="drink-prog-line drink-done"></div>
+      <div class="drink-prog-step drink-curr"><div class="drink-prog-dot">3</div><div class="drink-prog-label">Your Info</div></div>
     </div>
-    <div class="eu-card">
-      <div class="eu-card-title">Shipping Issue</div>
-      <div class="eu-card-sub">Provide your order details and photos to process your claim as quickly as possible.</div>
-      <div class="eu-alert eu-alert-warn"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><div><strong>Photos are required</strong> for all shipping damage claims. Include images of the damaged packaging and/or bike.</div></div>
-      <div class="eu-grid" style="margin-bottom:20px">
-        <div class="eu-field"><label class="eu-label">Your Name <span class="eu-req">*</span></label><input type="text" id="dtc-sh-name" placeholder="First & Last Name"></div>
-        <div class="eu-field"><label class="eu-label">Email Address <span class="eu-req">*</span></label><input type="email" id="dtc-sh-email" placeholder="you@email.com"></div>
-        <div class="eu-field eu-full"><label class="eu-label">Order Number <span class="eu-req">*</span></label><input type="text" id="dtc-sh-order" placeholder="e.g. #1042"></div>
-        <div class="eu-field eu-full"><label class="eu-label">Describe the Issue <span class="eu-req">*</span></label><textarea id="dtc-sh-desc" placeholder="What was damaged? Was the outer packaging damaged on arrival?"></textarea></div>
+    <div class="drink-card">
+      <div class="drink-card-title">Shipping Issue</div>
+      <div class="drink-card-sub">Provide your order details and photos to process your claim as quickly as possible.</div>
+      <div class="drink-alert drink-alert-warn"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><div><strong>Photos are required</strong> for all shipping damage claims. Include images of the damaged packaging and/or product.</div></div>
+      <div class="drink-grid" style="margin-bottom:20px">
+        <div class="drink-field"><label class="drink-label">Your Name <span class="drink-req">*</span></label><input type="text" id="dtc-sh-name" placeholder="First & Last Name"></div>
+        <div class="drink-field"><label class="drink-label">Email Address <span class="drink-req">*</span></label><input type="email" id="dtc-sh-email" placeholder="you@email.com"></div>
+        <div class="drink-field drink-full"><label class="drink-label">Order Number <span class="drink-req">*</span></label><input type="text" id="dtc-sh-order" placeholder="e.g. #1042"></div>
+        <div class="drink-field drink-full"><label class="drink-label">Describe the Issue <span class="drink-req">*</span></label><textarea id="dtc-sh-desc" placeholder="What was damaged? Was the outer packaging damaged on arrival?"></textarea></div>
       </div>
-      <div class="eu-sec-div">Damage Photos <span style="color:var(--eu-red);font-weight:800;letter-spacing:0;text-transform:none">*</span></div>
-      <div class="eu-upload-zone" ondragover="euDrag(event)" ondragleave="euUndrag(event)" ondrop="euDrop(event,'dtc-sh')">
-        <input type="file" id="files-dtc-sh" multiple accept="image/*,video/*" onchange="euFiles(this,'dtc-sh')">
-        <div class="eu-upload-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
-        <div class="eu-upload-title">Upload Damage Photos</div>
-        <div class="eu-upload-sub">Drag &amp; drop or click to browse &middot; JPG, PNG, MP4</div>
-        <div class="eu-upload-req">&#9888; Required for claims</div>
+      <div class="drink-sec-div">Damage Photos <span style="color:var(--eu-red);font-weight:800;letter-spacing:0;text-transform:none">*</span></div>
+      <div class="drink-upload-zone" ondragover="drinkDrag(event)" ondragleave="drinkUndrag(event)" ondrop="drinkDrop(event,'dtc-sh')">
+        <input type="file" id="files-dtc-sh" multiple accept="image/*,video/*" onchange="drinkFiles(this,'dtc-sh')">
+        <div class="drink-upload-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+        <div class="drink-upload-title">Upload Damage Photos</div>
+        <div class="drink-upload-sub">Drag &amp; drop or click to browse &middot; JPG, PNG, MP4</div>
+        <div class="drink-upload-req">&#9888; Required for claims</div>
       </div>
       <div class="eu-file-list" id="fl-dtc-sh"></div>
-      <div class="eu-btn-row">
-        <button class="eu-btn-back" onclick="euGo('eu-dtc2b')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
-        <button class="eu-btn-next" onclick="euReview('dtc-ship')">Review &amp; Submit <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      <div class="drink-btn-row">
+        <button class="drink-btn-back" onclick="drinkGo('drink-dtc2b')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
+        <button class="drink-btn-next" onclick="drinkReview('dtc-ship')">Review &amp; Submit <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
       </div>
     </div>
   </div>
 
-  <!-- DTC-3b: Bike Problem -->
-  <div class="eu-screen" id="eu-dtc3b">
-    <div class="eu-progress">
-      <div class="eu-prog-step eu-done"><div class="eu-prog-dot">&#10003;</div><div class="eu-prog-label">Category</div></div>
-      <div class="eu-prog-line eu-done"></div>
-      <div class="eu-prog-step eu-done"><div class="eu-prog-dot">&#10003;</div><div class="eu-prog-label">Issue Type</div></div>
-      <div class="eu-prog-line eu-done"></div>
-      <div class="eu-prog-step eu-curr"><div class="eu-prog-dot">3</div><div class="eu-prog-label">Your Info</div></div>
+  <!-- DTC-3b: Product Issue -->
+  <div class="drink-screen" id="drink-dtc3b">
+    <div class="drink-progress">
+      <div class="drink-prog-step drink-done"><div class="drink-prog-dot">&#10003;</div><div class="drink-prog-label">Category</div></div>
+      <div class="drink-prog-line drink-done"></div>
+      <div class="drink-prog-step drink-done"><div class="drink-prog-dot">&#10003;</div><div class="drink-prog-label">Issue Type</div></div>
+      <div class="drink-prog-line drink-done"></div>
+      <div class="drink-prog-step drink-curr"><div class="drink-prog-dot">3</div><div class="drink-prog-label">Your Info</div></div>
     </div>
-    <div class="eu-card">
-      <div class="eu-card-title">Bike Problem</div>
-      <div class="eu-card-sub">Describe the issue and we'll get you sorted out. Your serial number helps us pull up your bike record.</div>
-      <div class="eu-grid" style="margin-bottom:20px">
-        <div class="eu-field"><label class="eu-label">Your Name <span class="eu-req">*</span></label><input type="text" id="dtc-bp-name" placeholder="First & Last Name"></div>
-        <div class="eu-field"><label class="eu-label">Email Address <span class="eu-req">*</span></label><input type="email" id="dtc-bp-email" placeholder="you@email.com"></div>
-        <div class="eu-field eu-full"><label class="eu-label">Serial Number <span class="eu-req">*</span></label><input type="text" id="dtc-bp-serial" placeholder="Found on the down tube or bottom bracket sticker"></div>
-        <div class="eu-field eu-full"><label class="eu-label">Describe the Issue <span class="eu-req">*</span></label><textarea id="dtc-bp-desc" placeholder="What's happening? When does it occur? Any error codes on the display?"></textarea></div>
+    <div class="drink-card">
+      <div class="drink-card-title">Product Issue</div>
+      <div class="drink-card-sub">Describe the issue and we'll get you sorted out. Your order number helps us pull up your purchase record.</div>
+      <div class="drink-grid" style="margin-bottom:20px">
+        <div class="drink-field"><label class="drink-label">Your Name <span class="drink-req">*</span></label><input type="text" id="dtc-bp-name" placeholder="First & Last Name"></div>
+        <div class="drink-field"><label class="drink-label">Email Address <span class="drink-req">*</span></label><input type="email" id="dtc-bp-email" placeholder="you@email.com"></div>
+        <div class="drink-field drink-full"><label class="drink-label">Order Number <span class="drink-req">*</span></label><input type="text" id="dtc-bp-serial" placeholder="Found in your order confirmation email"></div>
+        <div class="drink-field drink-full"><label class="drink-label">Describe the Issue <span class="drink-req">*</span></label><textarea id="dtc-bp-desc" placeholder="What's happening? When does it occur? Any error codes on the display?"></textarea></div>
       </div>
-      <div class="eu-sec-div">Photos / Video <span style="color:var(--eu-gray);font-weight:400;letter-spacing:0;text-transform:none;font-size:11px">(optional but helpful)</span></div>
-      <div class="eu-upload-zone" ondragover="euDrag(event)" ondragleave="euUndrag(event)" ondrop="euDrop(event,'dtc-bp')">
-        <input type="file" id="files-dtc-bp" multiple accept="image/*,video/*" onchange="euFiles(this,'dtc-bp')">
-        <div class="eu-upload-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
-        <div class="eu-upload-title">Upload Photos or Video</div>
-        <div class="eu-upload-sub">Drag &amp; drop or click to browse</div>
+      <div class="drink-sec-div">Photos / Video <span style="color:var(--eu-gray);font-weight:400;letter-spacing:0;text-transform:none;font-size:11px">(optional but helpful)</span></div>
+      <div class="drink-upload-zone" ondragover="drinkDrag(event)" ondragleave="drinkUndrag(event)" ondrop="drinkDrop(event,'dtc-bp')">
+        <input type="file" id="files-dtc-bp" multiple accept="image/*,video/*" onchange="drinkFiles(this,'dtc-bp')">
+        <div class="drink-upload-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+        <div class="drink-upload-title">Upload Photos or Video</div>
+        <div class="drink-upload-sub">Drag &amp; drop or click to browse</div>
       </div>
       <div class="eu-file-list" id="fl-dtc-bp"></div>
-      <div class="eu-btn-row">
-        <button class="eu-btn-back" onclick="euGo('eu-dtc2b')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
-        <button class="eu-btn-next" onclick="euReview('dtc-bike')">Review &amp; Submit <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      <div class="drink-btn-row">
+        <button class="drink-btn-back" onclick="drinkGo('drink-dtc2b')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
+        <button class="drink-btn-next" onclick="drinkReview('dtc-bike')">Review &amp; Submit <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
       </div>
     </div>
   </div>
 
   <!-- DTC-3c: Product Question -->
-  <div class="eu-screen" id="eu-dtc3c">
-    <div class="eu-progress">
-      <div class="eu-prog-step eu-done"><div class="eu-prog-dot">&#10003;</div><div class="eu-prog-label">Category</div></div>
-      <div class="eu-prog-line eu-done"></div>
-      <div class="eu-prog-step eu-done"><div class="eu-prog-dot">&#10003;</div><div class="eu-prog-label">Issue Type</div></div>
-      <div class="eu-prog-line eu-done"></div>
-      <div class="eu-prog-step eu-curr"><div class="eu-prog-dot">3</div><div class="eu-prog-label">Your Info</div></div>
+  <div class="drink-screen" id="drink-dtc3c">
+    <div class="drink-progress">
+      <div class="drink-prog-step drink-done"><div class="drink-prog-dot">&#10003;</div><div class="drink-prog-label">Category</div></div>
+      <div class="drink-prog-line drink-done"></div>
+      <div class="drink-prog-step drink-done"><div class="drink-prog-dot">&#10003;</div><div class="drink-prog-label">Issue Type</div></div>
+      <div class="drink-prog-line drink-done"></div>
+      <div class="drink-prog-step drink-curr"><div class="drink-prog-dot">3</div><div class="drink-prog-label">Your Info</div></div>
     </div>
-    <div class="eu-card">
-      <div class="eu-card-title">Product Question</div>
-      <div class="eu-card-sub">A question about your existing Euphree bike or an accessory you own.</div>
-      <div class="eu-grid">
-        <div class="eu-field"><label class="eu-label">Your Name <span class="eu-req">*</span></label><input type="text" id="dtc-pq-name" placeholder="First & Last Name"></div>
-        <div class="eu-field"><label class="eu-label">Email Address <span class="eu-req">*</span></label><input type="email" id="dtc-pq-email" placeholder="you@email.com"></div>
-        <div class="eu-field"><label class="eu-label">Bike Model <span class="eu-opt">(optional)</span></label>
-          <select id="dtc-pq-model"><option value="">Select model…</option><option>City Robin X+</option><option>Solar Sparrow</option><option>Stellar Falcon Step-Thru</option><option>Stellar Falcon Mid-Step</option><option>Accessory / Other</option></select>
+    <div class="drink-card">
+      <div class="drink-card-title">Product Question</div>
+      <div class="drink-card-sub">A question about your existing Drink LLC product or an accessory you own.</div>
+      <div class="drink-grid">
+        <div class="drink-field"><label class="drink-label">Your Name <span class="drink-req">*</span></label><input type="text" id="dtc-pq-name" placeholder="First & Last Name"></div>
+        <div class="drink-field"><label class="drink-label">Email Address <span class="drink-req">*</span></label><input type="email" id="dtc-pq-email" placeholder="you@email.com"></div>
+        <div class="drink-field"><label class="drink-label">Product / Flavor <span class="drink-opt">(optional)</span></label>
+          <select id="dtc-pq-model"><option value="">Select flavor…</option><option>Lemonade</option><option>Lychee</option><option>Matcha</option><option>Passion Fruit</option><option>Peach Mango</option><option>Accessories / Other</option></select>
         </div>
-        <div class="eu-field"><label class="eu-label">Purchase Date <span class="eu-opt">(optional)</span></label><input type="date" id="dtc-pq-date"></div>
-        <div class="eu-field eu-full"><label class="eu-label">Your Question <span class="eu-req">*</span></label><textarea id="dtc-pq-q" placeholder="What would you like to know about your bike or accessory?"></textarea></div>
+        <div class="drink-field"><label class="drink-label">Purchase Date <span class="drink-opt">(optional)</span></label><input type="date" id="dtc-pq-date"></div>
+        <div class="drink-field drink-full"><label class="drink-label">Your Question <span class="drink-req">*</span></label><textarea id="dtc-pq-q" placeholder="What would you like to know about your order or product?"></textarea></div>
       </div>
-      <div class="eu-btn-row">
-        <button class="eu-btn-back" onclick="euGo('eu-dtc2b')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
-        <button class="eu-btn-next" onclick="euReview('dtc-pq')">Review &amp; Submit <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      <div class="drink-btn-row">
+        <button class="drink-btn-back" onclick="drinkGo('drink-dtc2b')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
+        <button class="drink-btn-next" onclick="drinkReview('dtc-pq')">Review &amp; Submit <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
       </div>
     </div>
   </div>
@@ -256,215 +256,215 @@
   <!-- DEALER FLOW -->
 
   <!-- DLR-1: Shop Info -->
-  <div class="eu-screen" id="eu-dlr1">
-    <div class="eu-progress">
-      <div class="eu-prog-step eu-curr"><div class="eu-prog-dot">1</div><div class="eu-prog-label">Shop Info</div></div>
-      <div class="eu-prog-line"></div>
-      <div class="eu-prog-step"><div class="eu-prog-dot">2</div><div class="eu-prog-label">Issue Type</div></div>
-      <div class="eu-prog-line"></div>
-      <div class="eu-prog-step"><div class="eu-prog-dot">3</div><div class="eu-prog-label">Details</div></div>
-      <div class="eu-prog-line"></div>
-      <div class="eu-prog-step"><div class="eu-prog-dot">4</div><div class="eu-prog-label">Review</div></div>
+  <div class="drink-screen" id="drink-dlr1">
+    <div class="drink-progress">
+      <div class="drink-prog-step drink-curr"><div class="drink-prog-dot">1</div><div class="drink-prog-label">Shop Info</div></div>
+      <div class="drink-prog-line"></div>
+      <div class="drink-prog-step"><div class="drink-prog-dot">2</div><div class="drink-prog-label">Issue Type</div></div>
+      <div class="drink-prog-line"></div>
+      <div class="drink-prog-step"><div class="drink-prog-dot">3</div><div class="drink-prog-label">Details</div></div>
+      <div class="drink-prog-line"></div>
+      <div class="drink-prog-step"><div class="drink-prog-dot">4</div><div class="drink-prog-label">Review</div></div>
     </div>
-    <div class="eu-card">
-      <div class="eu-card-title">Your Shop Info</div>
-      <div class="eu-card-sub">Tell us who you are so we can route your request to the dealer support team.</div>
-      <div class="eu-grid">
-        <div class="eu-field eu-full"><label class="eu-label">Shop Name <span class="eu-req">*</span></label><input type="text" id="dlr-shop" placeholder="e.g. Austin Bike Co."></div>
-        <div class="eu-field"><label class="eu-label">Your Name <span class="eu-req">*</span></label><input type="text" id="dlr-name" placeholder="First & Last Name"></div>
-        <div class="eu-field"><label class="eu-label">Role <span class="eu-opt">(optional)</span></label><input type="text" id="dlr-role" placeholder="e.g. Service Manager"></div>
-        <div class="eu-field"><label class="eu-label">Email <span class="eu-req">*</span></label><input type="email" id="dlr-email" placeholder="you@yourshop.com"></div>
-        <div class="eu-field"><label class="eu-label">Phone <span class="eu-req">*</span></label><input type="tel" id="dlr-phone" placeholder="(000) 000-0000"></div>
+    <div class="drink-card">
+      <div class="drink-card-title">Your Shop Info</div>
+      <div class="drink-card-sub">Tell us who you are so we can route your request to the dealer support team.</div>
+      <div class="drink-grid">
+        <div class="drink-field drink-full"><label class="drink-label">Shop Name <span class="drink-req">*</span></label><input type="text" id="dlr-shop" placeholder="e.g. Fresh Market Co."></div>
+        <div class="drink-field"><label class="drink-label">Your Name <span class="drink-req">*</span></label><input type="text" id="dlr-name" placeholder="First & Last Name"></div>
+        <div class="drink-field"><label class="drink-label">Role <span class="drink-opt">(optional)</span></label><input type="text" id="dlr-role" placeholder="e.g. Service Manager"></div>
+        <div class="drink-field"><label class="drink-label">Email <span class="drink-req">*</span></label><input type="email" id="dlr-email" placeholder="you@yourshop.com"></div>
+        <div class="drink-field"><label class="drink-label">Phone <span class="drink-req">*</span></label><input type="tel" id="dlr-phone" placeholder="(000) 000-0000"></div>
       </div>
-      <div class="eu-btn-row">
-        <button class="eu-btn-back" onclick="euGo('eu-s0')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
-        <button class="eu-btn-next" onclick="euGo('eu-dlr2')">Choose Issue Type <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      <div class="drink-btn-row">
+        <button class="drink-btn-back" onclick="drinkGo('drink-s0')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
+        <button class="drink-btn-next" onclick="drinkGo('drink-dlr2')">Choose Issue Type <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
       </div>
     </div>
   </div>
 
   <!-- DLR-2: Issue Type -->
-  <div class="eu-screen" id="eu-dlr2">
-    <div class="eu-progress">
-      <div class="eu-prog-step eu-done"><div class="eu-prog-dot">&#10003;</div><div class="eu-prog-label">Shop Info</div></div>
-      <div class="eu-prog-line eu-done"></div>
-      <div class="eu-prog-step eu-curr"><div class="eu-prog-dot">2</div><div class="eu-prog-label">Issue Type</div></div>
-      <div class="eu-prog-line"></div>
-      <div class="eu-prog-step"><div class="eu-prog-dot">3</div><div class="eu-prog-label">Details</div></div>
-      <div class="eu-prog-line"></div>
-      <div class="eu-prog-step"><div class="eu-prog-dot">4</div><div class="eu-prog-label">Review</div></div>
+  <div class="drink-screen" id="drink-dlr2">
+    <div class="drink-progress">
+      <div class="drink-prog-step drink-done"><div class="drink-prog-dot">&#10003;</div><div class="drink-prog-label">Shop Info</div></div>
+      <div class="drink-prog-line drink-done"></div>
+      <div class="drink-prog-step drink-curr"><div class="drink-prog-dot">2</div><div class="drink-prog-label">Issue Type</div></div>
+      <div class="drink-prog-line"></div>
+      <div class="drink-prog-step"><div class="drink-prog-dot">3</div><div class="drink-prog-label">Details</div></div>
+      <div class="drink-prog-line"></div>
+      <div class="drink-prog-step"><div class="drink-prog-dot">4</div><div class="drink-prog-label">Review</div></div>
     </div>
-    <div class="eu-card">
-      <div class="eu-card-title">What's the issue?</div>
-      <div class="eu-card-sub">Select the category that best describes your request.</div>
-      <div class="eu-issue-grid">
-        <button class="eu-issue-btn" onclick="euPickDlr('dship')" id="eu-dlr-dship">
-          <div class="eu-claim-pill">&#9888; Claim Required</div>
-          <div class="eu-issue-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
-          <div class="eu-issue-title">Shipping Damage</div>
-          <div class="eu-issue-desc">Bike arrived damaged. Photos required to file claim.</div>
+    <div class="drink-card">
+      <div class="drink-card-title">What's the issue?</div>
+      <div class="drink-card-sub">Select the category that best describes your request.</div>
+      <div class="drink-issue-grid">
+        <button class="drink-issue-btn" onclick="drinkPickDlr('dship')" id="drink-dlr-dship">
+          <div class="drink-claim-pill">&#9888; Claim Required</div>
+          <div class="drink-issue-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+          <div class="drink-issue-title">Shipping Damage</div>
+          <div class="drink-issue-desc">Product arrived damaged. Photos required to file claim.</div>
         </button>
-        <button class="eu-issue-btn" onclick="euPickDlr('floor')" id="eu-dlr-floor">
-          <div class="eu-issue-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6l-4 11M5.5 17.5L9 8h6l3.5 9.5M9 8l2-2h2"/><path d="M8 14h7"/></svg></div>
-          <div class="eu-issue-title">Floor Bike Issue</div>
-          <div class="eu-issue-desc">Problem with a demo or display bike at your shop.</div>
+        <button class="drink-issue-btn" onclick="drinkPickDlr('floor')" id="drink-dlr-floor">
+          <div class="drink-issue-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6l-4 11M5.5 17.5L9 8h6l3.5 9.5M9 8l2-2h2"/><path d="M8 14h7"/></svg></div>
+          <div class="drink-issue-title">Display Stock Issue</div>
+          <div class="drink-issue-desc">Problem with display stock or demo products at your store.</div>
         </button>
-        <button class="eu-issue-btn" onclick="euPickDlr('custbike')" id="eu-dlr-custbike">
-          <div class="eu-issue-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
-          <div class="eu-issue-title">Customer Bike</div>
-          <div class="eu-issue-desc">Warranty or service issue for a customer at your shop.</div>
+        <button class="drink-issue-btn" onclick="drinkPickDlr('custbike')" id="drink-dlr-custbike">
+          <div class="drink-issue-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <div class="drink-issue-title">Customer Order</div>
+          <div class="drink-issue-desc">Return or quality issue for a customer at your store.</div>
         </button>
       </div>
-      <div class="eu-btn-row">
-        <button class="eu-btn-back" onclick="euGo('eu-dlr1')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
-        <button class="eu-btn-next" id="eu-dlr2-next" disabled onclick="euDlr2Next()">Continue <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      <div class="drink-btn-row">
+        <button class="drink-btn-back" onclick="drinkGo('drink-dlr1')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
+        <button class="drink-btn-next" id="drink-dlr2-next" disabled onclick="drinkDlr2Next()">Continue <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
       </div>
     </div>
   </div>
 
   <!-- DLR-3a: Shipping Damage -->
-  <div class="eu-screen" id="eu-dlr3a">
-    <div class="eu-progress">
-      <div class="eu-prog-step eu-done"><div class="eu-prog-dot">&#10003;</div><div class="eu-prog-label">Shop Info</div></div>
-      <div class="eu-prog-line eu-done"></div>
-      <div class="eu-prog-step eu-done"><div class="eu-prog-dot">&#10003;</div><div class="eu-prog-label">Issue Type</div></div>
-      <div class="eu-prog-line eu-done"></div>
-      <div class="eu-prog-step eu-curr"><div class="eu-prog-dot">3</div><div class="eu-prog-label">Details</div></div>
-      <div class="eu-prog-line"></div>
-      <div class="eu-prog-step"><div class="eu-prog-dot">4</div><div class="eu-prog-label">Review</div></div>
+  <div class="drink-screen" id="drink-dlr3a">
+    <div class="drink-progress">
+      <div class="drink-prog-step drink-done"><div class="drink-prog-dot">&#10003;</div><div class="drink-prog-label">Shop Info</div></div>
+      <div class="drink-prog-line drink-done"></div>
+      <div class="drink-prog-step drink-done"><div class="drink-prog-dot">&#10003;</div><div class="drink-prog-label">Issue Type</div></div>
+      <div class="drink-prog-line drink-done"></div>
+      <div class="drink-prog-step drink-curr"><div class="drink-prog-dot">3</div><div class="drink-prog-label">Details</div></div>
+      <div class="drink-prog-line"></div>
+      <div class="drink-prog-step"><div class="drink-prog-dot">4</div><div class="drink-prog-label">Review</div></div>
     </div>
-    <div class="eu-card">
-      <div class="eu-card-title">Shipping Damage Claim</div>
-      <div class="eu-card-sub">Provide order details and damage photos. We cannot process claims without clear photos.</div>
-      <div class="eu-alert eu-alert-warn"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><div><strong>Photos are required</strong> to process shipping damage claims. We cannot move forward without them.</div></div>
-      <div class="eu-grid" style="margin-bottom:20px">
-        <div class="eu-field eu-full"><label class="eu-label">Order Number <span class="eu-req">*</span></label><input type="text" id="dlr-sh-order" placeholder="e.g. EU-10482"></div>
-        <div class="eu-field eu-full"><label class="eu-label">Describe the Damage <span class="eu-req">*</span></label><textarea id="dlr-sh-desc" placeholder="Where is the damage? Which parts are affected? Was the outer packaging damaged?"></textarea></div>
+    <div class="drink-card">
+      <div class="drink-card-title">Shipping Damage Claim</div>
+      <div class="drink-card-sub">Provide order details and damage photos. We cannot process claims without clear photos.</div>
+      <div class="drink-alert drink-alert-warn"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg><div><strong>Photos are required</strong> to process shipping damage claims. We cannot move forward without them.</div></div>
+      <div class="drink-grid" style="margin-bottom:20px">
+        <div class="drink-field drink-full"><label class="drink-label">Order Number <span class="drink-req">*</span></label><input type="text" id="dlr-sh-order" placeholder="e.g. EU-10482"></div>
+        <div class="drink-field drink-full"><label class="drink-label">Describe the Damage <span class="drink-req">*</span></label><textarea id="dlr-sh-desc" placeholder="Where is the damage? Which parts are affected? Was the outer packaging damaged?"></textarea></div>
       </div>
-      <div class="eu-sec-div">Damage Photos <span style="color:var(--eu-red);font-weight:800;letter-spacing:0;text-transform:none">*</span></div>
-      <div class="eu-upload-zone" ondragover="euDrag(event)" ondragleave="euUndrag(event)" ondrop="euDrop(event,'dlr-sh')">
-        <input type="file" id="files-dlr-sh" multiple accept="image/*,video/*" onchange="euFiles(this,'dlr-sh')">
-        <div class="eu-upload-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
-        <div class="eu-upload-title">Upload Damage Photos</div>
-        <div class="eu-upload-sub">Drag &amp; drop or click to browse &middot; JPG, PNG, MP4</div>
-        <div class="eu-upload-req">&#9888; Required</div>
+      <div class="drink-sec-div">Damage Photos <span style="color:var(--eu-red);font-weight:800;letter-spacing:0;text-transform:none">*</span></div>
+      <div class="drink-upload-zone" ondragover="drinkDrag(event)" ondragleave="drinkUndrag(event)" ondrop="drinkDrop(event,'dlr-sh')">
+        <input type="file" id="files-dlr-sh" multiple accept="image/*,video/*" onchange="drinkFiles(this,'dlr-sh')">
+        <div class="drink-upload-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+        <div class="drink-upload-title">Upload Damage Photos</div>
+        <div class="drink-upload-sub">Drag &amp; drop or click to browse &middot; JPG, PNG, MP4</div>
+        <div class="drink-upload-req">&#9888; Required</div>
       </div>
       <div class="eu-file-list" id="fl-dlr-sh"></div>
-      <div class="eu-btn-row">
-        <button class="eu-btn-back" onclick="euGo('eu-dlr2')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
-        <button class="eu-btn-next" onclick="euReview('dlr-ship')">Review &amp; Submit <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      <div class="drink-btn-row">
+        <button class="drink-btn-back" onclick="drinkGo('drink-dlr2')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
+        <button class="drink-btn-next" onclick="drinkReview('dlr-ship')">Review &amp; Submit <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
       </div>
     </div>
   </div>
 
-  <!-- DLR-3b: Floor Bike -->
-  <div class="eu-screen" id="eu-dlr3b">
-    <div class="eu-progress">
-      <div class="eu-prog-step eu-done"><div class="eu-prog-dot">&#10003;</div><div class="eu-prog-label">Shop Info</div></div>
-      <div class="eu-prog-line eu-done"></div>
-      <div class="eu-prog-step eu-done"><div class="eu-prog-dot">&#10003;</div><div class="eu-prog-label">Issue Type</div></div>
-      <div class="eu-prog-line eu-done"></div>
-      <div class="eu-prog-step eu-curr"><div class="eu-prog-dot">3</div><div class="eu-prog-label">Details</div></div>
-      <div class="eu-prog-line"></div>
-      <div class="eu-prog-step"><div class="eu-prog-dot">4</div><div class="eu-prog-label">Review</div></div>
+  <!-- DLR-3b: Display Stock -->
+  <div class="drink-screen" id="drink-dlr3b">
+    <div class="drink-progress">
+      <div class="drink-prog-step drink-done"><div class="drink-prog-dot">&#10003;</div><div class="drink-prog-label">Shop Info</div></div>
+      <div class="drink-prog-line drink-done"></div>
+      <div class="drink-prog-step drink-done"><div class="drink-prog-dot">&#10003;</div><div class="drink-prog-label">Issue Type</div></div>
+      <div class="drink-prog-line drink-done"></div>
+      <div class="drink-prog-step drink-curr"><div class="drink-prog-dot">3</div><div class="drink-prog-label">Details</div></div>
+      <div class="drink-prog-line"></div>
+      <div class="drink-prog-step"><div class="drink-prog-dot">4</div><div class="drink-prog-label">Review</div></div>
     </div>
-    <div class="eu-card">
-      <div class="eu-card-title">Floor Bike Issue</div>
-      <div class="eu-card-sub">Tell us what's happening with the demo or display bike at your shop.</div>
-      <div class="eu-grid" style="margin-bottom:20px">
-        <div class="eu-field"><label class="eu-label">Bike Model <span class="eu-req">*</span></label>
-          <select id="dlr-fl-model"><option value="">Select model…</option><option>City Robin X+</option><option>Solar Sparrow</option><option>Stellar Falcon Step-Thru</option><option>Stellar Falcon Mid-Step</option></select>
+    <div class="drink-card">
+      <div class="drink-card-title">Display Stock Issue</div>
+      <div class="drink-card-sub">Tell us what's happening with display stock or demo products at your store.</div>
+      <div class="drink-grid" style="margin-bottom:20px">
+        <div class="drink-field"><label class="drink-label">Product / Flavor <span class="drink-req">*</span></label>
+          <select id="dlr-fl-model"><option value="">Select flavor…</option><option>Lemonade</option><option>Lychee</option><option>Matcha</option><option>Passion Fruit</option><option>Peach Mango</option></select>
         </div>
-        <div class="eu-field"><label class="eu-label">Color <span class="eu-opt">(optional)</span></label><input type="text" id="dlr-fl-color" placeholder="e.g. Rebel Blue"></div>
-        <div class="eu-field eu-full"><label class="eu-label">Describe the Issue <span class="eu-req">*</span></label><textarea id="dlr-fl-desc" placeholder="What's happening? When did it start?"></textarea></div>
+        <div class="drink-field"><label class="drink-label">Color <span class="drink-opt">(optional)</span></label><input type="text" id="dlr-fl-color" placeholder="e.g. Rebel Blue"></div>
+        <div class="drink-field drink-full"><label class="drink-label">Describe the Issue <span class="drink-req">*</span></label><textarea id="dlr-fl-desc" placeholder="What's happening? When did it start?"></textarea></div>
       </div>
-      <div class="eu-sec-div">Photos / Video <span style="color:var(--eu-gray);font-weight:400;letter-spacing:0;text-transform:none;font-size:11px">(optional)</span></div>
-      <div class="eu-upload-zone" ondragover="euDrag(event)" ondragleave="euUndrag(event)" ondrop="euDrop(event,'dlr-fl')">
-        <input type="file" id="files-dlr-fl" multiple accept="image/*,video/*" onchange="euFiles(this,'dlr-fl')">
-        <div class="eu-upload-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
-        <div class="eu-upload-title">Upload Photos or Video</div>
-        <div class="eu-upload-sub">Drag &amp; drop or click to browse</div>
+      <div class="drink-sec-div">Photos / Video <span style="color:var(--eu-gray);font-weight:400;letter-spacing:0;text-transform:none;font-size:11px">(optional)</span></div>
+      <div class="drink-upload-zone" ondragover="drinkDrag(event)" ondragleave="drinkUndrag(event)" ondrop="drinkDrop(event,'dlr-fl')">
+        <input type="file" id="files-dlr-fl" multiple accept="image/*,video/*" onchange="drinkFiles(this,'dlr-fl')">
+        <div class="drink-upload-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+        <div class="drink-upload-title">Upload Photos or Video</div>
+        <div class="drink-upload-sub">Drag &amp; drop or click to browse</div>
       </div>
       <div class="eu-file-list" id="fl-dlr-fl"></div>
-      <div class="eu-btn-row">
-        <button class="eu-btn-back" onclick="euGo('eu-dlr2')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
-        <button class="eu-btn-next" onclick="euReview('dlr-floor')">Review &amp; Submit <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      <div class="drink-btn-row">
+        <button class="drink-btn-back" onclick="drinkGo('drink-dlr2')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
+        <button class="drink-btn-next" onclick="drinkReview('dlr-floor')">Review &amp; Submit <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
       </div>
     </div>
   </div>
 
-  <!-- DLR-3c: Customer Bike -->
-  <div class="eu-screen" id="eu-dlr3c">
-    <div class="eu-progress">
-      <div class="eu-prog-step eu-done"><div class="eu-prog-dot">&#10003;</div><div class="eu-prog-label">Shop Info</div></div>
-      <div class="eu-prog-line eu-done"></div>
-      <div class="eu-prog-step eu-done"><div class="eu-prog-dot">&#10003;</div><div class="eu-prog-label">Issue Type</div></div>
-      <div class="eu-prog-line eu-done"></div>
-      <div class="eu-prog-step eu-curr"><div class="eu-prog-dot">3</div><div class="eu-prog-label">Details</div></div>
-      <div class="eu-prog-line"></div>
-      <div class="eu-prog-step"><div class="eu-prog-dot">4</div><div class="eu-prog-label">Review</div></div>
+  <!-- DLR-3c: Customer Order -->
+  <div class="drink-screen" id="drink-dlr3c">
+    <div class="drink-progress">
+      <div class="drink-prog-step drink-done"><div class="drink-prog-dot">&#10003;</div><div class="drink-prog-label">Shop Info</div></div>
+      <div class="drink-prog-line drink-done"></div>
+      <div class="drink-prog-step drink-done"><div class="drink-prog-dot">&#10003;</div><div class="drink-prog-label">Issue Type</div></div>
+      <div class="drink-prog-line drink-done"></div>
+      <div class="drink-prog-step drink-curr"><div class="drink-prog-dot">3</div><div class="drink-prog-label">Details</div></div>
+      <div class="drink-prog-line"></div>
+      <div class="drink-prog-step"><div class="drink-prog-dot">4</div><div class="drink-prog-label">Review</div></div>
     </div>
-    <div class="eu-card">
-      <div class="eu-card-title">Customer Warranty / Service Issue</div>
-      <div class="eu-card-sub">Submit on behalf of a customer. Have their purchase info and serial number ready.</div>
-      <div class="eu-sec-div">Customer Info</div>
-      <div class="eu-grid" style="margin-bottom:24px">
-        <div class="eu-field"><label class="eu-label">Customer Name <span class="eu-req">*</span></label><input type="text" id="dlr-cb-custname" placeholder="Full name"></div>
-        <div class="eu-field"><label class="eu-label">Purchase Date <span class="eu-req">*</span></label><input type="date" id="dlr-cb-date"></div>
-        <div class="eu-field"><label class="eu-label">Serial Number <span class="eu-req">*</span></label><input type="text" id="dlr-cb-serial" placeholder="Down tube or bottom bracket"></div>
-        <div class="eu-field"><label class="eu-label">Bike Model <span class="eu-opt">(optional)</span></label>
-          <select id="dlr-cb-model"><option value="">Select model…</option><option>City Robin X+</option><option>Solar Sparrow</option><option>Stellar Falcon Step-Thru</option><option>Stellar Falcon Mid-Step</option></select>
+    <div class="drink-card">
+      <div class="drink-card-title">Customer Returns / Service Issue</div>
+      <div class="drink-card-sub">Submit on behalf of a customer. Have their purchase info and order number ready.</div>
+      <div class="drink-sec-div">Customer Info</div>
+      <div class="drink-grid" style="margin-bottom:24px">
+        <div class="drink-field"><label class="drink-label">Customer Name <span class="drink-req">*</span></label><input type="text" id="dlr-cb-custname" placeholder="Full name"></div>
+        <div class="drink-field"><label class="drink-label">Purchase Date <span class="drink-req">*</span></label><input type="date" id="dlr-cb-date"></div>
+        <div class="drink-field"><label class="drink-label">Order Number <span class="drink-req">*</span></label><input type="text" id="dlr-cb-serial" placeholder="From the customer's order confirmation"></div>
+        <div class="drink-field"><label class="drink-label">Product / Flavor <span class="drink-opt">(optional)</span></label>
+          <select id="dlr-cb-model"><option value="">Select flavor…</option><option>Lemonade</option><option>Lychee</option><option>Matcha</option><option>Passion Fruit</option><option>Peach Mango</option></select>
         </div>
-        <div class="eu-field eu-full"><label class="eu-label">Describe the Issue <span class="eu-req">*</span></label><textarea id="dlr-cb-desc" placeholder="What is the customer experiencing? When did it start?"></textarea></div>
+        <div class="drink-field drink-full"><label class="drink-label">Describe the Issue <span class="drink-req">*</span></label><textarea id="dlr-cb-desc" placeholder="What is the customer experiencing? When did it start?"></textarea></div>
       </div>
-      <div class="eu-sec-div">Photos / Video <span style="color:var(--eu-gray);font-weight:400;letter-spacing:0;text-transform:none;font-size:11px">(optional)</span></div>
-      <div class="eu-upload-zone" ondragover="euDrag(event)" ondragleave="euUndrag(event)" ondrop="euDrop(event,'dlr-cb')">
-        <input type="file" id="files-dlr-cb" multiple accept="image/*,video/*" onchange="euFiles(this,'dlr-cb')">
-        <div class="eu-upload-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
-        <div class="eu-upload-title">Upload Photos or Video</div>
-        <div class="eu-upload-sub">Drag &amp; drop or click to browse</div>
+      <div class="drink-sec-div">Photos / Video <span style="color:var(--eu-gray);font-weight:400;letter-spacing:0;text-transform:none;font-size:11px">(optional)</span></div>
+      <div class="drink-upload-zone" ondragover="drinkDrag(event)" ondragleave="drinkUndrag(event)" ondrop="drinkDrop(event,'dlr-cb')">
+        <input type="file" id="files-dlr-cb" multiple accept="image/*,video/*" onchange="drinkFiles(this,'dlr-cb')">
+        <div class="drink-upload-ico"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></div>
+        <div class="drink-upload-title">Upload Photos or Video</div>
+        <div class="drink-upload-sub">Drag &amp; drop or click to browse</div>
       </div>
       <div class="eu-file-list" id="fl-dlr-cb"></div>
-      <div class="eu-btn-row">
-        <button class="eu-btn-back" onclick="euGo('eu-dlr2')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
-        <button class="eu-btn-next" onclick="euReview('dlr-cust')">Review &amp; Submit <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      <div class="drink-btn-row">
+        <button class="drink-btn-back" onclick="drinkGo('drink-dlr2')"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Back</button>
+        <button class="drink-btn-next" onclick="drinkReview('dlr-cust')">Review &amp; Submit <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
       </div>
     </div>
   </div>
 
   <!-- REVIEW SCREEN -->
-  <div class="eu-screen" id="eu-review-screen">
-    <div class="eu-card">
-      <div class="eu-card-title">Review Your Submission</div>
-      <div class="eu-card-sub">Confirm everything looks right before we send it through.</div>
-      <div id="eu-review-content"></div>
-      <div class="eu-err-banner" id="eu-err">
+  <div class="drink-screen" id="drink-review-screen">
+    <div class="drink-card">
+      <div class="drink-card-title">Review Your Submission</div>
+      <div class="drink-card-sub">Confirm everything looks right before we send it through.</div>
+      <div id="drink-review-content"></div>
+      <div class="drink-err-banner" id="drink-err">
         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
         Something went wrong. Please try again or call us at (866) 729-8075.
       </div>
-      <div class="eu-btn-row">
-        <button class="eu-btn-back" id="eu-review-back"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Edit Details</button>
-        <button class="eu-btn-submit" id="eu-submit-btn" onclick="euSubmit()">
+      <div class="drink-btn-row">
+        <button class="drink-btn-back" id="drink-review-back"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Edit Details</button>
+        <button class="drink-btn-submit" id="drink-submit-btn" onclick="drinkSubmit()">
           <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-          Submit to Euphree
+          Submit to Drink LLC
         </button>
       </div>
     </div>
   </div>
 
   <!-- SUCCESS SCREEN -->
-  <div class="eu-screen" id="eu-success-screen">
-    <div class="eu-card">
-      <div class="eu-success">
-        <div class="eu-success-ico">
+  <div class="drink-screen" id="drink-success-screen">
+    <div class="drink-card">
+      <div class="drink-success">
+        <div class="drink-success-ico">
           <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
         </div>
         <h2>Request Received</h2>
-        <p>Your support request has been sent to our Houston team. We'll follow up within one business day.</p>
-        <div class="eu-ticket-num" id="eu-ticket-id">TICKET #EU-XXXXX</div>
-        <p style="font-size:13px;color:var(--eu-gray)">Confirmation sent to <strong id="eu-confirm-email" style="color:var(--eu-black)"></strong></p>
+        <p>Your support request has been sent to our team. We'll follow up within one business day.</p>
+        <div class="drink-ticket-num" id="drink-ticket-id">TICKET #EU-XXXXX</div>
+        <p style="font-size:13px;color:var(--eu-gray)">Confirmation sent to <strong id="drink-confirm-email" style="color:var(--eu-black)"></strong></p>
         <br>
-        <button class="eu-btn-reset" onclick="euReset()">
+        <button class="drink-btn-reset" onclick="drinkReset()">
           <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" width="14" height="14"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
           Submit Another Request
         </button>
@@ -472,12 +472,12 @@
     </div>
   </div>
 
-</div><!-- /eu-body -->
-</div><!-- /eu-portal -->
+</div><!-- /drink-body -->
+</div><!-- /drink-portal -->
 
 <!-- HubSpot config from section settings -->
 <script>
-  window.__euPortalConfig = {
+  window.__drinkPortalConfig = {
     proxyUrl:   {{ section.settings.hs_proxy_url | json }},
     portalId:   {{ section.settings.hs_portal_id | json }},
     formId:     {{ section.settings.hs_form_id | json }},
@@ -485,12 +485,12 @@
     stageNew:   {{ section.settings.hs_stage_new | json }}
   };
 </script>
-<script src="{{ 'euphree-support-portal.js' | asset_url }}" defer></script>
+<script src="{{ 'drink-support-portal.js' | asset_url }}" defer></script>
 
 {% schema %}
 {
   "name": "Support Portal",
-  "class": "section-euphree-support-portal",
+  "class": "section-drink-support-portal",
   "settings": [
     {
       "type": "header",
@@ -512,7 +512,7 @@
       "type": "textarea",
       "id": "subheading",
       "label": "Subheading",
-      "default": "Our Houston-based team is here for you — bikes, orders, warranties, and everything in between."
+      "default": "Our team is here for you — orders, products, satisfaction guarantee, and everything in between."
     },
     {
       "type": "header",
@@ -522,7 +522,7 @@
       "type": "text",
       "id": "trust_1",
       "label": "Trust Item 1",
-      "default": "2-Year Warranty"
+      "default": "Satisfaction Guaranteed"
     },
     {
       "type": "text",
@@ -534,7 +534,7 @@
       "type": "text",
       "id": "trust_3",
       "label": "Trust Item 3",
-      "default": "180+ Dealers Nationwide"
+      "default": "Available at Retailers Nationwide"
     },
     {
       "type": "text",
@@ -550,7 +550,7 @@
       "type": "text",
       "id": "hs_proxy_url",
       "label": "HubSpot Proxy URL",
-      "default": "/apps/euphree-hs-proxy",
+      "default": "/apps/drink-hs-proxy",
       "info": "Shopify App Proxy path that forwards requests to the HubSpot API."
     },
     {

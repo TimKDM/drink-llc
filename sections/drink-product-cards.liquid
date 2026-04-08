@@ -1,18 +1,18 @@
-<!-- Euphree Product Cards Section — Shopify Online Store 2.0 -->
+<!-- Drink Product Cards Section — Shopify Online Store 2.0 -->
 <!-- Dynamic 3-column grid with editable product cards via blocks -->
 <style>
-.euphree-products {
+.drink-products {
   padding: 100px 48px;
   background: #f5f5f3;
   font-family: var(--base-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   box-sizing: border-box;
 }
-.euphree-products * { box-sizing: border-box; margin: 0; padding: 0; }
-.euphree-products-header {
+.drink-products * { box-sizing: border-box; margin: 0; padding: 0; }
+.drink-products-header {
   text-align: center;
   margin-bottom: 64px;
 }
-.euphree-products-eyebrow {
+.drink-products-eyebrow {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2.5px;
@@ -20,39 +20,39 @@
   color: #888888;
   margin-bottom: 16px;
 }
-.euphree-products-header h2 {
+.drink-products-header h2 {
   font-family: var(--heading-font-family), serif;
   font-size: 56px;
   font-weight: 700;
   color: #121212;
   line-height: 1.1;
 }
-.euphree-product-grid {
+.drink-product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   max-width: 1400px;
   margin: 0 auto;
 }
-.euphree-product-card {
+.drink-product-card {
   background: #ffffff;
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
   position: relative;
 }
-.euphree-product-card:hover {
+.drink-product-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 50px rgba(0,0,0,0.1);
 }
-.euphree-product-img {
+.drink-product-img {
   position: relative;
   padding: 40px 32px 20px;
   background: linear-gradient(180deg, #f8f8f6 0%, #ffffff 100%);
   text-align: center;
 }
-.euphree-product-img img { width: 100%; max-width: 380px; height: auto; }
-.euphree-product-badge {
+.drink-product-img img { width: 100%; max-width: 380px; height: auto; }
+.drink-product-badge {
   position: absolute;
   top: 16px;
   left: 16px;
@@ -63,7 +63,7 @@
   font-size: 13px;
   font-weight: 700;
 }
-.euphree-product-specs {
+.drink-product-specs {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -71,7 +71,7 @@
   border-top: 1px solid rgba(0,0,0,0.06);
   margin: 0 24px;
 }
-.euphree-spec-item {
+.drink-spec-item {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -79,9 +79,9 @@
   font-weight: 600;
   color: #555555;
 }
-.euphree-spec-item svg { width: 16px; height: 16px; opacity: 0.6; }
-.euphree-product-info { padding: 20px 28px 28px; }
-.euphree-product-category {
+.drink-spec-item svg { width: 16px; height: 16px; opacity: 0.6; }
+.drink-product-info { padding: 20px 28px 28px; }
+.drink-product-category {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1.5px;
@@ -89,58 +89,58 @@
   color: #888888;
   margin-bottom: 8px;
 }
-.euphree-product-name {
+.drink-product-name {
   font-family: var(--heading-font-family), serif;
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 8px;
   color: #121212;
 }
-.euphree-product-desc {
+.drink-product-desc {
   font-size: 15px;
   color: #888888;
   line-height: 1.5;
   margin-bottom: 16px;
 }
-.euphree-product-price {
+.drink-product-price {
   display: flex;
   align-items: baseline;
   gap: 12px;
   margin-bottom: 8px;
 }
-.euphree-price-sale {
+.drink-price-sale {
   font-size: 28px;
   font-weight: 800;
   color: #c0392b;
 }
-.euphree-price-original {
+.drink-price-original {
   font-size: 18px;
   color: #c0c0c0;
   text-decoration: line-through;
 }
-.euphree-price-regular {
+.drink-price-regular {
   font-size: 28px;
   font-weight: 800;
   color: #121212;
 }
-.euphree-product-height {
+.drink-product-height {
   font-size: 13px;
   color: #888888;
   margin-bottom: 16px;
 }
-.euphree-color-swatches {
+.drink-color-swatches {
   display: flex;
   gap: 8px;
   margin-bottom: 20px;
 }
-.euphree-swatch {
+.drink-swatch {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   border: 2px solid #ffffff;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
 }
-.euphree-product-card .euphree-btn-product {
+.drink-product-card .drink-btn-product {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -158,7 +158,7 @@
   letter-spacing: 0.3px;
   text-align: center;
 }
-.euphree-product-card .euphree-btn-product:hover {
+.drink-product-card .drink-btn-product:hover {
   background: #2563b8;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(46,114,210,0.3);
@@ -166,31 +166,31 @@
 
 /* Tablet */
 @media (max-width: 1024px) {
-  .euphree-product-grid { grid-template-columns: 1fr 1fr; max-width: 800px; margin: 0 auto; }
-  .euphree-products-header h2 { font-size: 40px; }
+  .drink-product-grid { grid-template-columns: 1fr 1fr; max-width: 800px; margin: 0 auto; }
+  .drink-products-header h2 { font-size: 40px; }
 }
 /* Mobile */
 @media (max-width: 768px) {
-  .euphree-products { padding: 64px 20px; }
-  .euphree-products-header { margin-bottom: 40px; }
-  .euphree-products-header h2 { font-size: 32px; }
-  .euphree-product-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
-  .euphree-product-name { font-size: 22px; }
-  .euphree-product-desc { font-size: 14px; }
-  .euphree-product-img { padding: 28px 20px 16px; }
-  .euphree-product-info { padding: 16px 20px 24px; }
+  .drink-products { padding: 64px 20px; }
+  .drink-products-header { margin-bottom: 40px; }
+  .drink-products-header h2 { font-size: 32px; }
+  .drink-product-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+  .drink-product-name { font-size: 22px; }
+  .drink-product-desc { font-size: 14px; }
+  .drink-product-img { padding: 28px 20px 16px; }
+  .drink-product-info { padding: 16px 20px 24px; }
 }
 @media (max-width: 480px) {
-  .euphree-products-header h2 { font-size: 28px; }
+  .drink-products-header h2 { font-size: 28px; }
 }
 </style>
 
-<section class="euphree-products">
-  <div class="euphree-products-header">
-    <div class="euphree-products-eyebrow">{{ section.settings.eyebrow }}</div>
+<section class="drink-products">
+  <div class="drink-products-header">
+    <div class="drink-products-eyebrow">{{ section.settings.eyebrow }}</div>
     <h2>{{ section.settings.heading }}</h2>
   </div>
-  <div class="euphree-product-grid">
+  <div class="drink-product-grid">
 
     {% for block in section.blocks %}
       {%- assign p = block.settings.product -%}
@@ -212,10 +212,10 @@
       {%- if card_btn == blank and p != blank -%}{%- assign card_btn = 'Shop ' | append: p.title -%}{%- endif -%}
       {%- if card_btn == blank and c != blank -%}{%- assign card_btn = 'Shop ' | append: c.title -%}{%- endif -%}
 
-      <div class="euphree-product-card" {{ block.shopify_attributes }}>
-        <div class="euphree-product-img">
+      <div class="drink-product-card" {{ block.shopify_attributes }}>
+        <div class="drink-product-img">
           {% if block.settings.badge_text != blank %}
-            <div class="euphree-product-badge">{{ block.settings.badge_text }}</div>
+            <div class="drink-product-badge">{{ block.settings.badge_text }}</div>
           {% endif %}
           {% if block.settings.image != blank %}
             <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ card_name }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" loading="lazy">
@@ -227,8 +227,8 @@
             <img src="{{ block.settings.image_url }}" alt="{{ card_name }}" loading="lazy">
           {% endif %}
         </div>
-        <div class="euphree-product-specs">
-          <div class="euphree-spec-item">
+        <div class="drink-product-specs">
+          <div class="drink-spec-item">
             {% case block.settings.spec_1_icon %}
               {% when 'bolt' %}
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
@@ -243,7 +243,7 @@
             {% endcase %}
             {{ block.settings.spec_1_value }}
           </div>
-          <div class="euphree-spec-item">
+          <div class="drink-spec-item">
             {% case block.settings.spec_2_icon %}
               {% when 'bolt' %}
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
@@ -258,7 +258,7 @@
             {% endcase %}
             {{ block.settings.spec_2_value }}
           </div>
-          <div class="euphree-spec-item">
+          <div class="drink-spec-item">
             {% case block.settings.spec_3_icon %}
               {% when 'bolt' %}
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
@@ -274,43 +274,43 @@
             {{ block.settings.spec_3_value }}
           </div>
         </div>
-        <div class="euphree-product-info">
-          <div class="euphree-product-category">{{ block.settings.category }}</div>
-          <div class="euphree-product-name">{{ card_name }}</div>
-          <div class="euphree-product-desc">{{ card_desc }}</div>
-          <div class="euphree-product-price">
+        <div class="drink-product-info">
+          <div class="drink-product-category">{{ block.settings.category }}</div>
+          <div class="drink-product-name">{{ card_name }}</div>
+          <div class="drink-product-desc">{{ card_desc }}</div>
+          <div class="drink-product-price">
             {% if block.settings.sale_price != blank %}
               {% if block.settings.original_price != blank %}
-                <span class="euphree-price-sale">{{ block.settings.sale_price }}</span>
-                <span class="euphree-price-original">{{ block.settings.original_price }}</span>
+                <span class="drink-price-sale">{{ block.settings.sale_price }}</span>
+                <span class="drink-price-original">{{ block.settings.original_price }}</span>
               {% else %}
-                <span class="euphree-price-regular">{{ block.settings.sale_price }}</span>
+                <span class="drink-price-regular">{{ block.settings.sale_price }}</span>
               {% endif %}
             {% elsif p != blank %}
               {% if p.compare_at_price > p.price %}
-                <span class="euphree-price-sale">{{ p.price | money }}</span>
-                <span class="euphree-price-original">{{ p.compare_at_price | money }}</span>
+                <span class="drink-price-sale">{{ p.price | money }}</span>
+                <span class="drink-price-original">{{ p.compare_at_price | money }}</span>
               {% else %}
-                <span class="euphree-price-regular">{{ p.price | money }}</span>
+                <span class="drink-price-regular">{{ p.price | money }}</span>
               {% endif %}
             {% elsif c != blank and c.products.first != blank %}
               {% if c.products.first.compare_at_price > c.products.first.price %}
-                <span class="euphree-price-sale">{{ c.products.first.price | money }}</span>
-                <span class="euphree-price-original">{{ c.products.first.compare_at_price | money }}</span>
+                <span class="drink-price-sale">{{ c.products.first.price | money }}</span>
+                <span class="drink-price-original">{{ c.products.first.compare_at_price | money }}</span>
               {% else %}
-                <span class="euphree-price-regular">{{ c.products.first.price | money }}</span>
+                <span class="drink-price-regular">{{ c.products.first.price | money }}</span>
               {% endif %}
             {% endif %}
           </div>
-          <div class="euphree-product-height">{{ block.settings.rider_height }}</div>
-          <div class="euphree-color-swatches">
-            {% if block.settings.color_1 != blank %}<div class="euphree-swatch" style="background: {{ block.settings.color_1 }};"></div>{% endif %}
-            {% if block.settings.color_2 != blank %}<div class="euphree-swatch" style="background: {{ block.settings.color_2 }};"></div>{% endif %}
-            {% if block.settings.color_3 != blank %}<div class="euphree-swatch" style="background: {{ block.settings.color_3 }};"></div>{% endif %}
-            {% if block.settings.color_4 != blank %}<div class="euphree-swatch" style="background: {{ block.settings.color_4 }};"></div>{% endif %}
-            {% if block.settings.color_5 != blank %}<div class="euphree-swatch" style="background: {{ block.settings.color_5 }};"></div>{% endif %}
+          <div class="drink-product-height">{{ block.settings.rider_height }}</div>
+          <div class="drink-color-swatches">
+            {% if block.settings.color_1 != blank %}<div class="drink-swatch" style="background: {{ block.settings.color_1 }};"></div>{% endif %}
+            {% if block.settings.color_2 != blank %}<div class="drink-swatch" style="background: {{ block.settings.color_2 }};"></div>{% endif %}
+            {% if block.settings.color_3 != blank %}<div class="drink-swatch" style="background: {{ block.settings.color_3 }};"></div>{% endif %}
+            {% if block.settings.color_4 != blank %}<div class="drink-swatch" style="background: {{ block.settings.color_4 }};"></div>{% endif %}
+            {% if block.settings.color_5 != blank %}<div class="drink-swatch" style="background: {{ block.settings.color_5 }};"></div>{% endif %}
           </div>
-          <a href="{{ card_url }}" class="euphree-btn-product">{{ card_btn }}</a>
+          <a href="{{ card_url }}" class="drink-btn-product">{{ card_btn }}</a>
         </div>
       </div>
     {% endfor %}
@@ -320,20 +320,20 @@
 
 {% schema %}
 {
-  "name": "Euphree Product Cards",
-  "class": "section-euphree-product-cards",
+  "name": "Drink Product Cards",
+  "class": "section-drink-product-cards",
   "settings": [
     {
       "type": "text",
       "id": "eyebrow",
       "label": "Eyebrow text",
-      "default": "Our Lineup"
+      "default": "Our Flavors"
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Find Your Perfect Ride"
+      "default": "Find Your Perfect Flavor"
     }
   ],
   "blocks": [
@@ -378,7 +378,7 @@
           "type": "text",
           "id": "spec_1_value",
           "label": "Spec 1 value",
-          "default": "500W"
+          "default": "90 cal"
         },
         {
           "type": "select",
@@ -386,18 +386,18 @@
           "label": "Spec 1 icon",
           "default": "bolt",
           "options": [
-            { "value": "bolt", "label": "Bolt (power)" },
-            { "value": "battery", "label": "Battery (range)" },
-            { "value": "speed", "label": "Speed (clock)" },
-            { "value": "weight", "label": "Weight (heart)" },
-            { "value": "suspension", "label": "Suspension (tool)" }
+            { "value": "bolt", "label": "Calories" },
+            { "value": "battery", "label": "Serving Size" },
+            { "value": "speed", "label": "Key Ingredient" },
+            { "value": "weight", "label": "Flavor" },
+            { "value": "suspension", "label": "Other" }
           ]
         },
         {
           "type": "text",
           "id": "spec_2_value",
           "label": "Spec 2 value",
-          "default": "60 mi"
+          "default": "12 oz"
         },
         {
           "type": "select",
@@ -405,18 +405,18 @@
           "label": "Spec 2 icon",
           "default": "battery",
           "options": [
-            { "value": "bolt", "label": "Bolt (power)" },
-            { "value": "battery", "label": "Battery (range)" },
-            { "value": "speed", "label": "Speed (clock)" },
-            { "value": "weight", "label": "Weight (heart)" },
-            { "value": "suspension", "label": "Suspension (tool)" }
+            { "value": "bolt", "label": "Calories" },
+            { "value": "battery", "label": "Serving Size" },
+            { "value": "speed", "label": "Key Ingredient" },
+            { "value": "weight", "label": "Flavor" },
+            { "value": "suspension", "label": "Other" }
           ]
         },
         {
           "type": "text",
           "id": "spec_3_value",
           "label": "Spec 3 value",
-          "default": "28 mph"
+          "default": "Real Fruit"
         },
         {
           "type": "select",
@@ -424,11 +424,11 @@
           "label": "Spec 3 icon",
           "default": "speed",
           "options": [
-            { "value": "bolt", "label": "Bolt (power)" },
-            { "value": "battery", "label": "Battery (range)" },
-            { "value": "speed", "label": "Speed (clock)" },
-            { "value": "weight", "label": "Weight (heart)" },
-            { "value": "suspension", "label": "Suspension (tool)" }
+            { "value": "bolt", "label": "Calories" },
+            { "value": "battery", "label": "Serving Size" },
+            { "value": "speed", "label": "Key Ingredient" },
+            { "value": "weight", "label": "Flavor" },
+            { "value": "suspension", "label": "Other" }
           ]
         },
         {
@@ -466,8 +466,8 @@
         {
           "type": "text",
           "id": "rider_height",
-          "label": "Rider height",
-          "info": "e.g. \"Riders: 5'2\\\" – 6'0\\\"\""
+          "label": "Product detail",
+          "info": "e.g. \"Serving size: 12 oz\""
         },
         {
           "type": "header",
@@ -517,81 +517,72 @@
   ],
   "presets": [
     {
-      "name": "Euphree Product Cards",
+      "name": "Drink Product Cards",
       "settings": {
-        "eyebrow": "Our Lineup",
-        "heading": "Find Your Perfect Ride"
+        "eyebrow": "Our Flavors",
+        "heading": "Find Your Perfect Flavor"
       },
       "blocks": [
         {
           "type": "product_card",
           "settings": {
-            "badge_text": "$450 OFF",
-            "spec_1_value": "500W",
+            "badge_text": "Best Seller",
+            "spec_1_value": "90 cal",
             "spec_1_icon": "bolt",
-            "spec_2_value": "60 mi",
+            "spec_2_value": "12 oz",
             "spec_2_icon": "battery",
-            "spec_3_value": "28 mph",
+            "spec_3_value": "Real Lemon",
             "spec_3_icon": "speed",
-            "category": "Comfort · Best Seller",
-            "name": "City Robin X+",
-            "description": "Easy step-through access, upright posture, and full suspension for the smoothest ride.",
-            "sale_price": "$1,899",
-            "original_price": "$2,349",
-            "rider_height": "Riders: 5'2\" – 6'0\"",
-            "color_1": "#4a7ab5",
+            "category": "Citrus · Best Seller",
+            "name": "Lemonade",
+            "description": "Classic and refreshing, made with real lemon juice and a hint of natural sweetness.",
+            "sale_price": "$3.99",
+            "rider_height": "Serving size: 12 oz",
+            "color_1": "#f5e642",
             "color_2": "#f0ece4",
-            "color_3": "#3a7a4a",
-            "color_4": "#1a1a1a",
-            "button_label": "Shop City Robin X+",
-            "button_url": "/products/city-robin-x-plus"
+            "button_label": "Shop Lemonade",
+            "button_url": "/products/lemonade"
           }
         },
         {
           "type": "product_card",
           "settings": {
-            "spec_1_value": "500W",
+            "spec_1_value": "80 cal",
             "spec_1_icon": "bolt",
-            "spec_2_value": "40 mi",
+            "spec_2_value": "12 oz",
             "spec_2_icon": "battery",
-            "spec_3_value": "54 lbs",
-            "spec_3_icon": "weight",
-            "category": "Lightweight",
-            "name": "Solar Sparrow",
-            "description": "Quiet Gates belt drive, 54 lbs, easy to lift & ride. Zero chain maintenance.",
-            "sale_price": "$1,999",
-            "rider_height": "Riders: 4'11\" – 5'10\"",
-            "color_1": "#d4643a",
-            "color_2": "#5a8a5a",
-            "color_3": "#7a5aaa",
-            "color_4": "#4a7ab5",
-            "color_5": "#6b4a3a",
-            "button_label": "Shop Solar Sparrow",
-            "button_url": "/products/solar-sparrow"
+            "spec_3_value": "Ceremonial Grade",
+            "spec_3_icon": "speed",
+            "category": "Wellness · Energizing",
+            "name": "Matcha",
+            "description": "Smooth, earthy, and naturally energizing. Made with ceremonial-grade matcha.",
+            "sale_price": "$4.49",
+            "rider_height": "Serving size: 12 oz",
+            "color_1": "#4a7a3a",
+            "color_2": "#d4e8c4",
+            "button_label": "Shop Matcha",
+            "button_url": "/products/matcha"
           }
         },
         {
           "type": "product_card",
           "settings": {
-            "badge_text": "$500 OFF",
-            "spec_1_value": "750W",
+            "badge_text": "New Flavor",
+            "spec_1_value": "85 cal",
             "spec_1_icon": "bolt",
-            "spec_2_value": "70 mi",
+            "spec_2_value": "12 oz",
             "spec_2_icon": "battery",
-            "spec_3_value": "Air Susp.",
-            "spec_3_icon": "suspension",
-            "category": "Power · All-Terrain",
-            "name": "Stellar Falcon",
-            "description": "Air suspension, torque & cadence sensor, hill-ready 750W power for any terrain.",
-            "sale_price": "$1,999",
-            "original_price": "$2,499",
-            "rider_height": "Step-Thru (5'2\"–6'0\") & Mid-Step (5'4\"–6'2\")",
-            "color_1": "#a03030",
-            "color_2": "#1a1a1a",
-            "color_3": "#4a7ab5",
-            "color_4": "#5a2030",
-            "button_label": "Shop Stellar Falcon",
-            "button_url": "/collections/stellar-falcon-series"
+            "spec_3_value": "Real Passion Fruit",
+            "spec_3_icon": "speed",
+            "category": "Tropical · Refreshing",
+            "name": "Passion Fruit",
+            "description": "Bright, tangy, and bursting with tropical flavor. A taste of paradise in every sip.",
+            "sale_price": "$4.29",
+            "rider_height": "Serving size: 12 oz",
+            "color_1": "#e8a030",
+            "color_2": "#f5d060",
+            "button_label": "Shop Passion Fruit",
+            "button_url": "/products/passion-fruit"
           }
         }
       ]
