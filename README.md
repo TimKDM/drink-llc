@@ -1,1 +1,0 @@
-# Divine-ingredients-theme-file
