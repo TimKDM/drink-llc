@@ -1204,7 +1204,7 @@ a.product-text {
   }
 
   .thumbnail-left-sidebar .grid-item .thumbnail-list {
-    grid-template-columns: none;
+    grid-template-columns: 1fr;
   }
 
   .grid--2-col-tablet .grid-item.left-side {

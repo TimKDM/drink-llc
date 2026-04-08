@@ -1,23 +1,23 @@
 {
   "current": {
-    "color_void": "#FFFFFF",
-    "color_carbon": "#E2E6DE",
+    "color_void": "#0D0D0D",
+    "color_carbon": "#2A2A2A",
     "color_ash": "#6B7B6E",
-    "color_offwhite": "#1A1A1A",
+    "color_offwhite": "#F5F5F0",
     "cart_empty_message": "Nothing here yet.",
     "cart_type": "drawer",
     "page_width": 1280,
-    "spacing_sections": 0,
+    "spacing_sections": 40,
     "spacing_grid_horizontal": 20,
-    "spacing_grid_vertical": 8,
+    "spacing_grid_vertical": 20,
     "buttons_radius": 4,
     "buttons_border_thickness": 1,
-    "global_border_radius": 4,
+    "global_border_radius": 8,
     "global_shadow_opacity": 0,
     "global_shadow_horizontal_offset": 0,
     "global_shadow_vertical_offset": 0,
     "global_shadow_blur": 0,
-    "type_header_font": "bebas_neue_n4",
+    "type_header_font": "dm_serif_display_n4",
     "type_body_font": "dm_sans_n3",
     "heading_scale": 100,
     "body_scale": 100,
@@ -90,7 +90,11 @@
       "footer": {
         "type": "footer",
         "settings": {
-          "tagline": "Just Drink.",
+          "show_newsletter": true,
+          "newsletter_heading": "Join the Community",
+          "newsletter_text": "Get 10% off your first order. New flavors, restocks, and drops — straight to your inbox.",
+          "newsletter_placeholder": "Enter your email",
+          "tagline": "Performance Hydration. Clean Recovery.",
           "menu": "footer"
         }
       }
