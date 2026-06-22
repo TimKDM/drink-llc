@@ -188,7 +188,7 @@
         "heading": "We make hydration powder.",
         "description_1": "No manifesto. No origin story about a hike. We wanted better hydration without the sugar, the caffeine, or the filler ingredients. So we made it.",
         "description_2": "Electrolytes. B-vitamins. Real flavor. Mixed with water. That's the whole thing.",
-        "button_label": "About Drink LLC \u2192",
+        "button_label": "About DRiNK \u2192",
         "button_url": "shopify://pages/about-us"
       }
     },
@@ -210,7 +210,7 @@
             "image": "",
             "image_width": 280,
             "link": "",
-            "title": "SR Suntour Suspension\u00a0\u2013 proven comfort on any road"
+            "title": "B-Vitamins\u00a0\u2013 B6 & B12 for everyday energy"
           }
         },
         "logo_EEUKT7": {
@@ -219,7 +219,7 @@
             "image": "",
             "image_width": 280,
             "link": "",
-            "title": "Shimano Drivetrains\u00a0\u2013 smooth shifting worldwide"
+            "title": "Real Fruit Flavor\u00a0\u2013 no artificial flavors"
           }
         },
         "logo_VkQfLw": {
@@ -228,7 +228,7 @@
             "image": "",
             "image_width": 280,
             "link": "",
-            "title": "LG Battery Cells\u00a0\u2013 long-lasting and reliable"
+            "title": "Zero Sugar\u00a0\u2013 sweetened naturally, keto friendly"
           }
         },
         "logo_HNG3cL": {
@@ -237,7 +237,7 @@
             "image": "",
             "image_width": 280,
             "link": "",
-            "title": "Tektro Hydraulic Brakes\u00a0\u2013 confident stopping power"
+            "title": "No Fillers\u00a0\u2013 short ingredient list, no nonsense"
           }
         }
       },
@@ -289,7 +289,7 @@
         "prod_3": {
           "type": "product_card",
           "settings": {
-            "product": "matcha-2-mid-step",
+            "product": "matcha",
             "collection": "",
             "image_url": "",
             "badge_text": "NEW",
@@ -311,13 +311,13 @@
             "color_4": "#5a2030",
             "color_5": "",
             "button_label": "Shop Matcha",
-            "button_url": "/collections/matcha-series"
+            "button_url": "/products/matcha"
           }
         },
         "prod_1": {
           "type": "product_card",
           "settings": {
-            "product": "passion-fruit-x-plus",
+            "product": "passion-fruit",
             "collection": "",
             "image_url": "",
             "badge_text": "BEST SELLER",
@@ -339,7 +339,7 @@
             "color_4": "#1a1a1a",
             "color_5": "",
             "button_label": "Shop Passion Fruit",
-            "button_url": "/products/passion-fruit-x-plus"
+            "button_url": "/products/passion-fruit"
           }
         }
       },
@@ -362,7 +362,7 @@
           "settings": {
             "image": "",
             "name": "Variety Pack",
-            "description": "Classic aluminum basket for added front storage while keeping your steering steady.\u00a0",
+            "description": "A little of every flavor in single-serve sticks. Easy to pack, easy to share.",
             "link": ""
           }
         },
@@ -389,7 +389,7 @@
           "settings": {
             "image": "",
             "name": "5-Flavor Bundle",
-            "description": "Carry tools, clothing, or daily items on your rear rack with easy organization.\u00a0",
+            "description": "All five flavors in full-size tubs. Stock up once, sip all month.",
             "link": ""
           }
         }
@@ -445,9 +445,9 @@
             "enable_media": true,
             "image": "",
             "title": "Energy",
-            "text": "<p><a href=\"/collections/matcha-series\" target=\"_blank\" title=\"Matcha Beverages\"><strong>Matcha</strong></a> \u2013 Calm without the caffeine.</p>",
+            "text": "<p><a href=\"/products/matcha\" title=\"Matcha\"><strong>Matcha</strong></a> \u2013 Calm without the caffeine.</p>",
             "button_label": "Shop Matcha",
-            "link": "shopify://collections/matcha-series"
+            "link": "shopify://products/matcha"
           }
         }
       },
@@ -755,8 +755,8 @@
             "bg_color": "#ffffff",
             "bg_gradient": "",
             "text_color": "#505050",
-            "heading": "Fully Integrated Wiring for a Clean, Protected Look",
-            "text": "<p>Only Drink LLC hides cables within the frame, no dangling wires, no maintenance headaches. Looks sleek and protects components.</p>",
+            "heading": "Six Electrolytes in Every Scoop",
+            "text": "<p>Sodium, potassium, magnesium and more. The essentials your body needs after a workout, a commute, or a long day.</p>",
             "show_segments": false,
             "segments": 4,
             "active_segment": "2",
@@ -776,8 +776,8 @@
             "bg_color": "#ffffff",
             "bg_gradient": "",
             "text_color": "#505050",
-            "heading": "Precision-Welded Frame for a Seamless Refresh",
-            "text": "<p>Our frames feature ultra-smooth welding and refined tube joining,vno visible seams, no irritation, just elegant strength.</p>",
+            "heading": "B-Vitamins for Everyday Energy",
+            "text": "<p>B6 and B12 included in every serving. A clean energy feel without the sugar, the caffeine, or the crash.</p>",
             "show_segments": false,
             "segments": 4,
             "active_segment": "4",
@@ -797,8 +797,8 @@
             "bg_color": "#ffffff",
             "bg_gradient": "",
             "text_color": "#505050",
-            "heading": "Complimentary Tropical Kit Included",
-            "text": "<p>Each model includes a cushioned wide saddle and a Seatpost Suspension because comfort, convenience, and quality should come standard, not optional.</p>",
+            "heading": "Zero Sugar, Zero Caffeine",
+            "text": "<p>No sugar, no caffeine, no artificial sweeteners. Keto friendly and built for everyday hydration.</p>",
             "show_segments": false,
             "segments": 4,
             "active_segment": "3",
@@ -833,14 +833,14 @@
         "heading_qfVYNT": {
           "type": "heading",
           "settings": {
-            "title": "Meet Meet & Refresh With Drink LLC Taste With Drink LLC",
+            "title": "Taste the difference.",
             "use_h1": true
           }
         },
         "text_9RmwJz": {
           "type": "text",
           "settings": {
-            "text": "<p>Join Drink LLC\u2019s founder and team for demos, tasting events, pastries, drinks, giveaways, and raffles at select retail partners.</p>",
+            "text": "<p>Join the DRiNK team for demos, tasting events, giveaways, and more at select retail partners.</p>",
             "enlarge_text": false
           }
         },
@@ -945,31 +945,18 @@
             "name": "Lemonade",
             "tagline": "Classic",
             "image_url": "",
-            "price": "$3.99",
+            "price": "$24.99",
             "original_price": "",
             "rating": "4.9",
             "review_count": "250+ reviews",
             "button_label": "Shop Lemonade \u2192",
             "button_url": "/products/lemonade",
-            "motor": "90 calories",
-            "peak_power": "18g sugar",
-            "torque": "12 oz",
-            "battery": "Real lemon juice",
-            "range": "Bright & citrusy",
-            "top_speed": "Light sweetness",
-            "sensor": "Lemon, cane sugar",
-            "front_fork": "None",
-            "seatpost": "",
-            "tires": "",
-            "drivetrain": "",
-            "brakes": "",
-            "customer_height": "Anytime refresher",
-            "standover": "",
-            "frame_style": "",
-            "weight": "12 oz",
-            "max_payload": "",
-            "certification": "All Natural \u00b7 No Preservatives",
-            "ideal_customer": "Everyday hydration, hot weather, on-the-go"
+            "sugar": "0g",
+            "calories": "5",
+            "serving_size": "30",
+            "electrolytes": "6",
+            "caffeine": "0mg",
+            "keto": "Yes"
           }
         },
         "model_2": {
@@ -980,31 +967,18 @@
             "name": "Passion Fruit",
             "tagline": "Tropical \u00b7 Best Seller",
             "image_url": "",
-            "price": "$3.99",
+            "price": "$24.99",
             "original_price": "",
             "rating": "4.95",
             "review_count": "180+ reviews",
             "button_label": "Shop Passion Fruit \u2192",
             "button_url": "/products/passion-fruit",
-            "motor": "100 calories",
-            "peak_power": "22g sugar",
-            "torque": "12 oz",
-            "battery": "Real passion fruit puree",
-            "range": "Tropical & tangy",
-            "top_speed": "Medium sweetness",
-            "sensor": "Passion fruit, cane sugar",
-            "front_fork": "None",
-            "seatpost": "",
-            "tires": "",
-            "drivetrain": "",
-            "brakes": "",
-            "customer_height": "Island vibes anytime",
-            "standover": "",
-            "frame_style": "",
-            "weight": "12 oz",
-            "max_payload": "",
-            "certification": "All Natural \u00b7 No Preservatives",
-            "ideal_customer": "Tropical flavor lovers, afternoon pick-me-up"
+            "sugar": "0g",
+            "calories": "5",
+            "serving_size": "30",
+            "electrolytes": "6",
+            "caffeine": "0mg",
+            "keto": "Yes"
           }
         },
         "model_3": {
@@ -1015,31 +989,18 @@
             "name": "Matcha",
             "tagline": "Energy \u00b7 Focus",
             "image_url": "",
-            "price": "$4.49",
+            "price": "$24.99",
             "original_price": "",
             "rating": "4.85",
             "review_count": "120+ reviews",
             "button_label": "Shop Matcha \u2192",
             "button_url": "/products/matcha",
-            "motor": "70 calories",
-            "peak_power": "12g sugar",
-            "torque": "12 oz",
-            "battery": "Ceremonial-grade matcha",
-            "range": "Smooth & earthy",
-            "top_speed": "Lightly sweet",
-            "sensor": "Matcha, oat milk",
-            "front_fork": "None",
-            "seatpost": "",
-            "tires": "",
-            "drivetrain": "",
-            "brakes": "",
-            "customer_height": "Morning energy boost",
-            "standover": "",
-            "frame_style": "",
-            "weight": "12 oz",
-            "max_payload": "",
-            "certification": "Organic \u00b7 No Artificial Flavors",
-            "ideal_customer": "Clean energy seekers, health-conscious, matcha lovers"
+            "sugar": "0g",
+            "calories": "5",
+            "serving_size": "30",
+            "electrolytes": "6",
+            "caffeine": "0mg",
+            "keto": "Yes"
           }
         },
         "model_4": {
@@ -1050,31 +1011,18 @@
             "name": "Peach Mango",
             "tagline": "Sweet \u00b7 Tropical",
             "image_url": "",
-            "price": "$3.99",
+            "price": "$24.99",
             "original_price": "",
             "rating": "4.9",
             "review_count": "95+ reviews",
             "button_label": "Shop Peach Mango \u2192",
             "button_url": "/products/peach-mango",
-            "motor": "95 calories",
-            "peak_power": "20g sugar",
-            "torque": "12 oz",
-            "battery": "Real peach & mango juice",
-            "range": "Sweet & fruity",
-            "top_speed": "Medium sweetness",
-            "sensor": "Peach, mango, cane sugar",
-            "front_fork": "None",
-            "seatpost": "",
-            "tires": "",
-            "drivetrain": "",
-            "brakes": "",
-            "customer_height": "Sunny day sipper",
-            "standover": "",
-            "frame_style": "",
-            "weight": "12 oz",
-            "max_payload": "",
-            "certification": "All Natural \u00b7 No Preservatives",
-            "ideal_customer": "Sweet tooth, poolside refreshment, fruit lovers"
+            "sugar": "0g",
+            "calories": "5",
+            "serving_size": "30",
+            "electrolytes": "6",
+            "caffeine": "0mg",
+            "keto": "Yes"
           }
         }
       },

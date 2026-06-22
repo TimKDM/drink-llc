@@ -105,7 +105,7 @@
             "dropdown_link_title": "Hydration Powders",
             "image": "",
             "title": "Shop DRiNK Hydration Powders",
-            "link_url": "shopify://collections/beverages"
+            "link_url": "shopify://collections/hydration-powders"
           }
         },
         "menu_promotion_small_cgqEMQ": {
@@ -115,7 +115,7 @@
             "dropdown_link_title": "Hydration Powders",
             "image": "",
             "title": "Five flavors. Zero sugar. Pick yours.",
-            "link_url": "shopify://collections/beverages"
+            "link_url": "shopify://collections/hydration-powders"
           }
         }
       },
@@ -124,7 +124,7 @@
         "menu_promotion_small_cgqEMQ"
       ],
       "settings": {
-        "logo": "",
+        "logo": "shopify://shop_images/drink_header_logo.png",
         "logo_img_width_int": 155,
         "mobile_logo_img_width_int": 135,
         "logo_h1": true,
@@ -142,7 +142,7 @@
         "enable_mobile_promo_carousel": false,
         "enable_nav_mob_products": true,
         "nav_mob_products_title": "DRiNK Hydration Powders",
-        "nav_mob_products_collection": "beverages",
+        "nav_mob_products_collection": "hydration-powders",
         "enable_search": true,
         "search_recommendations_title": "",
         "search_recommendations_menu": "support-service",
