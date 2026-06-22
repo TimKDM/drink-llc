@@ -210,7 +210,7 @@
             "image": "",
             "image_width": 280,
             "link": "",
-            "title": "SR Suntour Suspension\u00a0\u2013 proven comfort on any road"
+            "title": "B-Vitamins\u00a0\u2013 B6 & B12 for everyday energy"
           }
         },
         "logo_EEUKT7": {
@@ -219,7 +219,7 @@
             "image": "",
             "image_width": 280,
             "link": "",
-            "title": "Shimano Drivetrains\u00a0\u2013 smooth shifting worldwide"
+            "title": "Real Fruit Flavor\u00a0\u2013 no artificial flavors"
           }
         },
         "logo_VkQfLw": {
@@ -228,7 +228,7 @@
             "image": "",
             "image_width": 280,
             "link": "",
-            "title": "LG Battery Cells\u00a0\u2013 long-lasting and reliable"
+            "title": "Zero Sugar\u00a0\u2013 sweetened naturally, keto friendly"
           }
         },
         "logo_HNG3cL": {
@@ -237,7 +237,7 @@
             "image": "",
             "image_width": 280,
             "link": "",
-            "title": "Tektro Hydraulic Brakes\u00a0\u2013 confident stopping power"
+            "title": "No Fillers\u00a0\u2013 short ingredient list, no nonsense"
           }
         }
       },
@@ -289,7 +289,7 @@
         "prod_3": {
           "type": "product_card",
           "settings": {
-            "product": "matcha-2-mid-step",
+            "product": "matcha",
             "collection": "",
             "image_url": "",
             "badge_text": "NEW",
@@ -311,13 +311,13 @@
             "color_4": "#5a2030",
             "color_5": "",
             "button_label": "Shop Matcha",
-            "button_url": "/collections/matcha-series"
+            "button_url": "/products/matcha"
           }
         },
         "prod_1": {
           "type": "product_card",
           "settings": {
-            "product": "passion-fruit-x-plus",
+            "product": "passion-fruit",
             "collection": "",
             "image_url": "",
             "badge_text": "BEST SELLER",
@@ -339,7 +339,7 @@
             "color_4": "#1a1a1a",
             "color_5": "",
             "button_label": "Shop Passion Fruit",
-            "button_url": "/products/passion-fruit-x-plus"
+            "button_url": "/products/passion-fruit"
           }
         }
       },
@@ -362,7 +362,7 @@
           "settings": {
             "image": "",
             "name": "Variety Pack",
-            "description": "Classic aluminum basket for added front storage while keeping your steering steady.\u00a0",
+            "description": "A little of every flavor in single-serve sticks. Easy to pack, easy to share.",
             "link": ""
           }
         },
@@ -389,7 +389,7 @@
           "settings": {
             "image": "",
             "name": "5-Flavor Bundle",
-            "description": "Carry tools, clothing, or daily items on your rear rack with easy organization.\u00a0",
+            "description": "All five flavors in full-size tubs. Stock up once, sip all month.",
             "link": ""
           }
         }
