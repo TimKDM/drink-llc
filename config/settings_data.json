@@ -125,7 +125,7 @@
     "coll_text_position_under_mobile": false,
     "coll_thumb_text_align_x": "left",
     "coll_thumb_text_align_y": "bottom",
-    "favicon": "",
+    "favicon": "shopify://shop_images/drink_favicon.png",
     "animations_enabled_desktop": true,
     "cart_type": "drawer",
     "after_add_to_cart": "drawer",

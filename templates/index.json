@@ -188,7 +188,7 @@
         "heading": "We make hydration powder.",
         "description_1": "No manifesto. No origin story about a hike. We wanted better hydration without the sugar, the caffeine, or the filler ingredients. So we made it.",
         "description_2": "Electrolytes. B-vitamins. Real flavor. Mixed with water. That's the whole thing.",
-        "button_label": "About Drink LLC \u2192",
+        "button_label": "About DRiNK \u2192",
         "button_url": "shopify://pages/about-us"
       }
     },
@@ -755,8 +755,8 @@
             "bg_color": "#ffffff",
             "bg_gradient": "",
             "text_color": "#505050",
-            "heading": "Fully Integrated Wiring for a Clean, Protected Look",
-            "text": "<p>Only Drink LLC hides cables within the frame, no dangling wires, no maintenance headaches. Looks sleek and protects components.</p>",
+            "heading": "Six Electrolytes in Every Scoop",
+            "text": "<p>Sodium, potassium, magnesium and more. The essentials your body needs after a workout, a commute, or a long day.</p>",
             "show_segments": false,
             "segments": 4,
             "active_segment": "2",
@@ -776,8 +776,8 @@
             "bg_color": "#ffffff",
             "bg_gradient": "",
             "text_color": "#505050",
-            "heading": "Precision-Welded Frame for a Seamless Refresh",
-            "text": "<p>Our frames feature ultra-smooth welding and refined tube joining,vno visible seams, no irritation, just elegant strength.</p>",
+            "heading": "B-Vitamins for Everyday Energy",
+            "text": "<p>B6 and B12 included in every serving. A clean energy feel without the sugar, the caffeine, or the crash.</p>",
             "show_segments": false,
             "segments": 4,
             "active_segment": "4",
@@ -797,8 +797,8 @@
             "bg_color": "#ffffff",
             "bg_gradient": "",
             "text_color": "#505050",
-            "heading": "Complimentary Tropical Kit Included",
-            "text": "<p>Each model includes a cushioned wide saddle and a Seatpost Suspension because comfort, convenience, and quality should come standard, not optional.</p>",
+            "heading": "Zero Sugar, Zero Caffeine",
+            "text": "<p>No sugar, no caffeine, no artificial sweeteners. Keto friendly and built for everyday hydration.</p>",
             "show_segments": false,
             "segments": 4,
             "active_segment": "3",
@@ -833,14 +833,14 @@
         "heading_qfVYNT": {
           "type": "heading",
           "settings": {
-            "title": "Meet Meet & Refresh With Drink LLC Taste With Drink LLC",
+            "title": "Taste the difference.",
             "use_h1": true
           }
         },
         "text_9RmwJz": {
           "type": "text",
           "settings": {
-            "text": "<p>Join Drink LLC\u2019s founder and team for demos, tasting events, pastries, drinks, giveaways, and raffles at select retail partners.</p>",
+            "text": "<p>Join the DRiNK team for demos, tasting events, giveaways, and more at select retail partners.</p>",
             "enlarge_text": false
           }
         },

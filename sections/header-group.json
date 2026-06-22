@@ -124,7 +124,7 @@
         "menu_promotion_small_cgqEMQ"
       ],
       "settings": {
-        "logo": "",
+        "logo": "shopify://shop_images/drink_header_logo.png",
         "logo_img_width_int": 155,
         "mobile_logo_img_width_int": 135,
         "logo_h1": true,
