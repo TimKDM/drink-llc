@@ -104,7 +104,7 @@
     "swatch_source": "theme",
     "swatch_option_name": "Color,color",
     "swatch_method": "swatches",
-    "swatch_value_list": "Lemonade: #FFE566\nLychee: #FF9EBA\nMatcha: #7CB518\nPassion Fruit: #C77DFF\nPeach Mango: #FF8C42",
+    "swatch_value_list": "Lemonade: #FFE566\nLychee: #FF9EBA\nCreatine: #5AB0FF\nPassion Fruit: #C77DFF\nPeach Mango: #FF8C42",
     "swatch_style": "icon_circle",
     "swatch_picker_image_size": 40,
     "enable_filter_swatches": true,
