@@ -15,8 +15,8 @@
         "image_nAbMMn": {
           "type": "image",
           "settings": {
-            "image": "",
-            "mobile_image": "",
+            "image": "shopify://shop_images/drink-hero-image.png",
+            "mobile_image": "shopify://shop_images/drink-hero-image.png",
             "slide_link": "",
             "subheading": "HYDRATION POWDER",
             "title": "Just Drink.",
@@ -36,8 +36,8 @@
         "image_NtLFBg": {
           "type": "image",
           "settings": {
-            "image": "",
-            "mobile_image": "",
+            "image": "shopify://shop_images/creatine.png",
+            "mobile_image": "shopify://shop_images/creatine.png",
             "slide_link": "",
             "subheading": "NEW",
             "title": "Creatine DRiNK",
@@ -58,8 +58,8 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "",
-            "mobile_image": "",
+            "image": "shopify://shop_images/passion-fruit-drink.png",
+            "mobile_image": "shopify://shop_images/passion-fruit-drink.png",
             "slide_link": "",
             "subheading": "",
             "title": "Pick your flavor.",
@@ -183,7 +183,7 @@
       ],
       "name": "DRiNK About Us",
       "settings": {
-        "image": "",
+        "image": "shopify://shop_images/lemonade-drink.png",
         "eyebrow": "About DRiNK",
         "heading": "We make hydration powder.",
         "description_1": "No manifesto. No origin story about a hike. We wanted better hydration without the sugar, the caffeine, or the filler ingredients. So we made it.",
@@ -253,7 +253,8 @@
         "title": "What's inside.",
         "image_opacity": 100,
         "color_scheme": "default"
-      }
+      },
+      "disabled": true
     },
     "drink_product_cards_eTzR4Q": {
       "type": "drink-product-cards",
@@ -412,7 +413,8 @@
         "highlight_button_url": "",
         "bg_image": "",
         "overlay_color": "rgba(255,255,255,0.75)"
-      }
+      },
+      "disabled": true
     },
     "1617292342c63ff855": {
       "type": "multi-column",
@@ -1073,8 +1075,8 @@
         "description": "Every tub. Every flavor. If you don't like it, we'll sort it out. No runaround.",
         "button_label": "Contact Us \u2192",
         "phone_number": "",
-        "button_url": "",
-        "image": ""
+        "button_url": "shopify://pages/contact",
+        "image": "shopify://shop_images/drink-hero-image.png"
       }
     },
     "custom_liquid_TfJHxB": {
