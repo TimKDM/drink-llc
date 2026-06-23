@@ -561,7 +561,8 @@
         "description": "Online. In stores. Wherever you hydrate.",
         "button_label": "Find a Retailer \u2192",
         "button_url": ""
-      }
+      },
+      "disabled": true
     },
     "scrolling_banner_4ErW9V": {
       "type": "scrolling-banner",
