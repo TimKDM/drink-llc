@@ -6,7 +6,7 @@
         "subheading_ajT4dc": {
           "type": "subheading",
           "settings": {
-            "subheading": "Free Shipping Over $49 · Sugar Free · Keto Friendly"
+            "subheading": "Sugar Free \u00b7 Keto Friendly \u00b7 Caffeine Free"
           }
         },
         "heading_h6RgNH": {
@@ -23,7 +23,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Six electrolytes. B-vitamins. Zero sugar. Five flavors people actually want to drink. Add water — that's the whole thing.</p>",
+            "text": "<p>Six electrolytes. B-vitamins. Zero sugar. Five flavors people actually want to drink. Add water \u2014 that's the whole thing.</p>",
             "enlarge_text": true
           }
         }
@@ -63,7 +63,7 @@
         "collapse_filters_method": "over-12",
         "show_filter_counts": false,
         "filter_two_columns": false,
-        "button_grid_filter_name": "Size,Taille,Größe",
+        "button_grid_filter_name": "Size,Taille,Gr\u00f6\u00dfe",
         "auto_apply_hide_unavailable": false,
         "enable_sticky_filter": true,
         "show_sort": true,
@@ -133,7 +133,7 @@
             "bg_gradient": "",
             "text_color": "#1f1f1f",
             "heading": "No Fillers, No Nonsense",
-            "text": "<p>Short ingredient list. B-vitamins included. Made in Houston, TX.</p>",
+            "text": "<p>Short ingredient list. B-vitamins included. Made in the USA.</p>",
             "show_segments": true,
             "segments": 5,
             "active_segment": "3",

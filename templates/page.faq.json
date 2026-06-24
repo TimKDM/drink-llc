@@ -1,1 +1,207 @@
-{"sections":{"heading":{"type":"image-with-text-overlay","blocks":{"heading":{"type":"heading","disabled":true,"settings":{"title":"DRiNK FAQ","heading_max_width":15,"title_size":52,"title_size_mobile":32,"use_h1":false}},"text":{"type":"text","disabled":true,"settings":{"text":"<p>Questions. Answers. No fluff.<\/p>","enlarge_text":true}}},"block_order":["heading","text"],"settings":{"image":"","height":"fixed","height_desktop":280,"height_mobile":100,"image_link":"","full_width":true,"text_alignment":"center left","mobile_overlay_under":false,"overlay_style":"full image-overlay--bg-shadow"}},"main":{"type":"faq-header","settings":{"title":"FAQ","use_h1":true,"text":"","show_search":true,"show_index":true,"index_heading":"What do you want to know?"}},"faq-content-1":{"type":"collapsible-tabs","blocks":{"question-1":{"type":"question","settings":{"title":"What is DRiNK?","answer":"<p>DRiNK is a premium hydration powder. You mix it with water. It tastes good and actually works. Electrolytes, B-vitamins, no fillers.<\/p>"}},"question-2":{"type":"question","settings":{"title":"How do I use it?","answer":"<p>Add one scoop to 12–16 oz of water. Stir or shake. Done.<\/p>"}},"question_eVmgjY":{"type":"question","settings":{"title":"What flavors are available?","answer":"<p>Lemonade, Lychee, Peach Mango, Passion Fruit, and Creatine. Five DRiNKs. All good.<\/p>"}},"question_EzDwXb":{"type":"question","settings":{"title":"Is it sugar free?","answer":"<p>Yes. Zero sugar. Zero artificial sweeteners. Zero guilt.<\/p>"}},"question_keto":{"type":"question","settings":{"title":"Is it keto friendly?","answer":"<p>Yes. Zero carbs that matter. Keto approved.<\/p>"}}},"block_order":["question-1","question-2","question_eVmgjY","question_EzDwXb","question_keto"],"settings":{"title":"The Basics"}},"faq-content-2":{"type":"collapsible-tabs","blocks":{"question-1":{"type":"question","settings":{"title":"What electrolytes are included?","answer":"<p>Sodium, potassium, and magnesium. The ones your body actually needs.<\/p>"}},"question_caffeine":{"type":"question","settings":{"title":"Is it caffeine free?","answer":"<p>Yes — every DRiNK is caffeine free, including Creatine.<\/p>"}},"question_made":{"type":"question","settings":{"title":"Where is it made?","answer":"<p>Made in the USA. Houston, Texas.<\/p>"}},"question_servings":{"type":"question","settings":{"title":"How many servings per tub?","answer":"<p>30 servings per tub. One scoop per serving.<\/p>"}},"question_mix":{"type":"question","settings":{"title":"Can I mix flavors?","answer":"<p>Your tub, your rules. Half scoop Lemonade, half scoop Peach Mango. Nobody is stopping you.<\/p>"}}},"block_order":["question-1","question_caffeine","question_made","question_servings","question_mix"],"settings":{"title":"Details"}},"contact":{"type":"rich-text","blocks":{"icon":{"type":"icon","settings":{"icon":"chat_bubble","icon_color":"rgba(0,0,0,0)"}},"heading":{"type":"heading","settings":{"title":"Still have questions?","use_h1":false}},"text":{"type":"text","settings":{"text":"<p>We answer emails. Quickly.<\/p>","enlarge_text":true}},"button":{"type":"button","settings":{"button_label":"Contact us","button_link":"shopify:\/\/pages\/customer-support","button_style":"primary"}}},"block_order":["icon","heading","text","button"],"settings":{"height":"medium","text_alignment":"center","full_width":false,"color_scheme":"default"}}},"order":["heading","main","faq-content-1","faq-content-2","contact"]}
+{
+  "sections": {
+    "heading": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "DRiNK FAQ",
+            "heading_max_width": 15,
+            "title_size": 52,
+            "title_size_mobile": 32,
+            "use_h1": false
+          }
+        },
+        "text": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Questions. Answers. No fluff.</p>",
+            "enlarge_text": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image": "",
+        "height": "fixed",
+        "height_desktop": 280,
+        "height_mobile": 100,
+        "image_link": "",
+        "full_width": true,
+        "text_alignment": "center left",
+        "mobile_overlay_under": false,
+        "overlay_style": "full image-overlay--bg-shadow"
+      }
+    },
+    "main": {
+      "type": "faq-header",
+      "settings": {
+        "title": "FAQ",
+        "use_h1": true,
+        "text": "",
+        "show_search": true,
+        "show_index": true,
+        "index_heading": "What do you want to know?"
+      }
+    },
+    "faq-content-1": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "What is DRiNK?",
+            "answer": "<p>DRiNK is a premium hydration powder. You mix it with water. It tastes good and actually works. Electrolytes, B-vitamins, no fillers.</p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "How do I use it?",
+            "answer": "<p>Add one scoop to 12\u201316 oz of water. Stir or shake. Done.</p>"
+          }
+        },
+        "question_eVmgjY": {
+          "type": "question",
+          "settings": {
+            "title": "What flavors are available?",
+            "answer": "<p>Lemonade, Lychee, Peach Mango, Passion Fruit, and Creatine. Five DRiNKs. All good.</p>"
+          }
+        },
+        "question_EzDwXb": {
+          "type": "question",
+          "settings": {
+            "title": "Is it sugar free?",
+            "answer": "<p>Yes. Zero sugar. Zero artificial sweeteners. Zero guilt.</p>"
+          }
+        },
+        "question_keto": {
+          "type": "question",
+          "settings": {
+            "title": "Is it keto friendly?",
+            "answer": "<p>Yes. Zero carbs that matter. Keto approved.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2",
+        "question_eVmgjY",
+        "question_EzDwXb",
+        "question_keto"
+      ],
+      "settings": {
+        "title": "The Basics"
+      }
+    },
+    "faq-content-2": {
+      "type": "collapsible-tabs",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "What electrolytes are included?",
+            "answer": "<p>Sodium, potassium, and magnesium. The ones your body actually needs.</p>"
+          }
+        },
+        "question_caffeine": {
+          "type": "question",
+          "settings": {
+            "title": "Is it caffeine free?",
+            "answer": "<p>Yes \u2014 every DRiNK is caffeine free, including Creatine.</p>"
+          }
+        },
+        "question_made": {
+          "type": "question",
+          "settings": {
+            "title": "Where is it made?",
+            "answer": "<p>Made in the USA.</p>"
+          }
+        },
+        "question_servings": {
+          "type": "question",
+          "settings": {
+            "title": "How many servings per tub?",
+            "answer": "<p>30 servings per tub. One scoop per serving.</p>"
+          }
+        },
+        "question_mix": {
+          "type": "question",
+          "settings": {
+            "title": "Can I mix flavors?",
+            "answer": "<p>Your tub, your rules. Half scoop Lemonade, half scoop Peach Mango. Nobody is stopping you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question_caffeine",
+        "question_made",
+        "question_servings",
+        "question_mix"
+      ],
+      "settings": {
+        "title": "Details"
+      }
+    },
+    "contact": {
+      "type": "rich-text",
+      "blocks": {
+        "icon": {
+          "type": "icon",
+          "settings": {
+            "icon": "chat_bubble",
+            "icon_color": "rgba(0,0,0,0)"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Still have questions?",
+            "use_h1": false
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We answer emails. Quickly.</p>",
+            "enlarge_text": true
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact us",
+            "button_link": "shopify://pages/customer-support",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "icon",
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "height": "medium",
+        "text_alignment": "center",
+        "full_width": false,
+        "color_scheme": "default"
+      }
+    }
+  },
+  "order": [
+    "heading",
+    "main",
+    "faq-content-1",
+    "faq-content-2",
+    "contact"
+  ]
+}
