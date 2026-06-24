@@ -15,8 +15,8 @@
         "image_nAbMMn": {
           "type": "image",
           "settings": {
-            "image": "",
-            "mobile_image": "",
+            "image": "shopify://shop_images/drink-hero-image.png",
+            "mobile_image": "shopify://shop_images/drink-hero-image.png",
             "slide_link": "",
             "subheading": "HYDRATION POWDER",
             "title": "Just Drink.",
@@ -27,7 +27,7 @@
             "text": "<p>Five flavors. Zero sugar. All the electrolytes.</p>",
             "enlarge_text": true,
             "button_label_1": "Shop All Flavors",
-            "button_url_1": "",
+            "button_url_1": "/collections/hydration-powders",
             "button_label_2": "",
             "button_url_2": "",
             "text_alignment": "center left"
@@ -36,8 +36,8 @@
         "image_NtLFBg": {
           "type": "image",
           "settings": {
-            "image": "",
-            "mobile_image": "",
+            "image": "shopify://shop_images/creatine.png",
+            "mobile_image": "shopify://shop_images/creatine.png",
             "slide_link": "",
             "subheading": "NEW",
             "title": "Creatine DRiNK",
@@ -58,8 +58,8 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "",
-            "mobile_image": "",
+            "image": "shopify://shop_images/passion-fruit-drink.png",
+            "mobile_image": "shopify://shop_images/passion-fruit-drink.png",
             "slide_link": "",
             "subheading": "",
             "title": "Pick your flavor.",
@@ -183,7 +183,7 @@
       ],
       "name": "DRiNK About Us",
       "settings": {
-        "image": "",
+        "image": "shopify://shop_images/lemonade-drink.png",
         "eyebrow": "About DRiNK",
         "heading": "We make hydration powder.",
         "description_1": "No manifesto. No origin story about a hike. We wanted better hydration without the sugar, the caffeine, or the filler ingredients. So we made it.",
@@ -253,7 +253,8 @@
         "title": "What's inside.",
         "image_opacity": 100,
         "color_scheme": "default"
-      }
+      },
+      "disabled": true
     },
     "drink_product_cards_eTzR4Q": {
       "type": "drink-product-cards",
@@ -274,7 +275,7 @@
             "category": "Classic",
             "name": "Lemonade",
             "description": "Sweet without the sugar. Bright without the crash.",
-            "sale_price": "$24.99",
+            "sale_price": "$29.99",
             "original_price": "",
             "customer_height": "Customers: 4'11\" \u2013 5'10\"",
             "color_1": "#d4643a",
@@ -302,7 +303,7 @@
             "category": "Strength",
             "name": "Creatine",
             "description": "5g creatine + electrolytes. Strength meets hydration.",
-            "sale_price": "$24.99",
+            "sale_price": "$39.99",
             "original_price": "",
             "customer_height": "Step-Thru (5'2\"\u20136'0\") & Mid-Step (5'4\"\u20136'2\")",
             "color_1": "#5AB0FF",
@@ -330,7 +331,7 @@
             "category": "Tropical",
             "name": "Passion Fruit",
             "description": "Island flavor. Mainland hydration.",
-            "sale_price": "$24.99",
+            "sale_price": "$29.99",
             "original_price": "",
             "customer_height": "Customers: 5'2\" \u2013 6'0\"",
             "color_1": "#4a7ab5",
@@ -412,7 +413,8 @@
         "highlight_button_url": "",
         "bg_image": "",
         "overlay_color": "rgba(255,255,255,0.75)"
-      }
+      },
+      "disabled": true
     },
     "1617292342c63ff855": {
       "type": "multi-column",
@@ -561,7 +563,8 @@
         "description": "Online. In stores. Wherever you hydrate.",
         "button_label": "Find a Retailer \u2192",
         "button_url": ""
-      }
+      },
+      "disabled": true
     },
     "scrolling_banner_4ErW9V": {
       "type": "scrolling-banner",
@@ -577,7 +580,7 @@
         "text_we3Dkx": {
           "type": "text",
           "settings": {
-            "text": "Free shipping over $49. Zero sugar. Zero nonsense.!",
+            "text": "Zero sugar. Six electrolytes. Zero nonsense.",
             "color": "#113702",
             "link": "",
             "use_h1": true,
@@ -848,7 +851,7 @@
           "type": "button",
           "settings": {
             "button_label": "Learn More",
-            "button_link": "https://www.facebook.com/drinkllc/events",
+            "button_link": "",
             "button_style": "primary"
           }
         }
@@ -884,7 +887,7 @@
           "type": "subheading",
           "disabled": true,
           "settings": {
-            "subheading": "Free shipping over $49. Zero sugar. Zero nonsense."
+            "subheading": "Zero sugar. Six electrolytes. Zero nonsense."
           }
         },
         "text_ccDNHG": {
@@ -945,7 +948,7 @@
             "name": "Lemonade",
             "tagline": "Classic",
             "image_url": "",
-            "price": "$24.99",
+            "price": "$29.99",
             "original_price": "",
             "rating": "4.9",
             "review_count": "250+ reviews",
@@ -967,7 +970,7 @@
             "name": "Passion Fruit",
             "tagline": "Tropical \u00b7 Best Seller",
             "image_url": "",
-            "price": "$24.99",
+            "price": "$29.99",
             "original_price": "",
             "rating": "4.95",
             "review_count": "180+ reviews",
@@ -989,7 +992,7 @@
             "name": "Creatine",
             "tagline": "Strength \u00b7 Hydration",
             "image_url": "",
-            "price": "$24.99",
+            "price": "$39.99",
             "original_price": "",
             "rating": "4.85",
             "review_count": "120+ reviews",
@@ -1011,12 +1014,34 @@
             "name": "Peach Mango",
             "tagline": "Sweet \u00b7 Tropical",
             "image_url": "",
-            "price": "$24.99",
+            "price": "$29.99",
             "original_price": "",
             "rating": "4.9",
             "review_count": "95+ reviews",
             "button_label": "Shop Peach Mango \u2192",
             "button_url": "/products/peach-mango",
+            "sugar": "0g",
+            "calories": "5",
+            "serving_size": "30",
+            "electrolytes": "6",
+            "caffeine": "0mg",
+            "keto": "Yes"
+          }
+        },
+        "model_5": {
+          "type": "model",
+          "settings": {
+            "product": "lychee",
+            "collection": "",
+            "name": "Lychee",
+            "tagline": "Exotic \u00b7 Floral",
+            "image_url": "",
+            "price": "$29.99",
+            "original_price": "",
+            "rating": "4.9",
+            "review_count": "75+ reviews",
+            "button_label": "Shop Lychee \u2192",
+            "button_url": "/products/lychee",
             "sugar": "0g",
             "calories": "5",
             "serving_size": "30",
@@ -1030,7 +1055,8 @@
         "model_1",
         "model_2",
         "model_3",
-        "model_4"
+        "model_4",
+        "model_5"
       ],
       "name": "DRiNK Compare Flavors",
       "settings": {
@@ -1049,8 +1075,8 @@
         "description": "Every tub. Every flavor. If you don't like it, we'll sort it out. No runaround.",
         "button_label": "Contact Us \u2192",
         "phone_number": "",
-        "button_url": "",
-        "image": ""
+        "button_url": "shopify://pages/contact",
+        "image": "shopify://shop_images/drink-hero-image.png"
       }
     },
     "custom_liquid_TfJHxB": {
