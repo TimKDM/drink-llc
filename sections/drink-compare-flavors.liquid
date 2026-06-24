@@ -3,8 +3,8 @@
 <!-- NOTE: This section includes JavaScript for the flavor toggle functionality -->
 <style>
 .drink-compare {
-  padding: 100px 48px;
-  background: #FFFFFF;
+  padding: 110px 48px;
+  background: #F7F7F4;
   text-align: center;
   font-family: var(--base-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   box-sizing: border-box;
@@ -12,22 +12,25 @@
 .drink-compare * { box-sizing: border-box; margin: 0; padding: 0; }
 .drink-compare-eyebrow {
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #777777;
+  color: #1E7FFF;
   margin-bottom: 16px;
 }
 .drink-compare h2 {
   font-family: var(--heading-font-family), serif;
-  font-size: 52px;
+  font-size: clamp(34px, 5vw, 64px);
   font-weight: 700;
-  margin-bottom: 16px;
-  color: #1A1A1A;
+  line-height: 1.0;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  color: #0B0B0F;
 }
 .drink-compare > p {
   font-size: 18px;
-  color: #555555;
+  color: #3A3A40;
   margin-bottom: 48px;
 }
 
@@ -43,21 +46,21 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #F5F5F5;
-  border: 2px solid #E0E0E0;
-  border-radius: 12px;
+  background: #FFFFFF;
+  border: 1px solid #ECECEC;
+  border-radius: 4px;
   padding: 16px 24px;
   cursor: pointer;
   transition: all 0.25s;
   user-select: none;
 }
-.drink-compare-toggle:hover { border-color: #999999; }
-.drink-compare-toggle.active { border-color: #FFE566; box-shadow: 0 4px 20px rgba(255,229,102,0.1); }
+.drink-compare-toggle:hover { border-color: #1E7FFF; transform: translateY(-2px); }
+.drink-compare-toggle.active { border-color: #1E7FFF; box-shadow: inset 0 0 0 1px #1E7FFF; }
 .drink-toggle-check {
   width: 24px;
   height: 24px;
-  border-radius: 6px;
-  border: 2px solid #555555;
+  border-radius: 4px;
+  border: 1px solid #C9C9CE;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,26 +68,31 @@
   flex-shrink: 0;
 }
 .drink-compare-toggle.active .drink-toggle-check {
-  background: #FFE566;
-  border-color: #FFE566;
+  background: #1E7FFF;
+  border-color: #1E7FFF;
 }
-.drink-toggle-check svg { opacity: 0; transition: opacity 0.15s; stroke: #0D0D0D; }
+.drink-toggle-check svg { opacity: 0; transition: opacity 0.15s; stroke: #FFFFFF; }
 .drink-compare-toggle.active .drink-toggle-check svg { opacity: 1; }
 .drink-toggle-info { text-align: left; }
 .drink-toggle-name {
   font-family: var(--heading-font-family), serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  color: #1A1A1A;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  color: #0B0B0F;
 }
 .drink-toggle-tagline {
   font-size: 13px;
-  color: #555555;
+  color: #3A3A40;
   margin-top: 2px;
 }
 .drink-compare-hint {
-  font-size: 14px;
-  color: #777777;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1E7FFF;
   margin-bottom: 32px;
 }
 
@@ -104,15 +112,17 @@
 .drink-compare-table thead th {
   position: sticky;
   top: 72px;
-  background: #FFFFFF;
+  background: #F7F7F4;
   z-index: 5;
   padding: 0 16px 20px;
   vertical-align: bottom;
 }
 .drink-compare-table th.drink-col-label { width: 180px; min-width: 160px; }
 .drink-compare-col-head {
-  background: #F5F5F5;
-  border-radius: 16px 16px 0 0;
+  background: #FFFFFF;
+  border: 1px solid #ECECEC;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
   padding: 28px 16px 20px;
   text-align: center;
   min-width: 200px;
@@ -123,27 +133,29 @@
   height: auto;
   margin: 0 auto 12px;
   display: block;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.1));
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
 }
 .drink-compare-col-head h4 {
   font-family: var(--heading-font-family), serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
-  color: #1A1A1A;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+  color: #0B0B0F;
   margin-bottom: 4px;
 }
 .drink-col-price {
   font-size: 15px;
-  color: #555555;
+  color: #3A3A40;
   font-weight: 600;
 }
 .drink-col-price .drink-price-was {
   text-decoration: line-through;
-  color: #c0c0c0;
+  color: #C9C9CE;
   font-weight: 400;
   margin-left: 6px;
 }
-.drink-col-price .drink-price-now { color: #c0392b; font-weight: 800; }
+.drink-col-price .drink-price-now { color: #1E7FFF; font-weight: 800; }
 .drink-col-rating {
   display: flex;
   align-items: center;
@@ -151,46 +163,48 @@
   gap: 6px;
   margin-top: 8px;
   font-size: 13px;
-  color: #555555;
+  color: #3A3A40;
 }
-.drink-col-rating .drink-stars-sm { color: #FF8C42; font-size: 15px; letter-spacing: 1px; }
+.drink-col-rating .drink-stars-sm { color: #1E7FFF; font-size: 15px; letter-spacing: 1px; }
 
 /* Table body */
 .drink-compare-table tbody tr { transition: background 0.15s; }
-.drink-compare-table tbody tr:hover { background: #F8F8F8; }
+.drink-compare-table tbody tr:hover { background: #FFFFFF; }
 .drink-compare-table td, .drink-compare-table th {
   padding: 16px;
   font-size: 15px;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #ECECEC;
   vertical-align: middle;
 }
 .drink-compare-table .drink-row-label {
   font-weight: 700;
-  color: #555555;
-  font-size: 14px;
-  letter-spacing: 0.3px;
+  color: #3A3A40;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   white-space: nowrap;
 }
-.drink-compare-table .drink-row-label svg { width: 16px; height: 16px; opacity: 0.4; margin-right: 8px; vertical-align: -2px; }
+.drink-compare-table .drink-row-label svg { width: 16px; height: 16px; color: #1E7FFF; opacity: 1; margin-right: 8px; vertical-align: -2px; }
 .drink-compare-table td {
   text-align: center;
-  color: #555555;
+  color: #3A3A40;
   font-weight: 500;
   min-width: 200px;
 }
-.drink-compare-table td strong { color: #1A1A1A; font-weight: 700; }
+.drink-compare-table td strong { color: #0B0B0F; font-weight: 700; }
 
 /* Category header rows */
 .drink-compare-table .drink-cat-row td, .drink-compare-table .drink-cat-row th {
   padding-top: 28px;
-  border-bottom: 2px solid #E0E0E0;
+  border-bottom: 2px solid #1E7FFF;
 }
 .drink-compare-table .drink-cat-row .drink-row-label {
   font-family: var(--heading-font-family), serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  color: #1A1A1A;
-  letter-spacing: 0;
+  color: #0B0B0F;
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
 }
 
 /* CTA row */
@@ -201,21 +215,23 @@
 }
 .drink-btn-compare {
   display: inline-block;
-  background: #1A1A1A;
+  background: #0B0B0F;
   color: #FFFFFF;
-  padding: 14px 16px;
-  border-radius: 8px;
+  padding: 16px 22px;
+  border-radius: 4px;
   font-size: 13px;
   font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   text-decoration: none;
   transition: all 0.2s;
   text-align: center;
   white-space: nowrap;
 }
 .drink-btn-compare:hover {
-  background: #333333;
+  background: #1E7FFF;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(30,127,255,0.25);
 }
 
 /* Column visibility */
@@ -223,54 +239,56 @@
 
 /* Featured column header accent */
 .drink-compare-col-head.drink-featured-head {
-  background: linear-gradient(180deg, #F5F5F5 0%, #EEEEEE 100%);
+  background: #FFFFFF;
+  border-top: 3px solid #1E7FFF;
 }
 
 /* Mobile scroll hint */
 .drink-compare-scroll-hint {
   display: none;
   text-align: center;
-  font-size: 13px;
-  color: #777777;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1E7FFF;
   margin-top: 12px;
 }
 @media (max-width: 900px) {
   .drink-compare-scroll-hint { display: block; }
   .drink-compare-selector { gap: 10px; }
   .drink-compare-toggle { padding: 12px 16px; }
-  .drink-toggle-name { font-size: 16px; }
+  .drink-toggle-name { font-size: 18px; }
 }
 
 /* Tablet */
 @media (max-width: 1024px) {
-  .drink-compare h2 { font-size: 40px; }
+  .drink-compare h2 { font-size: clamp(34px, 6vw, 48px); }
 }
 /* Mobile */
 @media (max-width: 768px) {
   .drink-compare { padding: 64px 20px; }
-  .drink-compare h2 { font-size: 32px; }
   .drink-compare > p { font-size: 15px; margin-bottom: 32px; }
   .drink-compare-selector { gap: 8px; flex-direction: column; align-items: center; }
   .drink-compare-toggle { padding: 12px 16px; width: 100%; max-width: 320px; }
-  .drink-toggle-name { font-size: 15px; }
+  .drink-toggle-name { font-size: 16px; }
   .drink-toggle-tagline { font-size: 12px; }
-  .drink-compare-hint { font-size: 13px; margin-bottom: 20px; }
+  .drink-compare-hint { font-size: 12px; margin-bottom: 20px; }
   .drink-compare-table td, .drink-compare-table th { padding: 12px 10px; font-size: 13px; }
-  .drink-compare-table .drink-row-label { font-size: 12px; white-space: normal; }
+  .drink-compare-table .drink-row-label { font-size: 11px; white-space: normal; }
   .drink-compare-table td { min-width: 140px; }
   .drink-compare-col-head { padding: 20px 10px 16px; min-width: 140px; }
-  .drink-compare-col-head h4 { font-size: 16px; }
+  .drink-compare-col-head h4 { font-size: 18px; }
   .drink-col-price { font-size: 13px; }
   .drink-col-rating { font-size: 11px; }
   .drink-compare-product-photo { max-width: 140px; }
-  .drink-compare-table .drink-cat-row .drink-row-label { font-size: 14px; }
-  .drink-btn-compare { padding: 12px 12px; font-size: 12px; }
+  .drink-compare-table .drink-cat-row .drink-row-label { font-size: 16px; }
+  .drink-btn-compare { padding: 13px 14px; font-size: 12px; }
 }
 @media (max-width: 480px) {
-  .drink-compare h2 { font-size: 28px; }
   .drink-compare-table td { min-width: 120px; }
   .drink-compare-col-head { min-width: 120px; padding: 16px 8px 12px; }
-  .drink-compare-col-head h4 { font-size: 14px; }
+  .drink-compare-col-head h4 { font-size: 16px; }
   .drink-compare-product-photo { max-width: 100px; }
   .drink-compare-table td, .drink-compare-table th { padding: 10px 8px; font-size: 12px; }
   .drink-compare-table .drink-row-label { font-size: 11px; }
