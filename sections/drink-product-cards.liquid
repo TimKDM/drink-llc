@@ -2,8 +2,8 @@
 <!-- Dynamic 3-column grid with editable product cards via blocks -->
 <style>
 .drink-products {
-  padding: 100px 48px;
-  background: #F8F8F8;
+  padding: 112px 48px;
+  background: #0B0B0F;
   font-family: var(--base-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   box-sizing: border-box;
 }
@@ -14,18 +14,28 @@
 }
 .drink-products-eyebrow {
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #777777;
+  color: #C6FF1A;
   margin-bottom: 16px;
 }
 .drink-products-header h2 {
   font-family: var(--heading-font-family), serif;
-  font-size: 56px;
+  font-size: clamp(34px, 5vw, 64px);
   font-weight: 700;
-  color: #1A1A1A;
-  line-height: 1.1;
+  color: #FFFFFF;
+  line-height: 1.0;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+.drink-products-header h2::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  background: #C6FF1A;
+  margin: 20px auto 0;
 }
 .drink-product-grid {
   display: grid;
@@ -35,21 +45,22 @@
   margin: 0 auto;
 }
 .drink-product-card {
-  background: #FFFFFF;
-  border-radius: 16px;
+  background: #15151D;
+  border-radius: 8px;
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
   position: relative;
-  border: 1px solid #EEEEEE;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 .drink-product-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+  border-color: #C6FF1A;
 }
 .drink-product-img {
   position: relative;
   padding: 40px 32px 20px;
-  background: linear-gradient(180deg, #F5F5F5 0%, #FFFFFF 100%);
+  background: linear-gradient(180deg, #1C1C26 0%, #15151D 100%);
   text-align: center;
 }
 .drink-product-img img { width: 100%; max-width: 380px; height: auto; }
@@ -57,19 +68,21 @@
   position: absolute;
   top: 16px;
   left: 16px;
-  background: #FFE566;
-  color: #0D0D0D;
+  background: #C6FF1A;
+  color: #0B0B0F;
   padding: 6px 14px;
   border-radius: 4px;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 .drink-product-specs {
   display: flex;
   justify-content: center;
   gap: 20px;
   padding: 12px 0;
-  border-top: 1px solid #EEEEEE;
+  border-top: 1px solid rgba(255,255,255,0.08);
   margin: 0 24px;
 }
 .drink-spec-item {
@@ -78,28 +91,30 @@
   gap: 6px;
   font-size: 13px;
   font-weight: 600;
-  color: #555555;
+  color: #C9C9CE;
 }
-.drink-spec-item svg { width: 16px; height: 16px; opacity: 0.6; }
+.drink-spec-item svg { width: 16px; height: 16px; color: #C6FF1A; opacity: 1; }
 .drink-product-info { padding: 20px 28px 28px; }
 .drink-product-category {
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #777777;
+  color: #C6FF1A;
   margin-bottom: 8px;
 }
 .drink-product-name {
   font-family: var(--heading-font-family), serif;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 8px;
-  color: #1A1A1A;
+  color: #FFFFFF;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
 }
 .drink-product-desc {
   font-size: 15px;
-  color: #555555;
+  color: #C9C9CE;
   line-height: 1.5;
   margin-bottom: 16px;
 }
@@ -112,21 +127,21 @@
 .drink-price-sale {
   font-size: 28px;
   font-weight: 800;
-  color: #c0392b;
+  color: #FF2E93;
 }
 .drink-price-original {
   font-size: 18px;
-  color: #c0c0c0;
+  color: #6A6A72;
   text-decoration: line-through;
 }
 .drink-price-regular {
   font-size: 28px;
   font-weight: 800;
-  color: #1A1A1A;
+  color: #FFFFFF;
 }
 .drink-product-height {
   font-size: 13px;
-  color: #777777;
+  color: #C9C9CE;
   margin-bottom: 16px;
 }
 .drink-color-swatches {
@@ -138,51 +153,50 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 2px solid #ffffff;
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
+  border: 2px solid #15151D;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.2);
 }
 .drink-product-card .drink-btn-product {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  background: #1A1A1A;
-  color: #FFFFFF;
+  background: #C6FF1A;
+  color: #0B0B0F;
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
+  text-transform: uppercase;
   text-decoration: none;
   border: none;
   cursor: pointer;
   transition: all 0.25s;
-  letter-spacing: 0.3px;
+  letter-spacing: 1px;
   text-align: center;
 }
 .drink-product-card .drink-btn-product:hover {
-  background: #333333;
+  background: #D6FF52;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 25px rgba(198,255,26,0.25);
 }
 
 /* Tablet */
 @media (max-width: 1024px) {
   .drink-product-grid { grid-template-columns: 1fr 1fr; max-width: 800px; margin: 0 auto; }
-  .drink-products-header h2 { font-size: 40px; }
 }
 /* Mobile */
 @media (max-width: 768px) {
   .drink-products { padding: 64px 20px; }
   .drink-products-header { margin-bottom: 40px; }
-  .drink-products-header h2 { font-size: 32px; }
   .drink-product-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
-  .drink-product-name { font-size: 22px; }
+  .drink-product-name { font-size: 24px; }
   .drink-product-desc { font-size: 14px; }
   .drink-product-img { padding: 28px 20px 16px; }
   .drink-product-info { padding: 16px 20px 24px; }
 }
 @media (max-width: 480px) {
-  .drink-products-header h2 { font-size: 28px; }
+  .drink-products { padding: 56px 18px; }
 }
 </style>
 

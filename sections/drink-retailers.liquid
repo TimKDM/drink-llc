@@ -3,7 +3,7 @@
 <style>
 .drink-retailers {
   padding: 120px 48px;
-  background: #FFFFFF;
+  background: #0B0B0F;
   font-family: var(--base-font-family), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   box-sizing: border-box;
 }
@@ -23,12 +23,18 @@
 }
 .drink-retailer-img {
   aspect-ratio: 1;
-  border-radius: 12px;
+  border-radius: 0;
   overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: border-color 0.25s, transform 0.25s;
 }
 .drink-retailer-img:first-child {
   grid-row: span 2;
   aspect-ratio: auto;
+}
+.drink-retailer-img:hover {
+  border-color: #C6FF1A;
+  transform: translateY(-2px);
 }
 .drink-retailer-img img {
   width: 100%;
@@ -38,24 +44,34 @@
 }
 .drink-retailer-eyebrow {
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #777777;
+  color: #C6FF1A;
   margin-bottom: 16px;
 }
 .drink-retailer-content h2 {
   font-family: var(--heading-font-family), serif;
-  font-size: 52px;
+  font-size: clamp(34px, 5vw, 64px);
   font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 24px;
-  color: #1A1A1A;
+  line-height: 0.98;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+.drink-retailer-content h2::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  background: #C6FF1A;
+  margin-top: 18px;
 }
 .drink-retailer-content p {
   font-size: 18px;
   line-height: 1.7;
-  color: #555555;
+  color: #C9C9CE;
   margin-bottom: 32px;
 }
 .drink-retailer-perks {
@@ -69,63 +85,61 @@
   align-items: center;
   gap: 14px;
   font-size: 16px;
-  font-weight: 500;
-  color: #1A1A1A;
+  font-weight: 600;
+  color: #FFFFFF;
 }
 .drink-perk-icon {
   width: 36px;
   height: 36px;
-  border-radius: 50%;
-  background: #FFF8E1;
-  border: 1px solid #EEEEEE;
+  border-radius: 8px;
+  background: #15151D;
+  border: 1px solid rgba(255,255,255,0.08);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
-.drink-perk-icon svg { width: 18px; height: 18px; color: #1A1A1A; }
-.drink-perk:nth-child(2) .drink-perk-icon { background: #FFE8F0; }
-.drink-perk:nth-child(3) .drink-perk-icon { background: #E8F5E9; }
+.drink-perk-icon svg { width: 18px; height: 18px; color: #C6FF1A; }
+.drink-perk:nth-child(2) .drink-perk-icon svg { color: #1E7FFF; }
+.drink-perk:nth-child(3) .drink-perk-icon svg { color: #FF2E93; }
 .drink-retailers .drink-btn-retailer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background: #1A1A1A;
-  color: #FFFFFF;
-  padding: 20px 40px;
-  border-radius: 8px;
-  font-size: 18px;
+  background: #C6FF1A;
+  color: #0B0B0F;
+  padding: 16px 34px;
+  border-radius: 4px;
+  font-size: 16px;
   font-weight: 700;
+  text-transform: uppercase;
   text-decoration: none;
   border: none;
   cursor: pointer;
   transition: all 0.25s;
-  letter-spacing: 0.3px;
+  letter-spacing: 1px;
 }
 .drink-retailers .drink-btn-retailer:hover {
-  background: #333333;
+  background: #D6FF52;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 25px rgba(198,255,26,0.25);
 }
 
 /* Tablet */
 @media (max-width: 1024px) {
   .drink-retailer-grid { grid-template-columns: 1fr; gap: 48px; }
-  .drink-retailer-content h2 { font-size: 40px; }
   .drink-retailer-visual { gap: 8px; }
 }
 /* Mobile */
 @media (max-width: 768px) {
   .drink-retailers { padding: 64px 20px; }
   .drink-retailer-grid { gap: 40px; }
-  .drink-retailer-content h2 { font-size: 32px; }
   .drink-retailer-content p { font-size: 16px; }
   .drink-retailer-visual { gap: 8px; }
-  .drink-retailer-img { border-radius: 8px; }
+  .drink-retailer-img { border-radius: 0; }
 }
 @media (max-width: 480px) {
-  .drink-retailer-content h2 { font-size: 28px; }
   .drink-retailer-visual { grid-template-columns: 1fr; }
   .drink-retailer-img:first-child { grid-row: auto; }
   .drink-retailers .drink-btn-retailer { width: 100%; text-align: center; justify-content: center; font-size: 16px; padding: 16px 28px; }
