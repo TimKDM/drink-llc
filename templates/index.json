@@ -883,15 +883,6 @@
         "button_url": "shopify://pages/contact",
         "image": "shopify://shop_images/drink-hero-image.png"
       }
-    },
-    "custom_liquid_TfJHxB": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "show_space": false,
-        "code": "<!-- Elfsight Instagram Feed | Untitled Instagram Feed -->\n<script src=\"https://static.elfsight.com/platform/platform.js\" async></script>\n<div class=\"elfsight-app-d0859147-75ab-4c02-bf03-e2551ca43757\" data-elfsight-app-lazy></div>"
-      }
     }
   },
   "order": [
@@ -913,7 +904,6 @@
     "featured_collection_eJBFTR",
     "newsletter_e6MJwL",
     "drink_compare_flavors_axpeJb",
-    "drink_warranty_RxdwPz",
-    "custom_liquid_TfJHxB"
+    "drink_warranty_RxdwPz"
   ]
 }
