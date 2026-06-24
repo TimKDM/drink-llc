@@ -4,8 +4,8 @@
 > written automatically. Paste each block into the matching field in
 > **Settings → Policies**. The Privacy Policy already exists (Shopify default).
 >
-> Contact: support@thisisdrink.com · Phone (placeholder): (866) 729-8075 · Ships within the United States · Free shipping over $49.
-> NOTE: The phone is a placeholder — swap it for a real number before relying on it. Set a matching "free over $49" rate in Settings → Shipping. Add your business city/state where relevant once you have it.
+> Contact: support@thisisdrink.com · Phone (placeholder): (866) 729-8075 · Ships within the United States · No free-shipping threshold.
+> NOTE: The phone is a placeholder — swap it for a real number before relying on it. Add your business city/state where relevant once you have it.
 
 ## Refund / Return Policy
 
@@ -27,8 +27,8 @@
 <h2>Shipping Policy</h2>
 <h3>Processing</h3>
 <p>Most orders ship within 1–2 business days. You'll get a tracking number by email as soon as your order is on its way.</p>
-<h3>Rates &amp; Free Shipping</h3>
-<p>Free standard shipping on all U.S. orders over $49. Orders under $49 ship at a flat rate calculated at checkout.</p>
+<h3>Rates</h3>
+<p>Shipping is calculated at checkout based on your order and destination.</p>
 <h3>Delivery</h3>
 <p>Standard U.S. delivery typically takes 3–7 business days after processing, depending on your location.</p>
 <h3>Where We Ship</h3>

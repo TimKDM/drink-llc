@@ -238,7 +238,7 @@
           "type": "question",
           "settings": {
             "title": "How fast do you ship?",
-            "answer": "<p>Most orders ship within 1\u20132 business days. Free shipping on orders over $49.</p>"
+            "answer": "<p>Most orders ship within 1\u20132 business days. Shipping is calculated at checkout.</p>"
           }
         },
         "question_YG4Aah": {

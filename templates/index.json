@@ -580,7 +580,7 @@
         "text_we3Dkx": {
           "type": "text",
           "settings": {
-            "text": "Free shipping over $49. Zero sugar. Zero nonsense.",
+            "text": "Zero sugar. Six electrolytes. Zero nonsense.",
             "color": "#113702",
             "link": "",
             "use_h1": true,
@@ -887,7 +887,7 @@
           "type": "subheading",
           "disabled": true,
           "settings": {
-            "subheading": "Free shipping over $49. Zero sugar. Zero nonsense."
+            "subheading": "Zero sugar. Six electrolytes. Zero nonsense."
           }
         },
         "text_ccDNHG": {
