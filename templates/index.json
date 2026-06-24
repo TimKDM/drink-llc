@@ -15,14 +15,14 @@
         "image_nAbMMn": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/drink-hero-image.png",
-            "mobile_image": "shopify://shop_images/drink-hero-image.png",
+            "image": "shopify://shop_images/drink-hero-sporty.png",
+            "mobile_image": "shopify://shop_images/drink-hero-sporty.png",
             "slide_link": "",
             "subheading": "HYDRATION POWDER",
             "title": "Just Drink.",
             "heading_max_width": 37,
-            "title_size": 32,
-            "title_size_mobile": 20,
+            "title_size": 46,
+            "title_size_mobile": 28,
             "use_h1": true,
             "text": "<p>Five flavors. Zero sugar. All the electrolytes.</p>",
             "enlarge_text": true,
