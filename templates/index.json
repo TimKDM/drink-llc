@@ -15,8 +15,8 @@
         "image_nAbMMn": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/drink-hero-deadpan.png",
-            "mobile_image": "shopify://shop_images/drink-hero-deadpan.png",
+            "image": "shopify://shop_images/drink-lifestyle-kitchen.png",
+            "mobile_image": "shopify://shop_images/drink-lifestyle-kitchen.png",
             "slide_link": "",
             "subheading": "HYDRATION POWDER",
             "title": "Just Drink.",
@@ -148,7 +148,7 @@
       ],
       "name": "DRiNK About Us",
       "settings": {
-        "image": "shopify://shop_images/lemonade-drink.png",
+        "image": "shopify://shop_images/1782221071011-generated-label-image-2.jpg",
         "eyebrow": "About DRiNK",
         "heading": "We make hydration powder.",
         "description_1": "No manifesto. No origin story about a hike. We wanted better hydration without the sugar, the caffeine, or the filler ingredients. So we made it.",
@@ -388,7 +388,7 @@
           "type": "text_block",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/passion_fruit.png",
+            "image": "shopify://shop_images/1782221036963-generated-label-image-0.jpg",
             "title": "Tropical",
             "text": "<p><a href=\"/products/passion-fruit-x-plus\" target=\"_blank\" title=\"Passion Fruit\"><strong>Passion Fruit</strong></a><strong> </strong>– Island flavor. Zero guilt.</p>",
             "button_label": "Shop Passion Fruit",
@@ -399,7 +399,7 @@
           "type": "text_block",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/lemonade.png",
+            "image": "shopify://shop_images/1782221070765-generated-label-image-0.jpg",
             "title": "Classic",
             "text": "<p><a href=\"/products/lemonade\" target=\"_blank\" title=\"Lemonade\"><strong>Lemonade</strong></a> – Sweet without the sugar. </p>",
             "button_label": "Shop Lemonade",
@@ -410,7 +410,7 @@
           "type": "text_block",
           "settings": {
             "enable_media": true,
-            "image": "shopify://shop_images/creatine.png",
+            "image": "shopify://shop_images/1782221071007-generated-label-image-0.jpg",
             "title": "Strength",
             "text": "<p><a href=\"/products/creatine\" title=\"Creatine\"><strong>Creatine</strong></a> – Strength meets hydration.</p>",
             "button_label": "Shop Creatine",
@@ -459,11 +459,11 @@
       "type": "drink-retailers",
       "name": "DRiNK Retailers",
       "settings": {
-        "image_1": "shopify://shop_images/drink-hero-image.png",
+        "image_1": "shopify://shop_images/1782221071011-generated-label-image-2.jpg",
         "image_1_alt": "DRiNK hydration powder on store shelf",
-        "image_2": "shopify://shop_images/lemonade-drink.png",
+        "image_2": "shopify://shop_images/1782221070765-generated-label-image-0.jpg",
         "image_2_alt": "DRiNK hydration powder retail display",
-        "image_3": "shopify://shop_images/passion-fruit-drink.png",
+        "image_3": "shopify://shop_images/1782221036963-generated-label-image-0.jpg",
         "image_3_alt": "DRiNK customers",
         "eyebrow": "Buy Local",
         "heading": "Find DRiNK near you.",
@@ -540,7 +540,7 @@
         "feature_f7Mipw": {
           "type": "feature",
           "settings": {
-            "image": "shopify://shop_images/drink-hero-image.png",
+            "image": "shopify://shop_images/1782221071007-generated-label-image-0.jpg",
             "bg_color": "#ffffff",
             "bg_gradient": "",
             "text_color": "#505050",
@@ -629,7 +629,7 @@
       "disabled": true,
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/passion-fruit-drink.png",
+        "image": "shopify://shop_images/1782221070765-generated-label-image-0.jpg",
         "image_width": 700,
         "image_link": "",
         "image_position": "right",
@@ -725,7 +725,7 @@
             "electrolytes": "6",
             "caffeine": "0mg",
             "keto": "Yes",
-            "image": "shopify://shop_images/lemonade.png"
+            "image": "shopify://shop_images/1782221070765-generated-label-image-0.jpg"
           }
         },
         "model_2": {
@@ -748,7 +748,7 @@
             "electrolytes": "6",
             "caffeine": "0mg",
             "keto": "Yes",
-            "image": "shopify://shop_images/passion_fruit.png"
+            "image": "shopify://shop_images/1782221036963-generated-label-image-0.jpg"
           }
         },
         "model_3": {
@@ -771,7 +771,7 @@
             "electrolytes": "3",
             "caffeine": "0mg",
             "keto": "Yes",
-            "image": "shopify://shop_images/creatine.png"
+            "image": "shopify://shop_images/1782221071007-generated-label-image-0.jpg"
           }
         },
         "model_4": {
@@ -794,7 +794,7 @@
             "electrolytes": "6",
             "caffeine": "0mg",
             "keto": "Yes",
-            "image": "shopify://shop_images/peach_mango.png"
+            "image": "shopify://shop_images/1782221037741-generated-label-image-0.jpg"
           }
         },
         "model_5": {
@@ -817,7 +817,7 @@
             "electrolytes": "6",
             "caffeine": "0mg",
             "keto": "Yes",
-            "image": "shopify://shop_images/lychee.png"
+            "image": "shopify://shop_images/1782221036675-generated-label-image-0.jpg"
           }
         }
       },
