@@ -65,7 +65,7 @@
         "announcement_jgzXqn": {
           "type": "announcement",
           "settings": {
-            "text": "Keto \u00b7 Sugar Free \u00b7 Electrolytes \u00b7 B-Vitamins.",
+            "text": "Keto · Sugar Free · Electrolytes · B-Vitamins.",
             "show_countdown": false,
             "hide_on_end": false,
             "end_date": "",
@@ -125,8 +125,8 @@
       ],
       "settings": {
         "logo": "shopify://shop_images/drink_header_logo.png",
-        "logo_img_width_int": 155,
-        "mobile_logo_img_width_int": 135,
+        "logo_img_width_int": 210,
+        "mobile_logo_img_width_int": 165,
         "logo_h1": true,
         "enable_sticky": true,
         "enable_transparent": false,
