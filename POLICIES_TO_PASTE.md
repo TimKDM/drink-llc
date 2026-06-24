@@ -1,8 +1,11 @@
 # Store Policies — paste into Shopify Admin → Settings → Policies
 
-> The API connection lacks the `write_legal_policies` scope, so these couldn't be
+> The API connection lacks the `write_legal_policies` scope, so these can't be
 > written automatically. Paste each block into the matching field in
 > **Settings → Policies**. The Privacy Policy already exists (Shopify default).
+>
+> Contact: support@thisisdrink.com · No phone line · Ships within the United States · No free-shipping threshold.
+> NOTE: Add your business city/state where relevant once you have it.
 
 ## Refund / Return Policy
 
@@ -11,25 +14,25 @@
 <h3>30-Day Returns</h3>
 <p>Unopened, sealed tubs can be returned within 30 days of delivery for a full refund. Opened a tub and it's not for you? Email us — we'll work something out.</p>
 <h3>How to Start a Return</h3>
-<p>Email <a href="mailto:support@drinkllc.com">support@drinkllc.com</a> with your order number. All returns must be approved before shipping back. We'll send a prepaid return label once approved.</p>
+<p>Email <a href="mailto:support@thisisdrink.com">support@thisisdrink.com</a> with your order number. All returns must be approved before shipping back. We'll send a prepaid return label once approved.</p>
 <h3>Refund Timing</h3>
 <p>After we receive your return, refunds are issued to your original payment method within 5–7 business days.</p>
 <h3>Damaged or Wrong Items</h3>
 <p>If your order arrives damaged or you received the wrong flavor, send a photo and your order number within 7 days of delivery and we'll replace it or refund you — no need to ship anything back.</p>
 <h3>Questions?</h3>
-<p>Email <a href="mailto:support@drinkllc.com">support@drinkllc.com</a> or call (866) 729-8075, Mon–Fri 9am–5pm CST.</p>
+<p>Email <a href="mailto:support@thisisdrink.com">support@thisisdrink.com</a>.</p>
 
 ## Shipping Policy
 
 <h2>Shipping Policy</h2>
 <h3>Processing</h3>
-<p>Most orders ship within 1–2 business days from Houston, Texas. You'll get a tracking number by email as soon as your order is on its way.</p>
-<h3>Rates &amp; Free Shipping</h3>
-<p>Free standard shipping on all U.S. orders over $49. Orders under $49 ship at a flat rate calculated at checkout.</p>
+<p>Most orders ship within 1–2 business days. You'll get a tracking number by email as soon as your order is on its way.</p>
+<h3>Rates</h3>
+<p>Shipping is calculated at checkout based on your order and destination.</p>
 <h3>Delivery</h3>
 <p>Standard U.S. delivery typically takes 3–7 business days after processing, depending on your location.</p>
 <h3>Where We Ship</h3>
-<p>We currently ship within the United States. For wholesale or international inquiries, email <a href="mailto:support@drinkllc.com">support@drinkllc.com</a>.</p>
+<p>We currently ship within the United States. For wholesale or international inquiries, email <a href="mailto:support@thisisdrink.com">support@thisisdrink.com</a>.</p>
 <h3>Lost or Delayed Orders</h3>
 <p>If your order hasn't arrived within the expected window, reach out and we'll track it down with the carrier.</p>
 
@@ -48,8 +51,8 @@
 <h3>Limitation of Liability</h3>
 <p>To the fullest extent permitted by law, DRiNK is not liable for any indirect or consequential damages arising from the use of our products or website. Use products only as directed.</p>
 <h3>Contact</h3>
-<p>Questions about these terms? Email <a href="mailto:support@drinkllc.com">support@drinkllc.com</a>.</p>
+<p>Questions about these terms? Email <a href="mailto:support@thisisdrink.com">support@thisisdrink.com</a>.</p>
 
 ## Contact Information
 
-<p>DRiNK<br>Houston, TX, USA<br>Email: <a href="mailto:support@drinkllc.com">support@drinkllc.com</a><br>Phone: (866) 729-8075 (Mon–Fri, 9am–5pm CST)</p>
+<p>DRiNK<br>United States<br>Email: <a href="mailto:support@thisisdrink.com">support@thisisdrink.com</a></p>
