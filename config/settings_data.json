@@ -129,7 +129,7 @@
     "animations_enabled_desktop": true,
     "cart_type": "drawer",
     "after_add_to_cart": "drawer",
-    "show_free_shipping_bar": false,
+    "show_free_shipping_bar": true,
     "free_shipping_amounts": "USD:4999",
     "product_currency_code_enabled": false,
     "cart_currency_code_enabled": true,

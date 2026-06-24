@@ -58,8 +58,8 @@
           "settings": {
             "enable_media": true,
             "image": "shopify://shop_images/phone_4ee5da45-caba-4ac6-8b68-de7bf49a96a3.svg",
-            "title": "Support Hours:",
-            "text": "<p>Mon\u2013Fri, 9am\u20135pm MT</p>",
+            "title": "Call Us:",
+            "text": "<p>(866) 729-8075 \u2014<em>Mon\u2013Fri, 9am\u20135pm CST</em></p>",
             "button_label": "",
             "link": ""
           }
@@ -238,7 +238,7 @@
           "type": "question",
           "settings": {
             "title": "How fast do you ship?",
-            "answer": "<p>Most orders ship within 1\u20132 business days. Shipping is calculated at checkout.</p>"
+            "answer": "<p>Most orders ship within 1\u20132 business days. Free shipping on orders over $49.</p>"
           }
         },
         "question_YG4Aah": {
