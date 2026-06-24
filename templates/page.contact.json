@@ -28,7 +28,7 @@
       ],
       "name": "Image with text overlay",
       "settings": {
-        "image": "shopify://shop_images/",
+        "image": "",
         "height": "fixed",
         "height_desktop": 200,
         "height_mobile": 100,
@@ -307,7 +307,7 @@
       ],
       "name": "Video with text",
       "settings": {
-        "video_shopify": "shopify://files/videos/CEOexplainsquality.mp4",
+        "video_shopify": "",
         "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_description": "",
         "autoplay": false,
